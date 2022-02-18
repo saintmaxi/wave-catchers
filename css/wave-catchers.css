@@ -328,10 +328,12 @@ h5 {
 	/* background-color: #FBF79E; */
 	backdrop-filter: blur(25px);
     background-color: #447CFC;
-	background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
+	background-image: url(../images/Sand.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  100%);
+	/* background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
 	#D07C28    0%, #D07C28  15%, 
 	#F7C793   0%, #F7C793 85%,        
-	#D07C28 0%);
+	#D07C28 0%); */
 
 
 	/* background-color: rgba(95, 92, 92, 0.336); */

@@ -25,13 +25,13 @@
         rgb(124, 112, 209) 20px,
         #8175db 20px
         ); */
-        background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
+        background-image: url(../images/Sand.png), linear-gradient(to bottom, 
         #D07C28    0%, #D07C28  100%);
         /* background-size: 100%; */
         /* background-image: url("../images/wood.png"); */
         /* background-image: url("../images/frond.png"); */
         backdrop-filter: blur(10px);
-        background-size: 20% 100%;
+        /* background-size: 30% 100%; */
 }
 
 #top .link {

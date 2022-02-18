@@ -46,14 +46,16 @@
 	border-width: .5vw;
     width: 30%;
     margin: 1.5%;
-    background: linear-gradient(to bottom, 
+    background-image: url(../images/Sand.png), linear-gradient(to bottom, 
+    #D07C28    0%, #D07C28  100%);
+    /* background: linear-gradient(to bottom, 
         #D07C28    0%, #D07C28  3%, 
         #F7C793   0%, #F7C793 97%,        
         #D07C28 0%);
         background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
         #D07C28    0%, #D07C28  3%, 
         #F7C793   0%, #F7C793 97%,        
-        #D07C28 0%);
+        #D07C28 0%); */
     text-align: center;
     display: -webkit-box;
     display: -webkit-flex;
