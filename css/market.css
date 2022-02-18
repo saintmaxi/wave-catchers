@@ -1,3 +1,18 @@
+.active {
+	background-color: #FDCD00;
+}
+
+#selector-div {
+    text-align: center;
+}
+
+#selector-div button {
+    font-size: 3vw;
+    line-height: 3vw;
+    padding: 1vw;
+    width: 10%;
+}
+
 #live-collections, #past-collections {
     text-align: center;
     display: -webkit-box;
@@ -25,10 +40,20 @@
 }
 
 .partner-collection {
-    border: 3px solid black;
+	border-style: solid;
+	border-color: black;
+	border-radius: 20px;
+	border-width: .5vw;
     width: 30%;
     margin: 1.5%;
-    background-color: #1a9bce;
+    background: linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  3%, 
+        #F7C793   0%, #F7C793 97%,        
+        #D07C28 0%);
+        background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  3%, 
+        #F7C793   0%, #F7C793 97%,        
+        #D07C28 0%);
     text-align: center;
     display: -webkit-box;
     display: -webkit-flex;
@@ -47,15 +72,19 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 15px;
-    border-radius: 0 0 20px 0;
 }
 
 .collection-img {
     margin: 10px;
-    border: 3px solid black;
+	border-style: solid;
+	border-color: black;
+	border-radius: 20px;
+	border-width: .5vw;
     width: 30%;
     min-width: 200px;
     min-height: 200px;
+    max-height: 200px;
+    max-width: 200px;
 }
 
 .collection-info {
@@ -66,6 +95,7 @@
 .collection-description {
     min-height: 20%;
     padding: 2%;
+    color: black !important;
 }
 
 h3 {
@@ -80,7 +110,7 @@ h3, h4 {
 }
 
 a {
-    color: #00EEFF;
+    color: black;
 }
 
 h4 {
@@ -91,7 +121,7 @@ h4 {
 
 .inside-text {
     font-size: 1vw;
-    color: black;
+    color: white;
 }
 
 #mint-prompt {
@@ -205,6 +235,14 @@ h4 {
 }
 
 @media screen and (max-width: 767px) {
+
+    #selector-div button {
+        font-size: 3vh;
+        line-height: 3vh;
+        padding: 1vw;
+        width: 40%;
+    }
+
     .navbar-container {
         width: 50% !important;
         padding: 0;
@@ -217,6 +255,15 @@ h4 {
     .collection-info {
         width:100%;
         margin-left: initial;
+    }
+
+    .partner-collection {
+		border-width: 5px;
+        margin-top: 40px;
+    }
+
+    .collection-img {
+		border-width: 5px;
     }
     
     .collection-description {

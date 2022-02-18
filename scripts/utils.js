@@ -28,9 +28,13 @@ async function displayLoading() {
 function showLive() {
     $('#past-collections').addClass('hidden');
     $('#live-collections').removeClass('hidden');
+    $("#live-button").addClass("active");
+    $("#past-button").removeClass("active");
 }
 
 function showPast() {
     $('#live-collections').addClass('hidden');
     $('#past-collections').removeClass('hidden');
+    $("#past-button").addClass("active");
+    $("#live-button").removeClass("active");
 }

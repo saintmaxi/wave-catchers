@@ -258,17 +258,17 @@ const loadCollections = async() => {
                 button = `<button class="mint-prompt-button" id="${id}-mint-button" onclick="openMintPrompt('${collection["contract"]}', '${name}', ${collection["cost"]}, ${collection["max-mint"]})"">MINT</button>`;
             }
             else {
-                button = `<button disabled class="mint-prompt-button" id="${name}-mint-button">MINTED OUT</button>`;
+                button = `<button disabled class="mint-prompt-button button" id="${name}-mint-button">MINTED OUT</button>`;
             }
         }
         else if (collection["status"] == "COMPLETE") {
-            button = `<a href="${collection["opensea-link"]}" style="text-decoration:none;color:black;" target="_blank"><button class="mint-prompt-button">VIEW ON OPENSEA</button></a>`;
+            button = `<a href="${collection["opensea-link"]}" style="text-decoration:none;color:black;" target="_blank"><button class="mint-prompt-button button">VIEW ON OPENSEA</button></a>`;
         }
         let fakeJSX = `<div class="partner-collection">
                         <img class="collection-img" src="${collection["image"]}">
                         <div class="collection-info">
                             <h3><a class="clickable" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${name}⬈</a></h3>
-                            <h4>${collection["cost"]}  | <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${total}</span> Minted</h4>
+                            <h4>${collection["cost"]} $COCO | <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${total}</span> Minted</h4>
                             <div class="inside-text collection-description">
                             ${collection["description"]}
                             </div>

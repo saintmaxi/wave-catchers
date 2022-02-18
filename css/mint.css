@@ -79,6 +79,17 @@
 #mint {
     margin: 0;
     width: 45%;
+    /* background-image: url("../images/wood.png"); */
+    background: linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  10%, 
+        #F7C793   0%, #F7C793 90%,        
+        #D07C28 0%);
+        background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  20%, 
+        #F7C793   0%, #F7C793 80%,        
+        #D07C28 0%);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
 }
 
 #quantity-controls {
@@ -112,7 +123,7 @@
 }
 
 .increment-button:hover {
-    color: lightgrey
+    opacity: .75;
 }
 
   

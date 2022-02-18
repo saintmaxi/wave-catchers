@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: #1a9bce;
+    --main-bg-color: #312876;
   }
 
 @keyframes blinker {
@@ -15,8 +15,35 @@
     flex-direction: row;
     justify-content: center;
     background-color: var(--main-bg-color);
+    background-color: #447CFC;
     border-bottom: .5vw solid black;
+    /* background: repeating-linear-gradient(
+        to bottom,
+        #312876 20px,
+        #4d41aa 20px,
+        #6a5dc9 20px,
+        rgb(124, 112, 209) 20px,
+        #8175db 20px
+        ); */
+        background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  100%);
+        /* background-size: 100%; */
+        /* background-image: url("../images/wood.png"); */
+        /* background-image: url("../images/frond.png"); */
+        backdrop-filter: blur(10px);
+        background-size: 20% 100%;
 }
+
+#top .link {
+	transition: transform ease 300ms;
+}
+
+#top .link:hover {
+  transform: translate(0, -2px);
+	transition: transform ease 300ms;
+    display:inline-block;
+}
+
 
 #header, #title-section {
     margin: 10px 0 10px 0%;
@@ -29,8 +56,9 @@
     justify-content: center;
     align-items: center;
     width: 45%;
-    border-right: .25vw solid black;
+    /* border-right: .25vw solid black; */
     font-size: 3vw;
+    line-height: 3vw;
     text-align: center;
 }
 
@@ -50,7 +78,7 @@
     justify-content: center;
     width: 15%;
     padding: .5%;
-    background-color: var(--main-bg-color);
+    /* background-color: var(--main-bg-color); */
 }
 
 #socials a {
@@ -78,13 +106,27 @@
 #title {
     width: 60%;
     letter-spacing: 5px;
+    /* background-image: url("../images/board.png");
+	background-size: 100% 100%; */
+    /* background-color: blanchedalmond;
+    border: solid .5vw black;
+    border-radius: 5px;
+    padding: .5vw; */
 }
 
 .header-menu {
-	font-size: 2vw;
+	font-size: 2.5vw;
+    line-height: 2.5vw;
     letter-spacing: 3px;
     width: 30%;
+    margin: 2%;
     text-align: center;
+/* background: linear-gradient(to bottom, 
+#83C4BA    0%, #83C4BA  40%, 
+        black   0%, black 60%,        
+        #83C4BA 0%);
+    border-radius: 55%;
+    padding: .5vw; */
 }
 
 /* end header/navbar styling */
@@ -129,12 +171,21 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    /* background-image: url("../images/wood.png"); */
+
+
 }
 
-#about-text-desktop {
+#about-text-desktop-1 {
     width: 65%;
     /* margin-left: 2.5%; */
-    margin-right:5%
+    margin-right:4%
+}
+
+#about-text-desktop-2 {
+    width: 65%;
+    /* margin-left: 2.5%; */
+    margin-left:4%
 }
 
 #about-gif {
@@ -192,6 +243,17 @@
 
 /* end team section styling */
 
+#bottom-socials {
+    background-color: black;
+    border-radius: 40px;
+    width: 40%;
+    margin: auto;
+    padding: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 #bottom-socials a {
     width: 4vw;
     height: 4vw;
@@ -225,7 +287,9 @@
         width: 100%;
         border-right: none;
         font-size: 4vh;
-        background-color: var(--main-bg-color);
+        line-height: 4vh;
+        background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  100%);
         margin-top: 0;
         margin-bottom: 0;
         padding: 2%;
@@ -264,10 +328,12 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: var(--main-bg-color);
+        background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
+        #F7C793    0%, #F7C793  100%);
         margin: 0;
         padding-top: 5px;
         padding-bottom: 5px;
+
     }
 
     .header-menu {
@@ -275,12 +341,17 @@
     }
 
     #mobile-wallet-connect-div {
-        background-color: var(--main-bg-color);
+        background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  100%);
         text-align: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-top: 5px solid black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        /* border-top: 5px solid black; */
         border-bottom: 5px solid black;
+    }
+
+    #mobile-wallet-connect-div .button {
+        min-height: 6vh;
     }
 
     /* end header/navbar styling */
@@ -343,6 +414,11 @@
     #about-info {
         font-size: 2.8vh !important;
         line-height: 3.3vh !important;
+    }
+
+    #bottom-socials {
+        width: 95%;
+        padding: 2vh;
     }
 
     #bottom-socials a {
