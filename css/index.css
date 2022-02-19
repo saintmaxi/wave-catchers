@@ -368,6 +368,20 @@
     }
 
 
+    @-webkit-keyframes slide-in {
+        100% {
+          -webkit-transform: translateY(0%);
+          transform: translateY(0%)
+        }
+    }
+
+    @-webkit-keyframes slide-out {
+        100% {
+          -webkit-transform: translateY(-100%);
+          transform: translateY(-100%)
+        }
+    }
+
     @keyframes slide-in {
         100% {
             transform: translateY(0%)
@@ -383,14 +397,16 @@
     .expanded {
         backdrop-filter: blur(10px);
         opacity: 1;
-    animation-name: slide-in;
-    animation-duration: 1s;
+    /* animation-name: slide-in;
+    animation-duration: 1s; */
+        animation: slide-in 1s linear;
+    -webkit-animation: slide-in 1s linear;
     }
 
     .collapsed {
         backdrop-filter: blur(10px);
-        animation-name: slide-out;
-        animation-duration: 1s;
+    -webkit-animation: slide-out 1s linear;
+        animation: slide-out 1s linear;
     /* transform: translateY(-100%) */
     }
 
