@@ -404,14 +404,24 @@
     /* animation-name: slide-in;
     animation-duration: 1s; */
         animation: slide-in 1s linear;
-    -webkit-animation: slide-in 1s linear;
+    /* -webkit-animation: slide-in 1s linear; */
+    -webkit-animation-name: slide-in;
+-webkit-animation-duration: 1s;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-timing-function: linear;
+-webkit-animation-fill-mode: forwards;
     }
 
     .collapsed {
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-    -webkit-animation: slide-out 1s linear;
+    /* -webkit-animation: slide-out 1s linear; */
         animation: slide-out 1s linear;
+        -webkit-animation-name: slide-out;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-fill-mode: forwards;
     /* transform: translateY(-100%) */
     }
 
