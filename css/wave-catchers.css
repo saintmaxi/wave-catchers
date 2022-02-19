@@ -5,7 +5,11 @@
 
 @font-face {  
 	font-family: 'Wavey';
-	src: URL('../css/Pattaya-Regular.ttf') format('truetype');
+	/* src: URL('../css/Pattaya-Regular.ttf') format('truetype'); */
+	/* src: URL('../css/street\ cred.ttf') format('truetype'); */
+	src: URL('../css/mexcellent\ rg.otf') format('truetype');
+
+
 	
 	/* src: URL('../css/fabfeltscript-bold.ttf') format('truetype'); */
 
@@ -77,23 +81,13 @@ p {
 }
 
 #account {
-	/* position: absolute;
-	display: inline; */
 	text-align: center;
-    /* top: 1vw;
-    right: 1vw; */
 	font-size: 1.3vw;
 	letter-spacing: 3px;
 	background-color: white;
 	color:black;
-	width: 100%;
-	height: 50%;
-	/* background-image: url("../images/board.png");
-	background-size: 100% 100%;
-	border: none;
-	border-radius: 55%;
-	padding: 1vw; */
-
+	width: 95%;
+	height: 70%;
   }
 
 
