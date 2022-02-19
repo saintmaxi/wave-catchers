@@ -228,8 +228,8 @@ const updateInfo = async() => {
         return;
     }
     else {
-        $("#account").text(`${_address.substr(0,9)}...`);
-        $("#mobile-account").text(`${_address.substr(0,9)}...`);
+        $("#account").text(`${_address.substr(0,9)}..`);
+        $("#mobile-account").text(`${_address.substr(0,9)}..`);
         $("#account").addClass("connected-account");
         $("#mobile-account").addClass("connected-account");
     }

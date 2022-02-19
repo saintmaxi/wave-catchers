@@ -14,9 +14,10 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: var(--main-bg-color);
-    background-color: #447CFC;
-    border-bottom: .5vw solid black;
+    color: white !important;
+    /* background-color: var(--main-bg-color);
+    background-color: #447CFC; */
+    /* border-bottom: .5vw solid black; */
     /* background: repeating-linear-gradient(
         to bottom,
         #312876 20px,
@@ -25,8 +26,8 @@
         rgb(124, 112, 209) 20px,
         #8175db 20px
         ); */
-        background-image: url(../images/Sand.png), linear-gradient(to bottom, 
-        #D07C28    0%, #D07C28  100%);
+        /* background-image: url(../images/Sand.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  100%); */
         /* background-size: 100%; */
         /* background-image: url("../images/wood.png"); */
         /* background-image: url("../images/frond.png"); */
@@ -55,26 +56,56 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    width: 20%;
     /* border-right: .25vw solid black; */
-    font-size: 3vw;
-    line-height: 3vw;
+    font-size: 2vw;
+    line-height: 2vw;
     text-align: center;
 }
 
+#title {
+    width: 100%;
+    letter-spacing: 5px;
+    /* background-image: url("../images/board.png");
+	background-size: 100% 100%; */
+    /* background-color: blanchedalmond;
+    border: solid .5vw black;
+    border-radius: 5px;
+    padding: .5vw; */
+}
+
 #header {
-    width: 40%;
-    border-left: .25vw solid black;
+    width: 50%;
+    /* border-left: .25vw solid black; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+.header-menu {
+	font-size: 2vw;
+    line-height: 2vw;
+    letter-spacing: 3px;
+    width: 20%;
+    margin: 2%;
+    text-align: center;
+/* background: linear-gradient(to bottom, 
+#83C4BA    0%, #83C4BA  40%, 
+        black   0%, black 60%,        
+        #83C4BA 0%);
+    border-radius: 55%;
+    padding: .5vw; */
+}
+
+.header-menu a {
+    color: white;
+}
+
 #socials {
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     width: 15%;
     padding: .5%;
@@ -101,32 +132,6 @@
 
 #logo-img:hover {
     opacity: .8;
-}
-
-#title {
-    width: 60%;
-    letter-spacing: 5px;
-    /* background-image: url("../images/board.png");
-	background-size: 100% 100%; */
-    /* background-color: blanchedalmond;
-    border: solid .5vw black;
-    border-radius: 5px;
-    padding: .5vw; */
-}
-
-.header-menu {
-	font-size: 2.5vw;
-    line-height: 2.5vw;
-    letter-spacing: 3px;
-    width: 30%;
-    margin: 2%;
-    text-align: center;
-/* background: linear-gradient(to bottom, 
-#83C4BA    0%, #83C4BA  40%, 
-        black   0%, black 60%,        
-        #83C4BA 0%);
-    border-radius: 55%;
-    padding: .5vw; */
 }
 
 /* end header/navbar styling */
@@ -288,8 +293,10 @@
         border-right: none;
         font-size: 4vh;
         line-height: 4vh;
-        background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
-        #D07C28    0%, #D07C28  100%);
+        /* background-image: url(../images/Sand.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  100%); */
+        /* background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  100%); */
         margin-top: 0;
         margin-bottom: 0;
         padding: 2%;
@@ -317,7 +324,7 @@
     }
     
     #title {
-        width: 60%;
+        width: 100%;
         letter-spacing: 3px;
     }
 
@@ -328,8 +335,10 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
-        #F7C793    0%, #F7C793  100%);
+        /* background-image: url(../images/Sand.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  100%); */
+        /* background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
+        #F7C793    0%, #F7C793  100%); */
         margin: 0;
         padding-top: 5px;
         padding-bottom: 5px;
@@ -341,13 +350,15 @@
     }
 
     #mobile-wallet-connect-div {
-        background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
-        #D07C28    0%, #D07C28  100%);
+        /* background-image: url(../images/Sand.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  100%); */
+        /* background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  100%); */
         text-align: center;
         padding-top: 5px;
         padding-bottom: 5px;
         /* border-top: 5px solid black; */
-        border-bottom: 5px solid black;
+        /* border-bottom: 5px solid black; */
     }
 
     #mobile-wallet-connect-div .button {
