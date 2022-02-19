@@ -32,6 +32,7 @@
         /* background-image: url("../images/wood.png"); */
         /* background-image: url("../images/frond.png"); */
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         /* background-size: 30% 100%; */
 }
 
@@ -301,6 +302,7 @@
         margin: 0;
         padding: 2%;
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
 
     }
 
@@ -363,6 +365,7 @@
     
     #mobile-nav-menu.expanded {
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
 
         margin-top: 0;
     }
@@ -396,6 +399,7 @@
 
     .expanded {
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         opacity: 1;
     /* animation-name: slide-in;
     animation-duration: 1s; */
@@ -405,6 +409,7 @@
 
     .collapsed {
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     -webkit-animation: slide-out 1s linear;
         animation: slide-out 1s linear;
     /* transform: translateY(-100%) */
@@ -438,6 +443,7 @@
         padding-top: 5px;
         padding-bottom: 5px;
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
 
         /* border-top: 5px solid black; */
         /* border-bottom: 5px solid black; */
