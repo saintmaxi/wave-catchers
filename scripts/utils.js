@@ -38,3 +38,9 @@ function showPast() {
     $("#past-button").addClass("active");
     $("#live-button").removeClass("active");
 }
+
+function toggleMenu() {
+    const el = document.getElementById("mobile-nav-menu")
+    el.classList.toggle('expanded')
+    el.classList.toggle('collapsed')
+ }

@@ -410,7 +410,9 @@ h5 {
 	}
 
 	#mobile-account {
-		width:90%;
+		width:80%;
+		background-color: white;
+		color: black
 	  }
 
 	#about {
