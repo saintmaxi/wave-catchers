@@ -166,6 +166,7 @@ p {
 }
 
 .button {
+	touch-action: manipulation;
 	background-color: black;
     border: .3vw black solid;
 	color: white;
