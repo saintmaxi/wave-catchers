@@ -171,6 +171,7 @@ p {
     border: .3vw black solid;
 	color: white;
 	font-size: 1.7vw;
+	line-height: 1.7vw;
 	padding: .5vw;
 	border-radius: 5px;
 	font-family: 'Wavey', sans-serif;
