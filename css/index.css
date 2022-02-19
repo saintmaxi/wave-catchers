@@ -250,9 +250,9 @@
 /* end team section styling */
 
 #bottom-socials {
-    background-color: black;
-    border-radius: 40px;
-    width: 40%;
+    /* background-color: black;
+    border-radius: 40px; */
+    width: 20%;
     margin: auto;
     padding: 1vw;
     display: flex;
