@@ -1,10 +1,8 @@
+#claim-tools h1 {
+    font-size: 4.4vh !important;
+    line-height: 4.4vh !important;
+}
+
 h2 {
     margin: 20px !important;
 }
-
-/* #claim-tools {
-    min-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
