@@ -291,13 +291,13 @@
     #title-section {
         width: 100%;
         border-right: none;
-        font-size: 4vh;
-        line-height: 4vh;
+        font-size: 5vh;
+        line-height: 5vh;
         /* background-image: url(../images/Sand.png), linear-gradient(to bottom, 
         #D07C28    0%, #D07C28  100%); */
         /* background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
         #D07C28    0%, #D07C28  100%); */
-        margin-top: 0;
+        padding-top: 20px !important;
         margin-bottom: 0;
         padding: 2%;
     }
@@ -346,7 +346,7 @@
     }
 
     .header-menu {
-        font-size: 2.5vh;
+        font-size: 3vh;
     }
 
     #mobile-wallet-connect-div {
