@@ -267,7 +267,7 @@ const loadCollections = async() => {
         let fakeJSX = `<div class="partner-collection">
                         <img class="collection-img" src="${collection["image"]}">
                         <div class="collection-info">
-                            <h3><a class="clickable" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${name}⬈</a></h3>
+                            <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${name}⬈</a></h3>
                             <h4>${collection["cost"]} $COCO <br> <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${total}</span> Minted</h4>
                             <div class="inside-text collection-description">
                             ${collection["description"]}
