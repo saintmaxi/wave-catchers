@@ -15,9 +15,15 @@
     flex-direction: row;
     justify-content: center;
     color: white !important;
+    /* background-color: rgb(69, 188, 228); */
+    /* background-color: rgb(45, 171, 212); */
+    /* background-color: #312876; */
+    /* background-color: #76BFFE; */
+    background-color: #447CFC;
+
     /* background-color: var(--main-bg-color);
     background-color: #447CFC; */
-    /* border-bottom: .5vw solid black; */
+    /* border-bottom: .5vw solid white; */
     /* background: repeating-linear-gradient(
         to bottom,
         #312876 20px,
@@ -294,6 +300,8 @@
         border-right: none;
         font-size: 5vh;
         line-height: 5vh;
+    background-color: #447CFC;
+
         /* background-image: url(../images/Sand.png), linear-gradient(to bottom, 
         #D07C28    0%, #D07C28  100%); */
         /* background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
@@ -361,6 +369,8 @@
     #mobile-nav-menu {
         margin-top: -100%;
         transition: all 0.4s;
+    background-color: #447CFC;
+
     }
     
     #mobile-nav-menu.expanded {
@@ -450,6 +460,8 @@
         #D07C28    0%, #D07C28  100%); */
         /* background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
         #D07C28    0%, #D07C28  100%); */
+    background-color: #447CFC;
+
         text-align: center;
         padding-top: 5px;
         padding-bottom: 5px;

@@ -183,6 +183,15 @@ p {
 	text-decoration: none
 }
 
+.title-link {
+	color: white;
+	text-decoration: none
+}
+
+.title-link:hover {
+	color: #F5CD03;
+}
+
 .button:hover {
 	background-color: #FDCD00;
 }
