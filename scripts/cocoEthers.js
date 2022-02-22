@@ -2,59 +2,42 @@
 /********************************PRODUCTION CONFIG********************************/
 /*********************************************************************************/
 
-// const warriorsAddress = "";
-// const warriorsAbi = () => {
-//     return ``;
+// const cocoAddress = "";
+// const cocoAbi = () => { 
+    // return ``;
 // };
 
 // const etherscanBase = `https://etherscan.io/tx/`;
 // const correctChain = 1;
-// const MAX_MINT = 10;
-// const MAX_MINT_WL = 10;
-// const MAX_SUPPLY = 3334;
-// const priceWei = "25000000000000000";
-// const priceEth = .025
-// const openseaLink = "";
-// const looksrareLink = "";
 
 /*********************************************************************************/
 /********************************DEV CONFIG********************************/
 /*********************************************************************************/
 
-const warriorsAddress = "";
-const warriorsAbi = () => {
-    return `[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"approved","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"operator","type":"address"},{"indexed":false,"internalType":"bool","name":"approved","type":"bool"}],"name":"ApprovalForAll","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[],"name":"COST_PER_MINT","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"EtherWarriorsRenderer","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"addressMintCountPublic","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"addressMintCountWhitelist","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"approve","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"collectionSize","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"currentRaidCost","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"getApproved","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"operator","type":"address"}],"name":"isApprovedForAll","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_quantity","type":"uint256"}],"name":"mintWithRaid","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"nextOwnerToExplicitlySet","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"ownerOf","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_quantity","type":"uint256"}],"name":"publicMint","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"publicSaleStartTime","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"raidAddress","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"raidMintingAllowed","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"},{"internalType":"bytes","name":"_data","type":"bytes"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"operator","type":"address"},{"internalType":"bool","name":"approved","type":"bool"}],"name":"setApprovalForAll","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"setEtherWarriorsRendererAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"setRaidAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bool","name":"_raidMintingAllowed","type":"bool"}],"name":"setRaidMintingAllowed","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"_whitelistSaleStartTime","type":"uint256"},{"internalType":"uint256","name":"_publicSaleStartTime","type":"uint256"}],"name":"setStartTimes","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"merkleRoot","type":"bytes32"}],"name":"setWhitelistMerkleRoot","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"_whitelistURI","type":"string"}],"name":"setWhitelistURI","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes4","name":"interfaceId","type":"bytes4"}],"name":"supportsInterface","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenOfOwnerByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_tokenId","type":"uint256"}],"name":"tokenURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"transferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32[]","name":"proof","type":"bytes32[]"}],"name":"verifySender","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"whitelistMerkleRoot","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_quantity","type":"uint256"},{"internalType":"bytes32[]","name":"proof","type":"bytes32[]"}],"name":"whitelistMint","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"whitelistSaleStartTime","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"whitelistURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"withdraw","outputs":[],"stateMutability":"nonpayable","type":"function"}]`;
+const cocoAddress = "0x35A64a3154460b7c740856ef6fe0E80e7c100b7a";
+const cocoAbi = () => { 
+    return `[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[],"name":"DEFAULT_START_TIMESTAMP","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"EMISSION_RATE","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"burn","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"burnFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint16[]","name":"_tokenIds","type":"uint16[]"}],"name":"claim","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"claimFree","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"setWaveCatchersAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"waveCatchers","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"}]`;
 };
 
 const etherscanBase = `https://rinkeby.etherscan.io/tx/`;
 const correctChain = 4;
-const MAX_MINT = 10;
-const MAX_MINT_WL = 10;
-const MAX_SUPPLY = 3334;
-const priceWei = "25000000000000000";
-const priceEth = .025
-const openseaLink = "";
-const looksrareLink = "";
 
 /*********************************END CONFIG************************************/
 
 if (window.ethereum == undefined) {
-    displayErrorMessage('Use a web3 enabled browser to mint!');
+    displayErrorMessage('Use a web3 enabled browser to claim $COCO!');
+    // $("#available-warrior-images").empty();
+    // $("#staked-warrior-images").empty();
+    // $("#available-warrior-images").append("<br><h3>No warriors available...</h3>");
+    // $("#staked-warrior-images").append("<br><h3>No warriors available...</h3>");
 }
 
 const provider = new ethers.providers.Web3Provider(window.ethereum,"any");
 const signer = provider.getSigner();
-const warriors = new ethers.Contract(warriorsAddress, warriorsAbi(), signer);
-
-const merkleProofSourceUrl = "https://api.nonfungiblecdn.com/cyberturtles/merkleproofs"; // change
-
-var whitelistIsLive;
-var publicIsLive;
-var totalMinted;
+const coco = new ethers.Contract(cocoAddress, cocoAbi(), signer);
 
 const connect = async()=>{
     await provider.send("eth_requestAccounts", []);
-    await revealMintPrompt();
 };
 
 const getAddress = async()=>{
@@ -73,201 +56,19 @@ const getChainId = async()=>{
     return await signer.getChainId()
 };
 
-function decrementClaim() {
-    let currentClaim = Number($("#number-to-mint").text());
-    if (currentClaim > 1) {
-        let newClaim = currentClaim - 1;
-        $("#number-to-mint").text(newClaim);
-    }
-}
-
-function updatePrice() {
-    let currentClaim = Number($("#number-to-mint").text());
-    let totalMintedAfter = totalMinted += 1;
-    $("#current-cost").html(`${(priceEth * currentClaim).toFixed(3)} <span style="font-family: Arial, Helvetica, sans-serif;">Ξ</span>`)
-}
-
-function incrementClaim() {
-    let currentClaim = Number($("#number-to-mint").text());
-    let max;
-    if (whitelistIsLive && !publicIsLive) {
-        max = MAX_MINT_WL;
-    }
-    else {
-        max = MAX_MINT;
-    }
-    if (currentClaim != max) {
-        let newClaim = currentClaim + 1;
-        $("#number-to-mint").text(newClaim);
-    }
-}
-
-const setMaxMint = async() => {
-    if (whitelistIsLive && !publicIsLive) {
-        $("#number-to-mint").text(MAX_MINT_WL);
-        $("#current-cost").text((priceEth * MAX_MINT_WL).toFixed(3))
-    }
-    else {
-        $("#number-to-mint").text(MAX_MINT);
-        let totalMintedAfter = totalMinted += 1;
-        $("#current-cost").html(`${(priceEth * MAX_MINT).toFixed(3)} <span style="font-family: Arial, Helvetica, sans-serif;">Ξ</span>`)
-    }
-}
-
-const getMerkleProof = async() => {
-    const _senderAddress = await getAddress();
-    const _proof = await fetch(`${merkleProofSourceUrl}/${_senderAddress}`).then(res => res.text());
-    const _proofArray = _proof ? JSON.parse(_proof) : [];
-    return _proofArray;
-};
-
-const isWhitelistOnly = async() => {
-    let whitelistStart = await warriors.whitelistSaleStartTime()
-    let whitelistLive = Date.now() > whitelistStart ? true : false;
-    whitelistIsLive = whitelistLive;
-    return whitelistLive;
-}
-
-const isPublic = async() => {
-    let publicStart = await warriors.publicSaleStartTime();
-    let publicLive = Date.now() > publicStart ? true : false;
-    publicIsLive = publicLive;
-    return publicLive;
-}
-
-const checkMintingLive = async() => {
-    const whitelistLive = await isWhitelistOnly();
-    const publicLive = await isPublic();
-    if (!whitelistLive && !publicLive) {
-        $("#mint-tools").addClass("hidden");
-        $("#mint-closed").removeClass("hidden");
-    }
-    else {
-        if (publicLive && whitelistLive) {
-            $("#whitelisted").html('');
-        }
-        $("#mint-tools").removeClass("hidden");
-        $("#mint-closed").addClass("hidden");
-    }
-}
-
-const checkWhitelistStatus = async() => {
-    const whitelistLive = await isWhitelistOnly();
-
-    if (whitelistLive) {
-        const _merkleProof = await getMerkleProof();
-        const addr = await getAddress();
-        const _isWhitelisted = await warriors.isWhitelisted(addr, _merkleProof).catch(err => console.log(err)); //change
-
-        if (!publicIsLive) {
-            $("#whitelisted").html(_isWhitelisted ? "Congrats, you made the whitelist!" : "Sorry, you are not whitelisted. Please wait for our public sale.");
-        }
-        return _isWhitelisted;
-    }
-};
-
-const _mintWithRaid = async(numberToMint) => {
-    const gasLimit = await warriors.estimateGas.mintWithRaid(numberToMint)
-    const newGasLimit = parseInt((gasLimit * 1.2)).toString();
-
-    await warriors.mintWithRaid(numberToMint, {gasLimit: newGasLimit}).then( async(tx_) => {
-        await waitForTransaction(tx_);
-    });   
-};
-
-const _publicMint = async(numberToMint) => {
-    if (numberToMint > MAX_MINT) {
-        await displayErrorMessage(`Max ${MAX_MINT} mints!`);
-    }
-
-    const cost = ethers.BigNumber.from(priceWei).mul(numberToMint);
-    const gasLimit = await warriors.estimateGas.publicMint(numberToMint, {value: cost})
-    const newGasLimit = parseInt((gasLimit * 1.2)).toString();
-
-    await warriors.publicMint(numberToMint, { value: cost, gasLimit: newGasLimit}).then( async(tx_) => {
-        await waitForTransaction(tx_);
-    });   
-};
-
-const _whitelistMint = async(numberToMint) => {
-    const whitelisted = checkWhitelistStatus();
-    if (!whitelisted){
-        await displayErrorMessage("You are not whitelisted!");
-    }
-    else if (numberToMint > MAX_MINT_WL) {
-        await displayErrorMessage(`Max ${MAX_MINT_WL} mints for WL!`);
-    }
-    else {
-        const merkleProof = await getMerkleProof();
-        const cost = ethers.BigNumber.from(priceWei).mul(numberToMint); 
-        const gasLimit = await warriors.estimateGas.whitelistMint(merkleProof, numberToMint, {value: cost});
-        const newGasLimit = parseInt((gasLimit * 1.2)).toString();
-        
-        await warriors.whitelistMint(merkleProof, numberToMint, {value: cost, gasLimit: newGasLimit}).then( async(tx_) => {
-            await waitForTransaction(tx_);
-        });
-    }
-};
-
-const mint = async() => {
-    const whitelistLive = await isWhitelistOnly();
-    const publicLive = await isPublic();
-    const numberToMint = Number($("#number-to-mint").text());
-    const minted = await warriors.totalSupply();
-
-    try {
-        if (publicLive) {
-            if (minted >= 5000 && (await warriors.raidMintingAllowed())) {
-               await _mintWithRaid(numberToMint);
-            }
-            else {
-               await _publicMint(numberToMint);
-            }
-        }
-        else if (whitelistLive) {
-            await _whitelistMint(numberToMint);
-        }
-        else {
-            await displayErrorMessage("Minting not yet live!")
-        }
-    }
-    catch (error) {
-        if ((error.message).includes("Can only mint max 3 in whitelist")) {
-            await displayErrorMessage(`Error: Max ${MAX_MINT_WL} mints for WL!`)
-        }
-        else if ((error.message).includes("Can only mint max 6")) {
-            await displayErrorMessage(`Error: Max ${MAX_MINT} mints per address!`)
-        }
-        else if ((error.message).includes("Did not send enough eth!")) {
-            await displayErrorMessage(`Error: Insufficient ETH!`)
-        }
-        else if ((error.message).includes("Raid minting not allowed")) {
-            await displayErrorMessage(`Error: $RAID minting not allowed!`)
-        }
-        else if ((error.message).includes("Sale has not yet started!")) {
-            await displayErrorMessage(`Error: Sale not yet started!`)
-        }
-        else {
-            await displayErrorMessage("An error occurred. See console and window alert for details...")
-            window.alert(error);
-            console.log(error);
-        }
-    }
-};
-
-const updateMintInfo = async() => {
-    let minted = Number(await warriors.totalSupply());
-    totalMinted = minted;
-    $("#num-minted").text(minted);
-    if (minted == MAX_SUPPLY) {
-        $("#sold-out").html(`SOLD OUT! <br><br>AVAILABLE ON <a href="${openseaLink}" target="_blank" class="w-inline-block" style="text-decoration:none;color:#03B4FC;">OPENSEA⬈</a> & <a href="${looksrareLink}" target="_blank" class="w-inline-block" style="text-decoration:none;color:green;">LOOKSRARE⬈</a>`);
-        $("#mint-button").remove();
-        $("#mint-n-stake-button").remove();
-        $("#quantity-controls").remove();
-    }
-    else if (minted >= 5000) {
-        await checkRaidApproval();
-    }
+const importCocoToWallet = async() => {
+    ethereum.request({
+        method: 'wallet_watchAsset',
+        params: {
+          type: 'ERC20',
+          options: {
+            address: cocoAddress,
+            symbol: 'COCO',
+            decimals: 18,
+            image: '',
+          },
+        },
+      });
 }
 
 const updateCurrentChain = async() => {
@@ -280,13 +81,333 @@ const updateCurrentChain = async() => {
     }
 }
 
-provider.on("network", async(newNetwork, oldNetwork) => {
-        if (oldNetwork) {
-            $("#refresh-notification").remove();
-            await updateCurrentChain();
-            await updateMintInfo();
+// COCO Functions
+
+const getWarriorsEnum = async()=>{
+    let userAddress = await getAddress();
+    let totalWarriors = await warriors.balanceOf(userAddress);
+    let ownedWarriors = [];
+    for (let i = 0; i < totalWarriors; i++) {
+        let id = Number(await warriors.tokenOfOwnerByIndex(userAddress, i));
+        if (!(await raid.isStaked(id))) {
+            ownedWarriors.push(id);
         }
-    });
+    }
+    return ownedWarriors.length;
+};
+
+const getStakedWarriorsEnum = async()=>{
+    let userAddress = await getAddress();
+    let ownedStakedWarriorsCount = await raid.stakedWarriorsQuantity(userAddress);
+    return ownedStakedWarriorsCount;
+};
+
+const getWarriorsOwned = async() => {
+    let userAddress = await getAddress();
+    let totalWarriors = await warriors.balanceOf(userAddress);
+    let ownedWarriors = [];
+    for (let i = 0; i < totalWarriors; i++) {
+        let id = Number(await warriors.tokenOfOwnerByIndex(userAddress, i));
+        if (!(await raid.isStaked(id))) {
+            ownedWarriors.push(id);
+        }
+    }
+    return [...ownedWarriors].sort((a, b) => a - b);
+}
+
+const getStakedWarriorsOwned = async() => {
+    let userAddress = await getAddress();
+    let ownedStakedWarriors = await raid.warriorsStaked(userAddress); 
+    return [...ownedStakedWarriors].sort((a, b) => a - b);
+}
+
+const getRaidBalance = async()=>{
+    let userAddress = await getAddress();
+    return (Number(formatEther(await raid.balanceOf(userAddress)))).toFixed(2);
+};
+
+const getPendingRaidBalance = async()=>{
+    let userAddress = await getAddress();
+    const pendingRaid = await raid.getTotalRewardsForUser(userAddress);
+    $("#claimable-raid").text(`${Number(formatEther(pendingRaid)).toFixed(2)}`);
+};
+
+const claimRaid = async()=>{
+    let userAddress = await getAddress();
+    if (await raid.getTotalRewardsForUser(userAddress) == 0) {
+        await displayErrorMessage('You have no $RAID to claim!')
+    }
+    else {
+        await raid.claimAllRewards().then( async(tx_) => {
+            await waitForTransaction(tx_);
+        });
+    }
+};
+
+// Staking functions
+
+const stakeWarriorsToRaid = async()=>{
+    if (selectedForStaking.size == 0) {
+        displayErrorMessage("Select at least 1 warrior to stake!")
+    }
+    else if ((await getWarriorsEnum()) == 0) {
+        displayErrorMessage("No available warriors to stake!")
+    }
+    else {
+        const warriorsArray = Array.from(selectedForStaking);
+    
+        await raid.stakeWarriorsByIds(warriorsArray).then( async(tx_) => {
+            for (let i = 0; i < warriorsArray.length; i++) {
+                $(`#warrior-${warriorsArray[i]}`).remove();
+            }
+            selectedForStaking = new Set();
+            $("#selected-for-staking").text("None");
+            $("#your-warriors-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
+            $("#your-staked-warriors-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
+            await waitForTransaction(tx_);
+        });
+    }
+};
+
+const stakeAll = async()=>{
+    if ((await getWarriorsEnum()) == 0) {
+        displayErrorMessage("No available warriors to stake!")
+    }
+    else {
+        const warriorsArray = await getWarriorsOwned();
+    
+        await raid.stakeWarriorsByIds(warriorsArray).then( async(tx_) => {
+            for (let i = 0; i < warriorsArray.length; i++) {
+                $(`#warrior-${warriorsArray[i]}`).remove();
+            }
+            selectedForStaking = new Set();
+            $("#selected-for-staking").text("None");
+            $("#your-warriors-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
+            $("#your-staked-warriors-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
+            await waitForTransaction(tx_);
+        });
+    }
+};
+
+const unstakeByIds = async()=>{
+    const numStaked = await getStakedWarriorsEnum();
+    if (numStaked == 0) {
+        displayErrorMessage("No warriors staked!")
+    }
+    else if (selectedForUnstaking.size == 0) {
+        displayErrorMessage("Select at least 1 warrior to unstake!")
+    }
+    else {
+        const warriorsArray = Array.from(selectedForUnstaking);
+        await raid.unstakeWarriorsByIds(warriorsArray).then( async(tx_) => {
+            for (let i = 0; i < warriorsArray.length; i++) {
+                $(`#warrior-${warriorsArray[i]}`).remove();
+            }
+            selectedForUnstaking = new Set();
+            $("#selected-for-unstaking").text("None");
+            $("#your-warriors-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
+            $("#your-staked-warriors-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
+            await waitForTransaction(tx_);
+        }); 
+    }
+}
+
+const unstakeAll = async()=>{
+    const numStaked = await getStakedWarriorsEnum();
+    if (numStaked == 0) {
+        displayErrorMessage("No warriors staked!")
+    }
+    else {
+        const warriorsArray = await getStakedWarriorsOwned();
+        await raid.unstakeAll().then( async(tx_) => {
+            for (let i = 0; i < warriorsArray.length; i++) {
+                $(`#warrior-${warriorsArray[i]}`).remove();
+            }
+            selectedForUnstaking = new Set();
+            $("#selected-for-unstaking").text("None");
+            $("#your-warriors-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
+            $("#your-staked-warriors-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
+            await waitForTransaction(tx_);
+        }); 
+    }
+}
+
+var currentlyStaked = [];
+
+const getWarriorImages = async()=>{
+    $("#available-warrior-images").empty();
+    $("#staked-warrior-images").empty();
+    $("#available-warrior-images").append(`<br><h3>Loading<span class="one">.</span><span class="two">.</span><span class="three">.</span></h3>`);
+    $("#staked-warrior-images").append(`<br><h3>Loading<span class="one">.</span><span class="two">.</span><span class="three">.</span></h3>`);
+
+
+    const yourWarriorsCount = await getWarriorsEnum();
+    if (yourWarriorsCount == 0) {
+        $("#available-warrior-images").empty();
+        $("#available-warrior-images").append("<br><h3>No warriors available...</h3>");
+    }
+    else {
+        const yourWarriors = await getWarriorsOwned();
+        let batchFakeJSX = "";
+        for (let i = 0; i < yourWarriors.length; i++) {
+            let warriorId = yourWarriors[i];
+            let active = "";
+            if (selectedForStaking.has(Number(warriorId))) {
+                active = "active";
+            }
+            const uri = await warriors.tokenURI(warriorId);
+            const decodedUri = JSON.parse(atob(uri.replace("data:application/json;base64,", "")))
+            let svg = atob(decodedUri.image.replace("data:image/svg+xml;base64,", ""));
+            svg = svg.replace("<svg ", `<svg onclick="selectForStaking(${warriorId})" `);
+            batchFakeJSX += `<div id="warrior-${warriorId}" class="your-warrior ${active}">${svg}<p class="warrior-id">#${warriorId}</p></div>`
+            // batchFakeJSX += `<div id="warrior-${warriorId}" class="your-warrior ${active}"><img onclick="selectForStaking(${warriorId})" src="${baseImageURI}"><p class="warrior-id">#${warriorId}</p></div>`            
+        };
+        $("#available-warrior-images").empty();
+        $("#available-warrior-images").append(batchFakeJSX);
+    }
+
+    const yourStakedWarriorsCount = await getStakedWarriorsEnum();
+    if (yourStakedWarriorsCount == 0) {
+        $("#staked-warrior-images").empty();
+        $("#staked-warrior-images").append("<br><h3>No warriors available...</h3>");
+    }
+    else {
+        const yourStakedWarriors = await getStakedWarriorsOwned();
+        currentlyStaked = yourStakedWarriors;
+        let batchFakeJSX = "";
+        for (let i = 0; i < yourStakedWarriors.length; i++) {
+            let warriorId = yourStakedWarriors[i];
+            let active= "";
+            if (selectedForUnstaking.has(Number(warriorId))) {
+                active = "active";
+            }
+            const uri = await warriors.tokenURI(warriorId);
+            const decodedUri = JSON.parse(atob(uri.replace("data:application/json;base64,", "")))
+            let svg = atob(decodedUri.image.replace("data:image/svg+xml;base64,", ""));
+            svg = svg.replace("<svg ", `<svg onclick="selectForUnstaking(${warriorId})" `);
+            let raidEarned = Number(formatEther(await raid.getRaidOwedToThisWarrior(warriorId))).toFixed(2);
+            // batchFakeJSX += `<div id="warrior-${warriorId}" class="your-warrior ${active}"><img onclick="selectForUnstaking(${warriorId})" src="${baseImageURI}${warriorId}.png"><p class="warrior-id">#${warriorId}</p><p class="raid-earned"><span id="raid-earned-${warriorId}">${raidEarned}</span></p></div>`
+            batchFakeJSX += `<div id="warrior-${warriorId}" class="your-warrior ${active}">${svg}<p class="warrior-id">#${warriorId}</p><p class="raid-earned"><span id="raid-earned-${warriorId}">${raidEarned}</span></p></div>`        
+        };
+        $("#staked-warrior-images").empty();
+        $("#staked-warrior-images").append(batchFakeJSX);
+    }
+}
+
+const getRaidEarnedByID = async(id) => {
+    try {
+        return Number(formatEther(await raid.getRaidOwedToThisWarrior(id))).toFixed(2);
+    }
+    catch {
+        console.log('Metamask throws extra error. Token reward lookup was successful.')
+        return 0;
+    }
+};
+
+const updateRaidEarned = async() => {
+    let totalEarned = 0;
+    for (let i = 0; i < currentlyStaked.length; i++) {
+        let warriorId = Number(currentlyStaked[i]);
+        let raidEarnedByID = await getRaidEarnedByID(warriorId);
+        $(`#raid-earned-${warriorId}`).text(raidEarnedByID);
+        if (selectedForUnstaking.has(warriorId)) {
+            totalEarned += Number(raidEarnedByID);
+        }
+    };
+    $("#raid-to-claim").text(`$RAID to Claim: ${totalEarned.toFixed(2)}`);
+};
+
+var stakedWarriorsCount;
+
+const updateClaimingInfo = async()=>{
+    if ((await getChainId()) === correctChain) {
+        const loadingDiv = `<div class="loading-div" id="refresh-notification">REFRESHING <br>CLAIMING INTERFACE<span class="one">.</span><span class="two">.</span><span class="three">.</span>​</div><br>`;
+        $("#pending-transactions").append(loadingDiv);
+        $("#your-raid").text(`${await getRaidBalance()}`);
+        let stakedWarriors = await getStakedWarriorsEnum();
+        stakedWarriorsCount = stakedWarriors;
+        if (stakedWarriors == 0) {
+            $("#claimable-raid").text("0.0");
+        }
+        else {
+            await getPendingRaidBalance();
+        }
+        $("#your-staked-warriors-num").html(`${stakedWarriors}`);
+        $("#earn-rate").html(100 * stakedWarriors);
+        $("#your-warriors-num").html(`${await getWarriorsEnum()}`);
+        await getWarriorImages();
+        $("#error-popup").remove();
+        $("#refresh-notification").remove();
+    } 
+    else {
+        $("#wallet").text(`Wrong Network!`);
+        $("#available-warrior-images").empty();
+        $("#available-warrior-images").text("Error: Wrong Network");
+        $("#your-raid").html(`0.0`);
+        $("#claimable-raid").html(`0.0`);
+        $("#earn-rate").html("0.0");
+        displayErrorMessage("Error: Wrong Network", false);
+    }
+};
+
+
+// General functions
+
+provider.on("network", async(newNetwork, oldNetwork) => {
+    if (oldNetwork) {
+        $("#refresh-notification").remove();
+        await updateCurrentChain();
+        await updateClaimingInfo();
+    }
+});
+
+//selection helpers
+
+var selectedForStaking = new Set();
+var selectedForUnstaking = new Set();
+
+async function selectForStaking(id) {
+    if (!selectedForStaking.has(id)) {
+        selectedForStaking.add(id);
+        $(`#warrior-${id}`).addClass("active");
+    }
+    else {
+        selectedForStaking.delete(id);
+        $(`#warrior-${id}`).removeClass("active");
+    }
+    if (selectedForStaking.size == 0) {
+        $("#selected-for-staking").text("None");
+    }
+    else {
+        let selectedString = `${Array.from(selectedForStaking).sort((a, b) => a - b).join(' ')}`;
+        $("#selected-for-staking").text(selectedString);
+    }
+}
+
+async function selectForUnstaking(id) {
+    if (!selectedForUnstaking.has(id)) {
+        selectedForUnstaking.add(id);
+        $(`#warrior-${id}`).addClass("active");
+    }
+    else {
+        selectedForUnstaking.delete(id);
+        $(`#warrior-${id}`).removeClass("active");
+    }
+    if (selectedForUnstaking.size == 0) {
+        $("#selected-for-unstaking").text("None");
+        $("#raid-to-claim").text(`$RAID to Claim: 0`);
+    }
+    else {
+        let selectedForUnstakingArray = Array.from(selectedForUnstaking).sort((a, b) => a - b);
+        let raidToClaim = 0;
+        for (let i = 0; i < selectedForUnstakingArray.length; i++) {
+            raidToClaim += Number(await getRaidEarnedByID(selectedForUnstakingArray[i]));
+        }
+        $("#raid-to-claim").text(`$RAID to Claim: ${raidToClaim.toFixed(2)}`);
+        let selectedString = `${selectedForUnstakingArray.join(' ')}`;
+        $("#selected-for-unstaking").text(selectedString);
+    }
+}
 
 // Processing tx returns
 const waitForTransaction = async(tx_) => {
@@ -297,7 +418,7 @@ const waitForTransaction = async(tx_) => {
 };
 
 // Resuming UI display, refreshing market for pending txs across pages
-var pendingTransactions = localStorage.getItem("EtherWarriorsPendingTxs");
+var pendingTransactions = localStorage.getItem("CocoPendingTxs");
 
 if (!pendingTransactions) {
     pendingTransactions = new Set();
@@ -310,11 +431,11 @@ else {
     for (let i =0; i < pendingTxArray.length; i++) {
         waitForTransaction(pendingTxArray[i]);
     }
-    localStorage.removeItem("EtherWarriorsPendingTxs");
+    localStorage.removeItem("CocoPendingTxs");
 }
 
 function cachePendingTransactions() {
-    localStorage.setItem("EtherWarriorsPendingTxs", JSON.stringify(Array.from(pendingTransactions)));
+    localStorage.setItem("CocoPendingTxs", JSON.stringify(Array.from(pendingTransactions)));
 }
 
 function startLoading(tx) {
@@ -323,7 +444,6 @@ function startLoading(tx) {
     const loadingDiv = `<a href="${etherscanLink}" class="etherscan-link" id="etherscan-link-${txHash}" target="_blank" rel="noopener noreferrer"><div class="loading-div" id="loading-div-${txHash}">PROCESSING<span class="one">.</span><span class="two">.</span><span class="three">.</span>​<br>CLICK FOR ETHERSCAN</div></a><br>`;
     $("#pending-transactions").append(loadingDiv);
     pendingTransactions.add(tx);
-    displayLoading();
 }
 
 async function endLoading(tx, txStatus) {
@@ -340,26 +460,22 @@ async function endLoading(tx, txStatus) {
     $(`#loading-div-${txHash}`).append(`TRANSACTION ${status}.<br>VIEW ON ETHERSCAN.`);
     await sleep(7000);
     $(`#etherscan-link-${txHash}`).remove();
-    $("#loading-popup").remove();
-    $("#block-screen-loading").remove();
     pendingTransactions.delete(tx);
     if (pendingTransactions.size == 0) {
-        await updateMintInfo();
+        await updateClaimingInfo();
     }
 }
 
 setInterval(async()=>{
     await updateInfo();
-    await checkMintingLive();
-    await updateMintInfo();
+    await updateRaidEarned();
+    await getPendingRaidBalance();
 }, 5000)
 
 const updateInfo = async () => {
     let userAddress = await getAddress();
-    $("#account").html(`
-        <i class="fas fa-circle" style="color: darkgreen; margin-right: 0.2rem"></i>
-        ${userAddress.substr(0,9)}..
-    `);
+    $("#account").text(`${userAddress.substr(0,9)}..`);
+    $("#mobile-account").text(`${userAddress.substr(0,9)}...`);
 };
 
 ethereum.on("accountsChanged", async(accounts_)=>{
@@ -368,10 +484,9 @@ ethereum.on("accountsChanged", async(accounts_)=>{
 
 window.onload = async()=>{
     await updateInfo();
-    await checkMintingLive();
-    await updateMintInfo();
-    await updatePrice();
-    await checkWhitelistStatus();
+    if (pendingTransactions.size < 1) {
+        await updateClaimingInfo();
+    }
 };
 
 window.onunload = async()=>{

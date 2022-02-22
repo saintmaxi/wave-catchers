@@ -1,3 +1,29 @@
+/* Approval section */
+
+#approval-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+#approval {
+    margin: 0;
+    width: 45%;
+    /* background-image: url(../images/sand4.png), linear-gradient(to bottom, 
+    #D07C28    0%, #D07C28  100%); */
+   background-color: white;
+}
+
+#approval h1 {
+    margin: 0;
+}
+
+
+
+/* End approval section */
+
 .active {
 	background-color: #FDCD00;
 }
@@ -37,6 +63,10 @@
     align-items: stretch;
     margin: auto;
     width: 95%;
+}
+
+#live-collections button, #past-collections button {
+    width: 80%;
 }
 
 .partner-collection {
@@ -90,10 +120,12 @@
 	border-radius: 20px;
 	border-width: .5vw;
     width: 30%;
-    min-width: 200px;
-    min-height: 200px;
-    max-height: 300px;
-    max-width: 300px;
+    /* min-width: 200px;
+    min-height: 200px; */
+    width: 200px;
+    height: 200px;
+    /* max-height: 300px;
+    max-width: 300px; */
 }
 
 .collection-info {
@@ -245,7 +277,38 @@ h4 {
     width: 1.7em
 }
 
+.purchased:hover {
+    background-color: black;
+}
+
 @media screen and (max-width: 767px) {
+
+
+    #live-collections button, #past-collections button {
+        width: 90%;
+    }
+
+    /* Approval section*/
+
+    #approval-container {
+        height: initial;
+    }
+
+    #approval {
+        width: 90%;
+    }
+
+    #approval h1 {
+        font-size: 4.5vh !important;
+        line-height: 4.5vh !important;
+    }
+
+    #approval-button {
+        width: 90%;
+    }
+
+    /* End approval section*/
+
 
     #selector-div button {
         font-size: 3vh;
@@ -384,6 +447,13 @@ h4 {
     .mint-prompt-button {
         font-size: 3vh;
     }
+}
 
 
+@media screen and (min-width: 1900px) {
+
+    .collection-img {
+        width: 250px;
+        height: 250px;
+    }
 }

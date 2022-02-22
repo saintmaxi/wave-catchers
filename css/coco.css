@@ -3,6 +3,18 @@
     line-height: 4.4vh !important;
 }
 
+#claim-tools button {
+    width: 70%;
+}
+
 h2 {
     margin: 20px !important;
+}
+
+@media screen and (max-width: 767px) {
+
+    #claim-tools button {
+        width: 95%;
+    }
+
 }

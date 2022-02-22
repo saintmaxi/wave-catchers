@@ -10,7 +10,7 @@
 // const etherscanBase = `https://etherscan.io/tx/`;
 // const correctChain = 1;
 // const MAX_MINT = 10;
-// const MAX_MINT_WL = 10;
+// const MAX_MINT_WL = 1;
 // const MAX_SUPPLY = 3334;
 // const priceWei = "25000000000000000";
 // const priceEth = .025
@@ -29,7 +29,7 @@ const wavecatchersAbi = () => {
 const etherscanBase = `https://rinkeby.etherscan.io/tx/`;
 const correctChain = 4;
 const MAX_MINT = 10;
-const MAX_MINT_WL = 10;
+const MAX_MINT_WL = 1;
 const MAX_SUPPLY = 3334;
 const priceWei = "25000000000000000";
 const priceEth = .025
