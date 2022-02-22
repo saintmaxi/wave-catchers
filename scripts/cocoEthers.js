@@ -121,9 +121,9 @@ const getStakedWarriorsOwned = async() => {
     return [...ownedStakedWarriors].sort((a, b) => a - b);
 }
 
-const getRaidBalance = async()=>{
+const getCocoBalance = async()=>{
     let userAddress = await getAddress();
-    return (Number(formatEther(await raid.balanceOf(userAddress)))).toFixed(2);
+    return (Number(formatEther(await coco.balanceOf(userAddress)))).toFixed(2);
 };
 
 const getPendingRaidBalance = async()=>{
