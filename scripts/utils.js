@@ -18,7 +18,7 @@ function sleep(ms) {
 
 async function displayLoading() {
     if (!($("#loading-popup").length)) {
-        let fakeJSX = `<img id="loading-popup" src="../images/tejigif.gif">`;
+        let fakeJSX = `<img id="loading-popup" src="../images/ex1.jpeg">`;
         $("body").append(fakeJSX);
         let height = $(document).height();
         $("body").append(`<div id='block-screen-loading' style="height:${height}px"></div>`);
