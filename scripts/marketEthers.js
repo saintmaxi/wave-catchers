@@ -126,7 +126,7 @@ const loadCollections = async() => {
                         <img class="collection-img" src="${collection["image"]}">
                         <div class="collection-info">
                             <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
-                            <h4>${collectionPrice} <img src="../images/coco.png" class="coco-icon"> <br> <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Minted</h4>
+                            <h4>${collectionPrice} <img src="${cocoImgURL}" class="coco-icon"> <br> <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Minted</h4>
                             <div class="inside-text collection-description">
                             ${collection["description"]}
                             </div>
