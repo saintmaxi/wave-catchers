@@ -323,7 +323,7 @@ const updateClaimingInfo = async()=>{
     if ((await getChainId()) === correctChain) {
         const loadingDiv = `<div class="loading-div" id="refresh-notification">REFRESHING <br>CLAIMING INTERFACE<span class="one">.</span><span class="two">.</span><span class="three">.</span>​</div><br>`;
         $("#pending-transactions").append(loadingDiv);
-        $("#your-raid").text(`${await getRaidBalance()}`);
+        $("#your-raid").text(`${await getCocoBalance()}`);
         let stakedWarriors = await getStakedWarriorsEnum();
         stakedWarriorsCount = stakedWarriors;
         if (stakedWarriors == 0) {
