@@ -65,7 +65,7 @@ const importCocoToWallet = async() => {
             address: cocoAddress,
             symbol: 'COCO',
             decimals: 18,
-            image: '',
+            image: 'https://github.com/saintmaxi/wave-catchers/blob/main/images/coco.png?raw=true',
           },
         },
       });
