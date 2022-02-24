@@ -122,21 +122,35 @@
       </div>
       
    </div>
-   <div id="mint-container" class="section body-section body-1 wf-section">
-      <!-- <img src="images/ticket.jpeg" class="hide-on-mobile" style="margin-right:2%;"> -->
-      <div id="mint" class="container w-container box">
-         <div id="claim-tools"  style="text-align: center;">
-            <h1>CLAIM $COCO</h1><br>
-            <h2>YOUR WALLET BALANCE</h2>
-            <h2 id="current-balance">0</h2>
-            <h2>CLAIMABLE AMOUNT</h2>
-            <h2 id="claimable-amount">0</h2>
-            <button class="button">CLAIM</button>
-            <br><br>
-            <button class="button" onclick="importCocoToWallet()">TRACK IN WALLET</button>
+   <div class="section">
+      <div id="coco-balances">
+         <div id="your-coco-container" class="box coco-balance-container">
+            <h2 class="text-primary">Your $COCO</h2>
+            <h2><span id="your-coco"><span class="one">.</span><span class="two">.</span><span class="three">.</span></span> <img src="https://github.com/saintmaxi/wave-catchers/blob/main/images/coco.png?raw=true" class="coco-icon"></h2>
+            <button class="button" onclick="importCocoToWallet()">TRACK $COCO IN WALLET </button>
+         </div>
+         <div class="box coco-balance-container"> 
+            <h2 class="text-primary">Claimable $COCO</h2>
+            <h2><span id="claimable-coco"><span class="one">.</span><span class="two">.</span><span class="three">.</span></span> <img src="https://github.com/saintmaxi/wave-catchers/blob/main/images/coco.png?raw=true" class="coco-icon"></h2>
+            <button class="button" onclick="claimAll()">CLAIM $COCO </button>
          </div>
       </div>
-      <!-- <img src="images/ticket.jpeg" class="hide-on-mobile" style="margin-left:2%;"> -->
+   </div>
+   <div id="your-wavecatcher-section" class="container box">
+      <div id="staked-wavecatcher-wrapper" class="staking-section">
+         <h2 class="text-primary">YOUR CREW (<span id="your-wavecatchers-num"><span class="one">.</span><span class="two">.</span><span class="three">.</span></span>)</h2>
+              <div class="stake-buttons">
+                <button id="unstakeSelectedButton" href="#" class="button" onclick="claimByIds()">CLAIM SELECTED</button>
+                <button id="unstakeallButton" href="#" class="button" onclick="claimAll()">CLAIM ALL</button>
+              </div>
+              <div style="text-align: center;">
+                <h3 class="selected">Selected:</h3>
+                <h3 class="selected" id="selected-for-unstaking">None</h3>
+              </div>
+         <div id="available-wavecatchers-images" style="margin-top:0;width:100%;">
+            <h3>Searching <span class="hide-on-mobile">for Wave Catchers</span><span class="one">.</span><span class="two">.</span><span class="three">.</span></h3>
+         </div>
+      </div>
    </div>
    <img src="images/WebsiteBG-mobile.png" loading="lazy" alt="" class="banner-img fixed-banner hide-on-desktop">
    <img src="images/WebsiteBG.png" loading="lazy" alt="" class="banner-img fixed-banner hide-on-mobile">

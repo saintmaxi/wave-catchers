@@ -2,6 +2,11 @@
 /********************************PRODUCTION CONFIG********************************/
 /*********************************************************************************/
 
+// const wavecatchersAddress = "";
+// const wavecatchersAbi = () => {
+//     return ``;
+// };
+
 // const cocoAddress = "";
 // const cocoAbi = () => { 
     // return ``;
@@ -9,10 +14,16 @@
 
 // const etherscanBase = `https://etherscan.io/tx/`;
 // const correctChain = 1;
+// const cocoImgURL = "https://github.com/saintmaxi/wave-catchers/blob/main/images/coco.png?raw=true";
 
 /*********************************************************************************/
 /********************************DEV CONFIG********************************/
 /*********************************************************************************/
+
+const wavecatchersAddress = "0x60f9391e12A18cdC84168Ba7452e257BC93b8CA3";
+const wavecatchersAbi = () => {
+    return `[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"approved","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"operator","type":"address"},{"indexed":false,"internalType":"bool","name":"approved","type":"bool"}],"name":"ApprovalForAll","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"approve","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"collectionSize","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"getApproved","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"operator","type":"address"}],"name":"isApprovedForAll","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"mint","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"nextOwnerToExplicitlySet","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"ownerOf","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"},{"internalType":"bytes","name":"_data","type":"bytes"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"operator","type":"address"},{"internalType":"bool","name":"approved","type":"bool"}],"name":"setApprovalForAll","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"baseURI","type":"string"}],"name":"setBaseURI","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes4","name":"interfaceId","type":"bytes4"}],"name":"supportsInterface","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenOfOwnerByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"tokenURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"transferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"withdraw","outputs":[],"stateMutability":"nonpayable","type":"function"}]`;
+};
 
 const cocoAddress = "0x35A64a3154460b7c740856ef6fe0E80e7c100b7a";
 const cocoAbi = () => { 
@@ -21,19 +32,19 @@ const cocoAbi = () => {
 
 const etherscanBase = `https://rinkeby.etherscan.io/tx/`;
 const correctChain = 4;
+const cocoImgURL = "https://github.com/saintmaxi/wave-catchers/blob/main/images/coco.png?raw=true";
 
 /*********************************END CONFIG************************************/
 
 if (window.ethereum == undefined) {
     displayErrorMessage('Use a web3 enabled browser to claim $COCO!');
-    // $("#available-warrior-images").empty();
-    // $("#staked-warrior-images").empty();
-    // $("#available-warrior-images").append("<br><h3>No warriors available...</h3>");
-    // $("#staked-warrior-images").append("<br><h3>No warriors available...</h3>");
+    $("#available-wavecatchers-images").empty();
+    $("#available-wavecatchers-images").append("<br><h3>No Wave Catchers available...</h3>");
 }
 
 const provider = new ethers.providers.Web3Provider(window.ethereum,"any");
 const signer = provider.getSigner();
+const wavecatchers = new ethers.Contract(wavecatchersAddress, wavecatchersAbi(), signer);
 const coco = new ethers.Contract(cocoAddress, cocoAbi(), signer);
 
 const connect = async()=>{
@@ -83,220 +94,115 @@ const updateCurrentChain = async() => {
 
 // COCO Functions
 
-const getWarriorsEnum = async()=>{
+const getWaveCatchersEnum = async()=>{
     let userAddress = await getAddress();
-    let totalWarriors = await warriors.balanceOf(userAddress);
-    let ownedWarriors = [];
-    for (let i = 0; i < totalWarriors; i++) {
-        let id = Number(await warriors.tokenOfOwnerByIndex(userAddress, i));
-        if (!(await raid.isStaked(id))) {
-            ownedWarriors.push(id);
-        }
-    }
-    return ownedWarriors.length;
+    let totalWaveCatchers = await wavecatchers.balanceOf(userAddress);
+    return totalWaveCatchers;
 };
 
-const getStakedWarriorsEnum = async()=>{
+const getWaveCatchersOwned = async() => {
     let userAddress = await getAddress();
-    let ownedStakedWarriorsCount = await raid.stakedWarriorsQuantity(userAddress);
-    return ownedStakedWarriorsCount;
-};
-
-const getWarriorsOwned = async() => {
-    let userAddress = await getAddress();
-    let totalWarriors = await warriors.balanceOf(userAddress);
-    let ownedWarriors = [];
-    for (let i = 0; i < totalWarriors; i++) {
-        let id = Number(await warriors.tokenOfOwnerByIndex(userAddress, i));
-        if (!(await raid.isStaked(id))) {
-            ownedWarriors.push(id);
-        }
+    let totalWaveCatchers = await wavecatchers.balanceOf(userAddress);
+    let ownedWaveCatchers = [];
+    for (let i = 0; i < totalWaveCatchers; i++) {
+        let id = Number(await wavecatchers.tokenOfOwnerByIndex(userAddress, i));
+        ownedWaveCatchers.push(id);
     }
-    return [...ownedWarriors].sort((a, b) => a - b);
-}
-
-const getStakedWarriorsOwned = async() => {
-    let userAddress = await getAddress();
-    let ownedStakedWarriors = await raid.warriorsStaked(userAddress); 
-    return [...ownedStakedWarriors].sort((a, b) => a - b);
+    return [...ownedWaveCatchers].sort((a, b) => a - b);
 }
 
 const getCocoBalance = async()=>{
     let userAddress = await getAddress();
-    return (Number(formatEther(await coco.balanceOf(userAddress)))).toFixed(2);
+    let cocoBalance = await coco.balanceOf(userAddress);
+    $("#your-coco").html(`${(Number(formatEther(cocoBalance))).toFixed(2)}`);
 };
 
-const getPendingRaidBalance = async()=>{
+const getPendingCocoBalance = async()=>{ // need to add up by total of each token
     let userAddress = await getAddress();
-    const pendingRaid = await raid.getTotalRewardsForUser(userAddress);
-    $("#claimable-raid").text(`${Number(formatEther(pendingRaid)).toFixed(2)}`);
+    let totalWaveCatchers = await getWaveCatchersEnum();
+    let pendingCoco = 0;
+    for (let i = 0; i < totalWaveCatchers; i++) {
+        let id = Number(await wavecatchers.tokenOfOwnerByIndex(userAddress, i));
+        // pendingCoco += await coco. //get coco owed to token
+    }
+    $("#claimable-coco").html(`${Number(formatEther(pendingCoco)).toFixed(2)}`);
 };
 
-const claimRaid = async()=>{
-    let userAddress = await getAddress();
-    if (await raid.getTotalRewardsForUser(userAddress) == 0) {
-        await displayErrorMessage('You have no $RAID to claim!')
+const claimByIds = async()=>{
+    if (selectedForUnstaking.size == 0) {
+        displayErrorMessage("Select at least 1 Wave Catcher to claim!")
     }
     else {
-        await raid.claimAllRewards().then( async(tx_) => {
+        const waveCatchersArray = Array.from(selectedForUnstaking);
+        await coco.claim(waveCatchersArray).then( async(tx_) => {
+            for (let i = 0; i < waveCatchersArray.length; i++) {
+                $(`#wavecatcher-${waveCatchersArray[i]}`).remove();
+            }
+            selectedForUnstaking = new Set();
+            $("#selected-for-unstaking").text("None");
+            $("#your-wavecatchers-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
             await waitForTransaction(tx_);
-        });
+        }); 
+    }
+};
+
+const claimAll = async() => {
+    const numWaveCatchers = await getWaveCatchersEnum();
+    if (numWaveCatchers == 0) {
+        displayErrorMessage("No Wave Catchers to claim for!")
+    }
+    else {
+        const waveCatchersArray = await getWaveCatchersOwned();
+        await coco.claim(waveCatchersArray).then( async(tx_) => {
+            for (let i = 0; i < waveCatchersArray.length; i++) {
+                $(`#wavecatcher-${waveCatchersArray[i]}`).remove();
+            }
+            selectedForUnstaking = new Set();
+            $("#selected-for-unstaking").text("None");
+            $("#your-wavecatchers-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
+            await waitForTransaction(tx_);
+        }); 
     }
 };
 
 // Staking functions
 
-const stakeWarriorsToRaid = async()=>{
-    if (selectedForStaking.size == 0) {
-        displayErrorMessage("Select at least 1 warrior to stake!")
-    }
-    else if ((await getWarriorsEnum()) == 0) {
-        displayErrorMessage("No available warriors to stake!")
-    }
-    else {
-        const warriorsArray = Array.from(selectedForStaking);
-    
-        await raid.stakeWarriorsByIds(warriorsArray).then( async(tx_) => {
-            for (let i = 0; i < warriorsArray.length; i++) {
-                $(`#warrior-${warriorsArray[i]}`).remove();
-            }
-            selectedForStaking = new Set();
-            $("#selected-for-staking").text("None");
-            $("#your-warriors-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
-            $("#your-staked-warriors-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
-            await waitForTransaction(tx_);
-        });
-    }
-};
-
-const stakeAll = async()=>{
-    if ((await getWarriorsEnum()) == 0) {
-        displayErrorMessage("No available warriors to stake!")
-    }
-    else {
-        const warriorsArray = await getWarriorsOwned();
-    
-        await raid.stakeWarriorsByIds(warriorsArray).then( async(tx_) => {
-            for (let i = 0; i < warriorsArray.length; i++) {
-                $(`#warrior-${warriorsArray[i]}`).remove();
-            }
-            selectedForStaking = new Set();
-            $("#selected-for-staking").text("None");
-            $("#your-warriors-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
-            $("#your-staked-warriors-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
-            await waitForTransaction(tx_);
-        });
-    }
-};
-
-const unstakeByIds = async()=>{
-    const numStaked = await getStakedWarriorsEnum();
-    if (numStaked == 0) {
-        displayErrorMessage("No warriors staked!")
-    }
-    else if (selectedForUnstaking.size == 0) {
-        displayErrorMessage("Select at least 1 warrior to unstake!")
-    }
-    else {
-        const warriorsArray = Array.from(selectedForUnstaking);
-        await raid.unstakeWarriorsByIds(warriorsArray).then( async(tx_) => {
-            for (let i = 0; i < warriorsArray.length; i++) {
-                $(`#warrior-${warriorsArray[i]}`).remove();
-            }
-            selectedForUnstaking = new Set();
-            $("#selected-for-unstaking").text("None");
-            $("#your-warriors-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
-            $("#your-staked-warriors-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
-            await waitForTransaction(tx_);
-        }); 
-    }
-}
-
-const unstakeAll = async()=>{
-    const numStaked = await getStakedWarriorsEnum();
-    if (numStaked == 0) {
-        displayErrorMessage("No warriors staked!")
-    }
-    else {
-        const warriorsArray = await getStakedWarriorsOwned();
-        await raid.unstakeAll().then( async(tx_) => {
-            for (let i = 0; i < warriorsArray.length; i++) {
-                $(`#warrior-${warriorsArray[i]}`).remove();
-            }
-            selectedForUnstaking = new Set();
-            $("#selected-for-unstaking").text("None");
-            $("#your-warriors-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
-            $("#your-staked-warriors-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
-            await waitForTransaction(tx_);
-        }); 
-    }
-}
-
 var currentlyStaked = [];
 
-const getWarriorImages = async()=>{
-    $("#available-warrior-images").empty();
-    $("#staked-warrior-images").empty();
-    $("#available-warrior-images").append(`<br><h3>Loading<span class="one">.</span><span class="two">.</span><span class="three">.</span></h3>`);
-    $("#staked-warrior-images").append(`<br><h3>Loading<span class="one">.</span><span class="two">.</span><span class="three">.</span></h3>`);
+const getWaveCatchersImages = async()=>{
+    $("#available-wavecatchers-images").empty();
+    $("#available-wavecatchers-images").append(`<br><h3>Loading<span class="one">.</span><span class="two">.</span><span class="three">.</span></h3>`);
 
-
-    const yourWarriorsCount = await getWarriorsEnum();
-    if (yourWarriorsCount == 0) {
-        $("#available-warrior-images").empty();
-        $("#available-warrior-images").append("<br><h3>No warriors available...</h3>");
+    const yourWaveCatchersCount = await getWaveCatchersEnum();
+    if (yourWaveCatchersCount == 0) {
+        $("#available-wavecatchers-images").empty();
+        $("#available-wavecatchers-images").append("<br><h3>No Wave Catchers available...</h3>");
     }
     else {
-        const yourWarriors = await getWarriorsOwned();
+        const yourWaveCatchers = await getWaveCatchersOwned();
+        currentlyStaked = yourWaveCatchers;
         let batchFakeJSX = "";
-        for (let i = 0; i < yourWarriors.length; i++) {
-            let warriorId = yourWarriors[i];
-            let active = "";
-            if (selectedForStaking.has(Number(warriorId))) {
-                active = "active";
-            }
-            const uri = await warriors.tokenURI(warriorId);
-            const decodedUri = JSON.parse(atob(uri.replace("data:application/json;base64,", "")))
-            let svg = atob(decodedUri.image.replace("data:image/svg+xml;base64,", ""));
-            svg = svg.replace("<svg ", `<svg onclick="selectForStaking(${warriorId})" `);
-            batchFakeJSX += `<div id="warrior-${warriorId}" class="your-warrior ${active}">${svg}<p class="warrior-id">#${warriorId}</p></div>`
-            // batchFakeJSX += `<div id="warrior-${warriorId}" class="your-warrior ${active}"><img onclick="selectForStaking(${warriorId})" src="${baseImageURI}"><p class="warrior-id">#${warriorId}</p></div>`            
-        };
-        $("#available-warrior-images").empty();
-        $("#available-warrior-images").append(batchFakeJSX);
-    }
-
-    const yourStakedWarriorsCount = await getStakedWarriorsEnum();
-    if (yourStakedWarriorsCount == 0) {
-        $("#staked-warrior-images").empty();
-        $("#staked-warrior-images").append("<br><h3>No warriors available...</h3>");
-    }
-    else {
-        const yourStakedWarriors = await getStakedWarriorsOwned();
-        currentlyStaked = yourStakedWarriors;
-        let batchFakeJSX = "";
-        for (let i = 0; i < yourStakedWarriors.length; i++) {
-            let warriorId = yourStakedWarriors[i];
+        for (let i = 0; i < yourWaveCatchers.length; i++) {
+            let waveCatcherID = yourWaveCatchers[i];
             let active= "";
-            if (selectedForUnstaking.has(Number(warriorId))) {
+            if (selectedForUnstaking.has(Number(waveCatcherID))) {
                 active = "active";
             }
-            const uri = await warriors.tokenURI(warriorId);
-            const decodedUri = JSON.parse(atob(uri.replace("data:application/json;base64,", "")))
-            let svg = atob(decodedUri.image.replace("data:image/svg+xml;base64,", ""));
-            svg = svg.replace("<svg ", `<svg onclick="selectForUnstaking(${warriorId})" `);
-            let raidEarned = Number(formatEther(await raid.getRaidOwedToThisWarrior(warriorId))).toFixed(2);
-            // batchFakeJSX += `<div id="warrior-${warriorId}" class="your-warrior ${active}"><img onclick="selectForUnstaking(${warriorId})" src="${baseImageURI}${warriorId}.png"><p class="warrior-id">#${warriorId}</p><p class="raid-earned"><span id="raid-earned-${warriorId}">${raidEarned}</span></p></div>`
-            batchFakeJSX += `<div id="warrior-${warriorId}" class="your-warrior ${active}">${svg}<p class="warrior-id">#${warriorId}</p><p class="raid-earned"><span id="raid-earned-${warriorId}">${raidEarned}</span></p></div>`        
+            let cocoEarned = 100
+            // let cocoEarned = Number(formatEther(await raid.getRaidOwedToThisWarrior(waveCatcherID))).toFixed(2); //replace w coco version
+
+            batchFakeJSX += `<div id="wavecatcher-${waveCatcherID}" class="your-wavecatcher ${active}"><img onclick="selectForUnstaking(${waveCatcherID})" src="https://github.com/saintmaxi/wave-catchers/blob/main/images/ex1.jpeg?raw=true"><p class="wavecatcher-id">#${waveCatcherID}</p><p class="coco-earned"><span id="coco-earned-${waveCatcherID}">${cocoEarned}</span><img src="${cocoImgURL}" class="coco-icon"></p></div>`        
+            // batchFakeJSX += `<div id="wavecatcher-${waveCatcherID}" class="your-wavecatcher ${active}"><img onclick="selectForUnstaking(${waveCatcherID})" src="${baseImageURI}${waveCatcherID}.png"><p class="wavecatcher-id">#${waveCatcherID}</p><p class="coco-earned"><span id="coco-earned-${waveCatcherID}">${cocoEarned}</span></p></div>`        
+            
         };
-        $("#staked-warrior-images").empty();
-        $("#staked-warrior-images").append(batchFakeJSX);
+        $("#available-wavecatchers-images").empty();
+        $("#available-wavecatchers-images").append(batchFakeJSX);
     }
 }
 
-const getRaidEarnedByID = async(id) => {
+const getCocoEarnedByID = async(id) => {
     try {
-        return Number(formatEther(await raid.getRaidOwedToThisWarrior(id))).toFixed(2);
+        return Number(formatEther(await raid.getRaidOwedToThisWarrior(id))).toFixed(2); //replace w coco version
     }
     catch {
         console.log('Metamask throws extra error. Token reward lookup was successful.')
@@ -304,47 +210,43 @@ const getRaidEarnedByID = async(id) => {
     }
 };
 
-const updateRaidEarned = async() => {
+const updateCocoEarned = async() => {
     let totalEarned = 0;
     for (let i = 0; i < currentlyStaked.length; i++) {
-        let warriorId = Number(currentlyStaked[i]);
-        let raidEarnedByID = await getRaidEarnedByID(warriorId);
-        $(`#raid-earned-${warriorId}`).text(raidEarnedByID);
-        if (selectedForUnstaking.has(warriorId)) {
-            totalEarned += Number(raidEarnedByID);
+        let waveCatcherID = Number(currentlyStaked[i]);
+        let cocoEarnedByID = await getCocoEarnedByID(waveCatcherID);
+        $(`#coco-earned-${waveCatcherID}`).html(`${cocoEarnedByID}`);
+        if (selectedForUnstaking.has(waveCatcherID)) {
+            totalEarned += Number(cocoEarnedByID);
         }
     };
-    $("#raid-to-claim").text(`$RAID to Claim: ${totalEarned.toFixed(2)}`);
+    $("#coco-to-claim").html(`$<img src="${cocoImgURL}" class="coco-icon"> to Claim: ${totalEarned.toFixed(2)}`);
 };
-
-var stakedWarriorsCount;
 
 const updateClaimingInfo = async()=>{
     if ((await getChainId()) === correctChain) {
         const loadingDiv = `<div class="loading-div" id="refresh-notification">REFRESHING <br>CLAIMING INTERFACE<span class="one">.</span><span class="two">.</span><span class="three">.</span>​</div><br>`;
         $("#pending-transactions").append(loadingDiv);
-        $("#your-raid").text(`${await getCocoBalance()}`);
-        let stakedWarriors = await getStakedWarriorsEnum();
-        stakedWarriorsCount = stakedWarriors;
-        if (stakedWarriors == 0) {
-            $("#claimable-raid").text("0.0");
+        await getCocoBalance();
+        let waveCatchersNum = await getWaveCatchersEnum();
+        if (waveCatchersNum == 0) {
+            $("#claimable-coco").text("0.0");
         }
         else {
-            await getPendingRaidBalance();
+            await getPendingCocoBalance();
         }
-        $("#your-staked-warriors-num").html(`${stakedWarriors}`);
-        $("#earn-rate").html(100 * stakedWarriors);
-        $("#your-warriors-num").html(`${await getWarriorsEnum()}`);
-        await getWarriorImages();
+        $("#your-wavecatchers-num").html(`${waveCatchersNum}`);
+        $("#earn-rate").html(100 * waveCatchersNum);
+        await getWaveCatchersImages();
         $("#error-popup").remove();
         $("#refresh-notification").remove();
     } 
     else {
         $("#wallet").text(`Wrong Network!`);
-        $("#available-warrior-images").empty();
-        $("#available-warrior-images").text("Error: Wrong Network");
-        $("#your-raid").html(`0.0`);
-        $("#claimable-raid").html(`0.0`);
+        $("#available-wavecatchers-images").empty();
+        $("#available-wavecatchers-images").text("Error: Wrong Network");
+        $("#your-coco").html(`0.0`);
+        $("#claimable-coco").html(`0.0`);
         $("#earn-rate").html("0.0");
         displayErrorMessage("Error: Wrong Network", false);
     }
@@ -363,47 +265,28 @@ provider.on("network", async(newNetwork, oldNetwork) => {
 
 //selection helpers
 
-var selectedForStaking = new Set();
 var selectedForUnstaking = new Set();
-
-async function selectForStaking(id) {
-    if (!selectedForStaking.has(id)) {
-        selectedForStaking.add(id);
-        $(`#warrior-${id}`).addClass("active");
-    }
-    else {
-        selectedForStaking.delete(id);
-        $(`#warrior-${id}`).removeClass("active");
-    }
-    if (selectedForStaking.size == 0) {
-        $("#selected-for-staking").text("None");
-    }
-    else {
-        let selectedString = `${Array.from(selectedForStaking).sort((a, b) => a - b).join(' ')}`;
-        $("#selected-for-staking").text(selectedString);
-    }
-}
 
 async function selectForUnstaking(id) {
     if (!selectedForUnstaking.has(id)) {
         selectedForUnstaking.add(id);
-        $(`#warrior-${id}`).addClass("active");
+        $(`#wavecatcher-${id}`).addClass("active");
     }
     else {
         selectedForUnstaking.delete(id);
-        $(`#warrior-${id}`).removeClass("active");
+        $(`#wavecatcher-${id}`).removeClass("active");
     }
     if (selectedForUnstaking.size == 0) {
         $("#selected-for-unstaking").text("None");
-        $("#raid-to-claim").text(`$RAID to Claim: 0`);
+        $("#coco-to-claim").html(`$<img src="${cocoImgURL}" class="coco-icon"> to Claim: 0`);
     }
     else {
         let selectedForUnstakingArray = Array.from(selectedForUnstaking).sort((a, b) => a - b);
-        let raidToClaim = 0;
+        let cocoToClaim = 0;
         for (let i = 0; i < selectedForUnstakingArray.length; i++) {
-            raidToClaim += Number(await getRaidEarnedByID(selectedForUnstakingArray[i]));
+            cocoToClaim += Number(await getCocoEarnedByID(selectedForUnstakingArray[i]));
         }
-        $("#raid-to-claim").text(`$RAID to Claim: ${raidToClaim.toFixed(2)}`);
+        $("#coco-to-claim").html(`$<img src="${cocoImgURL}" class="coco-icon"> to Claim: ${cocoToClaim.toFixed(2)}`);
         let selectedString = `${selectedForUnstakingArray.join(' ')}`;
         $("#selected-for-unstaking").text(selectedString);
     }
@@ -468,8 +351,8 @@ async function endLoading(tx, txStatus) {
 
 setInterval(async()=>{
     await updateInfo();
-    await updateRaidEarned();
-    await getPendingRaidBalance();
+    await updateCocoEarned();
+    await getPendingCocoBalance();
 }, 5000)
 
 const updateInfo = async () => {
