@@ -5,7 +5,7 @@
             "description": "Designed in the Metaverse | Born in Japan. Secure your whitelist before they disappear for good...",
             "image": "https://pbs.twimg.com/media/FLpHeRGaMAIn78T?format=jpg&name=medium",
             "website": "#",
-            "max-supply": 3333
+            "max-slots": 5
         },
     "1":
         {
@@ -13,6 +13,6 @@
             "description": "3334 Wave Catchers grant you access to the first on-chain whitelist marketplace. Earn $COCO by holding. Never grind for a whitelist again.",
             "image": "https://i.redd.it/4v4qlx8ltaw61.jpg",
             "website": "#",
-            "max-supply": 4444
+            "max-slots": 20
         }
 }

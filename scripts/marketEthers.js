@@ -107,14 +107,17 @@ const loadCollections = async() => {
         let WLinfo = await market.getWhitelist(i);
         let id = WLinfo.id;
         let collectionPrice = Number(formatEther(WLinfo.price));
-        let maxSlots = WLinfo.amount;
-        let spotsLeft = WLinfo.spotsLeft;
-        let minted = maxSlots - spotsLeft;
+        // let maxSlots = WLinfo.amount;
+        // let minted = maxSlots - spotsLeft;
         let winners = await market.getWinnersForWL(id);
 
         // Data from JSON file
         let collection = collectionsData[String(i)];
-        if (spotsLeft != 0) {
+        let maxSlots = collection["max-slots"];
+        let minted = maxSlots - WLinfo.amount;
+        // let minted = maxSlots - spotsLeft;
+
+        if (minted != maxSlots) {
             let button;
             if (winners.includes(await getAddress())) {
                 button = `<button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">PURCHASED!</button>`;
@@ -168,14 +171,15 @@ const updateSupplies = async() => {
     for (let i = 0; i < numCollections; i++) {
         let WLinfo = await market.getWhitelist(i);
         let id = WLinfo.id;
-        let max = WLinfo.amount;
-        let spotsLeft = WLinfo.spotsLeft;
-        if (spotsLeft == 0) {
+        let collection = collectionsData[String(i)];
+        let max = collection["max-slots"];
+        let minted = max - WLinfo.amount;
+        if (minted == max) {
             $(`#${id}-mint-button`).text("SOLD OUT");
             $(`#${id}-mint-button`).addClass("purchased");
             $(`#${id}-mint-button`).prop("disabled", true);
         }
-        $(`#${id}-supply`).text(max - spotsLeft);
+        $(`#${id}-supply`).text(minted);
     }
 }
 
