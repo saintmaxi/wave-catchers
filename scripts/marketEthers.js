@@ -64,7 +64,7 @@ const approveCocoToMarket = async() => {
 
 const checkCocoApproval = async() => {
     const userAddress = await getAddress();
-    if ((await coco.allowance(userAddress, marketAddress)) >= maxInt) {
+    if (Number(await coco.allowance(userAddress, marketAddress)) >= maxInt) {
         $("#approval-container").remove();
     }
     else {
