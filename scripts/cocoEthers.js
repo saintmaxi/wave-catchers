@@ -135,12 +135,9 @@ const claimByIds = async()=>{
     else {
         const waveCatchersArray = Array.from(selectedForUnstaking);
         await coco.claim(waveCatchersArray).then( async(tx_) => {
-            for (let i = 0; i < waveCatchersArray.length; i++) {
-                $(`#wavecatcher-${waveCatchersArray[i]}`).remove();
-            }
             selectedForUnstaking = new Set();
             $("#selected-for-unstaking").text("None");
-            $("#your-wavecatchers-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
+            $(".active").removeClass("active");
             await waitForTransaction(tx_);
         }); 
     }
@@ -154,12 +151,9 @@ const claimAll = async() => {
     else {
         const waveCatchersArray = await getWaveCatchersOwned();
         await coco.claim(waveCatchersArray).then( async(tx_) => {
-            for (let i = 0; i < waveCatchersArray.length; i++) {
-                $(`#wavecatcher-${waveCatchersArray[i]}`).remove();
-            }
             selectedForUnstaking = new Set();
             $("#selected-for-unstaking").text("None");
-            $("#your-wavecatchers-num").html(`<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
+            $(".active").removeClass("active");
             await waitForTransaction(tx_);
         }); 
     }
@@ -168,6 +162,7 @@ const claimAll = async() => {
 // Staking functions
 
 var currentlyStaked = [];
+var imagesLoaded = false;
 
 const getWaveCatchersImages = async()=>{
     $("#available-wavecatchers-images").empty();
@@ -197,6 +192,7 @@ const getWaveCatchersImages = async()=>{
         $("#available-wavecatchers-images").empty();
         $("#available-wavecatchers-images").append(batchFakeJSX);
     }
+    imagesLoaded = true;
 }
 
 const getCocoEarnedByID = async(id) => {
@@ -236,7 +232,9 @@ const updateClaimingInfo = async()=>{
         }
         $("#your-wavecatchers-num").html(`${waveCatchersNum}`);
         $("#earn-rate").html(100 * waveCatchersNum);
-        await getWaveCatchersImages();
+        if (!imagesLoaded) {
+            await getWaveCatchersImages();
+        }
         $("#error-popup").remove();
         $("#refresh-notification").remove();
     } 
