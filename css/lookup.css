@@ -1,0 +1,16 @@
+#wl-section {
+    width: 90%;
+    min-height: 20vh;
+    border: .5vw black solid;
+    border-radius: 20px;
+    margin: auto;
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+    #wl-section {
+        border-width: 5px;
+    }
+}

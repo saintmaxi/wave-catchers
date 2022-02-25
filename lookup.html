@@ -20,6 +20,7 @@
    <link href="css/normalize.css" rel="stylesheet" type="text/css">
    <link href="css/index.css" rel="stylesheet" type="text/css">
    <link href="css/mint.css" rel="stylesheet" type="text/css">
+   <link href="css/lookup.css" rel="stylesheet" type="text/css">
    <script
       type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
    <link href="https://github.com/saintmaxi/wave-catchers/blob/main/images/ex1.jpeg?raw=true" rel="shortcut icon" type="image/x-icon">
@@ -29,16 +30,9 @@
 <body class="body">
    <div id="top">
       <div id="title-section" class="header">
-         <!-- <a href="index.html" id="logo-img">
-            <img src="images/ex1.jpeg" style="width:70%;border-radius: 50%;">
-         </a> -->
          <div id="title">
-            <!-- <img src="images/tejiverse-header.png"> -->
             <a href="./index.html" class="title-link">WAVE CATCHERS</a>
          </div>
-         <!-- <a href="index.html" class="hide-on-desktop" id="logo-img">
-            <img src="images/ex1.jpeg" style="width:70%;border-radius: 50%;">
-         </a> -->
       </div>
       <div id="header" class="header hide-on-mobile">
          <div class="header-menu">
@@ -132,105 +126,19 @@
       
    </div>
    <div id="mint-container" class="section body-section body-1 wf-section">
-      <!-- <img src="images/ticket.jpeg" class="hide-on-mobile" style="margin-right:2%;"> -->
-      <div id="mint" class="container w-container box">
-         <div id="mint-tools">
-            <h1 style="text-align: center;">CATCH THE WAVE</h1>
-            <div class="modal-info">
-               <h2 class="heading">Minted</h2>
-               <h2 id="mintedCount" class="heading"><span id="num-minted">-</span>/3334</h2>
-            </div>
-            <div class="modal-info">
-               <h2 class="heading">Price</h2>
-               <h2 id="totalMintPrice" class="heading"><span id="current-cost">0.025 Ξ</span></h2>
-            </div>
-            <div>
-               <p class="main-paragraph" id="quantity-controls">
-                  <button class="increment-button" id="mint-minus" onclick="decrementClaim();updatePrice()">⊖</button>
-                  <span id="number-to-mint">1</span>
-                  <button class="increment-button" id="mint-plus" onclick="incrementClaim();updatePrice()">⊕</button>
-                  <br><br>
-                  <button class="button" id="max-button" onclick="setMaxMint()">MAX</button>
-               </p>
-               <div style="text-align: center;">
-                  <h2 id="sold-out"></h2>
-               </div>
-               <div style="text-align: center;">
-                  <h2 id="whitelisted"></h2>
-               </div>
-            </div>
-         </div>
-         <div id="mint-buttons" style="text-align: center;">
-            <button id="claim-button" class="button hidden" onclick="ogMint()">CLAIM OG</button>
-            <button id="mint-button" class="button" onclick="publicMint()">MINT</button>
-         </div>
-      </div>
-      <div class="mint-info hidden" id="mint-closed" style="text-align: center;">
-         <h2>Minting is currently closed!</h2>
-      </div>
-      <!-- <img src="images/ticket.jpeg" class="hide-on-mobile" style="margin-left:2%;"> -->
-   </div>
-   <div class="section body-section body-1 wf-section">
-      <div id="about" class="container w-container box">
-         <div id="about-text-desktop-1" class="hide-on-mobile">
-            <h1>WELCOME TO WAVE CATCHERS!</h1>
-            <p style="margin-bottom: 17px;">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget rutrum sem. Etiam ut arcu sit amet sapien laoreet porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis quis elit lorem. Donec est eros, gravida in varius sit amet, tempor vel mauris. Pellentesque rutrum magna quis lectus mollis, at posuere ante volutpat. Fusce blandit purus mattis sem feugiat feugiat.
-               <br>
-            <!-- </p> -->
-            <!-- <p style="width:80%;margin:auto;font-style: italic;">
-               So what does this so-called world consist of?
-            </p> -->
-            <!-- <p>
-               <br> -->
-               <!-- Well, you’re just going to have to come along for the ride and see where Teji takes you..
-               This may just be the worst project ever made but it’s a free mint.. so what have you got to lose anon?
-               We’re probably just another one of those collections that sits in your OpenSea doing nothing, right?
-               But there’s also a teeny weeny 1 in 60 billion chance that we just might be doing things a little
-               different here in the Tejiverse.. -->
-            </p>
-         </div>
-         <h1 class="hide-on-desktop">WELCOME!</h1>
-         <div id="about-gif">
-            <img id="teji-gif" src="images/ex2.png" style="width: 100%;">
-         </div>
-         <div id="about-text-mobile" class="hide-on-desktop">
-            <p>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget rutrum sem. Etiam ut arcu sit amet sapien laoreet porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis quis elit lorem. Donec est eros, gravida in varius sit amet, tempor vel mauris. Pellentesque rutrum magna quis lectus mollis, at posuere ante volutpat. Fusce blandit purus mattis sem feugiat feugiat.
+      <div id="mint" class="container w-container box"  style="text-align: center;">
+            <h1>LOOKUP TOOl</h1>
+            <h2>Look Up Pending <img src="./images/coco.png" class="coco-icon"> By Token</h2>
+            <input>
+            <br>
+            <button class="button">LOOK UP</button>
+            <h2 id="mintedCount" class="heading">PENDING: <span id="num-minted">-</span> <img src="./images/coco.png" class="coco-icon"></h2>
+            <h2>Look Up WL By Project</h2>
+            <select>
+            </select>
+            <div id="wl-section">
 
-               <br>
-            <!-- </p>
-            <p style="width:100%;text-align: center;font-style: italic;">
-               So what does this so-called world consist of?
-            </p>
-            <p>
-               <br>
-               Well, you’re just going to have to come along for the ride and see where Teji takes you..
-               This may just be the worst project ever made but it’s a free mint.. so what have you got to lose anon?
-               We’re probably just another one of those collections that sits in your OpenSea doing nothing, right?
-               But there’s also a teeny weeny 1 in 60 billion chance that we just might be doing things a little
-               different here in the Tejiverse.. -->
-            </p>
-         </div>
-      </div>
-   </div>
-   <div class="section body-section body-1 wf-section">
-      <div id="about" class="container w-container box">
-         <div id="about-gif">
-            <img id="teji-gif" src="images/ex3.png" style="width: 100%;">
-         </div>
-         <div id="about-text-desktop-2" class="hide-on-mobile">
-            <h1>TEAM? TOKEN? ROADMAP?</h1>
-            <p>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget rutrum sem. Etiam ut arcu sit amet sapien laoreet porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis quis elit lorem. Donec est eros, gravida in varius sit amet, tempor vel mauris. Pellentesque rutrum magna quis lectus mollis, at posuere ante volutpat. Fusce blandit purus mattis sem feugiat feugiat.
-            </p>
-         </div>
-         <h1 class="hide-on-desktop">TEAM? TOKEN? ROADMAP?</h1>
-         <div id="about-text-mobile" class="hide-on-desktop">
-            <p>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget rutrum sem. Etiam ut arcu sit amet sapien laoreet porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis quis elit lorem. Donec est eros, gravida in varius sit amet, tempor vel mauris. Pellentesque rutrum magna quis lectus mollis, at posuere ante volutpat. Fusce blandit purus mattis sem feugiat feugiat.
-            </p>
-         </div>
+            </div>            
       </div>
    </div>
    <img src="images/WebsiteBG-mobile.png" loading="lazy" alt="" class="banner-img fixed-banner hide-on-desktop">
