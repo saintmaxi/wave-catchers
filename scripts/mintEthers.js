@@ -46,8 +46,6 @@ const provider = new ethers.providers.Web3Provider(window.ethereum,"any");
 const signer = provider.getSigner();
 const wavecatchers = new ethers.Contract(wavecatchersAddress, wavecatchersAbi(), signer);
 
-const merkleProofSourceUrl = "https://api.nonfungiblecdn.com/cyberturtles/merkleproofs"; // change to our netlify function endpoint
-
 var whitelistIsLive;
 var publicIsLive;
 var totalMinted;
@@ -116,16 +114,16 @@ const setMaxMint = async() => {
 
 const getMerkleProof = async() => {
     const _senderAddress = await getAddress();
-    const _proof = await fetch(`${merkleProofSourceUrl}/${_senderAddress}`).then(res => res.text());
+    const _proof = await fetch(`https://www.wavecatchers.io/.netlify/functions/merkle?addr=${_senderAddress}`).then(res => res.text());
     const _proofArray = _proof ? JSON.parse(_proof) : [];
     return _proofArray;
 };
 
 const checkWhitelistStatus = async() => {
-    // const _merkleProof = await getMerkleProof();
+    const _merkleProof = await getMerkleProof();
     const addr = await getAddress();
-    // const _isWhitelisted = await wavecatchers.canClaimOG(addr, _merkleProof).catch(err => console.log(err));
-    const _isWhitelisted=true
+    const _isWhitelisted = await wavecatchers.canClaimOG(addr, _merkleProof).catch(err => console.log(err));
+    // const _isWhitelisted=true
     if (_isWhitelisted) {
         $("#whitelisted").html("Congrats, you are an OG!<br>Claim 1 free Wave Catcher with the 'CLAIM OG' button.");
         $("#claim-button").removeClass("hidden");
