@@ -46,5 +46,12 @@
         "image": "https://i.redd.it/4v4qlx8ltaw61.jpg",
         "website": "#",
         "max-slots": 20
+    },
+    {
+        "name": "Bored Ape",
+        "description": "Bayc test.",
+        "image": "https://www.thestreet.com/.image/t_share/MTgyMDU5NDcwMTc4NzU1NzE1/boredape1.jpg",
+        "website": "#",
+        "max-slots": 30
     }
 }
