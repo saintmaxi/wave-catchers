@@ -79,14 +79,14 @@ const purchase  = async(id) => {
         });
     }
     catch (error) {
-        if ((error.message).includes("Not enough MES credits")) {
-            await displayErrorMessage(`Error: Insufficient $MES credits for action!`);
+        if ((error.message).includes("Address has already purchased")) {
+            await displayErrorMessage(`Error: You already purchased a slot!`);
         }
-        else if ((error.message).includes("Not enough MES to")) {
-            await displayErrorMessage(`Error: Insufficient $MES for action!`);
+        else if ((error.message).includes("No spots left")) {
+            await displayErrorMessage(`Error: No spots left!`);
         }
-        else if ((error.message).includes("Satellite Mint is not enabled yet!")) {
-            await displayErrorMessage(`Error: Satellite Mint is not enabled yet!`);
+        else if ((error.message).includes("transfer amount exceeds balance")) {
+            await displayErrorMessage(`Error: Insufficent $COCO balance!!`);
         }
         else {
             await displayErrorMessage("An error occurred. See console and window alert for details...")
