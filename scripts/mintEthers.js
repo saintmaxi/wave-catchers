@@ -129,6 +129,7 @@ const checkWhitelistStatus = async() => {
         $("#claim-button").removeClass("hidden");
     }
     else {
+        $("#whitelisted").html("");
         $("#claim-button").addClass("hidden");
     }
     return _isWhitelisted;
