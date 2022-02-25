@@ -21,9 +21,9 @@
 /********************************DEV CONFIG********************************/
 /*********************************************************************************/
 
-const wavecatchersAddress = "0x60f9391e12A18cdC84168Ba7452e257BC93b8CA3";
+const wavecatchersAddress = "0x535Bf3F267a593C2da3A11d54Ab5723d05243404";
 const wavecatchersAbi = () => {
-    return `[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"approved","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"operator","type":"address"},{"indexed":false,"internalType":"bool","name":"approved","type":"bool"}],"name":"ApprovalForAll","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"approve","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"collectionSize","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"getApproved","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"operator","type":"address"}],"name":"isApprovedForAll","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"mint","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"nextOwnerToExplicitlySet","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"ownerOf","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"},{"internalType":"bytes","name":"_data","type":"bytes"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"operator","type":"address"},{"internalType":"bool","name":"approved","type":"bool"}],"name":"setApprovalForAll","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"baseURI","type":"string"}],"name":"setBaseURI","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes4","name":"interfaceId","type":"bytes4"}],"name":"supportsInterface","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenOfOwnerByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"tokenURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"transferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"withdraw","outputs":[],"stateMutability":"nonpayable","type":"function"}]`;
+    return `[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"approved","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"operator","type":"address"},{"indexed":false,"internalType":"bool","name":"approved","type":"bool"}],"name":"ApprovalForAll","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[{"internalType":"bytes32[]","name":"merkleProof","type":"bytes32[]"}],"name":"OGMint","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"approve","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"},{"internalType":"bytes32[]","name":"_merkleProof","type":"bytes32[]"}],"name":"canClaimOG","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"collectionSize","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"getApproved","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"operator","type":"address"}],"name":"isApprovedForAll","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"merkleRoot","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"mint","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"nextOwnerToExplicitlySet","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"ownerOf","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"},{"internalType":"bytes","name":"_data","type":"bytes"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"operator","type":"address"},{"internalType":"bool","name":"approved","type":"bool"}],"name":"setApprovalForAll","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"baseURI","type":"string"}],"name":"setBaseURI","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"_merkleRoot","type":"bytes32"}],"name":"setMerkleRoot","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes4","name":"interfaceId","type":"bytes4"}],"name":"supportsInterface","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenOfOwnerByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"tokenURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"transferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"withdraw","outputs":[],"stateMutability":"nonpayable","type":"function"}]`;
 };
 
 const etherscanBase = `https://rinkeby.etherscan.io/tx/`;
@@ -46,7 +46,7 @@ const provider = new ethers.providers.Web3Provider(window.ethereum,"any");
 const signer = provider.getSigner();
 const wavecatchers = new ethers.Contract(wavecatchersAddress, wavecatchersAbi(), signer);
 
-const merkleProofSourceUrl = "https://api.nonfungiblecdn.com/cyberturtles/merkleproofs"; // change
+const merkleProofSourceUrl = "https://api.nonfungiblecdn.com/cyberturtles/merkleproofs"; // change to our netlify function endpoint
 
 var whitelistIsLive;
 var publicIsLive;
@@ -121,119 +121,70 @@ const getMerkleProof = async() => {
     return _proofArray;
 };
 
-const isWhitelistOnly = async() => {
-    return false;
-    let whitelistStart = await wavecatchers.whitelistSaleStartTime()
-    let whitelistLive = Date.now() > whitelistStart ? true : false;
-    whitelistIsLive = whitelistLive;
-    return whitelistLive;
-}
-
-const isPublic = async() => {
-    return true;
-    let publicStart = await wavecatchers.publicSaleStartTime();
-    let publicLive = Date.now() > publicStart ? true : false;
-    publicIsLive = publicLive;
-    return publicLive;
-}
-
-const checkMintingLive = async() => {
-    const whitelistLive = await isWhitelistOnly();
-    const publicLive = await isPublic();
-    if (!whitelistLive && !publicLive) {
-        $("#mint-tools").addClass("hidden");
-        $("#mint-closed").removeClass("hidden");
-    }
-    else {
-        if (publicLive && whitelistLive) {
-            $("#whitelisted").html('');
-        }
-        $("#mint-tools").removeClass("hidden");
-        $("#mint-closed").addClass("hidden");
-    }
-}
-
 const checkWhitelistStatus = async() => {
-    const whitelistLive = await isWhitelistOnly();
-
-    if (whitelistLive) {
-        const _merkleProof = await getMerkleProof();
-        const addr = await getAddress();
-        const _isWhitelisted = await wavecatchers.isWhitelisted(addr, _merkleProof).catch(err => console.log(err)); //change
-
-        if (!publicIsLive) {
-            $("#whitelisted").html(_isWhitelisted ? "Congrats, you made the whitelist!" : "Sorry, you are not whitelisted. Please wait for our public sale.");
-        }
-        return _isWhitelisted;
-    }
-};
-
-const _publicMint = async(numberToMint) => {
-    if (numberToMint > MAX_MINT) {
-        await displayErrorMessage(`Max ${MAX_MINT} mints!`);
-    }
-
-    // const cost = ethers.BigNumber.from(priceWei).mul(numberToMint);
-    // const gasLimit = await wavecatchers.estimateGas.mint(numberToMint, {value: cost})
-    // const newGasLimit = parseInt((gasLimit * 1.2)).toString();
-
-    // await wavecatchers.mint(numberToMint, { value: cost, gasLimit: newGasLimit}).then( async(tx_) => {
-    //     await waitForTransaction(tx_);
-    // });   
-    await wavecatchers.mint(numberToMint).then( async(tx_) => {
-        await waitForTransaction(tx_);
-    });   
-};
-
-const _whitelistMint = async(numberToMint) => {
-    const whitelisted = checkWhitelistStatus();
-    if (!whitelisted){
-        await displayErrorMessage("You are not whitelisted!");
-    }
-    else if (numberToMint > MAX_MINT_WL) {
-        await displayErrorMessage(`Max ${MAX_MINT_WL} mints for WL!`);
+    // const _merkleProof = await getMerkleProof();
+    const addr = await getAddress();
+    // const _isWhitelisted = await wavecatchers.canClaimOG(addr, _merkleProof).catch(err => console.log(err));
+    const _isWhitelisted=true
+    if (_isWhitelisted) {
+        $("#whitelisted").html("Congrats, you are an OG!<br>Claim 1 free Wave Catcher with the 'CLAIM OG' button.");
+        $("#claim-button").removeClass("hidden");
     }
     else {
-        const merkleProof = await getMerkleProof();
-        const cost = ethers.BigNumber.from(priceWei).mul(numberToMint); 
-        const gasLimit = await wavecatchers.estimateGas.whitelistMint(merkleProof, numberToMint, {value: cost});
-        const newGasLimit = parseInt((gasLimit * 1.2)).toString();
-        
-        await wavecatchers.whitelistMint(merkleProof, numberToMint, {value: cost, gasLimit: newGasLimit}).then( async(tx_) => {
+        $("#claim-button").addClass("hidden");
+    }
+    return _isWhitelisted;
+};
+
+const publicMint = async() => {
+    try {
+        const numberToMint = Number($("#number-to-mint").text());
+        if (numberToMint > MAX_MINT) {
+            await displayErrorMessage(`Max ${MAX_MINT} mints!`);
+        }
+
+        // const cost = ethers.BigNumber.from(priceWei).mul(numberToMint);
+        // const gasLimit = await wavecatchers.estimateGas.mint(numberToMint, {value: cost})
+        // const newGasLimit = parseInt((gasLimit * 1.2)).toString();
+
+        // await wavecatchers.mint(numberToMint, { value: cost, gasLimit: newGasLimit}).then( async(tx_) => {
+        //     await waitForTransaction(tx_);
+        // });   
+        await wavecatchers.mint(numberToMint).then( async(tx_) => {
             await waitForTransaction(tx_);
         });
-    }
-};
-
-const mint = async() => {
-    const whitelistLive = await isWhitelistOnly();
-    const publicLive = await isPublic();
-    const numberToMint = Number($("#number-to-mint").text());
-    // const minted = await wavecatchers.totalSupply();
-
-    try {
-        if (publicLive) {
-            await _publicMint(numberToMint);
-        }
-        else if (whitelistLive) {
-            await _whitelistMint(numberToMint);
-        }
-        else {
-            await displayErrorMessage("Minting not yet live!")
-        }
     }
     catch (error) { // edit error messages
         if ((error.message).includes("Can only mint max 3 in whitelist")) {
             await displayErrorMessage(`Error: Max ${MAX_MINT_WL} mints for WL!`)
         }
-        else if ((error.message).includes("Can only mint max 6")) {
-            await displayErrorMessage(`Error: Max ${MAX_MINT} mints per address!`)
+        else {
+            await displayErrorMessage("An error occurred. See console and window alert for details...")
+            window.alert(error);
+            console.log(error);
         }
-        else if ((error.message).includes("Did not send enough eth!")) {
-            await displayErrorMessage(`Error: Insufficient ETH!`)
+    }
+};
+
+const ogMint = async() => {
+    try {
+        const whitelisted = checkWhitelistStatus();
+        if (!whitelisted){
+            await displayErrorMessage("You are not OG!");
         }
-        else if ((error.message).includes("Sale has not yet started!")) {
-            await displayErrorMessage(`Error: Sale not yet started!`)
+        else {
+            const merkleProof = await getMerkleProof();
+            const gasLimit = await wavecatchers.estimateGas.OGMint(merkleProof);
+            const newGasLimit = parseInt((gasLimit * 1.2)).toString();
+            
+            await wavecatchers.OGMint(merkleProof, {gasLimit: newGasLimit}).then( async(tx_) => {
+                await waitForTransaction(tx_);
+            });
+        }
+    }
+    catch (error) { // edit error messages
+        if ((error.message).includes("Can only mint max 3 in whitelist")) {
+            await displayErrorMessage(`Error: Max ${MAX_MINT_WL} mints for WL!`)
         }
         else {
             await displayErrorMessage("An error occurred. See console and window alert for details...")
@@ -250,7 +201,7 @@ const updateMintInfo = async() => {
     if (minted == MAX_SUPPLY) {
         $("#sold-out").html(`SOLD OUT! <br><br>AVAILABLE ON <a href="${openseaLink}" target="_blank" class="w-inline-block" style="text-decoration:none;color:#03B4FC;">OPENSEA⬈</a> & <a href="${looksrareLink}" target="_blank" class="w-inline-block" style="text-decoration:none;color:green;">LOOKSRARE⬈</a>`);
         $("#mint-button").remove();
-        // $("#mint-n-stake-button").remove();
+        $("#claim-button").remove();
         $("#quantity-controls").remove();
     }
 }
@@ -332,7 +283,6 @@ async function endLoading(tx, txStatus) {
 
 setInterval(async()=>{
     await updateInfo();
-    await checkMintingLive();
     await updateMintInfo();
 }, 5000)
 
@@ -348,7 +298,6 @@ ethereum.on("accountsChanged", async(accounts_)=>{
 
 window.onload = async()=>{
     await updateInfo();
-    // await checkMintingLive();
     await updateMintInfo();
     await updatePrice();
     await checkWhitelistStatus();

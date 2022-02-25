@@ -73,7 +73,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 70%;
+    /* height: 70%; */
 }
 
 #mint {
@@ -97,10 +97,14 @@
     width:25%;
 }
 
-#mint-button, #mint-n-stake-button {
+#mint-button, #mint-n-stake-button, #claim-button {
 	height: 4vw;
     width: 98%;
     margin:0;
+}
+
+#claim-button {
+    margin-bottom: 1vw;
 }
 
 #mint button {
@@ -180,7 +184,7 @@
         min-width: 150px;
     }
 
-    #mint-button, #mint-n-stake-button {
+    #mint-button, #mint-n-stake-button, #claim-button {
         height: 10vh;
         width: 98%;
         margin-bottom: 5%;
