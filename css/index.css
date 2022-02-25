@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: #312876;
+    --main-bg-color: #447CFC;
   }
 
 @keyframes blinker {
@@ -273,11 +273,19 @@
 
 #copyright-div {
     background-color: var(--main-bg-color);
-    border-top: .5vw solid black;
+    /* border-top: .5vw solid black; */
     text-align: center;
     font-size: 1.4vw !important;
 	line-height: 1.7vw !important;
-    padding: 5px;
+    padding: 20px;
+}
+
+#copyright-div  a {
+    color: white;
+}
+
+#copyright-div  a:hover {
+	color: #F5CD03;
 }
 
 #copyright-div img {
@@ -549,13 +557,9 @@
     }
 
     #copyright-div {
-        border-width: 5px;
-        padding: 3px;
+        padding: 10px;
         font-size: 2.8vh !important;
 		line-height: 3.1vh !important;
     }
 
-    #copyright-div img {
-        margin: 8px;
-    }
 }

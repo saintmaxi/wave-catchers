@@ -14,5 +14,37 @@
             "image": "https://i.redd.it/4v4qlx8ltaw61.jpg",
             "website": "#",
             "max-slots": 20
-        }
+        },
+    "2":
+    {
+        "name": "Example Collection",
+        "description": "3334 Wave Catchers grant you access to the first on-chain whitelist marketplace. Earn $COCO by holding. Never grind for a whitelist again.",
+        "image": "https://i.redd.it/4v4qlx8ltaw61.jpg",
+        "website": "#",
+        "max-slots": 30
+    },
+    "3":
+    {
+        "name": "Example Collection",
+        "description": "3334 Wave Catchers grant you access to the first on-chain whitelist marketplace. Earn $COCO by holding. Never grind for a whitelist again.",
+        "image": "https://i.redd.it/4v4qlx8ltaw61.jpg",
+        "website": "#",
+        "max-slots": 15
+    },
+    "4":
+    {
+        "name": "Example Collection",
+        "description": "3334 Wave Catchers grant you access to the first on-chain whitelist marketplace. Earn $COCO by holding. Never grind for a whitelist again.",
+        "image": "https://i.redd.it/4v4qlx8ltaw61.jpg",
+        "website": "#",
+        "max-slots": 15
+    },
+    "5":
+    {
+        "name": "Example Collection",
+        "description": "3334 Wave Catchers grant you access to the first on-chain whitelist marketplace. Earn $COCO by holding. Never grind for a whitelist again.",
+        "image": "https://i.redd.it/4v4qlx8ltaw61.jpg",
+        "website": "#",
+        "max-slots": 20
+    }
 }
