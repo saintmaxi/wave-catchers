@@ -55,6 +55,7 @@ if (window.ethereum == undefined) {
 const provider = new ethers.providers.Web3Provider(window.ethereum,"any");
 const signer = provider.getSigner();
 const wavecatchers = new ethers.Contract(wavecatchersAddress, wavecatchersAbi(), signer);
+const market = new ethers.Contract(marketAddress, marketAbi(), signer);
 const coco = new ethers.Contract(cocoAddress, cocoAbi(), signer);
 
 const connect = async()=>{
@@ -77,21 +78,6 @@ const getChainId = async()=>{
     return await signer.getChainId()
 };
 
-const importCocoToWallet = async() => {
-    ethereum.request({
-        method: 'wallet_watchAsset',
-        params: {
-          type: 'ERC20',
-          options: {
-            address: cocoAddress,
-            symbol: 'COCO',
-            decimals: 18,
-            image: 'https://github.com/saintmaxi/wave-catchers/blob/main/images/coco.png?raw=true',
-          },
-        },
-      });
-}
-
 const updateCurrentChain = async() => {
     if ((await getChainId()) !== correctChain) {
         displayErrorMessage("Error: Wrong Network!", false);
@@ -102,112 +88,24 @@ const updateCurrentChain = async() => {
     }
 }
 
-// COCO Functions
-
-const getWaveCatchersEnum = async()=>{
-    let userAddress = await getAddress();
-    let totalWaveCatchers = await wavecatchers.balanceOf(userAddress);
-    return totalWaveCatchers;
-};
-
-const getWaveCatchersOwned = async() => {
-    let userAddress = await getAddress();
-    let totalWaveCatchers = await wavecatchers.balanceOf(userAddress);
-    let ownedWaveCatchers = [];
-    for (let i = 0; i < totalWaveCatchers; i++) {
-        let id = Number(await wavecatchers.tokenOfOwnerByIndex(userAddress, i));
-        ownedWaveCatchers.push(id);
-    }
-    return [...ownedWaveCatchers].sort((a, b) => a - b);
-}
-
-const getCocoBalance = async()=>{
-    let userAddress = await getAddress();
-    let cocoBalance = await coco.balanceOf(userAddress);
-    $("#your-coco").html(`${(Number(formatEther(cocoBalance))).toFixed(2)}`);
-};
-
-const getPendingCocoBalance = async()=>{ // need to add up by total of each token
-    let userAddress = await getAddress();
-    let totalWaveCatchers = await getWaveCatchersEnum();
-    let pendingCoco = 0;
-    for (let i = 0; i < totalWaveCatchers; i++) {
-        let id = Number(await wavecatchers.tokenOfOwnerByIndex(userAddress, i));
-        pendingCoco += Number(formatEther(await coco.getRewardsForId(id))); //get coco owed to token
-    }
-    $("#claimable-coco").html(`${pendingCoco.toFixed(2)}`);
-};
-
-const claimByIds = async()=>{
-    if (selectedForUnstaking.size == 0) {
-        displayErrorMessage("Select at least 1 Wave Catcher to claim!")
-    }
-    else {
-        const waveCatchersArray = Array.from(selectedForUnstaking);
-        await coco.claim(waveCatchersArray).then( async(tx_) => {
-            selectedForUnstaking = new Set();
-            $("#selected-for-unstaking").text("None");
-            $(".active").removeClass("active");
-            await waitForTransaction(tx_);
-        }); 
-    }
-};
-
-const claimAll = async() => {
-    const numWaveCatchers = await getWaveCatchersEnum();
-    if (numWaveCatchers == 0) {
-        displayErrorMessage("No Wave Catchers to claim for!")
-    }
-    else {
-        const waveCatchersArray = await getWaveCatchersOwned();
-        await coco.claim(waveCatchersArray).then( async(tx_) => {
-            selectedForUnstaking = new Set();
-            $("#selected-for-unstaking").text("None");
-            $(".active").removeClass("active");
-            await waitForTransaction(tx_);
-        }); 
-    }
-};
-
-// Staking functions
-
-var currentlyStaked = [];
-var imagesLoaded = false;
-
-const getWaveCatchersImages = async()=>{
-    $("#available-wavecatchers-images").empty();
-    $("#available-wavecatchers-images").append(`<br><h3>Loading<span class="one">.</span><span class="two">.</span><span class="three">.</span></h3>`);
-
-    const yourWaveCatchersCount = await getWaveCatchersEnum();
-    if (yourWaveCatchersCount == 0) {
-        $("#available-wavecatchers-images").empty();
-        $("#available-wavecatchers-images").append("<br><h3>No Wave Catchers available...</h3>");
-    }
-    else {
-        const yourWaveCatchers = await getWaveCatchersOwned();
-        currentlyStaked = yourWaveCatchers;
-        let batchFakeJSX = "";
-        for (let i = 0; i < yourWaveCatchers.length; i++) {
-            let waveCatcherID = yourWaveCatchers[i];
-            let active= "";
-            if (selectedForUnstaking.has(Number(waveCatcherID))) {
-                active = "active";
-            }
-            let cocoEarned = Number(formatEther(await coco.getRewardsForId(waveCatcherID))).toFixed(2);
-
-            batchFakeJSX += `<div id="wavecatcher-${waveCatcherID}" class="your-wavecatcher ${active}"><img onclick="selectForUnstaking(${waveCatcherID})" src="https://github.com/saintmaxi/wave-catchers/blob/main/images/ex1.jpeg?raw=true"><p class="wavecatcher-id">#${waveCatcherID}</p><p class="coco-earned"><span id="coco-earned-${waveCatcherID}">${cocoEarned}</span><img src="${cocoImgURL}" class="coco-icon"></p></div>`        
-            // batchFakeJSX += `<div id="wavecatcher-${waveCatcherID}" class="your-wavecatcher ${active}"><img onclick="selectForUnstaking(${waveCatcherID})" src="${baseImageURI}${waveCatcherID}.png"><p class="wavecatcher-id">#${waveCatcherID}</p><p class="coco-earned"><span id="coco-earned-${waveCatcherID}">${cocoEarned}</span></p></div>`        
-            
-        };
-        $("#available-wavecatchers-images").empty();
-        $("#available-wavecatchers-images").append(batchFakeJSX);
-    }
-    imagesLoaded = true;
-}
-
-const getCocoEarnedByID = async(id) => {
+const getCocoEarnedByID = async() => {
     try {
-        return Number(formatEther(await coco.getRewardsForId(id))).toFixed(2); //replace w coco version
+        let input = $("#token-id").val();
+        if (!input) {
+            $("#pending-coco").text("Invalid ID");
+        }
+        else {
+            let id = Number(input);
+            if (id < 0 || id > (await wavecatchers.totalSupply() -1)) {
+                $("#pending-coco").text("Invalid ID");
+            }
+            else {
+                let pendingCoco = Number(formatEther(await coco.getRewardsForId(id))).toFixed(2);
+                $("#pending-coco").html(`PENDING: ${pendingCoco} <img src="./images/coco.png" class="coco-icon">`);
+            }
+        }
+        $("#spacer").remove();
+        $("#pending-coco-div").removeClass("hidden");
     }
     catch {
         console.log('Metamask throws extra error. Token reward lookup was successful.')
@@ -215,49 +113,49 @@ const getCocoEarnedByID = async(id) => {
     }
 };
 
-const updateCocoEarned = async() => {
-    let totalEarned = 0;
-    for (let i = 0; i < currentlyStaked.length; i++) {
-        let waveCatcherID = Number(currentlyStaked[i]);
-        let cocoEarnedByID = await getCocoEarnedByID(waveCatcherID);
-        $(`#coco-earned-${waveCatcherID}`).html(`${cocoEarnedByID}`);
-        if (selectedForUnstaking.has(waveCatcherID)) {
-            totalEarned += Number(cocoEarnedByID);
-        }
-    };
-    $("#coco-to-claim").html(`$<img src="${cocoImgURL}" class="coco-icon"> to Claim: ${totalEarned.toFixed(2)}`);
-};
+var projectToWL = new Map();
 
-const updateClaimingInfo = async()=>{
-    if ((await getChainId()) === correctChain) {
-        const loadingDiv = `<div class="loading-div" id="refresh-notification">REFRESHING <br>CLAIMING INTERFACE<span class="one">.</span><span class="two">.</span><span class="three">.</span>​</div><br>`;
-        $("#pending-transactions").append(loadingDiv);
-        await getCocoBalance();
-        let waveCatchersNum = await getWaveCatchersEnum();
-        if (waveCatchersNum == 0) {
-            $("#claimable-coco").text("0.0");
+var collectionsData;
+
+const loadCollectionsData = async() => {
+    collectionsData = await $.getJSON('./data/partner-collections.json');
+    let numWL = await market.whitelistCounter();
+    for (let i = 0; i < numWL; i++) {
+        let projectName = collectionsData[String(i)].name;
+        let winners = await market.getWinnersForWL(i);
+        projectToWL.set(projectName, winners);
+        $("#wl-select").append(`<option value="${projectName}">${projectName}</option>`);
+        if (i == 0) {
+            selectWL(projectName);
         }
-        else {
-            await getPendingCocoBalance();
-        }
-        $("#your-wavecatchers-num").html(`${waveCatchersNum}`);
-        $("#earn-rate").html(100 * waveCatchersNum);
-        if (!imagesLoaded) {
-            await getWaveCatchersImages();
-        }
-        $("#error-popup").remove();
-        $("#refresh-notification").remove();
-    } 
-    else {
-        $("#wallet").text(`Wrong Network!`);
-        $("#available-wavecatchers-images").empty();
-        $("#available-wavecatchers-images").text("Error: Wrong Network");
-        $("#your-coco").html(`0.0`);
-        $("#claimable-coco").html(`0.0`);
-        $("#earn-rate").html("0.0");
-        displayErrorMessage("Error: Wrong Network", false);
     }
-};
+}
+
+function selectWL(projectName) {
+    let wlArray = [...(projectToWL.get(projectName))];
+    let wlString = wlArray.join("\n");
+    $("#wl-section").empty();
+    $("#wl-section").text(wlString);
+    updateDownload();
+}
+
+function updateDownload() {
+    let projectName = $("#wl-select").val();
+    let filename = `${projectName}_WAVECATCHERS_WL.txt`;
+    let wlArray = [...(projectToWL.get(projectName))];
+    let wlString = wlArray.join("\n");
+
+    $("#download-link").attr('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(wlString));
+    $("#download-link").attr('download', filename);
+  
+    // element.style.display = 'none';
+    // document.body.appendChild(element);
+  
+    // element.click();
+  
+    // document.body.removeChild(element);
+}
+
 
 
 // General functions
@@ -270,34 +168,6 @@ provider.on("network", async(newNetwork, oldNetwork) => {
     }
 });
 
-//selection helpers
-
-var selectedForUnstaking = new Set();
-
-async function selectForUnstaking(id) {
-    if (!selectedForUnstaking.has(id)) {
-        selectedForUnstaking.add(id);
-        $(`#wavecatcher-${id}`).addClass("active");
-    }
-    else {
-        selectedForUnstaking.delete(id);
-        $(`#wavecatcher-${id}`).removeClass("active");
-    }
-    if (selectedForUnstaking.size == 0) {
-        $("#selected-for-unstaking").text("None");
-        $("#coco-to-claim").html(`$<img src="${cocoImgURL}" class="coco-icon"> to Claim: 0`);
-    }
-    else {
-        let selectedForUnstakingArray = Array.from(selectedForUnstaking).sort((a, b) => a - b);
-        let cocoToClaim = 0;
-        for (let i = 0; i < selectedForUnstakingArray.length; i++) {
-            cocoToClaim += Number(await getCocoEarnedByID(selectedForUnstakingArray[i]));
-        }
-        $("#coco-to-claim").html(`$<img src="${cocoImgURL}" class="coco-icon"> to Claim: ${cocoToClaim.toFixed(2)}`);
-        let selectedString = `${selectedForUnstakingArray.join(' ')}`;
-        $("#selected-for-unstaking").text(selectedString);
-    }
-}
 
 // Processing tx returns
 const waitForTransaction = async(tx_) => {
@@ -351,15 +221,10 @@ async function endLoading(tx, txStatus) {
     await sleep(7000);
     $(`#etherscan-link-${txHash}`).remove();
     pendingTransactions.delete(tx);
-    if (pendingTransactions.size == 0) {
-        await updateClaimingInfo();
-    }
 }
 
 setInterval(async()=>{
     await updateInfo();
-    await updateCocoEarned();
-    await getPendingCocoBalance();
 }, 5000)
 
 const updateInfo = async () => {
@@ -374,9 +239,7 @@ ethereum.on("accountsChanged", async(accounts_)=>{
 
 window.onload = async()=>{
     await updateInfo();
-    if (pendingTransactions.size < 1) {
-        await updateClaimingInfo();
-    }
+    await loadCollectionsData();
 };
 
 window.onunload = async()=>{

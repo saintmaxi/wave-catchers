@@ -1,16 +1,97 @@
+h2 {
+    margin-top: 1.5vw !important;
+    margin-bottom:1.5vw !important;
+}
+
 #wl-section {
     width: 90%;
     min-height: 20vh;
+    max-height: 50vh;
+    overflow-y: scroll;
     border: .5vw black solid;
     border-radius: 20px;
     margin: auto;
+    text-align: center;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    font-size: 1.2vw;
+    line-height: 1.2vw;
 }
 
+input {
+    border: .5vw black solid;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 2vw;
+    line-height: 2vw;
+    width: 50%;
+}
 
+#lookup-button {
+    width: 50%;
+}
 
+select {
+    border: .5vw black solid;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    width: 75%;
+    margin-bottom: 2vw;
+}
+
+#spacer {
+    height: 2vw;
+}
+
+#download-link {
+    width: 5%;
+}
+
+#download-button {
+    width: 5%;
+}
 
 @media screen and (max-width: 991px) {
-    #wl-section {
-        border-width: 5px;
+    #lookup-button {
+        width: 98%;
     }
+
+    h2 {
+        margin-top: 2vh !important;
+        margin-bottom:2vh !important;
+    }
+
+    #wl-section {
+        width: 98%;
+        border-width: 5px;
+        padding-top:2vh;
+        padding-bottom: 2vh;
+        font-size: 1.2vh;
+        line-height: 1.2vh;
+    }
+
+    input, select {
+        font-size: 3vh;
+        line-height: 3vh;
+        border-width: 5px;
+        width: 98%;
+    }
+
+    select {
+        font-size: 2vh;
+        line-height: 2vh;
+        width: 90%;
+    }
+
+    select {
+        margin-bottom: 2vh;
+    }
+
+    #spacer {
+        height: 2vh;
+    }
+
+
 }
