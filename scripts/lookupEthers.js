@@ -101,7 +101,7 @@ const getCocoEarnedByID = async() => {
             }
             else {
                 let pendingCoco = Number(formatEther(await coco.getRewardsForId(id))).toFixed(2);
-                $("#pending-coco").html(`PENDING: ${pendingCoco} <img src="./images/coco.png" class="coco-icon">`);
+                $("#pending-coco").html(`UNCLAIMED: ${pendingCoco} <img src="./images/coco.png" class="coco-icon">`);
             }
         }
         $("#spacer").remove();
