@@ -163,6 +163,9 @@ const publicMint = async() => {
         if ((error.message).includes("Can only mint max 3 in whitelist")) {
             await displayErrorMessage(`Error: Max ${MAX_MINT_WL} mints for WL!`)
         }
+        else if ((error.message).includes("User denied transaction signature")) {
+            console.log("Transaction rejected.");
+        }
         else {
             await displayErrorMessage("An error occurred. See console and window alert for details...")
             window.alert(error);
@@ -190,6 +193,9 @@ const ogMint = async() => {
     catch (error) { // edit error messages
         if ((error.message).includes("Can only mint max 3 in whitelist")) {
             await displayErrorMessage(`Error: Max ${MAX_MINT_WL} mints for WL!`)
+        }
+        else if ((error.message).includes("User denied transaction signature")) {
+            console.log("Transaction rejected.");
         }
         else {
             await displayErrorMessage("An error occurred. See console and window alert for details...")
