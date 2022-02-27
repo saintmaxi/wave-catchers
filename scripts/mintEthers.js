@@ -148,16 +148,16 @@ const publicMint = async() => {
             await displayErrorMessage(`Max ${MAX_MINT} mints!`);
         }
 
-        // const cost = ethers.BigNumber.from(priceWei).mul(numberToMint);
-        // const gasLimit = await wavecatchers.estimateGas.mint(numberToMint, {value: cost})
-        // const newGasLimit = parseInt((gasLimit * 1.2)).toString();
+        const cost = ethers.BigNumber.from(priceWei).mul(numberToMint);
+        const gasLimit = await wavecatchers.estimateGas.mint(numberToMint, {value: cost})
+        const newGasLimit = parseInt((gasLimit * 1.2)).toString();
 
-        // await wavecatchers.mint(numberToMint, { value: cost, gasLimit: newGasLimit}).then( async(tx_) => {
-        //     await waitForTransaction(tx_);
-        // });   
-        await wavecatchers.mint(numberToMint).then( async(tx_) => {
+        await wavecatchers.mint(numberToMint, { value: cost, gasLimit: newGasLimit}).then( async(tx_) => {
             await waitForTransaction(tx_);
-        });
+        });   
+        // await wavecatchers.mint(numberToMint).then( async(tx_) => {
+        //     await waitForTransaction(tx_);
+        // });
     }
     catch (error) { // edit error messages
         if ((error.message).includes("Can only mint max 3 in whitelist")) {
