@@ -14,6 +14,7 @@
 
 // const etherscanBase = `https://etherscan.io/tx/`;
 // const correctChain = 1;
+// const baseImageURI = "https://ipfs.io/ipfs/QmTynTQdL4etGJTLDMLLsQdJdWSxKE15NG12vTbh1mzPr/";
 // const cocoImgURL = "https://github.com/saintmaxi/wave-catchers/blob/main/images/coco.png?raw=true";
 
 /*********************************************************************************/
@@ -32,6 +33,7 @@ const cocoAbi = () => {
 
 const etherscanBase = `https://rinkeby.etherscan.io/tx/`;
 const correctChain = 4;
+const baseImageURI = "https://ipfs.io/ipfs/QmTynTQdL4etGJTLDMLLsQdJdWSxKE15NG12vTbh1mzPr/";
 const cocoImgURL = "https://github.com/saintmaxi/wave-catchers/blob/main/images/coco.png?raw=true";
 
 /*********************************END CONFIG************************************/
