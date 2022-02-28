@@ -446,8 +446,8 @@
     /* end mobile navbar animations*/
 
     .header-menu {
-        font-size: 3vh;
-        line-height: 3vh;
+        font-size: 4vh;
+        line-height: 4vh;
         text-align: left;
     }
 
@@ -496,6 +496,8 @@
     #about p {
         padding-left: 0 !important;
         padding-right: 0 !important;
+        font-size: 3.2vh !important;
+        line-height: 3.2vh !important;
     }
     
     #about-text-mobile {
