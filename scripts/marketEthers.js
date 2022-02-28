@@ -133,7 +133,7 @@ const loadCollections = async() => {
             else {
                 button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="purchase(${id})">PURCHASE</button>`;
             }
-            let fakeJSX = `<div class="partner-collection">
+            let fakeJSX = `<div class="partner-collection" id="project-${id}">
                             <a href="${collection["twitter"]}" target="_blank">
                                 <img class="collection-twitter" src="./images/twitter-white.png">
                             </a>
@@ -144,14 +144,14 @@ const loadCollections = async() => {
                                 <div class="inside-text collection-description">
                                 ${collection["description"]}
                                 </div>
-                                ${button}
                             </div>
+                            ${button}
                             </div>`
             liveJSX += fakeJSX;
         }
         else {
             numPast +=1;
-            let fakeJSX = `<div class="partner-collection">
+            let fakeJSX = `<div class="partner-collection" id="project-${id}">
                             <img class="collection-img" src="${collection["image"]}">
                             <div class="collection-info">
                                 <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
@@ -159,8 +159,8 @@ const loadCollections = async() => {
                                 <div class="inside-text collection-description">
                                 ${collection["description"]}
                                 </div>
-                                <button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">SOLD OUT</button>
                             </div>
+                            <button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">SOLD OUT</button>
                             </div>`
            pastJSX += fakeJSX;
         }
@@ -310,7 +310,3 @@ window.onload = async() => {
 window.onunload = async()=>{
     cachePendingTransactions();
 }
-
-document.addEventListener('scroll', function(e) {
-    console.log('scrolled')
-});
