@@ -311,6 +311,9 @@ h4 {
     background-color: grey;
 }
 
+.down-arrow {
+    width: 3vw;
+}
 
 .one {
     opacity: 0;
@@ -360,7 +363,31 @@ h4 {
     }
 }
 
+/* Scroll animation */
+
+@-webkit-keyframes bounce {
+    0% { transform: translateY(0);} 
+   50% {transform: translateY(-5px);} 
+   100% { transform: translateY(0);} 
+}
+  
+@keyframes bounce {
+    0% { transform: translateY(0);} 
+   50% {transform: translateY(-5px);} 
+   100% { transform: translateY(0);} 
+}
+
+#scroll-indicator-live, #scroll-indicator-past {
+    -webkit-animation: bounce 1.3s infinite;
+    animation: bounce 1.3s infinite;
+    color: white !important;
+}
+
 @media screen and (max-width: 767px) {
+
+    .down-arrow {
+        width: 3vh;
+    }
 
 
     #live-collections button, #past-collections button {

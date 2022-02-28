@@ -28,6 +28,8 @@ async function displayLoading() {
 function showLive() {
     $('#past-collections').addClass('hidden');
     $('#live-collections').removeClass('hidden');
+    $("#scroll-indicator-past").addClass("hidden");
+    $("#scroll-indicator-live").removeClass("hidden");
     $("#live-button").addClass("active");
     $("#past-button").removeClass("active");
 }
@@ -35,6 +37,8 @@ function showLive() {
 function showPast() {
     $('#live-collections').addClass('hidden');
     $('#past-collections').removeClass('hidden');
+    $("#scroll-indicator-past").removeClass("hidden");
+    $("#scroll-indicator-live").addClass("hidden");
     $("#past-button").addClass("active");
     $("#live-button").removeClass("active");
 }
