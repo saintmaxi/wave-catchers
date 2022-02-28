@@ -60,7 +60,7 @@
     -ms-flex-align: center;
     align-items: stretch;
     margin: auto;
-    width: 95%;
+    width: 100%;
 }
 
 #live-collections button, #past-collections button {
@@ -93,8 +93,8 @@
 	border-color: black;
 	border-radius: 20px;
 	border-width: .5vw;
-    width: 25%;
-    margin: 1.5%;
+    width: 22%;
+    margin: 1%;
     background-color: white;
     text-align: center;
     display: -webkit-box;

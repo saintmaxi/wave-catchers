@@ -135,7 +135,7 @@ const loadCollections = async() => {
             }
             let fakeJSX = `<div class="partner-collection">
                             <a href="${collection["twitter"]}" target="_blank">
-                                <img class="collection-twitter" src="../images/twitter-white.png">
+                                <img class="collection-twitter" src="./images/twitter-white.png">
                             </a>
                             <img class="collection-img" src="${collection["image"]}">
                             <div class="collection-info">
