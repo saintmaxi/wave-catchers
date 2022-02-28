@@ -110,22 +110,22 @@ const loadCollections = async() => {
     let numCollections = Number(await market.whitelistCounter());
     let liveJSX = "";
     let pastJSX = "";
+    let numLive = 0;
+    let numPast = 0;
     for (let i = 0; i < numCollections; i++) {
         // WL data from contract
         let WLinfo = await market.getWhitelist(i);
         let id = WLinfo.id;
         let collectionPrice = Number(formatEther(WLinfo.price));
-        // let maxSlots = WLinfo.amount;
-        // let minted = maxSlots - spotsLeft;
         let winners = await market.getWinnersForWL(id);
 
         // Data from JSON file
         let collection = collectionsData[String(i)];
         let maxSlots = collection["max-slots"];
         let minted = maxSlots - WLinfo.amount;
-        // let minted = maxSlots - spotsLeft;
 
         if (minted != maxSlots) {
+            numLive += 1;
             let button;
             if (winners.includes(await getAddress())) {
                 button = `<button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">PURCHASED!</button>`;
@@ -150,6 +150,7 @@ const loadCollections = async() => {
             liveJSX += fakeJSX;
         }
         else {
+            numPast +=1;
             let fakeJSX = `<div class="partner-collection">
                             <img class="collection-img" src="${collection["image"]}">
                             <div class="collection-info">
@@ -168,6 +169,8 @@ const loadCollections = async() => {
     $("#past-collections").empty();
     $("#live-collections").append(liveJSX);
     $("#past-collections").append(pastJSX);
+    $("#num-live").text(` (${numLive})`);
+    $("#num-past").text(` (${numPast})`);
     loadedCollections = true;
 }
 
