@@ -36,6 +36,10 @@ const cocoImgURL = "https://github.com/saintmaxi/wave-catchers/blob/main/images/
 
 /*********************************END CONFIG************************************/
 
+if (window.ethereum == undefined) {
+    displayErrorMessage('Use a web3 enabled browser to browse listings!');
+}
+
 // Initiate Provider 
 const provider = new ethers.providers.Web3Provider(window.ethereum, "any");
 const signer = provider.getSigner();
@@ -59,6 +63,7 @@ const maxInt = "1157920892373161954235709850086879078532699846656405640394575840
 const approveCocoToMarket = async() => {
     await coco.approve(marketAddress, maxInt).then (async(tx_) => {
         await waitForTransaction(tx_);
+        $("#approval-button").html(`Approving<span class="one">.</span><span class="two">.</span><span class="three">.</span>`)
     });
 }
 
@@ -265,6 +270,26 @@ ethereum.on("accountsChanged", async (accounts_) => {
 });
 
 window.onload = async() => {
+    if (!(await getAddress())) {
+        const connectPrompt = ` <div id="ex1" class="partner-collection example">
+                                    <div class="cover">
+                                        <button class="button" onclick="connect()">CONNECT WALLET TO VIEW LISTINGS</button>
+                                    </div>
+                                    <img class="collection-img" src="./images/ticket.jpeg">
+                                    <div class="collection-info">
+                                        <h3>???</h3>
+                                        <h4>??? | ???/??? Purchased</h4>
+                                       <div class="inside-text collection-description"> An innovative group of characters residing on the Ethereum blockchain. Whitelist now available for
+                                         purchase on Wave Catchers Markeplace. Secure your spot now before they're all gone!
+                                        </div>
+                                        <button class="button">PURCHASE</button>
+                                    </div>
+                                </div>`
+        $("#live-collections").empty();
+        $("#past-collections").empty();
+        $("#live-collections").append(connectPrompt);
+        $("#past-collections").append(connectPrompt);
+    }
     await updateInfo();
     await loadCollectionsData();
     await loadCollections();
