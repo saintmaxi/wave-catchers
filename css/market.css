@@ -73,10 +73,12 @@
 
 .cover {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+	border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    width: 101%;
     height: 100.5%;
+    transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.856);
 }
 
