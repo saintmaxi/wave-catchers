@@ -115,11 +115,26 @@
     flex-wrap: wrap;
     padding: 15px;
     max-width: 550px;
+    position: relative;
 }
 
 .partner-collection h3 {
     font-size: 1.8vw;
     line-height: 1.8vw;
+}
+
+.collection-twitter {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    width: 15%;
+}
+
+.collection-discord {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    width: 15%;
 }
 
 .collection-img {

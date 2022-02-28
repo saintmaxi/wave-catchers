@@ -134,30 +134,33 @@ const loadCollections = async() => {
                 button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="purchase(${id})">PURCHASE</button>`;
             }
             let fakeJSX = `<div class="partner-collection">
-                        <img class="collection-img" src="${collection["image"]}">
-                        <div class="collection-info">
-                            <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
-                            <h4>${collectionPrice} <img src="${cocoImgURL}" class="coco-icon"> <br> <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Purchased</h4>
-                            <div class="inside-text collection-description">
-                            ${collection["description"]}
+                            <a href="${collection["twitter"]}" target="_blank">
+                                <img class="collection-twitter" src="../images/twitter-white.png">
+                            </a>
+                            <img class="collection-img" src="${collection["image"]}">
+                            <div class="collection-info">
+                                <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
+                                <h4>${collectionPrice} <img src="${cocoImgURL}" class="coco-icon"> <br> <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Purchased</h4>
+                                <div class="inside-text collection-description">
+                                ${collection["description"]}
+                                </div>
+                                ${button}
                             </div>
-                            ${button}
-                        </div>
-                       </div>`
+                            </div>`
             liveJSX += fakeJSX;
         }
         else {
             let fakeJSX = `<div class="partner-collection">
                             <img class="collection-img" src="${collection["image"]}">
                             <div class="collection-info">
-                            <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
-                            <h4>${collectionPrice} <img src="${cocoImgURL}" class="coco-icon"> <br> <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Purchased</h4>
-                            <div class="inside-text collection-description">
-                            ${collection["description"]}
+                                <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
+                                <h4>${collectionPrice} <img src="${cocoImgURL}" class="coco-icon"> <br> <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Purchased</h4>
+                                <div class="inside-text collection-description">
+                                ${collection["description"]}
+                                </div>
+                                <button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">SOLD OUT</button>
                             </div>
-                             <button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">SOLD OUT</button>
-                            </div>
-                        </div>`
+                            </div>`
            pastJSX += fakeJSX;
         }
     }
