@@ -136,7 +136,7 @@ const checkMintingLive = async() => {
     else {
         $("#mint-button").removeClass("hidden");
         $("#quantity-controls").removeClass("hidden");
-        $("#claim-button").removeClass("hidden");
+        // $("#claim-button").removeClass("hidden");
         $("#mint-closed").addClass("hidden");
     }
 }
@@ -145,9 +145,15 @@ const checkWhitelistStatus = async() => {
     const _merkleProof = await getMerkleProof();
     const addr = await getAddress();
     const _isWhitelisted = await wavecatchers.canClaimOG(addr, _merkleProof).catch(err => console.log(err));
-    if (_isWhitelisted) {
-        $("#whitelisted").html("Congrats, you are an OG!<br>Claim 1 free Wave Catcher with the 'CLAIM OG' button.");
-        $("#claim-button").removeClass("hidden");
+    if (await checkMintingLive()) {
+        if (_isWhitelisted) {
+            $("#whitelisted").html("Congrats, you are an OG!<br>Claim 1 free Wave Catcher with the 'CLAIM OG' button.");
+            $("#claim-button").removeClass("hidden");
+        }
+        else {
+            $("#whitelisted").html("");
+            $("#claim-button").addClass("hidden");
+        }
     }
     else {
         $("#whitelisted").html("");
@@ -308,6 +314,7 @@ setInterval(async()=>{
     await updateInfo();
     await updateMintInfo();
     await checkMintingLive();
+    await checkWhitelistStatus();
 }, 5000)
 
 const updateInfo = async () => {
