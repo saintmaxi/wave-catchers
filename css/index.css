@@ -15,31 +15,9 @@
     flex-direction: row;
     justify-content: center;
     color: white !important;
-    /* background-color: rgb(69, 188, 228); */
-    /* background-color: rgb(45, 171, 212); */
-    /* background-color: #312876; */
-    /* background-color: #76BFFE; */
     background-color: #447CFC;
-
-    /* background-color: var(--main-bg-color);
-    background-color: #447CFC; */
-    /* border-bottom: .5vw solid white; */
-    /* background: repeating-linear-gradient(
-        to bottom,
-        #312876 20px,
-        #4d41aa 20px,
-        #6a5dc9 20px,
-        rgb(124, 112, 209) 20px,
-        #8175db 20px
-        ); */
-        /* background-image: url(../images/Sand.png), linear-gradient(to bottom, 
-        #D07C28    0%, #D07C28  100%); */
-        /* background-size: 100%; */
-        /* background-image: url("../images/wood.png"); */
-        /* background-image: url("../images/frond.png"); */
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        /* background-size: 30% 100%; */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 #top .link {
@@ -64,7 +42,6 @@
     justify-content: center;
     align-items: center;
     width: 30%;
-    /* border-right: .25vw solid black; */
     font-size: 2vw;
     line-height: 2vw;
     text-align: center;
@@ -73,17 +50,10 @@
 #title {
     width: 100%;
     letter-spacing: 5px;
-    /* background-image: url("../images/board.png");
-	background-size: 100% 100%; */
-    /* background-color: blanchedalmond;
-    border: solid .5vw black;
-    border-radius: 5px;
-    padding: .5vw; */
 }
 
 #header {
     width: 40%;
-    /* border-left: .25vw solid black; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -97,12 +67,6 @@
     width: 25%;
     margin: 2%;
     text-align: center;
-/* background: linear-gradient(to bottom, 
-#83C4BA    0%, #83C4BA  40%, 
-        black   0%, black 60%,        
-        #83C4BA 0%);
-    border-radius: 55%;
-    padding: .5vw; */
 }
 
 .header-menu a {
@@ -116,7 +80,6 @@
     justify-content: center;
     width: 15%;
     padding: .5%;
-    /* background-color: var(--main-bg-color); */
 }
 
 #socials a {
@@ -199,18 +162,15 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    /* background-image: url("../images/wood.png"); */
 }
 
 #about-text-desktop-1 {
     width: 75%;
-    /* margin-left: 2.5%; */
     margin-right:6%
 }
 
 #about-text-desktop-2 {
     width: 75%;
-    /* margin-left: 2.5%; */
     margin-left:6%
 }
 
@@ -232,53 +192,7 @@
 
 /* end about section styling */
 
-
-/* start team section styling */
-
-#team-members {
-    text-align: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.team-member {
-	width: 29%;
-	margin: 2%;
-	margin-bottom: 0 !important;
-	margin-top: 0 !important;
-	text-align: center;
-}
-
-.team-member img {
-	/* border: 3px solid white;
-	background-color: grey; */
-	width: 60%;
-	margin: 10px;
-}
-
-/* end team section styling */
-
 #bottom-socials {
-    /* background-color: black;
-    border-radius: 40px; */
     width: 20%;
     margin: auto;
     padding: 1vw;
@@ -294,7 +208,6 @@
 
 #copyright-div {
     background-color: var(--main-bg-color);
-    /* border-top: .5vw solid black; */
     text-align: center;
     font-size: 1.4vw !important;
 	line-height: 1.7vw !important;
@@ -338,18 +251,12 @@
         border-right: none;
         font-size: 5vh;
         line-height: 5vh;
-    background-color: #447CFC;
-
-        /* background-image: url(../images/Sand.png), linear-gradient(to bottom, 
-        #D07C28    0%, #D07C28  100%); */
-        /* background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
-        #D07C28    0%, #D07C28  100%); */
+        background-color: #447CFC;
         padding-top: 20px !important;
         margin: 0;
         padding: 2%;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-
     }
 
     #socials {
@@ -359,8 +266,6 @@
         align-items: end;
         justify-content: center;
         width: 100%;
-        /* backdrop-filter: blur(10px); */
-
     }
 
     #socials a {
@@ -387,14 +292,9 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        /* background-image: url(../images/Sand.png), linear-gradient(to bottom, 
-        #D07C28    0%, #D07C28  100%); */
-        /* background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
-        #F7C793    0%, #F7C793  100%); */
         margin: 0;
         padding-top: 5px;
         padding-bottom: 5px;
-        /* backdrop-filter: blur(10px); */
     }
 
     /* Mobile Navbar animations */
@@ -449,28 +349,23 @@
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         opacity: 1;
-    /* animation-name: slide-in;
-    animation-duration: 1s; */
         animation: slide-in 1s linear;
-    /* -webkit-animation: slide-in 1s linear; */
-    -webkit-animation-name: slide-in;
--webkit-animation-duration: 1s;
--webkit-animation-iteration-count: 1;
--webkit-animation-timing-function: linear;
--webkit-animation-fill-mode: forwards;
+        -webkit-animation-name: slide-in;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-fill-mode: forwards;
     }
 
     .collapsed {
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-    /* -webkit-animation: slide-out 1s linear; */
         animation: slide-out 1s linear;
         -webkit-animation-name: slide-out;
         -webkit-animation-duration: 1s;
         -webkit-animation-iteration-count: 1;
         -webkit-animation-timing-function: linear;
         -webkit-animation-fill-mode: forwards;
-    /* transform: translateY(-100%) */
     }
 
     /* end mobile navbar animations*/
@@ -494,20 +389,12 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        /* background-image: url(../images/Sand.png), linear-gradient(to bottom, 
-        #D07C28    0%, #D07C28  100%); */
-        /* background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
-        #D07C28    0%, #D07C28  100%); */
-    background-color: #447CFC;
-
+        background-color: #447CFC;
         text-align: center;
         padding-top: 5px;
         padding-bottom: 5px;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-
-        /* border-top: 5px solid black; */
-        /* border-bottom: 5px solid black; */
     }
 
     #mobile-wallet-connect-div .button {
@@ -545,15 +432,6 @@
     }
 
     /* end about section styling */
-
-    /* start team section styling */
-
-	.team-member {
-		width: 95%;
-		margin: 2%;
-	}
-
-    /* end team section styling */
 
 
     p {

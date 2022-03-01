@@ -1,16 +1,6 @@
 @font-face {  
-	font-family: 'Helvetica Bold';
-	src: URL('../css/Helvetica-Bold-Font.ttf') format('truetype');
-}  
-
-@font-face {  
 	font-family: 'Wavey';
 	src: URL('../css/wheaton\ capitals.otf') format('truetype');
-}  
-
-@font-face {  
-	font-family: 'Helvetica';
-	src: URL('../css/Helvetica.ttf') format('truetype');
 }  
 
 html, body {
@@ -40,7 +30,6 @@ html, body {
 	position:fixed;
     bottom:0px;
     z-index: -1;
-	/* filter: blur(4px) */
 }
 
 h1, h2 {
@@ -49,18 +38,13 @@ h1, h2 {
 
 h1 {
 	font-family: "Wavey";
-	/* color: #FCCD00; */
 	color: black;
-	/* -webkit-text-fill-color: #FCCD00; Will override color (regardless of order) */
-	/* -webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black; */
 	font-size: 3vw !important;
 	line-height: 3vw !important;
 }
 
 p {
 	font-family: "Courier New";
-	/* font-family: "Helvetica"; */
 	text-align: justify;
 	font-weight: bold;
 	font-size: 1.4vw !important;
@@ -85,7 +69,6 @@ p {
 
 
 .body {
-	/* background-image: url(../images/bg.png); */
 	background-color: white;
 	font-family: 'Wavey', sans-serif;
 	background-size: auto;
@@ -331,18 +314,8 @@ h5 {
 	border-radius: 20px;
 	border-width: .5vw;
 	padding: 20px;
-	/* background-color: #FBF79E; */
 	backdrop-filter: blur(25px);
     background-color: white;
-	/* background-image: url(../images/Sand.png), linear-gradient(to bottom, 
-        #D07C28    0%, #D07C28  100%); */
-	/* background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
-	#D07C28    0%, #D07C28  15%, 
-	#F7C793   0%, #F7C793 85%,        
-	#D07C28 0%); */
-
-
-	/* background-color: rgba(95, 92, 92, 0.336); */
 }
 
 .box2 {
