@@ -153,6 +153,44 @@
 
 /* start about section styling */
 
+#roadmap {
+    -webkit-animation: bounce 1.3s infinite;
+    animation: bounce 1.3s infinite;
+    color: black !important;
+}
+
+.down-arrow {
+    width: 3vw;
+}
+
+@-webkit-keyframes bounce {
+    0% { transform: translateY(0);} 
+   50% {transform: translateY(-5px);} 
+   100% { transform: translateY(0);} 
+}
+  
+@keyframes bounce {
+    0% { transform: translateY(0);} 
+   50% {transform: translateY(-5px);} 
+   100% { transform: translateY(0);} 
+}
+
+.left-number, .right-number {
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    font-size: 3vw;
+    line-height: 3vw;
+}
+
+.left-number {
+    left: 20px;
+}
+
+.right-number {
+    right: 20px;
+}
+
 #about {
     padding: 30px;
     text-align:center;
@@ -160,30 +198,36 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
     /* background-image: url("../images/wood.png"); */
-
-
 }
 
 #about-text-desktop-1 {
-    width: 65%;
+    width: 75%;
     /* margin-left: 2.5%; */
-    margin-right:4%
+    margin-right:6%
 }
 
 #about-text-desktop-2 {
-    width: 65%;
+    width: 75%;
     /* margin-left: 2.5%; */
-    margin-left:4%
+    margin-left:6%
 }
 
 #about-gif {
-    width: 30%;
+    width: 15%;
 }
 
-#teji-gif {
+#wc-gif {
     border: .5vw black solid;
     border-radius: 20px;
+}
+
+#about h2 {
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 /* end about section styling */
@@ -270,6 +314,15 @@
 }
 
 @media screen and (max-width: 991px) {
+
+    .left-number, .right-number {
+        display: none;
+    }
+
+    .down-arrow {
+        width: 3vh;
+    }
+
     /* start header-navbar styling */
 
     #top {
@@ -473,8 +526,8 @@
     #about p {
         padding-left: 0 !important;
         padding-right: 0 !important;
-        font-size: 3.2vh !important;
-        line-height: 3.2vh !important;
+        font-size: 18px !important;
+        line-height: 18px !important;
     }
     
     #about-text-mobile {
@@ -487,7 +540,7 @@
         width: 100%;
     }
 
-    #teji-gif {
+    #wc-gif {
         border-width: 5px;
     }
 
