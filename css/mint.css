@@ -73,14 +73,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* height: 70%; */
 }
 
 #mint {
     margin: 0;
     width: 45%;
-    /* background-image: url(../images/sand4.png), linear-gradient(to bottom, 
-    #D07C28    0%, #D07C28  100%); */
    background-color: white;
 }
 
