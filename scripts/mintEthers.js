@@ -125,11 +125,26 @@ const getMerkleProof = async() => {
     }
 };
 
+const checkMintingLive = async() => {
+    const live = await wavecatchers.saleIsActive();
+    if (!live) {
+        $("#mint-button").addClass("hidden");
+        $("#quantity-controls").addClass("hidden");
+        $("#claim-button").addClass("hidden");
+        $("#mint-closed").removeClass("hidden");
+    }
+    else {
+        $("#mint-button").removeClass("hidden");
+        $("#quantity-controls").removeClass("hidden");
+        $("#claim-button").removeClass("hidden");
+        $("#mint-closed").addClass("hidden");
+    }
+}
+
 const checkWhitelistStatus = async() => {
     const _merkleProof = await getMerkleProof();
     const addr = await getAddress();
     const _isWhitelisted = await wavecatchers.canClaimOG(addr, _merkleProof).catch(err => console.log(err));
-    // const _isWhitelisted=true
     if (_isWhitelisted) {
         $("#whitelisted").html("Congrats, you are an OG!<br>Claim 1 free Wave Catcher with the 'CLAIM OG' button.");
         $("#claim-button").removeClass("hidden");
@@ -155,9 +170,6 @@ const publicMint = async() => {
         await wavecatchers.mint(numberToMint, { value: cost, gasLimit: newGasLimit}).then( async(tx_) => {
             await waitForTransaction(tx_);
         });   
-        // await wavecatchers.mint(numberToMint).then( async(tx_) => {
-        //     await waitForTransaction(tx_);
-        // });
     }
     catch (error) { // edit error messages
         if ((error.message).includes("Can only mint max 3 in whitelist")) {
@@ -295,6 +307,7 @@ async function endLoading(tx, txStatus) {
 setInterval(async()=>{
     await updateInfo();
     await updateMintInfo();
+    await checkMintingLive();
 }, 5000)
 
 const updateInfo = async () => {
@@ -309,6 +322,7 @@ ethereum.on("accountsChanged", async(accounts_)=>{
 
 window.onload = async()=>{
     await updateInfo();
+    await checkMintingLive();
     await updateMintInfo();
     await updatePrice();
     await checkWhitelistStatus();

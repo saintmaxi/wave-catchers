@@ -145,7 +145,7 @@
                <h2 id="totalMintPrice" class="heading"><span id="current-cost">0.025 Ξ</span></h2>
             </div>
             <div>
-               <p class="main-paragraph" id="quantity-controls">
+               <p class="main-paragraph hidden" id="quantity-controls">
                   <button class="increment-button" id="mint-minus" onclick="decrementClaim();updatePrice()">⊖</button>
                   <span id="number-to-mint">1</span>
                   <button class="increment-button" id="mint-plus" onclick="incrementClaim();updatePrice()">⊕</button>
@@ -158,15 +158,15 @@
                <div style="text-align: center;">
                   <h2 id="whitelisted"></h2>
                </div>
+               <div class="mint-info hidden" id="mint-closed" style="text-align: center;">
+                  <h2>Minting is currently closed!</h2>
+               </div>
             </div>
          </div>
          <div id="mint-buttons" style="text-align: center;">
             <button id="claim-button" class="button hidden" onclick="ogMint()">CLAIM OG</button>
-            <button id="mint-button" class="button" onclick="publicMint()">MINT</button>
+            <button id="mint-button" class="button hidden" onclick="publicMint()">MINT</button>
          </div>
-      </div>
-      <div class="mint-info hidden" id="mint-closed" style="text-align: center;">
-         <h2>Minting is currently closed!</h2>
       </div>
       <img src="images/wcgif3.gif" class="hide-on-mobile mint-img" style="margin-left:2%;">
    </div>
