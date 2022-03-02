@@ -20,7 +20,7 @@
    <link href="css/normalize.css" rel="stylesheet" type="text/css">
    <link href="css/index.css" rel="stylesheet" type="text/css">
    <link href="css/mint.css" rel="stylesheet" type="text/css">
-   <link href="css/coco.css" rel="stylesheet" type="text/css">
+   <link href="css/toc.css" rel="stylesheet" type="text/css">
    <script
       type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
    <link href="https://github.com/saintmaxi/wave-catchers/blob/main/images/ex1.jpeg?raw=true" rel="shortcut icon" type="image/x-icon">
@@ -84,7 +84,7 @@
          <div id="mobile-nav-menu" class="collapsed">
             <div id="header" class="header hide-on-desktop">
                <div class="header-menu">
-                  <a href="./index.html" class="link">
+                  <a href="./testnetMint.html" class="link">
                      HOME
                   </a>
                </div>
@@ -125,34 +125,23 @@
       </div>
       
    </div>
-   <div class="section">
-      <div id="coco-balances">
-         <div id="your-coco-container" class="box coco-balance-container">
-            <h2 class="text-primary">Your $COCO</h2>
-            <h2><span id="your-coco"><span class="one">.</span><span class="two">.</span><span class="three">.</span></span> <img src="https://github.com/saintmaxi/wave-catchers/blob/main/images/coco.png?raw=true" class="coco-icon"></h2>
-            <button class="button" onclick="importCocoToWallet()">TRACK $COCO IN WALLET </button>
-         </div>
-         <div class="box coco-balance-container"> 
-            <h2 class="text-primary">Claimable $COCO</h2>
-            <h2><span id="claimable-coco"><span class="one">.</span><span class="two">.</span><span class="three">.</span></span> <img src="https://github.com/saintmaxi/wave-catchers/blob/main/images/coco.png?raw=true" class="coco-icon"></h2>
-            <button class="button" onclick="claimAll()">CLAIM $COCO </button>
-         </div>
-      </div>
-   </div>
-   <div id="your-wavecatcher-section" class="container box">
-      <div id="staked-wavecatcher-wrapper" class="staking-section">
-         <h2 class="text-primary">YOUR CREW (<span id="your-wavecatchers-num"><span class="one">.</span><span class="two">.</span><span class="three">.</span></span>)</h2>
-              <div class="stake-buttons">
-                <button id="unstakeSelectedButton" href="#" class="button" onclick="claimByIds()">CLAIM SELECTED</button>
-                <button id="unstakeallButton" href="#" class="button" onclick="claimAll()">CLAIM ALL</button>
-              </div>
-              <div style="text-align: center;">
-                <h3 class="selected">Selected:</h3>
-                <h3 class="selected" id="selected-for-unstaking">None</h3>
-              </div>
-         <div id="available-wavecatchers-images" style="margin-top:0;width:100%;">
-            <h3>Searching <span class="hide-on-mobile">for Wave Catchers</span><span class="one">.</span><span class="two">.</span><span class="three">.</span></h3>
-         </div>
+   <div id="mint-container" class="section body-section body-1 wf-section" style="text-align: center;">
+      <div id="mint" class="container w-container box">
+            <h1>Terms and Conditions</h1>
+            <br>
+            <p>
+               Wave Catchers is a collection of 3334 Non-Fungible Tokens (NFTs) operating on the Ethereum Network. This website is an interface utilized to interact with Wave Catchers tokens and its on-chain Whitelist Marketplace. All users are fully and solely responsible for the safety and management of their Wave Catchers NFT(s) and the security of their own wallet.
+            </p>
+            <br>
+            <h1>$COCO Token</h1>
+            <br>
+            <p>The utility token $COCO is at the core of the Wave Catchers ecosystem. In the near future, our collection (including all utilities) will be closely tied to $COCO allowing users to leverage the inherent opportunities</p>
+            <br>
+            <h1>1 $COCO = 1 $COCO</h1>
+            <br>
+            <p>
+               Tokens should not be construed or interpreted to hold extrinsic financial value. $COCO has no other functionality outside of the Wave Catchers ecosystem, and $COCO cannot be purchased from The Wave Catchers Developers.
+            </p>
       </div>
    </div>
    <img src="images/WebsiteBG-mobile.png" loading="lazy" alt="" class="banner-img fixed-banner hide-on-desktop">
@@ -188,7 +177,7 @@
    <script type="application/javascript" src="https://cdn-cors.ethers.io/lib/ethers-5.5.1.umd.min.js"></script>
    <link href="css/webflow.css" rel="stylesheet" type="text/css">
    <script src="./scripts/utils.js"></script>
-   <script src="./scripts/cocoEthers.js"></script>
+   <script src="./scripts/mintEthers.js"></script>
 </body>
 
 </html>
