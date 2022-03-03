@@ -149,7 +149,7 @@ const checkWhitelistStatus = async() => {
     const _isWhitelisted = await wavecatchers.canClaimOG(addr, _merkleProof).catch(err => console.log(err));
     if (await checkMintingLive()) {
         if (_isWhitelisted) {
-            $("#whitelisted").html("Congrats, you are an OG!<br>Claim 1 free Wave Catcher with the 'CLAIM OG' button.");
+            $("#whitelisted").html("Congrats, <span class='hide-on-mobile'>you are an </span>OG!<br>Claim 1 free Wave Catcher with the 'CLAIM OG' button.");
             $("#claim-button").removeClass("hidden");
         }
         else {
