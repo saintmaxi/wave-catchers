@@ -1,3 +1,4 @@
+// a saintmaxi joint
 /*********************************************************************************/
 /********************************PRODUCTION CONFIG********************************/
 /*********************************************************************************/
@@ -32,7 +33,7 @@ const openseaLink = "https://opensea.io/collection/wavecatchersofficial";
 // const MAX_SUPPLY = 3334;
 // const priceWei = "25000000000000000";
 // const priceEth = .025
-// const openseaLink = "https://opensea.io/collection/wavecatchersofficial";
+// const openseaLink = "";
 
 /*********************************END CONFIG************************************/
 
@@ -130,7 +131,7 @@ const checkMintingLive = async() => {
     if (!live) {
         $("#mint-button").addClass("hidden");
         $("#quantity-controls").addClass("hidden");
-        $("#claim-button").addClass("hidden");
+        // $("#claim-button").addClass("hidden");
         $("#mint-closed").removeClass("hidden");
     }
     else {
@@ -151,13 +152,13 @@ const checkWhitelistStatus = async() => {
             $("#claim-button").removeClass("hidden");
         }
         else {
-            $("#whitelisted").html("");
+            $("#whitelisted").html(`Sorry, you are not OG or have already claimed! Purchase on secondary on <a href="${openseaLink}" target="_blank" class="w-inline-block" style="text-decoration:none;color:#03B4FC;">OPENSEA⬈</a>.`);
             $("#claim-button").addClass("hidden");
         }
     }
     else {
-        $("#whitelisted").html("");
-        $("#claim-button").addClass("hidden");
+        // $("#whitelisted").html("");
+        // $("#claim-button").addClass("hidden");
     }
     return _isWhitelisted;
 };
@@ -245,13 +246,10 @@ const updateMintInfo = async() => {
     $("#num-minted").text(minted);
     if (minted == MAX_SUPPLY) {
         $("#sold-out").html(`SOLD OUT! <br><br>AVAILABLE ON <a href="${openseaLink}" target="_blank" class="w-inline-block" style="text-decoration:none;color:#03B4FC;">OPENSEA⬈</a>`);
+        $("#whitelisted").remove();
         $("#mint-button").remove();
         $("#claim-button").remove();
         $("#quantity-controls").remove();
-    }
-    else if (wlLeft == 0) {
-        $("#claim-button").remove();
-        $("#whitelisted").remove()();
     }
     else if (minted == (MAX_SUPPLY - wlLeft)) {
         $("#mint-button").remove();

@@ -21,18 +21,26 @@ exports.handler = async function(event, context) {
         return { statusCode: 400, body: "Missing query parameters" };
       }
 
+      let checksumAddr;
       try {
-        addr = ethers.utils.getAddress(addr);
+        checksumAddr = ethers.utils.getAddress(addr);
       }
       catch {
         return { statusCode: 400, body: "Invalid address" };
       }
     
-      if (!whitelist.includes(addr)) {
+      let proof;
+      let lowercaseAddr = addr.toLowerCase();
+      
+      if (whitelist.includes(checksumAddr)) {
+        proof = await(getProof(checksumAddr));
+      }
+      else if (whitelist.includes(lowercaseAddr)) {
+        proof = await(getProof(lowercaseAddr));
+      }
+      else {
         return { statusCode: 400, body: "Not in whitelist" };
       }
-
-      const proof = await getProof(addr);
     
       return {
         statusCode: 200,

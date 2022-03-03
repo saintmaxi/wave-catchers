@@ -1,3 +1,5 @@
+// a saintmaxi joint
+
 async function displayErrorMessage(message, timed=true) {
     if (!($("#error-popup").length)) {
         let fakeJSX = `<div id="error-popup"><p>${message}</p></div>`;
