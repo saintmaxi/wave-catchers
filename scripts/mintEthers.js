@@ -14,8 +14,7 @@ const MAX_MINT_WL = 1;
 const MAX_SUPPLY = 3334;
 const priceWei = "25000000000000000";
 const priceEth = .025
-const openseaLink = "";
-const looksrareLink = "";
+const openseaLink = "https://opensea.io/collection/wavecatchersofficial";
 
 /*********************************************************************************/
 /********************************DEV CONFIG********************************/
@@ -33,8 +32,7 @@ const looksrareLink = "";
 // const MAX_SUPPLY = 3334;
 // const priceWei = "25000000000000000";
 // const priceEth = .025
-// const openseaLink = "";
-// const looksrareLink = "";
+// const openseaLink = "https://opensea.io/collection/wavecatchersofficial";
 
 /*********************************END CONFIG************************************/
 
@@ -246,7 +244,7 @@ const updateMintInfo = async() => {
     totalMinted = minted;
     $("#num-minted").text(minted);
     if (minted == MAX_SUPPLY) {
-        $("#sold-out").html(`SOLD OUT! <br><br>AVAILABLE ON <a href="${openseaLink}" target="_blank" class="w-inline-block" style="text-decoration:none;color:#03B4FC;">OPENSEA⬈</a> & <a href="${looksrareLink}" target="_blank" class="w-inline-block" style="text-decoration:none;color:green;">LOOKSRARE⬈</a>`);
+        $("#sold-out").html(`SOLD OUT! <br><br>AVAILABLE ON <a href="${openseaLink}" target="_blank" class="w-inline-block" style="text-decoration:none;color:#03B4FC;">OPENSEA⬈</a>`);
         $("#mint-button").remove();
         $("#claim-button").remove();
         $("#quantity-controls").remove();
