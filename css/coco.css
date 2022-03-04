@@ -120,6 +120,7 @@ h3 {
     border: none;
     width: 1.5vw;
     margin: 0;
+    background-color: transparent;
 }
 
 .your-wavecatcher .coco-icon:hover {

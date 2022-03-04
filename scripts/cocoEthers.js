@@ -15,7 +15,7 @@ const cocoAbi = () => {
 
 const etherscanBase = `https://etherscan.io/tx/`;
 const correctChain = 1;
-const baseImageURI = "https://ipfs.io/ipfs/QmTynTQdL4etGJTLDMLLsQdJdWSxKE15NG12vTbh1mzPr/";
+const baseImageURI = "https://wavecatchers.mypinata.cloud/ipfs/QmSMd9zpdeJSr2rzLvcvrKtfDRvuz8PYhk7GqCNumsa4H7/";
 const cocoImgURL = "https://github.com/saintmaxi/wave-catchers/blob/main/images/coco.png?raw=true";
 
 /*********************************************************************************/
@@ -188,8 +188,8 @@ const getWaveCatchersImages = async()=>{
             }
             let cocoEarned = Number(formatEther(await coco.getRewardsForId(waveCatcherID))).toFixed(2);
 
-            batchFakeJSX += `<div id="wavecatcher-${waveCatcherID}" class="your-wavecatcher ${active}"><img onclick="selectForUnstaking(${waveCatcherID})" src="https://github.com/saintmaxi/wave-catchers/blob/main/images/ex1.jpeg?raw=true"><p class="wavecatcher-id">#${waveCatcherID}</p><p class="coco-earned"><span id="coco-earned-${waveCatcherID}">${cocoEarned}</span><img src="${cocoImgURL}" class="coco-icon"></p></div>`        
-            // batchFakeJSX += `<div id="wavecatcher-${waveCatcherID}" class="your-wavecatcher ${active}"><img onclick="selectForUnstaking(${waveCatcherID})" src="${baseImageURI}${waveCatcherID}.png"><p class="wavecatcher-id">#${waveCatcherID}</p><p class="coco-earned"><span id="coco-earned-${waveCatcherID}">${cocoEarned}</span></p></div>`        
+            // batchFakeJSX += `<div id="wavecatcher-${waveCatcherID}" class="your-wavecatcher ${active}"><img onclick="selectForUnstaking(${waveCatcherID})" src="https://github.com/saintmaxi/wave-catchers/blob/main/images/ex1.jpeg?raw=true"><p class="wavecatcher-id">#${waveCatcherID}</p><p class="coco-earned"><span id="coco-earned-${waveCatcherID}">${cocoEarned}</span><img src="${cocoImgURL}" class="coco-icon"></p></div>`        
+            batchFakeJSX += `<div id="wavecatcher-${waveCatcherID}" class="your-wavecatcher ${active}"><img onclick="selectForUnstaking(${waveCatcherID})" src="${baseImageURI}${waveCatcherID}.png"><p class="wavecatcher-id">#${waveCatcherID}</p><p class="coco-earned"><span id="coco-earned-${waveCatcherID}">${cocoEarned}</span><img src="${cocoImgURL}" class="coco-icon"></p></div>`        
             
         };
         $("#available-wavecatchers-images").empty();

@@ -158,7 +158,7 @@ const checkWhitelistStatus = async() => {
     }
     else {
         // $("#whitelisted").html("");
-        // $("#claim-button").addClass("hidden");
+        $("#claim-button").addClass("hidden");
     }
     return _isWhitelisted;
 };

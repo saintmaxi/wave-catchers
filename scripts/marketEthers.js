@@ -38,7 +38,8 @@ const cocoImgURL = "https://github.com/saintmaxi/wave-catchers/blob/main/images/
 /*********************************END CONFIG************************************/
 
 if (window.ethereum == undefined) {
-    displayErrorMessage('Use a web3 enabled browser to browse listings!');
+    displayErrorMessage('Use a web3 enabled browser to purchase listings!');
+    loadInfuraListings();
 }
 
 // Initiate Provider 
@@ -296,28 +297,15 @@ ethereum.on("accountsChanged", async (accounts_) => {
 
 window.onload = async() => {
     if (!(await getAddress())) {
-        const connectPrompt = ` <div id="ex1" class="partner-collection example">
-                                    <div class="cover">
-                                        <button class="button" onclick="connect()">CONNECT WALLET TO VIEW LISTINGS</button>
-                                    </div>
-                                    <img class="collection-img" src="./images/ticket.jpeg">
-                                    <div class="collection-info">
-                                        <h3>???</h3>
-                                        <h4>??? | ???/??? Purchased</h4>
-                                       <div class="inside-text collection-description"> An innovative group of characters residing on the Ethereum blockchain. Whitelist now available for
-                                         purchase on Wave Catchers Markeplace. Secure your spot now before they're all gone!
-                                        </div>
-                                        <button class="button">PURCHASE</button>
-                                    </div>
-                                </div>`
-        $("#live-collections").empty();
-        $("#past-collections").empty();
-        $("#live-collections").append(connectPrompt);
-        $("#past-collections").append(connectPrompt);
+        console.log("using infura")
+        await loadInfuraListings();
     }
-    await updateInfo();
-    await loadCollectionsData();
-    await loadCollections();
+    else {
+        console.log("using wallet")
+        await updateInfo();
+        await loadCollectionsData();
+        await loadCollections();
+    }
 };
 
 window.onunload = async()=>{

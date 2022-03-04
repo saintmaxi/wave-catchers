@@ -58,3 +58,20 @@ function toggleMenu() {
     pendingTransactions.clear();
     location.reload();
 };
+
+const loadInfuraListings = async() => {
+    const listings = await fetch(`https://www.wavecatchers.io/.netlify/functions/listings?get=true`).then(res => res.text());
+    const jsonData = listings ? JSON.parse(listings) : [];
+    $("#live-collections").empty();
+    $("#past-collections").empty();
+    $("#live-collections").append(jsonData.liveJSX);
+    $("#past-collections").append(jsonData.pastJSX);
+    $("#num-live").text(` (${jsonData.numLive})`);
+    $("#num-past").text(` (${jsonData.numPast})`);
+    if (jsonData.numLive >= 4) {
+        $("#scroll-indicator-live").html(`<img class="down-arrow" src="images/down-arrow.png"> SCROLL<span class="hide-on-mobile"> FOR MORE</span> <img class="down-arrow" src="images/down-arrow.png">`);
+    }
+    if (jsonData.numPast >= 4) {
+        $("#scroll-indicator-past").html(`<img class="down-arrow" src="images/down-arrow.png"> SCROLL <span class="hide-on-mobile"> FOR MORE</span> <img class="down-arrow" src="images/down-arrow.png">`);
+    }
+}
