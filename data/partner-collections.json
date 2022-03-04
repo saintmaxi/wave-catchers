@@ -1,58 +1,90 @@
 {
     "0": {
-            "name": "Kiwami",
-            "description": "Designed in the Metaverse | Born in Japan. Secure your whitelist before they disappear for good...",
-            "image": "https://pbs.twimg.com/media/FLpHeRGaMAIn78T?format=jpg&name=medium",
-            "website": "#",
-            "twitter": "https://twitter.com/wavecatchersnft",
-            "max-slots": 5
+        "name": "Kiwami",
+        "description": "Designed in the Metaverse<br><br>Born in Japan.<br><br>Purchase a Mintlist slot to secure your spot at Tengoku Club.",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/kiwami.gif?raw=true",
+        "website": "#",
+        "twitter": "http://twitter.com/KiwamiNFT",
+        "max-slots": 10
         },
     "1": {
-            "name": "Example Collection",
-            "description": "3334 Wave Catchers grant you access to the first on-chain whitelist marketplace. Earn $COCO by holding. Never grind for a whitelist again.",
-            "image": "https://i.redd.it/4v4qlx8ltaw61.jpg",
-            "website": "#",
-            "twitter": "https://twitter.com/wavecatchersnft",
-            "max-slots": 20
+        "name": "Psyker",
+        "description": "Welcome to the Pskyerverse! Immerse yourself into a fighting experience like no other, blending science-fiction and post-apocalyptic themes.",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/psyker.png?raw=true",
+        "website": "https://psyker.game/",
+        "twitter": "http://twitter.com/psykergame",
+        "max-slots": 50
         },
     "2": {
-        "name": "Example Collection",
-        "description": "3334 Wave Catchers grant you access to the first on-chain whitelist marketplace. Earn $COCO by holding. Never grind for a whitelist again.",
-        "image": "https://i.redd.it/4v4qlx8ltaw61.jpg",
-        "website": "#",
-        "twitter": "https://twitter.com/wavecatchersnft",
-        "max-slots": 30
+        "name": "War Kittens",
+        "description": "The on-chain PvP RPG ⚔️🐱<br><br>Entering the Kitten Kingdom is not for the faint of heart– join us if you’re prepared.",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/warkittens.gif?raw=true",
+        "website": "https://warkittens.xyz/",
+        "twitter": "https://twitter.com/0xWarKittens",
+        "max-slots": 10
     },
     "3": {
-        "name": "Example Collection",
-        "description": "3334 Wave Catchers grant you access to the first on-chain whitelist marketplace. Earn $COCO by holding. Never grind for a whitelist again.",
-        "image": "https://i.redd.it/4v4qlx8ltaw61.jpg",
+        "name": "Smol Potions",
+        "description": "The forgotten art of black $MAGIC. Who knows what these potions are capable of....<br><br>Free mint on L2",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolpotion.png?raw=true",
         "website": "#",
-        "twitter": "https://twitter.com/wavecatchersnft",
-        "max-slots": 15
+        "twitter": "https://twitter.com/SmolPotions",
+        "max-slots": 10
     },
     "4": {
-        "name": "Example Collection",
-        "description": "3334 Wave Catchers grant you access to the first on-chain whitelist marketplace.",
-        "image": "https://i.redd.it/4v4qlx8ltaw61.jpg",
-        "website": "#",
-        "twitter": "https://twitter.com/wavecatchersnft",
-        "max-slots": 15
+        "name": "ApexWolves",
+        "description": "5,000 of the freshest wolves building their pack on the Ethereum blockchain.<br><br>Loyalty points applicable: 2/16/2022 - Present",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/apexwolves.jpeg?raw=true",
+        "website": "https://www.apexwolves.io/",
+        "twitter": "https://twitter.com/0xAWNFT",
+        "max-slots": 10
     },
     "5": {
-        "name": "Example Collection",
-        "description": "3334 Wave Catchers grant you access to the first on-chain whitelist marketplace.",
-        "image": "https://i.redd.it/4v4qlx8ltaw61.jpg",
-        "website": "#",
-        "twitter": "https://twitter.com/wavecatchersnft",
-        "max-slots": 20
+        "name": "Fat Cats DAO",
+        "description": "5000 unique NFTs that double as membership tokens and a share of all Fat Cats holdings. Join us as we build the premier blue chip NFT portfolio & community!",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/fatcatsdao.gif?raw=true",
+        "website": "https://www.fatcats.art/",
+        "twitter": "https://twitter.com/FatCatsDao",
+        "max-slots": 100
     },
     "6": {
-        "name": "Bored Ape",
-        "description": "Bayc test.",
-        "image": "https://www.thestreet.com/.image/t_share/MTgyMDU5NDcwMTc4NzU1NzE1/boredape1.jpg",
+        "name": "It Remains",
+        "description": "The beyond dystopian NFT universe franchise. A genesis collection of 7777 Resisters. With the art director of WALL-E and Finding Nemo.",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/itremains.jpeg?raw=true",
+        "website": "https://itremains.io/",
+        "twitter": "https://twitter.com/ItRemainsNFT",
+        "max-slots": 10
+    },
+    "7": {
+        "name": "Genesis Dragons v2",
+        "description": "The v2 Collection of Genesis Dragons, a collection of 250 Pixel Dragons Created by @NiftyDragons.<br><br>Join the Thunder!",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/genesisdragons.jpeg?raw=true",
         "website": "#",
-        "twitter": "https://twitter.com/wavecatchersnft",
-        "max-slots": 30
+        "twitter": "https://twitter.com/GenesisDragons",
+        "max-slots": 20
+    },
+    "8": {
+        "name": "Soul Splicers",
+        "description": "Building the next generation of blockchain gaming, starting with a P2E roguevania.<br><br>No empty promises, gameplay first.",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/soulsplicers.jpeg?raw=true",
+        "website": "#",
+        "twitter": "https://twitter.com/SoulSplicersNFT",
+        "max-slots": 15
+    },
+    "9": {
+        "name": "Smol Obits",
+        "description": "Smol Obits is a collection of 4269 prehistoric, skeletal ancestors of Smol Brains<br><br>Free Mint on Arbitrum",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolobits.jpeg?raw=true",
+        "website": "#",
+        "twitter": "https://twitter.com/SmolObits",
+        "max-slots": 20
+    },
+    "10": {
+        "name": "Elefrens",
+        "description": "5555 Elephant Baby Calves on arbitrum protecting endangered Elephants and African wildlife.<br>NFT STAKING. DAO. GAME. AIRDROPS. CHARITY.",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/elefrens.jpeg?raw=true",
+        "website": "#",
+        "twitter": "https://twitter.com/Elefrens",
+        "max-slots": 10
     }
 }

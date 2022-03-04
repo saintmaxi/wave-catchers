@@ -216,6 +216,10 @@ h3 {
     }
 }
 
+.stake-buttons button {
+    width: 25%;
+}
+
 @media screen and (max-width: 991px) {
 
     #coco-description {
