@@ -50,3 +50,11 @@ function toggleMenu() {
     el.classList.toggle('expanded')
     el.classList.toggle('collapsed')
  }
+
+ function clearPendingTxs() {
+    localStorage.removeItem("WaveCatchersPendingTxs");
+    localStorage.removeItem("CocoMarketPendingTxs");
+    localStorage.removeItem("CocoPendingTxs");
+    pendingTransactions.clear();
+    location.reload();
+};
