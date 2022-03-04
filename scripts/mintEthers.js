@@ -328,15 +328,15 @@ async function endLoading(tx, txStatus) {
     $(`#etherscan-link-${txHash}`).remove();
     pendingTransactions.delete(tx);
     if (pendingTransactions.size == 0) {
-        await updateMintInfo();
+        // await updateMintInfo();
     }
 }
 
 setInterval(async()=>{
     await updateInfo();
-    await updateMintInfo();
-    await checkMintingLive();
-    await checkWhitelistStatus();
+    // await updateMintInfo();
+    // await checkMintingLive();
+    // await checkWhitelistStatus();
 }, 5000)
 
 const updateInfo = async () => {
@@ -351,10 +351,10 @@ ethereum.on("accountsChanged", async(accounts_)=>{
 
 window.onload = async()=>{
     await updateInfo();
-    await checkMintingLive();
-    await updateMintInfo();
-    await updatePrice();
-    await checkWhitelistStatus();
+    // await checkMintingLive();
+    // await updateMintInfo();
+    // await updatePrice();
+    // await checkWhitelistStatus();
 };
 
 window.onunload = async()=>{
