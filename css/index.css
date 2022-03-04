@@ -212,6 +212,7 @@
     font-size: 1.4vw !important;
 	line-height: 1.7vw !important;
     padding: 20px;
+    position: relative;
 }
 
 #copyright-div  a {

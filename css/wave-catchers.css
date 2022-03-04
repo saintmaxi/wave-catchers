@@ -12,6 +12,14 @@ html, body {
 	
 }
 
+#clear-button  {
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	font-size: 1vw;
+	line-height: 1vw;
+}
+
 .coco-icon {
 	display: inline;
 	width: 1.8vw;
