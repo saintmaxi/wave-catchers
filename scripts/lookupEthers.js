@@ -48,9 +48,7 @@ const cocoImgURL = "https://github.com/saintmaxi/wave-catchers/blob/main/images/
 /*********************************END CONFIG************************************/
 
 if (window.ethereum == undefined) {
-    displayErrorMessage('Use a web3 enabled browser to claim $COCO!');
-    $("#available-wavecatchers-images").empty();
-    $("#available-wavecatchers-images").append("<br><h3>No Wave Catchers available...</h3>");
+    displayErrorMessage('Use a web3 enabled browser and connect to use lookup tool!');
 }
 
 const provider = new ethers.providers.Web3Provider(window.ethereum,"any");
