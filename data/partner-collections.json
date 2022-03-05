@@ -118,13 +118,5 @@
         "website": "https://twitter.com/vSamurai_NFT",
         "twitter": "https://twitter.com/vSamurai_NFT",
         "max-slots": 20
-    },
-    "15": {
-        "name": "ignore",
-        "description": "ignore",
-        "image": "ignore",
-        "website": "ignore",
-        "twitter": "ignore",
-        "max-slots": 20
     }
 }

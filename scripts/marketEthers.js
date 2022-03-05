@@ -116,68 +116,67 @@ const loadCollections = async() => {
     let pastJSX = "";
     let numLive = 0;
     let numPast = 0;
-    for (let i = 0; i < Object.keys(collectionsData).length; i++) {
-        if (i != 15) {
-            // WL data from contract
-            let WLinfo = await market.getWhitelist(i);
-            let id = WLinfo.id;
-            let collectionPrice = Number(formatEther(WLinfo.price));
-            // let winners = await market.getWinnersForWL(id);
-            let winners = [];
-            let eventFilter = market.filters.Purchase(id);
-            let events = await market.queryFilter(eventFilter);
-            for (let i = 0; i < events.length; i++) {
-                winners.push(events[i].args._address);
-            }
+    let projectIDs = Object.keys(collectionsData);
+    for (let i = 0; i < projectIDs.length; i++) {
+        // WL data from contract
+        let id = Number(projectIDs[i]);
+        let WLinfo = await market.getWhitelist(i);
+        let collectionPrice = Number(formatEther(WLinfo.price));
+        // let winners = await market.getWinnersForWL(id);
+        let winners = [];
+        let eventFilter = market.filters.Purchase(id);
+        let events = await market.queryFilter(eventFilter);
+        for (let i = 0; i < events.length; i++) {
+            winners.push(events[i].args._address);
+        }
 
-            // Data from JSON file
-            let collection = collectionsData[String(i)];
-            let maxSlots = collection["max-slots"];
-            let minted = maxSlots - WLinfo.amount;
+        // Data from JSON file
+        let collection = collectionsData[String(i)];
+        let maxSlots = collection["max-slots"];
+        let minted = maxSlots - WLinfo.amount;
 
-            if (minted != maxSlots) {
-                numLive += 1;
-                let button;
-                if (winners.includes(await getAddress())) {
-                    button = `<button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">PURCHASED!</button>`;
-                }
-                else {
-                    button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="purchase(${id})">PURCHASE</button>`;
-                }
-                let fakeJSX = `<div class="partner-collection" id="project-${id}">
-                                <a href="${collection["twitter"]}" target="_blank">
-                                    <img class="collection-twitter" src="./images/twitter-white.png">
-                                </a>
-                                <img class="collection-img" src="${collection["image"]}">
-                                <div class="collection-info">
-                                    <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
-                                    <h4>${collectionPrice} <img src="${cocoImgURL}" class="coco-icon"> <br> <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Purchased</h4>
-                                    <div class="inside-text collection-description">
-                                    ${collection["description"]}
-                                    </div>
-                                </div>
-                                ${button}
-                                </div>`
-                liveJSX += fakeJSX;
+        if (minted != maxSlots) {
+            numLive += 1;
+            let button;
+            if (winners.includes(await getAddress())) {
+                button = `<button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">PURCHASED!</button>`;
             }
             else {
-                numPast +=1;
-                let fakeJSX = `<div class="partner-collection" id="project-${id}">
-                                <a href="${collection["twitter"]}" target="_blank">
-                                    <img class="collection-twitter" src="./images/twitter-white.png">
-                                </a>
-                                <img class="collection-img" src="${collection["image"]}">
-                                <div class="collection-info">
-                                    <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
-                                    <h4>${collectionPrice} <img src="${cocoImgURL}" class="coco-icon"> <br> <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Purchased</h4>
-                                    <div class="inside-text collection-description">
-                                    ${collection["description"]}
-                                    </div>
-                                </div>
-                                <button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">SOLD OUT</button>
-                                </div>`
-            pastJSX += fakeJSX;
+                button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="purchase(${id})">PURCHASE</button>`;
             }
+            let fakeJSX = `<div class="partner-collection" id="project-${id}">
+                            <a href="${collection["twitter"]}" target="_blank">
+                                <img class="collection-twitter" src="./images/twitter-white.png">
+                            </a>
+                            <img class="collection-img" src="${collection["image"]}">
+                            <div class="collection-info">
+                                <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
+                                <h4>${collectionPrice} <img src="${cocoImgURL}" class="coco-icon"> <br> <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Purchased</h4>
+                                <div class="inside-text collection-description">
+                                ${collection["description"]}
+                                </div>
+                            </div>
+                            ${button}
+                            </div>`
+            liveJSX = fakeJSX + liveJSX;
+        }
+        else {
+            numPast +=1;
+            let fakeJSX = `<div class="partner-collection" id="project-${id}">
+                            <a href="${collection["twitter"]}" target="_blank">
+                                <img class="collection-twitter" src="./images/twitter-white.png">
+                            </a>
+                            <img class="collection-img" src="${collection["image"]}">
+                            <div class="collection-info">
+                                <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
+                                <h4>${collectionPrice} <img src="${cocoImgURL}" class="coco-icon"> <br> <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Purchased</h4>
+                                <div class="inside-text collection-description">
+                                ${collection["description"]}
+                                </div>
+                            </div>
+                            <button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">SOLD OUT</button>
+                            </div>`
+        pastJSX = fakeJSX + pastJSX;
         }
     }
     $("#live-collections").empty();
