@@ -120,7 +120,7 @@ const loadCollections = async() => {
     for (let i = 0; i < projectIDs.length; i++) {
         // WL data from contract
         let id = Number(projectIDs[i]);
-        let WLinfo = await market.getWhitelist(i);
+        let WLinfo = await market.getWhitelist(id);
         let collectionPrice = Number(formatEther(WLinfo.price));
         // let winners = await market.getWinnersForWL(id);
         let winners = [];
@@ -131,7 +131,7 @@ const loadCollections = async() => {
         }
 
         // Data from JSON file
-        let collection = collectionsData[String(i)];
+        let collection = collectionsData[String(id)];
         let maxSlots = collection["max-slots"];
         let minted = maxSlots - WLinfo.amount;
 
@@ -201,11 +201,11 @@ async function loadCollectionsData() {
 }
 
 const updateSupplies = async() => {
-    let numCollections = Number(await market.whitelistCounter());
-    for (let i = 0; i < numCollections; i++) {
-        let WLinfo = await market.getWhitelist(i);
-        let id = WLinfo.id;
-        let collection = collectionsData[String(i)];
+    let projectIDs = Object.keys(collectionsData);
+    for (let i = 0; i < projectIDs.length; i++) {
+        let id = Number(projectIDs[i]);
+        let WLinfo = await market.getWhitelist(id);
+        let collection = collectionsData[String(id)];
         let max = collection["max-slots"];
         let minted = max - WLinfo.amount;
         if (minted == max) {

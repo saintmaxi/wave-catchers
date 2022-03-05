@@ -22,10 +22,11 @@ const getCollections = async() => {
     for (let i = 0; i < projectIDs.length; i++) {
         // WL data from contract
         let id = Number(projectIDs[i]);
+        let WLinfo = await market.getWhitelist(id);
         let collectionPrice = Number(ethers.utils.formatEther(WLinfo.price));
 
         // Data from JSON file
-        let collection = collectionsData[String(i)];
+        let collection = collectionsData[String(id)];
         let maxSlots = collection["max-slots"];
         let minted = maxSlots - WLinfo.amount;
 
