@@ -118,5 +118,13 @@
         "website": "https://twitter.com/vSamurai_NFT",
         "twitter": "https://twitter.com/vSamurai_NFT",
         "max-slots": 20
+    },
+    "16": {
+        "name": "Smol Sharks",
+        "description": "There is something in the water... $MAGIC, Free Mint, PvP P2E NFT game",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/shark.jpeg?raw=true",
+        "website": "https://twitter.com/smolsharks",
+        "twitter": "https://twitter.com/smolsharks",
+        "max-slots": 15
     }
 }
