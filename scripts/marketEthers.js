@@ -93,10 +93,10 @@ const purchase  = async(id) => {
             await displayErrorMessage(`Error: No spots left!`);
         }
         else if ((error.message).includes("transfer amount exceeds balance")) {
-            await displayErrorMessage(`Error: Insufficent $COCO balance!!`);
+            await displayErrorMessage(`Error: Insufficent $COCO balance!`);
         }
         else if ((error.message).includes("burn amount exceeds balance")) {
-            await displayErrorMessage(`Error: Insufficent $COCO balance!!`);
+            await displayErrorMessage(`Error: Insufficent $COCO balance!`);
         }
         else if ((error.message).includes("User denied transaction signature")) {
             console.log("Transaction rejected.");
