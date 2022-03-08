@@ -185,10 +185,10 @@ const loadCollections = async() => {
     $("#past-collections").append(pastJSX);
     $("#num-live").text(` (${numLive})`);
     $("#num-past").text(` (${numPast})`);
-    if (numLive >= 4) {
+    if (numLive > 4) {
         $("#scroll-indicator-live").html(`<img class="down-arrow" src="images/down-arrow.png"> SCROLL<span class="hide-on-mobile"> FOR MORE</span> <img class="down-arrow" src="images/down-arrow.png">`);
     }
-    if (numPast >= 4) {
+    if (numPast > 4) {
         $("#scroll-indicator-past").html(`<img class="down-arrow" src="images/down-arrow.png"> SCROLL <span class="hide-on-mobile"> FOR MORE</span> <img class="down-arrow" src="images/down-arrow.png">`);
     }
     loadedCollections = true;
