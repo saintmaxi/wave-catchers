@@ -136,6 +136,7 @@ h3 {
   
 .your-wavecatcher:hover {
     transform: translate(0, -5px);
+    cursor: pointer;
 }
 
 .your-wavecatcher:hover .wavecatcher-id, .your-wavecatcher:hover .coco-earned {

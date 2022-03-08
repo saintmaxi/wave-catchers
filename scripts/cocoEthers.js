@@ -189,7 +189,7 @@ const getWaveCatchersImages = async()=>{
             let cocoEarned = Number(formatEther(await coco.getRewardsForId(waveCatcherID))).toFixed(2);
 
             // batchFakeJSX += `<div id="wavecatcher-${waveCatcherID}" class="your-wavecatcher ${active}"><img onclick="selectForUnstaking(${waveCatcherID})" src="https://github.com/saintmaxi/wave-catchers/blob/main/images/ex1.jpeg?raw=true"><p class="wavecatcher-id">#${waveCatcherID}</p><p class="coco-earned"><span id="coco-earned-${waveCatcherID}">${cocoEarned}</span><img src="${cocoImgURL}" class="coco-icon"></p></div>`        
-            batchFakeJSX += `<div id="wavecatcher-${waveCatcherID}" class="your-wavecatcher ${active}"><img onclick="selectForUnstaking(${waveCatcherID})" src="${baseImageURI}${waveCatcherID}.png"><p class="wavecatcher-id">#${waveCatcherID}</p><p class="coco-earned"><span id="coco-earned-${waveCatcherID}">${cocoEarned}</span><img src="${cocoImgURL}" class="coco-icon"></p></div>`        
+            batchFakeJSX += `<div id="wavecatcher-${waveCatcherID}" class="your-wavecatcher ${active}" onclick="selectForUnstaking(${waveCatcherID})"><img src="${baseImageURI}${waveCatcherID}.png"><p class="wavecatcher-id">#${waveCatcherID}</p><p class="coco-earned"><span id="coco-earned-${waveCatcherID}">${cocoEarned}</span><img src="${cocoImgURL}" class="coco-icon"></p></div>`        
             
         };
         $("#available-wavecatchers-images").empty();
