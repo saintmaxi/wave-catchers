@@ -118,12 +118,12 @@ var collectionsData;
 
 const loadCollectionsData = async() => {
     collectionsData = await $.getJSON('./data/partner-collections.json');
-    let numWL = await market.whitelistCounter();
-    for (let i = 0; i < numWL; i++) {
-        let projectName = collectionsData[String(i)].name;
-        // let winners = await market.getWinnersForWL(i);
+    let projectIDs = Object.keys(collectionsData);
+    for (let i = 0; i < projectIDs.length; i++) {
+        let id = Number(projectIDs[i]);
+        let projectName = collectionsData[String(id)].name;
         let winners = [];
-        let eventFilter = market.filters.Purchase(i);
+        let eventFilter = market.filters.Purchase(id);
         let events = await market.queryFilter(eventFilter);
         for (let i = 0; i < events.length; i++) {
             winners.push(events[i].args._address);

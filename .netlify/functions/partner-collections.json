@@ -119,12 +119,36 @@
         "twitter": "https://twitter.com/vSamurai_NFT",
         "max-slots": 20
     },
-     "16": {
+    "16": {
         "name": "Smol Sharks",
         "description": "There is something in the water... $MAGIC, Free Mint, PvP P2E NFT game",
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/shark.jpeg?raw=true",
         "website": "https://twitter.com/smolsharks",
         "twitter": "https://twitter.com/smolsharks",
-        "max-slots": 20
+        "max-slots": 15
+    },
+     "17": {
+        "name": "Everai",
+        "description": "Heroes of the Metaverse. A long-lasting brand based on the Everai Heroes and their Universe.",
+        "image": "https://raw.githubusercontent.com/saintmaxi/wave-catchers-prod/main/images/everai.jpeg?raw=true",
+        "website": "https://everai.xyz/",
+        "twitter": "https://twitter.com/TheEverai",
+        "max-slots": 5
+    },
+    "18": {
+        "name": "Kiwami (Refill)",
+        "description": "Designed in the Metaverse<br><br>Born in Japan.<br><br>Purchase a Mintlist slot to secure your spot at Tengoku Club.",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/kiwami.gif?raw=true",
+        "website": "http://twitter.com/KiwamiNFT",
+        "twitter": "http://twitter.com/KiwamiNFT",
+        "max-slots": 10
+    },
+    "19": {
+        "name": "War Kittens (Refill)",
+        "description": "The on-chain PvP RPG ⚔️🐱<br><br>Entering the Kitten Kingdom is not for the faint of heart– join us if you’re prepared.",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/warkittens.gif?raw=true",
+        "website": "https://warkittens.xyz/",
+        "twitter": "https://twitter.com/0xWarKittens",
+        "max-slots": 10
     }
 }
