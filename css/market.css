@@ -121,7 +121,6 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 15px;
-    max-width: 550px;
     position: relative;
 }
 
@@ -172,7 +171,6 @@
 
 .collection-info {
     width:90%;
-    margin-left:2%
 }
 
 .collection-description {
