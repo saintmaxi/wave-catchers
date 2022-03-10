@@ -299,10 +299,6 @@ h4 {
     font-size: 1.3vw;
 }
 
-.mint-button .mes-icon {
-    cursor: pointer;
-}
-
 #mint-prompt h3 {
     font-size: 2.5vw;
     line-height: 2.6vw;
@@ -311,10 +307,6 @@ h4 {
 #mint-prompt h4 {
     font-size: 2.2vw;
     line-height: 2.3vw;
-}
-
-.mes-icon {
-    width: 1.7em
 }
 
 .purchased {
@@ -545,10 +537,6 @@ h4 {
 
     #number-to-mint-header {
         margin-bottom: 4vh !important;
-    }
-
-    .mes-icon {
-        width: 1.7em
     }
 
     #mint-input {
