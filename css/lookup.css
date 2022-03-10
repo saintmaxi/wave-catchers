@@ -3,6 +3,11 @@ h2 {
     margin-bottom:1.5vw !important;
 }
 
+#your-wl-spots {
+    font-size: 1.6vw;
+    line-height: 1.6vw;
+}
+
 #wl-section {
     width: 90%;
     min-height: 20vh;
