@@ -162,6 +162,13 @@ const loadCollections = async() => {
         }
         else {
             numPast +=1;
+            let button;
+            if (winners.includes(await getAddress())) {
+                button = `<button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">PURCHASED!</button>`;
+            }
+            else {
+                button = `<button disabled class="mint-prompt-button button" id="${id}-mint-button"">SOLD OUT</button>`;
+            }
             let fakeJSX = `<div class="partner-collection" id="project-${id}">
                             <a href="${collection["twitter"]}" target="_blank">
                                 <img class="collection-twitter" src="./images/twitter-white.png">
@@ -174,7 +181,7 @@ const loadCollections = async() => {
                                 ${collection["description"]}
                                 </div>
                             </div>
-                            <button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">SOLD OUT</button>
+                            ${button}
                             </div>`
         pastJSX = fakeJSX + pastJSX;
         }
