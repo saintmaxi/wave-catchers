@@ -5,7 +5,8 @@
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/kiwami.gif?raw=true",
         "website": "http://twitter.com/KiwamiNFT",
         "twitter": "http://twitter.com/KiwamiNFT",
-        "max-slots": 10
+        "max-slots": 10,
+        "display-on-market": "true"
         },
     "1": {
         "name": "Psyker",
@@ -13,7 +14,8 @@
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/psyker.png?raw=true",
         "website": "https://psyker.game/",
         "twitter": "http://twitter.com/psykergame",
-        "max-slots": 50
+        "max-slots": 50,
+        "display-on-market": "true"
         },
     "2": {
         "name": "War Kittens",
@@ -21,7 +23,8 @@
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/warkittens.gif?raw=true",
         "website": "https://warkittens.xyz/",
         "twitter": "https://twitter.com/0xWarKittens",
-        "max-slots": 10
+        "max-slots": 10,
+        "display-on-market": "true"
     },
     "3": {
         "name": "Smol Potions",
@@ -29,7 +32,8 @@
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolpotion.png?raw=true",
         "website": "https://twitter.com/SmolPotions",
         "twitter": "https://twitter.com/SmolPotions",
-        "max-slots": 10
+        "max-slots": 10,
+        "display-on-market": "true"
     },
     "4": {
         "name": "ApexWolves",
@@ -37,7 +41,8 @@
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/apexwolves.jpeg?raw=true",
         "website": "https://www.apexwolves.io/",
         "twitter": "https://twitter.com/0xAWNFT",
-        "max-slots": 10
+        "max-slots": 10,
+        "display-on-market": "false"
     },
     "5": {
         "name": "Fat Cats DAO",
@@ -45,7 +50,8 @@
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/fatcatsdao.gif?raw=true",
         "website": "https://www.fatcats.art/",
         "twitter": "https://twitter.com/FatCatsDao",
-        "max-slots": 100
+        "max-slots": 100,
+        "display-on-market": "false"
     },
     "6": {
         "name": "It Remains",
@@ -53,7 +59,8 @@
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/itremains.jpeg?raw=true",
         "website": "https://itremains.io/",
         "twitter": "https://twitter.com/ItRemainsNFT",
-        "max-slots": 10
+        "max-slots": 10,
+        "display-on-market": "false"
     },
     "7": {
         "name": "Genesis Dragons v2",
@@ -61,7 +68,8 @@
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/genesisdragons.jpeg?raw=true",
         "website": "https://twitter.com/GenesisDragons",
         "twitter": "https://twitter.com/GenesisDragons",
-        "max-slots": 20
+        "max-slots": 20,
+        "display-on-market": "true"
     },
     "8": {
         "name": "Soul Splicers",
@@ -69,7 +77,8 @@
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/soulsplicers.jpeg?raw=true",
         "website": "https://twitter.com/SoulSplicersNFT",
         "twitter": "https://twitter.com/SoulSplicersNFT",
-        "max-slots": 15
+        "max-slots": 15,
+        "display-on-market": "true"
     },
     "9": {
         "name": "Smol Obits",
@@ -77,7 +86,8 @@
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolobits.jpeg?raw=true",
         "website": "https://twitter.com/SmolObits",
         "twitter": "https://twitter.com/SmolObits",
-        "max-slots": 20
+        "max-slots": 20,
+        "display-on-market": "true"
     },
     "10": {
         "name": "Elefrens",
@@ -85,7 +95,8 @@
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/elefrens.jpeg?raw=true",
         "website": "https://twitter.com/Elefrens",
         "twitter": "https://twitter.com/Elefrens",
-        "max-slots": 10
+        "max-slots": 10,
+        "display-on-market": "true"
     },
     "11": {
         "name": "Eyes of Ignolia",
@@ -93,7 +104,8 @@
         "image": "https://pbs.twimg.com/profile_images/1466206671194177545/4nk-xvI1_400x400.jpg",
         "website": "https://www.eyesofignolia.io/",
         "twitter": "https://twitter.com/eyesofignolia",
-        "max-slots": 5
+        "max-slots": 5,
+        "display-on-market": "true"
     },
     "12": {
         "name": "Lost Samurise",
@@ -101,7 +113,8 @@
         "image": "https://pbs.twimg.com/profile_images/1485980245534683139/ePzEaG6l_400x400.jpg",
         "website": "https://samurise.xyz",
         "twitter": "https://twitter.com/SamuRiseNFT",
-        "max-slots": 15
+        "max-slots": 15,
+        "display-on-market": "true"
     },
     "13": {
         "name": "The Dead Puppet Co",
@@ -109,7 +122,8 @@
         "image": "https://pbs.twimg.com/profile_images/1491804392353193987/BVQjwJoq_400x400.jpg",
         "website": "https://twitter.com/TheDeadPuppetCo",
         "twitter": "https://twitter.com/TheDeadPuppetCo",
-        "max-slots": 20
+        "max-slots": 20,
+        "display-on-market": "false"
     },
     "14": {
         "name": "vSamurai",
@@ -117,7 +131,8 @@
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/Screen%20Shot%202022-03-05%20at%2012.49.43.png?raw=true",
         "website": "https://twitter.com/vSamurai_NFT",
         "twitter": "https://twitter.com/vSamurai_NFT",
-        "max-slots": 20
+        "max-slots": 20,
+        "display-on-market": "true"
     },
     "16": {
         "name": "Smol Sharks",
@@ -125,7 +140,8 @@
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/shark.jpeg?raw=true",
         "website": "https://twitter.com/smolsharks",
         "twitter": "https://twitter.com/smolsharks",
-        "max-slots": 15
+        "max-slots": 15,
+        "display-on-market": "true"
     },
     "17": {
         "name": "Everai",
@@ -133,7 +149,8 @@
         "image": "https://raw.githubusercontent.com/saintmaxi/wave-catchers-prod/main/images/everai.jpeg?raw=true",
         "website": "https://everai.xyz/",
         "twitter": "https://twitter.com/TheEverai",
-        "max-slots": 5
+        "max-slots": 5,
+        "display-on-market": "true"
     },
     "18": {
         "name": "Kiwami (Refill)",
@@ -141,7 +158,8 @@
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/kiwami.gif?raw=true",
         "website": "http://twitter.com/KiwamiNFT",
         "twitter": "http://twitter.com/KiwamiNFT",
-        "max-slots": 10
+        "max-slots": 10,
+        "display-on-market": "true"
     },
     "19": {
         "name": "War Kittens (Refill)",
@@ -149,7 +167,8 @@
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/warkittens.gif?raw=true",
         "website": "https://warkittens.xyz/",
         "twitter": "https://twitter.com/0xWarKittens",
-        "max-slots": 10
+        "max-slots": 10,
+        "display-on-market": "true"
     },
     "20": {
         "name": "Introverse",
@@ -157,7 +176,8 @@
         "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/intro.jpeg?raw=true",
         "website": "https://www.introverse.club/",
         "twitter": "https://twitter.com/_introverse_",
-        "max-slots": 15
+        "max-slots": 15,
+        "display-on-market": "true"
     },
     "21": {
         "name": "The Squids",
@@ -165,6 +185,25 @@
         "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/squid.gif?raw=true",
         "website": "https://thesquids.io/",
         "twitter": "https://twitter.com/TheSquids_NFT",
-        "max-slots": 15
+        "max-slots": 15,
+        "display-on-market": "true"
+    },
+    "22": {
+        "name": "Magic Monkies",
+        "description": "A collection of cute magic monkies on arbitrum. Free mint & P2E.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/monkie.jpeg?raw=true",
+        "website": "https://twitter.com/magicmonkies",
+        "twitter": "https://twitter.com/magicmonkies",
+        "max-slots": 25,
+        "display-on-market": "true"
+    },
+    "23": {
+        "name": "Smulips",
+        "description": "5,000 Smulips unleashed on Arbitrum, Join the garden. Free mint within the $MAGIC metaverse.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/smulip.jpeg?raw=true",
+        "website": "https://www.smulips.com/",
+        "twitter": "https://twitter.com/Smulips",
+        "max-slots": 10,
+        "display-on-market": "true"
     }
 }
