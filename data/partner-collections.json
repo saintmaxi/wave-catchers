@@ -127,7 +127,7 @@
         "twitter": "https://twitter.com/smolsharks",
         "max-slots": 15
     },
-     "17": {
+    "17": {
         "name": "Everai",
         "description": "Heroes of the Metaverse. A long-lasting brand based on the Everai Heroes and their Universe.",
         "image": "https://raw.githubusercontent.com/saintmaxi/wave-catchers-prod/main/images/everai.jpeg?raw=true",
@@ -150,5 +150,21 @@
         "website": "https://warkittens.xyz/",
         "twitter": "https://twitter.com/0xWarKittens",
         "max-slots": 10
+    },
+    "20": {
+        "name": "Introverse",
+        "description": "With unity, wealth, and true knowledge, we will be the society of the future. We are #introverse.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/intro.jpeg?raw=true",
+        "website": "https://www.introverse.club/",
+        "twitter": "https://twitter.com/_introverse_",
+        "max-slots": 15
+    },
+    "21": {
+        "name": "The Squids",
+        "description": "1,000 Genesis Lab-made NFTs designed to play games on the metaverse. Mini games | $DNA",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/squid.gif?raw=true",
+        "website": "https://thesquids.io/",
+        "twitter": "https://twitter.com/TheSquids_NFT",
+        "max-slots": 15
     }
 }
