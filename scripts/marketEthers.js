@@ -167,7 +167,7 @@ const loadCollections = async() => {
                 button = `<button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">PURCHASED!</button>`;
             }
             else {
-                button = `<button disabled class="mint-prompt-button button" id="${id}-mint-button"">SOLD OUT</button>`;
+                button = `<button disabled class="mint-prompt-button button purchased" id="${id}-mint-button"">SOLD OUT</button>`;
             }
             let fakeJSX = `<div class="partner-collection" id="project-${id}">
                             <a href="${collection["twitter"]}" target="_blank">
