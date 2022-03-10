@@ -90,6 +90,11 @@
     border-color: white;
 }
 
+.cover button:hover {
+    cursor: default;
+    background-color: black;
+}
+
 .partner-collection {
 	border-style: solid;
 	border-color: black;
