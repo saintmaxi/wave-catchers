@@ -12,6 +12,26 @@ html, body {
 	
 }
 
+.coco-balance-float {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	font-size: 1.5vw;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	border-radius: 20px;
+	background: white;
+	color: black;
+	border: .5vw solid black;
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  .coco-balance-float img {
+	margin-left: 10px;
+  }
+
 #clear-button  {
 	position: absolute;
 	bottom: 5px;
@@ -472,6 +492,29 @@ h5 {
 		padding-right: 20px;
 		padding-left: 20px
 	}
+
+	.coco-balance-float {
+		position: fixed;
+		left: 10%;
+		bottom: 30px;
+		width: 80%;
+		margin: auto;
+		font-size: 2.5vh;
+		z-index: 10;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		padding: 15px;
+		background: white;
+		color: black;
+		border-radius: 20px;
+		border: 5px solid black;
+		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	  }
+	  .coco-balance-float img {
+		margin-left: 10px;
+	  }
 }
 
 @media screen and (max-width:479px) {

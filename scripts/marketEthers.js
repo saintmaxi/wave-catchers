@@ -135,7 +135,6 @@ const loadCollections = async() => {
         let maxSlots = collection["max-slots"];
         let minted = maxSlots - WLinfo.amount;
         let display = collection["display-on-market"] == "true" ? true : false;
-        console.log(display)
 
         if (display) {
             if (minted != maxSlots) {
@@ -316,6 +315,9 @@ window.onload = async() => {
         await updateInfo();
         await loadCollectionsData();
         await loadCollections();
+        let userAddress = await getAddress();
+        let cocoBalance = await coco.balanceOf(userAddress);
+        $("#coco-balance").html(`${(Number(formatEther(cocoBalance))).toFixed(2)}`);
     }
 };
 
