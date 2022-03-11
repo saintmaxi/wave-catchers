@@ -144,7 +144,7 @@ const loadMyWL = async() => {
         $("#your-wl-spots").html("No spots purchased!");
     }
     else {
-        let wlString = myWL.join("\n");
+        let wlString = myWL.join("<br>");
         $("#your-wl-spots").html(wlString);
     }
 }
