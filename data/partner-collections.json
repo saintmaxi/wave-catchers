@@ -232,5 +232,23 @@
         "twitter": "https://twitter.com/TalesofElleria",
         "max-slots": 15,
         "display-on-market": "true"
+    },
+    "27": {
+        "name": "Martian Premier League",
+        "description": "10,000 genesis characters - 9,000 humans and 1,000 Martians - available to mint in early March. These characters form the basis of Professor Gaffer's new society being built on Mars.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/martian.jpeg?raw=true",
+        "website": "https://www.martianpremierleague.com/",
+        "twitter": "https://twitter.com/MartianPLeague",
+        "max-slots": 5,
+        "display-on-market": "true"
+    },
+    "28": {
+        "name": "PaperHands",
+        "description": "Presenting the world's first ever Paint-2-Earn NFT Game. PaperHands is a simple play-to-earn game where one player draws what is indicated by the game, while other players attempt to guess what is being drawn.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/pphand.jpeg?raw=true",
+        "website": "https://paperhands.game/",
+        "twitter": "https://twitter.com/PaperHandsGame",
+        "max-slots": 40,
+        "display-on-market": "true"
     }
 }
