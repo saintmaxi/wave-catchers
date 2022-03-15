@@ -1,0 +1,85 @@
+#current-raffle-img {
+    width: 50%;
+    border-style: solid;
+	border-color: black;
+	border-radius: 20px;
+	border-width: .5vw;
+    background-color: black;
+}
+
+#enter-button {
+    width: 50%;
+}
+
+#raffle {
+    margin: 1%;
+    width: 45%;
+   background-color: white;
+}
+
+#live-raffles, #past-raffles {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: stretch;
+    margin: auto;
+    width: 100%;
+}
+
+#live-raffles button {
+    width: 50%;
+}
+
+#past-raffles button {
+    width: 90%;
+}
+
+input {
+    margin-bottom: 1.5vw;
+}
+
+@media screen and (max-width: 991px) {
+    #current-raffle-img {
+		border-width: 5px;
+    }
+
+    #raffle {
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    #live-raffles button {
+        width: 90%;
+    }
+
+    #enter-button {
+        width: 98%;
+    }
+    
+    #raffle button {
+        font-size: 3vh;
+        letter-spacing: 5px;
+    }
+
+    input {
+        width: 90%;
+        margin-bottom: 2vh;
+    }
+}

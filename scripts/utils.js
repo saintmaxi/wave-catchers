@@ -45,6 +45,20 @@ function showPast() {
     $("#live-button").removeClass("active");
 }
 
+function showLiveRaffles() {
+    $('#past-raffles').addClass('hidden');
+    $('#live-raffles').removeClass('hidden');
+    $("#live-button").addClass("active");
+    $("#past-button").removeClass("active");
+}
+
+function showPastRaffles() {
+    $('#live-raffles').addClass('hidden');
+    $('#past-raffles').removeClass('hidden');
+    $("#past-button").addClass("active");
+    $("#live-button").removeClass("active");
+}
+
 function toggleMenu() {
     const el = document.getElementById("mobile-nav-menu")
     el.classList.toggle('expanded')

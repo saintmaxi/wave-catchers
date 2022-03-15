@@ -268,7 +268,7 @@ h5 {
     box-shadow: 0 0 5000px 5000px rgba(0,0,0,0.88);
 }
 
-#error-popup, #status-popup {
+#error-popup, #status-popup, #discord-popup {
 	background-color: white;
     z-index: 99999;
     position:fixed;
@@ -283,7 +283,11 @@ h5 {
     box-shadow: 0 0 5000px 5000px rgba(0,0,0,0.88);
 }
 
-#error-popup p, #status-popup p {
+#discord-popup {
+    height: 45vh;
+}
+
+#error-popup p, #status-popup p, #discord-popup p {
     width: 100%;
     font-size: 2.5vw !important;
     line-height: 2.7vw !important;
@@ -295,6 +299,38 @@ h5 {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+#discord-popup p {
+	position: initial;
+	top: initial;
+	left: initial;
+	transform: none;
+	width: 95%;
+	margin: auto;
+	padding-bottom: 0;
+}
+  
+  #discord-popup #content {
+	width: 100%;
+	font-size: 2vw;
+	line-height: 2vw;
+	position: absolute;
+	color: black;
+	top: 50%;
+	left: 50%;
+	width: 90%;
+	transform: translate(-50%, -50%);
+  }
+  
+  #discord-popup #content input {
+	text-align: center;
+	border: solid black .5vw;
+  }
+  
+  #discord-popup #content button {
+	margin: auto;
+	margin-top: 3%;
+  }
 
 @keyframes blinker {
     50% {
@@ -315,7 +351,7 @@ h5 {
     background-color: #F72119 !important;
 }
 
-#block-screen, #block-screen-error, #block-screen-status, #block-screen-approval, #block-screen-loading {
+#block-screen, #block-screen-error, #block-screen-status, #block-screen-approval, #block-screen-loading,  #block-screen-discord {
     z-index: 9998;
     width: 100vw;
     opacity: 0;
@@ -473,17 +509,38 @@ h5 {
 		line-height: 5.4vh !important;
 	}
 
-    #error-popup, #status-popup {
+    #error-popup, #status-popup, #discord-popup {
         width: 75vw;
         height: 15vh;
 		border-width: 5px;
     }
 
-    #error-popup p, #status-popup p {
+	#discord-popup {
+		height: 40vh;
+	  }
+
+    #error-popup p, #status-popup p, #discord-popup p {
         font-size: 4vw !important;
 		line-height: 4.2vw !important;
 		width: 80%;
     }
+
+	#discord-popup p {
+		padding: 0;
+		margin: auto !important;
+		margin-bottom: 3%;
+	  }
+	
+	  #discord-popup #content input {
+			border-width: 2px;
+		font-size: 4vw;
+		line-height: 4vw;
+	  }
+
+	  #discord-popup #content button {
+		margin-top: 7%;
+  }
+	
 
 }
 
