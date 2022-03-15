@@ -42,7 +42,7 @@
         "website": "https://www.apexwolves.io/",
         "twitter": "https://twitter.com/0xAWNFT",
         "max-slots": 10,
-        "display-on-market": "false"
+        "display-on-market": "true"
     },
     "5": {
         "name": "Fat Cats DAO",
@@ -204,6 +204,33 @@
         "website": "https://www.smulips.com/",
         "twitter": "https://twitter.com/Smulips",
         "max-slots": 10,
+        "display-on-market": "true"
+    },
+    "24": {
+        "name": "KaijuKing #5168",
+        "description": "Join the Kingz and live forever as a legend.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/kaiju.png?raw=true",
+        "website": "https://kaijukingz.io",
+        "twitter": "https://twitter.com/kaijukingz/",
+        "max-slots": 1,
+        "display-on-market": "true"
+    },
+    "25": {
+        "name": "Illogics",
+        "description": "The illogics have crash landed on Earth and are here to change the future of NFTs. ⁣(Transparency / Fairness / Utility) $GOOP ",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/illogics.jpeg?raw=true",
+        "website": "https://www.illogics.io/",
+        "twitter": "https://twitter.com/illogics",
+        "max-slots": 15,
+        "display-on-market": "true"
+    },
+    "26": {
+        "name": "Tales of Elleria",
+        "description": "Welcome to Elleria. Send your heroes on assignments and quests to earn Medals ($MEDALS) and Ellerium ($ELM)",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/tales.jpeg?raw=true",
+        "website": "https://www.talesofelleria.com/",
+        "twitter": "https://twitter.com/TalesofElleria",
+        "max-slots": 15,
         "display-on-market": "true"
     }
 }
