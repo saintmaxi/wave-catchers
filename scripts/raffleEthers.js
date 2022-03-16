@@ -130,7 +130,7 @@ const getLatestRaffle = async() => {
         else {
             $("#total-price").removeClass("hidden");
             let userEntries = await getRaffleEntries(currentID);
-            $("#max-msg").html(`Unlimited entries!<br class="hide-on-desktop"><br class="hide-on-desktop"> Yours: ${userEntries}`);
+            $("#max-msg").html(`Unlimited entries!<br class="hide-on-desktop"><br class="hide-on-desktop">Yours: <span id="your-entries">${userEntries}</span>`);
             $("#entry-num").removeClass("hidden");
         }
     
@@ -159,6 +159,11 @@ const getRaffleEntries = async(id) => {
         }
     }
     return entries;
+}
+
+const updateUserEntries = async() => {
+    let entries = await getRaffleEntries(currentID);
+    $("your-entries").html(entries);
 }
 
 const loadPastRaffles = async() => {
@@ -374,6 +379,7 @@ async function endLoading(tx, txStatus) {
 setInterval(async()=>{
     await updateInfo();
     await getCocoBalance();
+    await updateUserEntries();
 }, 5000)
 
 const updateInfo = async () => {
