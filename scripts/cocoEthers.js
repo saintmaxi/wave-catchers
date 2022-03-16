@@ -257,9 +257,7 @@ const updateClaimingInfo = async()=>{
 
 provider.on("network", async(newNetwork, oldNetwork) => {
     if (oldNetwork) {
-        $("#refresh-notification").remove();
-        await updateCurrentChain();
-        await updateClaimingInfo();
+        location.reload();
     }
 });
 
@@ -350,6 +348,7 @@ async function endLoading(tx, txStatus) {
 }
 
 setInterval(async()=>{
+    await updateCurrentChain();
     await updateInfo();
     await updateCocoEarned();
     await getPendingCocoBalance();
@@ -366,6 +365,7 @@ ethereum.on("accountsChanged", async(accounts_)=>{
 });
 
 window.onload = async()=>{
+    await updateCurrentChain();
     await updateInfo();
     if (pendingTransactions.size < 1) {
         await updateClaimingInfo();

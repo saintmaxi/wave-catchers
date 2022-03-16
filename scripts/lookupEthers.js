@@ -227,9 +227,7 @@ function updateDownload() {
 
 provider.on("network", async(newNetwork, oldNetwork) => {
     if (oldNetwork) {
-        $("#refresh-notification").remove();
-        await updateCurrentChain();
-        await updateClaimingInfo();
+        location.reload();
     }
 });
 
@@ -289,6 +287,7 @@ async function endLoading(tx, txStatus) {
 }
 
 setInterval(async()=>{
+    await updateCurrentChain();
     await updateInfo();
 }, 5000)
 
@@ -302,7 +301,14 @@ ethereum.on("accountsChanged", async(accounts_)=>{
     location.reload();
 });
 
+provider.on("network", async(newNetwork, oldNetwork) => {
+    if (oldNetwork) {
+        location.reload();
+    }
+});
+
 window.onload = async()=>{
+    await updateCurrentChain();
     await updateInfo();
     await loadCollectionsData();
     await loadMyWL();

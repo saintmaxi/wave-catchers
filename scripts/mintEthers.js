@@ -269,9 +269,7 @@ const updateCurrentChain = async() => {
 
 provider.on("network", async(newNetwork, oldNetwork) => {
         if (oldNetwork) {
-            $("#refresh-notification").remove();
-            await updateCurrentChain();
-            await updateMintInfo();
+            location.reload();
         }
     });
 
@@ -333,6 +331,7 @@ async function endLoading(tx, txStatus) {
 }
 
 setInterval(async()=>{
+    await updateCurrentChain();
     await updateInfo();
     await updateMintInfo();
     await checkMintingLive();
@@ -350,6 +349,7 @@ ethereum.on("accountsChanged", async(accounts_)=>{
 });
 
 window.onload = async()=>{
+    await updateCurrentChain();
     await updateInfo();
     await checkMintingLive();
     await updateMintInfo();
