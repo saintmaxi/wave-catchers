@@ -56,16 +56,15 @@ if (window.ethereum == undefined) {
     loadInfuraListings();
 }
 
-// Initiate Provider 
+// - - - - - - - - - SETUP + GENERAL WEB3 FUNCTIONS - - - - - - - - -
+
 const provider = new ethers.providers.Web3Provider(window.ethereum, "any");
 const signer = provider.getSigner();
 
-// Initiate Contracts
 const coco = new ethers.Contract(cocoAddress, cocoAbi(), signer);
 const market = new ethers.Contract(marketAddress, marketAbi(), signer);
 const newMarket = new ethers.Contract(newMarketAddress, newMarketAbi(), signer);
 
-// General Functions
 const connect = async() => { await provider.send("eth_requestAccounts", []) };
 const getAddress = async() => { try { return await signer.getAddress(); } catch { return false; }}; 
 const formatEther = (balance_) => { return ethers.utils.formatEther(balance_) }; // divides by 18 modulus
@@ -75,7 +74,7 @@ const getChainId = async() => { return await signer.getChainId() };
 // General Variables
 const maxInt = "115792089237316195423570985008687907853269984665640564039457584007913129639934";
 
-// Approval Functions
+// - - - - - - - - - APPROVAL FUNCTIONS - - - - - - - - -
 
 const approveCocoToMarket = async() => {
     await coco.approve(marketAddress, maxInt).then (async(tx_) => {
@@ -109,6 +108,7 @@ const checkCocoApproval = async() => {
     }
 };
 
+// - - - - - - - - - PURCHASE FUNCTIONS - - - - - - - - -
 
 const purchaseWithName  = async(id) => {
     try {
@@ -168,6 +168,9 @@ const purchase  = async(id) => {
         else if ((error.message).includes("No spots left")) {
             await displayErrorMessage(`Error: No spots left!`);
         }
+        else if ((error.message).includes("Not live yet")) {
+            await displayErrorMessage(`Error: Not live yet!`);
+        }
         else if ((error.message).includes("transfer amount exceeds balance")) {
             await displayErrorMessage(`Error: Insufficent $COCO balance!`);
         }
@@ -201,7 +204,35 @@ const promptForDiscord = async(id) => {
     }
 }
 
+// - - - - - - - - - LOAD AND UPDATE LISTING DISPLAYS - - - - - - - - -
+
+var liveListings = [];
+var timerPending = [];
 var loadedCollections = false;
+
+setInterval(async()=>{
+    if (loadedCollections) {
+        for (let i = 0; i < liveListings.length; i++) {
+            if (timerPending[i]) {
+                let id = liveListings[i];
+                let now = Date.now() / 1000;
+                let timestamp = Number((await newMarket.getWhitelist(id)).timestamp);
+                let distance = timestamp - now;
+        
+                var hours = Math.floor(distance / (60 * 60));
+                var minutes = Math.floor((distance % (60 * 60)) / (60));
+                var seconds = Math.floor((distance % (60)));
+              
+                $(`#timer-${id}`).html(`${hours}:${minutes}:${seconds}`);
+                
+                if (distance <= 0) {
+                    timerPending[i] = false;
+                    $(`#timer-${id}`).html("LIVE");
+                }
+            }
+        }
+    }
+}, 1000)
 
 const loadCollections = async() => {
     let liveJSX = "";
@@ -262,6 +293,8 @@ const loadCollections = async() => {
         if (display) {
             if (minted != maxSlots) {
                 numLive += 1;
+                liveListings.push(id);
+                timerPending.push(true);
                 let button;
                 if (winners.includes(await getAddress())) {
                     button = `<button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">PURCHASED!</button>`;
@@ -278,6 +311,7 @@ const loadCollections = async() => {
                                 <a href="${collection["twitter"]}" target="_blank">
                                     <img class="collection-twitter" src="./images/twitter-white.png">
                                 </a>
+                                <div id="timer-${id}">??:??:??</div>
                                 <img class="collection-img" src="${collection["image"]}">
                                 <div class="collection-info">
                                     <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
@@ -362,7 +396,7 @@ const updateSupplies = async() => {
     }
 }
 
-// Processing txs
+// - - - - - - - - - PROCESSING TRANSACTIONS - - - - - - - - -
 
 // After Tx Hook
 const waitForTransaction = async(tx_) => {

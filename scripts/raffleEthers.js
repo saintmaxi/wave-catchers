@@ -53,6 +53,8 @@ if (window.ethereum == undefined) {
     displayErrorMessage('Use a web3 enabled browser and connect to enter raffles!');
 }
 
+// - - - - - - - - - SETUP + GENERAL WEB3 FUNCTIONS - - - - - - - - -
+
 const provider = new ethers.providers.Web3Provider(window.ethereum,"any");
 const signer = provider.getSigner();
 const wavecatchers = new ethers.Contract(wavecatchersAddress, wavecatchersAbi(), signer);
@@ -89,6 +91,8 @@ const updateCurrentChain = async() => {
     }
 }
 
+// - - - - - - - - - RAFFLE FUNCTIONS - - - - - - - - -
+
 var rafflePrice;
 var capped;
 var currentID;
@@ -120,12 +124,12 @@ const getLatestRaffle = async() => {
         $("#base-raffle-price").html(rafflePrice);
         if (capped) {
             $("#total-price").addClass("hidden");
-            $("#max-msg").removeClass("hidden");
+            $("#max-msg").html("Max 1 entry!");
             $("#entry-num").addClass("hidden");
         }
         else {
             $("#total-price").removeClass("hidden");
-            $("#max-msg").addClass("hidden");
+            $("#max-msg").html("Unlimited entries!");
             $("#entry-num").removeClass("hidden");
         }
     
@@ -190,7 +194,7 @@ const enterRaffle = async() => {
             });
         }
         else {
-            let amount = Number($("entry-num").val());
+            let amount = Number($("#entry-num").val());
             await market.enterRaffle(currentID, amount).then( async(tx_) => {
                 await waitForTransaction(tx_);
             });
@@ -248,12 +252,11 @@ setInterval(async()=>{
         var now = Date.now() / 1000;
         var distance = latestEndTime - now;
 
-        var days = Math.floor(distance / (60 * 60 * 24));
-        var hours = Math.floor((distance % (60 * 60 * 24)) / (60 * 60));
+        var hours = Math.floor(distance / (60 * 60));
         var minutes = Math.floor((distance % (60 * 60)) / (60));
         var seconds = Math.floor((distance % (60)));
       
-        $("#time-left").html(`${days}D ${hours}H ${minutes}M ${seconds}S`);
+        $("#time-left").html(`${hours}H ${minutes}M ${seconds}S`);
       
         if (distance < 0) {
           $("#time-left").html("EXPIRED");
@@ -267,6 +270,12 @@ async function loadRafflesData() {
     rafflesData = await $.getJSON(data_file);
 }
 
+const getCocoBalance = async()=>{
+    let userAddress = await getAddress();
+    let cocoBalance = await coco.balanceOf(userAddress);
+    $("#coco-balance").html(`${(Number(formatEther(cocoBalance))).toFixed(2)}`);
+};
+
 // General functions
 
 provider.on("network", async(newNetwork, oldNetwork) => {
@@ -278,7 +287,8 @@ provider.on("network", async(newNetwork, oldNetwork) => {
 });
 
 
-// Processing tx returns
+// - - - - - - - - - PROCESSING TRANSACTIONS - - - - - - - - -
+
 const waitForTransaction = async(tx_) => {
     startLoading(tx_);
     provider.once(tx_.hash, async (transaction_) => {
@@ -334,6 +344,7 @@ async function endLoading(tx, txStatus) {
 
 setInterval(async()=>{
     await updateInfo();
+    await getCocoBalance();
 }, 5000)
 
 const updateInfo = async () => {
@@ -351,6 +362,7 @@ window.onload = async()=>{
     await loadRafflesData();
     await getLatestRaffle();
     await loadPastRaffles();
+    await getCocoBalance();
 };
 
 window.onunload = async()=>{

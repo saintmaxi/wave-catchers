@@ -383,7 +383,7 @@ h4 {
    100% { transform: translateY(0);} 
 }
 
-#scroll-indicator-live, #scroll-indicator-past {
+#scroll-indicator-live, #scroll-indicator-past, #scroll-indicator {
     -webkit-animation: bounce 1.3s infinite;
     animation: bounce 1.3s infinite;
     color: white !important;

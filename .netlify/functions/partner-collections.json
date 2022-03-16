@@ -15,7 +15,7 @@
         "website": "https://psyker.game/",
         "twitter": "http://twitter.com/psykergame",
         "max-slots": 50,
-        "display-on-market": "true"
+        "display-on-market": "false"
         },
     "2": {
         "name": "War Kittens",
@@ -249,6 +249,24 @@
         "website": "https://paperhands.game/",
         "twitter": "https://twitter.com/PaperHandsGame",
         "max-slots": 40,
+        "display-on-market": "true"
+    },
+    "29": {
+        "name": "Gummies Gang",
+        "description": "6969 chewy NFT friends who got hungry and ate the forbidden Ethereum rainbow.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/gummies.jpeg?raw=true",
+        "website": "https://twitter.com/GummiesGangNFT",
+        "twitter": "https://twitter.com/GummiesGangNFT",
+        "max-slots": 10,
+        "display-on-market": "true"
+    },
+    "30": {
+        "name": "Wagmi World",
+        "description": "Welcome to Wagmi World ✨ a project by @neokseye",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/wworld.jpeg?raw=true",
+        "website": "https://twitter.com/Wagmiworld",
+        "twitter": "https://twitter.com/wagmiworld",
+        "max-slots": 25,
         "display-on-market": "true"
     }
 }

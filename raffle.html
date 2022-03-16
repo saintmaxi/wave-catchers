@@ -156,10 +156,12 @@
             <h1>$COCO RAFFLE</h1>
             <h2 id="raffle-title">???</h2>
             <img src="./images/ticket.jpeg" id="current-raffle-img">
-            <h2 id="time-left-div" class="hidden">TIME LEFT: <span id="time-left">-</span></h2>
+            <h2 id="time-left-div" class="hidden">
+               <span id="time-left">-</span>
+            </h2>
             <h2>ENTRY PRICE: <span id="base-raffle-price">-</span> <img src="./images/coco.png" class="coco-icon"></h2>
-            <h2 id="total-price" class="hidden">TOTAL PRICE: <span id="raffle-price">-</span> <img src="./images/coco.png" class="coco-icon"></h2>
-            <h2 id="max-msg" class="hidden">MAX 1 ENTRY</h2>
+            <h2 id="total-price" class="hidden">TOTAL: <span id="raffle-price">-</span> <img src="./images/coco.png" class="coco-icon"></h2>
+            <h2 id="max-msg"></h2>
             <input min=1 type="number" id="entry-num" class="hidden" placeholder="# of Entries" value="">
             <button id="enter-button" class="button hidden" onclick="enterRaffle()">ENTER</button>
             <button id="entered-button" class="button purchased hidden">ENTERED!</button>
@@ -191,6 +193,10 @@
    </div> -->
    <img src="images/WebsiteBG-mobile.png" loading="lazy" alt="" class="banner-img fixed-banner hide-on-desktop">
    <img src="images/WebsiteBG.png" loading="lazy" alt="" class="banner-img fixed-banner hide-on-mobile">
+   <div class="coco-balance-float">
+      <div>Balance: <span id="coco-balance"><span class="one">.</span><span class="two">.</span><span class="three">.</span></span></div>
+      <img class="coco-icon" src="./images/coco.png">
+   </div>
    <div>
       <div class="section body-section footer wf-section">
          <div class="container w-container footer-section">

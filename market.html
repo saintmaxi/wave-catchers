@@ -154,8 +154,11 @@
          <button id="live-button" class="button active" onclick="showLive()">LIVE<span id="num-live"></span></button>
          <button id="past-button" class="button" onclick="showPast()">PAST<span id="num-past"></span></button>
       </div>
-      <h2 id="scroll-indicator-live" style="text-align: center;color: white;"></h2>
-      <h2 id="scroll-indicator-past" class="hidden" style="text-align: center;color: white;"></h2>
+      <h2 id="scroll-indicator-live" class="hide-on-mobile" style="text-align: center;color: white;"></h2>
+      <h2 id="scroll-indicator-past" class="hidden hide-on-mobile" style="text-align: center;color: white;"></h2>
+      <h2 id="scroll-indicator" class="hide-on-desktop" style="text-align: center;color: white;">
+         <img class="down-arrow" src="images/down-arrow.png"> SCROLL<span class="hide-on-mobile"> FOR MORE</span> <img class="down-arrow" src="images/down-arrow.png">
+      </h2>
       <div id="live-collections">
          <div id="ex1" class="partner-collection example">
             <div class="cover">
