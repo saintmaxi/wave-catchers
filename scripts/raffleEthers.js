@@ -129,7 +129,8 @@ const getLatestRaffle = async() => {
         }
         else {
             $("#total-price").removeClass("hidden");
-            $("#max-msg").html("Unlimited entries!");
+            let userEntries = await getRaffleEntries(currentID);
+            $("#max-msg").html(`Unlimited entries!<br class="hide-on-desktop"><br class="hide-on-desktop"> Yours: ${userEntries}`);
             $("#entry-num").removeClass("hidden");
         }
     
@@ -144,18 +145,34 @@ const getLatestRaffle = async() => {
     }
 }
 
+const getRaffleEntries = async(id) => {
+    let userAddress = await getAddress();
+    const eventFilter = market.filters.EnterRaffle(id);
+    const logs = await market.queryFilter(eventFilter);
+
+    let entries = 0;
+    for (i = 0; i < logs.length; i++) {
+        let address = logs[i].args._address;
+        let amount = Number(logs[i].args._amount);
+        if (userAddress == address) {
+            entries += amount;
+        }
+    }
+    return entries;
+}
+
 const loadPastRaffles = async() => {
     $("#past-raffles").empty();
     let pastJSX = "";
     let numPast = 0;
     let raffleIDs = Object.keys(rafflesData);
     for (let i = 0; i < raffleIDs.length; i++) {
-        numPast +=1;
         let id = Number(raffleIDs[i]);
 
         // Raffle data from contract
         let raffleInfo = await market.getRaffle(id);
         let rafflePrice = Number(formatEther(raffleInfo.price));
+        let userEntries = await getRaffleEntries(id);
         let expired = (raffleInfo.endTime < (Date.now() / 1000));
 
         // Data from JSON file
@@ -163,6 +180,7 @@ const loadPastRaffles = async() => {
         let hasEntered = await market.hasPurchasedRaffle(currentID, await getAddress());
 
         if (expired) {
+            numPast +=1;
             let button;
             if (hasEntered) {
                 button = `<button disabled class="mint-prompt-button button purchased">ENTERED!</button>`;
@@ -175,6 +193,7 @@ const loadPastRaffles = async() => {
                             <div class="collection-info">
                                 <h3>${raffle["name"]}</h3>
                                 <h4>${rafflePrice} <img src="${cocoImgURL}" class="coco-icon"></h4>
+                                <h4>Your entries: ${userEntries}</h4>
                             </div>
                             ${button}
                             </div>`

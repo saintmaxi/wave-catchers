@@ -551,9 +551,10 @@ h5 {
 	}
 
 	.coco-balance-float {
-		position: fixed;
-		left: 10%;
-		bottom: 40px;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
 		width: 80%;
 		margin: auto;
 		font-size: 2.5vh;

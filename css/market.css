@@ -389,6 +389,11 @@ h4 {
     color: white !important;
 }
 
+.timer {
+    font-size: 1.3vw;
+    line-height: 1.3vw;
+}
+
 @media screen and (max-width: 767px) {
 
     .down-arrow {
@@ -553,6 +558,11 @@ h4 {
 
     .mint-prompt-button {
         font-size: 3vh;
+    }
+
+    .timer {
+        font-size: 3vh;
+        line-height: 3vh;
     }
 }
 

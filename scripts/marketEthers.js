@@ -135,6 +135,9 @@ const purchaseWithName  = async(id) => {
         else if ((error.message).includes("No spots left")) {
             await displayErrorMessage(`Error: No spots left!`);
         }
+        else if ((error.message).includes("Not live yet")) {
+            await displayErrorMessage(`Error: Not live yet!`);
+        }
         else if ((error.message).includes("transfer amount exceeds balance")) {
             await displayErrorMessage(`Error: Insufficent $COCO balance!`);
         }
@@ -155,11 +158,18 @@ const purchaseWithName  = async(id) => {
     }
 }
 
-const purchase  = async(id) => {
+const purchase  = async(id, version) => {
     try {
-        await market.purchase(id).then( async(tx_) => {
-            await waitForTransaction(tx_);
-        });
+        if (version == 1) {
+            await market.purchase(id).then( async(tx_) => {
+                await waitForTransaction(tx_);
+            });
+        }
+        else if (version == 2) {
+            await newMarket.purchase(id).then( async(tx_) => {
+                await waitForTransaction(tx_);
+            }); 
+        }
     }
     catch (error) {
         if ((error.message).includes("Address has already purchased")) {
@@ -233,11 +243,11 @@ setInterval(async()=>{
                     seconds = `0${seconds}`;
                 }
               
-                $(`#timer-${id}`).html(`${hours}:${minutes}:${seconds}`);
+                $(`#timer-${id}`).html(`LIVE IN ${hours}:${minutes}:${seconds}`);
                 
                 if (distance <= 0) {
                     timerPending[i] = false;
-                    $(`#timer-${id}`).html("LIVE");
+                    $(`#timer-${id}`).html("LIVE NOW");
                 }
             }
         }
@@ -314,14 +324,14 @@ const loadCollections = async() => {
                         button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="promptForDiscord(${id})">PURCHASE</button>`;
                     }
                     else {
-                        button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="purchase(${id})">PURCHASE</button>`;
+                        button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="purchase(${id}, ${version})">PURCHASE</button>`;
                     }
                 }
                 let fakeJSX = `<div class="partner-collection" id="project-${id}">
                                 <a href="${collection["twitter"]}" target="_blank">
                                     <img class="collection-twitter" src="./images/twitter-white.png">
                                 </a>
-                                <div id="timer-${id}">??:??:??</div>
+                                <div class="timer" id="timer-${id}">Loading<span class="one">.</span><span class="two">.</span><span class="three">.</span></div>
                                 <img class="collection-img" src="${collection["image"]}">
                                 <div class="collection-info">
                                     <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
