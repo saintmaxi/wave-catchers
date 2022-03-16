@@ -130,7 +130,7 @@ const getLatestRaffle = async() => {
         else {
             $("#total-price").removeClass("hidden");
             let userEntries = await getRaffleEntries(currentID);
-            $("#max-msg").html(`Unlimited entries!<br class="hide-on-desktop"><br class="hide-on-desktop">Yours: <span id="your-entries">${userEntries}</span>`);
+            $("#max-msg").html(`Unlimited entries!<br class="hide-on-desktop"><br class="hide-on-desktop"> Yours: <span id="your-entries">${userEntries}</span>`);
             $("#entry-num").removeClass("hidden");
         }
     
@@ -163,7 +163,7 @@ const getRaffleEntries = async(id) => {
 
 const updateUserEntries = async() => {
     let entries = await getRaffleEntries(currentID);
-    $("your-entries").html(entries);
+    $("#your-entries").html(entries);
 }
 
 const loadPastRaffles = async() => {
