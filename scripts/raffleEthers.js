@@ -266,7 +266,7 @@ setInterval(async()=>{
             seconds = `0${seconds}`;
         }
       
-        $("#time-left").html(`${hours}H ${minutes}M ${seconds}S`);
+        $(`#time-left`).html(`${hours}:${minutes}:${seconds}`);
       
         if (distance < 0) {
           $("#time-left").html("EXPIRED");
