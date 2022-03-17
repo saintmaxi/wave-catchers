@@ -226,6 +226,12 @@ const promptForDiscord = async(id) => {
 
 // - - - - - - - - - LOAD AND UPDATE LISTING DISPLAYS - - - - - - - - -
 
+const getCocoBalance = async()=>{
+    let userAddress = await getAddress();
+    let cocoBalance = await coco.balanceOf(userAddress);
+    $("#coco-balance").html(`${(Number(formatEther(cocoBalance))).toFixed(2)}`);
+};
+
 var liveListings = [];
 var timerPending = [];
 var loadedCollections = false;
@@ -520,6 +526,7 @@ const updateInfo = async () => {
 
 setInterval( async() => {
     await updateCurrentChain();
+    await getCocoBalance();
     await updateInfo();
     if (loadedCollections) {
         await updateSupplies();
@@ -548,9 +555,7 @@ window.onload = async() => {
         await updateInfo();
         await loadCollectionsData();
         await loadCollections();
-        let userAddress = await getAddress();
-        let cocoBalance = await coco.balanceOf(userAddress);
-        $("#coco-balance").html(`${(Number(formatEther(cocoBalance))).toFixed(2)}`);
+        await getCocoBalance();
     }
 };
 
