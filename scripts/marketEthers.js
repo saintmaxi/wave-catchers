@@ -264,123 +264,138 @@ setInterval(async()=>{
     }
 }, 1000)
 
+const splitArrayToChunks = (array_, chunkSize_) => {
+    let _arrays = Array(Math.ceil(array_.length / chunkSize_))
+    .fill()
+    .map((_, index) => index * chunkSize_)
+    .map((begin) => array_.slice(begin, begin + chunkSize_));
+
+    console.log(_arrays);
+    return _arrays;
+};
+
 const loadCollections = async() => {
     let liveJSX = "";
     let pastJSX = "";
     let numLive = 0;
     let numPast = 0;
     let projectIDs = Object.keys(collectionsData);
-    for (let i = 0; i < projectIDs.length; i++) {
-        let marketContract;
-        let version;
+    const chunks = splitArrayToChunks(projectIDs, 5)
+    for (const chunk of chunks) {
+        await Promise.all( chunk.map( async(i) => {
+            let marketContract;
+            let version;
+    
+            let id = Number(i);
+            if (id < V2_START) {
+                version = 1;
+                marketContract = market;
+            }
+            else {
+                version = 2;
+                marketContract = newMarket;
+            }
+    
+            // WL data from contract
+            let WLinfo = await marketContract.getWhitelist(id);
 
-        let id = Number(projectIDs[i]);
-        if (id < V2_START) {
-            version = 1;
-            marketContract = market;
-        }
-        else {
-            version = 2;
-            marketContract = newMarket;
-        }
-
-        // WL data from contract
-        let WLinfo = await marketContract.getWhitelist(id);
-        let collectionPrice = Number(formatEther(WLinfo.price));
-
-        // Data from JSON file
-        let collection = collectionsData[String(id)];
-        let maxSlots = collection["max-slots"];
-        let minted = maxSlots - WLinfo.amount;
-        let display = collection["display-on-market"] == "true" ? true : false;
-        let discordRequired = (version == 2) ? (collectionsData[String(id)]["discord-required"] == "true") : false;
-
-        let winners = [];
-        if (version == 2) {
-            if (discordRequired) {
-                let eventFilterName = marketContract.filters.PurchaseWithNameWL(id);
-                let eventsName = await marketContract.queryFilter(eventFilterName);
-                for (let i = 0; i < eventsName.length; i++) {
-                    winners.push(`${eventsName[i].args._address}`);
+            let collectionPrice = Number(formatEther(WLinfo.price));
+    
+            // Data from JSON file
+            let collection = collectionsData[String(id)];
+            let maxSlots = collection["max-slots"];
+            let minted = maxSlots - WLinfo.amount;
+            let display = collection["display-on-market"] == "true" ? true : false;
+            let discordRequired = (version == 2) ? (collectionsData[String(id)]["discord-required"] == "true") : false;
+    
+            let winners = [];
+            if (version == 2) {
+                if (discordRequired) {
+                    let eventFilterName = marketContract.filters.PurchaseWithNameWL(id);
+                    let eventsName = await marketContract.queryFilter(eventFilterName);
+                    for (let i = 0; i < eventsName.length; i++) {
+                        winners.push(`${eventsName[i].args._address}`);
+                    }
+                }
+                else {
+                    let eventFilter = marketContract.filters.PurchaseWL(id);
+                    let events = await marketContract.queryFilter(eventFilter);
+                    for (let i = 0; i < events.length; i++) {
+                        winners.push(`${events[i].args._address}`);
+                    }
                 }
             }
             else {
-                let eventFilter = marketContract.filters.PurchaseWL(id);
+                let eventFilter = marketContract.filters.Purchase(id);
                 let events = await marketContract.queryFilter(eventFilter);
                 for (let i = 0; i < events.length; i++) {
-                    winners.push(`${events[i].args._address}`);
+                    winners.push(events[i].args._address);
                 }
             }
-        }
-        else {
-            let eventFilter = marketContract.filters.Purchase(id);
-            let events = await marketContract.queryFilter(eventFilter);
-            for (let i = 0; i < events.length; i++) {
-                winners.push(events[i].args._address);
-            }
-        }
-
-        if (display) {
-            if (minted != maxSlots) {
-                numLive += 1;
-                liveListings.push(id);
-                timerPending.push(true);
-                let button;
-                if (winners.includes(await getAddress())) {
-                    button = `<button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">PURCHASED!</button>`;
-                }
-                else {
-                    if (discordRequired) {
-                        button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="promptForDiscord(${id})">PURCHASE</button>`;
+    
+            if (display) {
+                if (minted != maxSlots) {
+                    numLive += 1;
+                    liveListings.push(id);
+                    timerPending.push(true);
+                    let button;
+                    if (winners.includes(await getAddress())) {
+                        button = `<button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">PURCHASED!</button>`;
                     }
                     else {
-                        button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="purchase(${id}, ${version})">PURCHASE</button>`;
+                        if (discordRequired) {
+                            button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="promptForDiscord(${id})">PURCHASE</button>`;
+                        }
+                        else {
+                            button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="purchase(${id}, ${version})">PURCHASE</button>`;
+                        }
                     }
-                }
-                let fakeJSX = `<div class="partner-collection" id="project-${id}">
-                                <a href="${collection["twitter"]}" target="_blank">
-                                    <img class="collection-twitter" src="./images/twitter-white.png">
-                                </a>
-                                <div class="timer" id="timer-${id}">Loading<span class="one">.</span><span class="two">.</span><span class="three">.</span></div>
-                                <img class="collection-img" src="${collection["image"]}">
-                                <div class="collection-info">
-                                    <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
-                                    <h4>${collectionPrice} <img src="${cocoImgURL}" class="coco-icon"> <br> <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Purchased</h4>
-                                    <div class="inside-text collection-description">
-                                    ${collection["description"]}
+                    let fakeJSX = `<div class="partner-collection" id="project-${id}">
+                                    <a href="${collection["twitter"]}" target="_blank">
+                                        <img class="collection-twitter" src="./images/twitter-white.png">
+                                    </a>
+                                    <div class="timer" id="timer-${id}">Loading<span class="one">.</span><span class="two">.</span><span class="three">.</span></div>
+                                    <img class="collection-img" src="${collection["image"]}">
+                                    <div class="collection-info">
+                                        <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
+                                        <h4>${collectionPrice} <img src="${cocoImgURL}" class="coco-icon"> <br> <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Purchased</h4>
+                                        <div class="inside-text collection-description">
+                                        ${collection["description"]}
+                                        </div>
                                     </div>
-                                </div>
-                                ${button}
-                                </div>`
-                liveJSX = fakeJSX + liveJSX;
-            }
-            else {
-                numPast +=1;
-                let button;
-                if (winners.includes(await getAddress())) {
-                    button = `<button disabled class="mint-prompt-button button purchased">PURCHASED!</button>`;
+                                    ${button}
+                                    </div>`
+                    liveJSX = fakeJSX + liveJSX;
                 }
                 else {
-                    button = `<button disabled class="mint-prompt-button button purchased">SOLD OUT</button>`;
-                }
-                let fakeJSX = `<div class="partner-collection" id="project-${id}">
-                                <a href="${collection["twitter"]}" target="_blank">
-                                    <img class="collection-twitter" src="./images/twitter-white.png">
-                                </a>
-                                <img class="collection-img" src="${collection["image"]}">
-                                <div class="collection-info">
-                                    <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
-                                    <h4>${collectionPrice} <img src="${cocoImgURL}" class="coco-icon"> <br> <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Purchased</h4>
-                                    <div class="inside-text collection-description">
-                                    ${collection["description"]}
+                    numPast +=1;
+                    let button;
+                    if (winners.includes(await getAddress())) {
+                        button = `<button disabled class="mint-prompt-button button purchased">PURCHASED!</button>`;
+                    }
+                    else {
+                        button = `<button disabled class="mint-prompt-button button purchased">SOLD OUT</button>`;
+                    }
+                    let fakeJSX = `<div class="partner-collection" id="project-${id}">
+                                    <a href="${collection["twitter"]}" target="_blank">
+                                        <img class="collection-twitter" src="./images/twitter-white.png">
+                                    </a>
+                                    <img class="collection-img" src="${collection["image"]}">
+                                    <div class="collection-info">
+                                        <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
+                                        <h4>${collectionPrice} <img src="${cocoImgURL}" class="coco-icon"> <br> <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Purchased</h4>
+                                        <div class="inside-text collection-description">
+                                        ${collection["description"]}
+                                        </div>
                                     </div>
-                                </div>
-                                ${button}
-                                </div>`
-            pastJSX = fakeJSX + pastJSX;
+                                    ${button}
+                                    </div>`
+                pastJSX = fakeJSX + pastJSX;
+                }
             }
-        }
+        }));
     }
+
     $("#live-collections").empty();
     $("#past-collections").empty();
     $("#live-collections").append(liveJSX);
