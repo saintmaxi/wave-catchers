@@ -1,14 +1,17 @@
 {
     "0": {
         "name": "Kiwami",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/kiwami.gif?raw=true"
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/kiwami.gif?raw=true",
+        "discord-required": "true"
     },
     "1": {
         "name": "Wave Catcher #3328",
-        "image": "https://wavecatchers.mypinata.cloud/ipfs/QmSMd9zpdeJSr2rzLvcvrKtfDRvuz8PYhk7GqCNumsa4H7/3328.png"
+        "image": "https://wavecatchers.mypinata.cloud/ipfs/QmSMd9zpdeJSr2rzLvcvrKtfDRvuz8PYhk7GqCNumsa4H7/3328.png",
+        "discord-required": "true"
     },
     "2": {
         "name": "Psyker",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/psyker.png?raw=true"
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/psyker.png?raw=true",
+        "discord-required": "true"
     }
 }

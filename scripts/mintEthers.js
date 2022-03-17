@@ -53,7 +53,6 @@ var totalMinted;
 
 const connect = async()=>{
     await provider.send("eth_requestAccounts", []);
-    await revealMintPrompt();
 };
 
 const getAddress = async()=>{

@@ -17,6 +17,10 @@
    background-color: white;
 }
 
+#discord-popup #content input {
+    width: initial !important;
+}
+
 #live-raffles, #past-raffles {
     text-align: center;
     display: -webkit-box;

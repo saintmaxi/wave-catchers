@@ -81,15 +81,28 @@ const getChainId = async()=>{
     return await signer.getChainId()
 };
 
-const updateCurrentChain = async() => {
-    if ((await getChainId()) !== correctChain) {
-        displayErrorMessage("Error: Wrong Network!", false);
+// General Variables
+const maxInt = "115792089237316195423570985008687907853269984665640564039457584007913129639934";
+
+// - - - - - - - - - APPROVAL FUNCTIONS - - - - - - - - -
+
+const approveCocoToMarket = async() => {
+    await coco.approve(marketAddress, maxInt).then (async(tx_) => {
+        await waitForTransaction(tx_);
+        $("#approval-button").html(`Approving<span class="one">.</span><span class="two">.</span><span class="three">.</span>`)
+    });
+}
+
+const checkCocoApproval = async() => {
+    const userAddress = await getAddress();
+    let approved = (Number(await coco.allowance(userAddress, marketAddress)) >= maxInt) ? true : false;
+    if (approved) {
+        $("#approval-container").remove();
     }
     else {
-        $("#error-popup").remove();
-        $("#block-screen-error").remove();
+        $("#approval-container").removeClass("hidden");
     }
-}
+};
 
 // - - - - - - - - - RAFFLE FUNCTIONS - - - - - - - - -
 
@@ -115,6 +128,7 @@ const getLatestRaffle = async() => {
         rafflePrice = Number(formatEther(raffleInfo.price));
         let raffleImg = rafflesData[String(currentID)].image;
         let raffleTitle = rafflesData[String(currentID)].name;
+        let discordRequired = (rafflesData[String(currentID)]["discord-required"] == "true");
         let hasEntered = await market.hasPurchasedRaffle(currentID, await getAddress());
         $("#raffle-title").html(raffleTitle);
         $("#current-raffle-img").attr("src", raffleImg);
@@ -142,16 +156,34 @@ const getLatestRaffle = async() => {
             $("#enter-button").removeClass("hidden");
             $("#entered-button").addClass("hidden");   
         }
+
+        if (discordRequired) {
+            $("#enter-button").addClass("hidden");
+            $("#enter-with-name-button").removeClass("hidden");
+        }
+        else {
+            $("#enter-button").remmoveClass("hidden");
+            $("#enter-with-name-button").addClass("hidden");
+        }
     }
 }
 
 const getRaffleEntries = async(id) => {
     let userAddress = await getAddress();
     const eventFilter = market.filters.EnterRaffle(id);
+    const eventFilterWithName = market.filters.EnterRaffleWithName(id);
     const logs = await market.queryFilter(eventFilter);
+    const logsWithName = market.queryFilter(eventFilterWithName);
 
     let entries = 0;
     for (i = 0; i < logs.length; i++) {
+        let address = logs[i].args._address;
+        let amount = Number(logs[i].args._amount);
+        if (userAddress == address) {
+            entries += amount;
+        }
+    }
+    for (i = 0; i < logsWithName.length; i++) {
         let address = logs[i].args._address;
         let amount = Number(logs[i].args._amount);
         if (userAddress == address) {
@@ -210,6 +242,22 @@ const loadPastRaffles = async() => {
     $("#num-past").text(` (${numPast})`);
 }
 
+const promptForDiscord = async(id) => {
+    if (!($("#discord-popup").length)) {
+        let fakeJSX = `<div id="discord-popup">
+                        <div id="content">
+                         <p>Enter Discord User ID to associate with purchase.</p>
+                         <br>
+                         <input id="discord-name" type="text" spellcheck="false" value="" placeholder="user#1234">
+                         <button class="button" onclick="enterRaffleWithName(${id})"">COMPLETE PURCHASE</button>
+                        </div>
+                       </div>`;
+        $("body").append(fakeJSX);
+        let height = $(document).height();
+        $("body").append(`<div id='block-screen-discord' style="height:${height}px" onclick="$('#discord-popup').remove();$('#block-screen-discord').remove()"></div>`);
+    }
+}
+
 const enterRaffle = async() => {
     try {
         if (capped) {
@@ -222,6 +270,55 @@ const enterRaffle = async() => {
             await market.enterRaffle(currentID, amount).then( async(tx_) => {
                 await waitForTransaction(tx_);
             });
+        }
+    }
+    catch (error) {
+        if ((error.message).includes("Already entered")) {
+            await displayErrorMessage(`Error: You already entered!`);
+        }
+        else if ((error.message).includes("Raffle ended")) {
+            await displayErrorMessage(`Error: Raffle ended!`);
+        }
+        else if ((error.message).includes("transfer amount exceeds balance")) {
+            await displayErrorMessage(`Error: Insufficent $COCO balance!`);
+        }
+        else if ((error.message).includes("burn amount exceeds balance")) {
+            await displayErrorMessage(`Error: Insufficent $COCO balance!`);
+        }
+        else if ((error.message).includes("User denied transaction signature")) {
+            console.log("Transaction rejected.");
+        }
+        else {
+            await displayErrorMessage("An error occurred. See console and window alert for details...")
+            window.alert(error);
+            console.log(error);
+        }
+    }
+}
+
+
+const enterRaffleWithName = async() => {
+    try {
+        let name = $("#discord-name").val();
+        if (name == "") {
+            await displayErrorMessage(`Error: No User ID provided!`);
+
+        }
+        else if (!(name.includes("#"))) {
+            await displayErrorMessage(`Error: Must include "#" and numbers in ID!`);
+        }
+        else {
+            if (capped) {
+                await market.enterRaffleWithName(currentID, 1, name).then( async(tx_) => {
+                    await waitForTransaction(tx_);
+                });
+            }
+            else {
+                let amount = Number($("#entry-num").val());
+                await market.enterRaffleWithName(currentID, amount, name).then( async(tx_) => {
+                    await waitForTransaction(tx_);
+                });
+            }
         }
     }
     catch (error) {
@@ -375,13 +472,13 @@ async function endLoading(tx, txStatus) {
 }
 
 setInterval(async()=>{
-    await updateCurrentChain();
     await updateInfo();
     await getCocoBalance();
     await updateUserEntries();
 }, 5000)
 
 const updateInfo = async () => {
+    await checkCocoApproval();
     let userAddress = await getAddress();
     $("#account").text(`${userAddress.substr(0,9)}..`);
     $("#mobile-account").text(`${userAddress.substr(0,9)}...`);
@@ -392,7 +489,6 @@ ethereum.on("accountsChanged", async(accounts_)=>{
 });
 
 window.onload = async()=>{
-    await updateCurrentChain();
     await updateInfo();
     await loadRafflesData();
     await getLatestRaffle();

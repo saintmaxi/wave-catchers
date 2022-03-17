@@ -116,7 +116,7 @@
         "twitter": "https://twitter.com/PaperHandsGame",
         "max-slots": 20,
         "display-on-market": "true",
-        "discord-required": "false"
+        "discord-required": "true"
     },
     "29": {
         "name": "Example3",

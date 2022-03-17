@@ -146,6 +146,13 @@
       </div>
    </div>
    <br>
+   <div id="approval-container" class="section body-section body-1 wf-section hidden">
+      <div id="approval" class="container w-container box" style="text-align: center;">
+         <h1>APPROVE MARKETPLACE</h1><br>
+         <h3>In order to enter raffles with <img class="coco-icon" src="images/coco.png">, you must first approve the V2 marketplace contract to spend your <img class="coco-icon" src="images/coco.png">.</h3><br>
+         <button class="button" id="approval-button" onclick="approveCocoToMarket()">APPROVE V2</button>
+      </div>
+   </div>
    <div class="section body-section body-1 wf-section">
       <div id="selector-div">
          <button id="live-button" class="button active" onclick="showLiveRaffles()">LATEST<span id="num-live"></span></button>
@@ -164,6 +171,7 @@
             <h2 id="max-msg"></h2>
             <input min=1 type="number" id="entry-num" class="hidden" placeholder="# of Entries" value="">
             <button id="enter-button" class="button hidden" onclick="enterRaffle()">ENTER</button>
+            <button id="enter-with-name-button" class="button hidden" onclick="promptForDiscord()">ENTER</button>
             <button id="entered-button" class="button purchased hidden">ENTERED!</button>
       </div>
       </div>
