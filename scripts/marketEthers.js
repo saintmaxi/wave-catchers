@@ -145,7 +145,7 @@ const purchaseWithName  = async(id) => {
             await displayErrorMessage(`Error: Insufficent $COCO balance!`);
         }
         else if ((error.message).includes("burn amount exceeds allowance")) {
-            await displayErrorMessage(`Error: Market not approved to spend $COCO!`);
+            await displayErrorMessage(`Error: Market v2 not approved to spend $COCO!`);
         }
         else if ((error.message).includes("User denied transaction signature")) {
             console.log("Transaction rejected.");
@@ -179,6 +179,9 @@ const purchase  = async(id) => {
         }
         else if ((error.message).includes("burn amount exceeds balance")) {
             await displayErrorMessage(`Error: Insufficent $COCO balance!`);
+        }
+        else if ((error.message).includes("burn amount exceeds allowance")) {
+            await displayErrorMessage(`Error: Market v1 not approved to spend $COCO!`);
         }
         else if ((error.message).includes("User denied transaction signature")) {
             console.log("Transaction rejected.");

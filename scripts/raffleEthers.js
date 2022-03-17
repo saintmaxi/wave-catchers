@@ -277,7 +277,7 @@ const enterRaffle = async() => {
             await displayErrorMessage(`Error: Insufficent $COCO balance!`);
         }
         else if ((error.message).includes("burn amount exceeds allowance")) {
-            await displayErrorMessage(`Error: Market not approved to spend $COCO!`);
+            await displayErrorMessage(`Error: Market v2 not approved to spend $COCO!`);
         }
         else if ((error.message).includes("User denied transaction signature")) {
             console.log("Transaction rejected.");
@@ -333,7 +333,7 @@ const enterRaffleWithName = async() => {
             await displayErrorMessage(`Error: Insufficent $COCO balance!`);
         }
         else if ((error.message).includes("burn amount exceeds allowance")) {
-            await displayErrorMessage(`Error: Market not approved to spend $COCO!`);
+            await displayErrorMessage(`Error: Market v2 not approved to spend $COCO!`);
         }
         else if ((error.message).includes("User denied transaction signature")) {
             console.log("Transaction rejected.");
