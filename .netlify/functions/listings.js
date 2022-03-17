@@ -26,7 +26,6 @@ const splitArrayToChunks = (array_, chunkSize_) => {
     .map((_, index) => index * chunkSize_)
     .map((begin) => array_.slice(begin, begin + chunkSize_));
 
-    console.log(_arrays);
     return _arrays;
 };
 

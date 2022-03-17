@@ -11,6 +11,10 @@
     width: 50%;
 }
 
+#entered-button:hover {
+    cursor: default !important;
+}
+
 #raffle {
     margin: 1%;
     width: 45%;

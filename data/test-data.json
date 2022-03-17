@@ -105,8 +105,7 @@
         "website": "https://paperhands.game/",
         "twitter": "https://twitter.com/PaperHandsGame",
         "max-slots": 20,
-        "display-on-market": "true",
-        "discord-required": "true"
+        "display-on-market": "true"
     },
     "28": {
         "name": "Example2",
@@ -115,8 +114,7 @@
         "website": "https://paperhands.game/",
         "twitter": "https://twitter.com/PaperHandsGame",
         "max-slots": 20,
-        "display-on-market": "true",
-        "discord-required": "true"
+        "display-on-market": "true"
     },
     "29": {
         "name": "Example3",
@@ -125,8 +123,7 @@
         "website": "https://paperhands.game/",
         "twitter": "https://twitter.com/PaperHandsGame",
         "max-slots": 20,
-        "display-on-market": "true",
-        "discord-required": "true"
+        "display-on-market": "true"
     },
     "30": {
         "name": "Example4",
@@ -135,7 +132,6 @@
         "website": "https://paperhands.game/",
         "twitter": "https://twitter.com/PaperHandsGame",
         "max-slots": 20,
-        "display-on-market": "true",
-        "discord-required": "false"
+        "display-on-market": "true"
     }
 }
