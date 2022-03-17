@@ -397,6 +397,7 @@ const loadCollections = async() => {
             }
         }));
     }
+    
     let liveIds = Array.from(idToLiveJSX.keys()).map(Number).sort(function(a, b){return b-a});
     let pastIds = Array.from(idToPastJSX.keys()).map(Number).sort(function(a, b){return b-a});
     for (const liveId of liveIds) {

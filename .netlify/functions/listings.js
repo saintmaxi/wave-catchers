@@ -36,7 +36,9 @@ const getCollections = async() => {
     let numLive = 0;
     let numPast = 0;
     let projectIDs = Object.keys(collectionsData);
-    const chunks = splitArrayToChunks(projectIDs, 5)
+    const chunks = splitArrayToChunks(projectIDs, 5);
+    let idToLiveJSX = new Map();
+    let idToPastJSX = new Map();
     for (const chunk of chunks) {
         await Promise.all( chunk.map( async(i) => {
             let marketContract;
@@ -80,7 +82,7 @@ const getCollections = async() => {
                                     </div>
                                     <button class="mint-prompt-button button" id="${id}-mint-button" onclick="connect()">CONNECT</button>
                                     </div>`
-                    liveJSX = fakeJSX + liveJSX;
+                    idToLiveJSX.set(id, fakeJSX);
                 }
                 else {
                     numPast += 1;
@@ -98,10 +100,19 @@ const getCollections = async() => {
                                     </div>
                                     <button class="mint-prompt-button button" id="${id}-mint-button" onclick="connect()">CONNECT</button>
                                     </div>`
-                    pastJSX = fakeJSX + pastJSX;
+                    idToPastJSX.set(id, fakeJSX);
                 }
             }
         }));
+    }
+
+    let liveIds = Array.from(idToLiveJSX.keys()).map(Number).sort(function(a, b){return b-a});
+    let pastIds = Array.from(idToPastJSX.keys()).map(Number).sort(function(a, b){return b-a});
+    for (const liveId of liveIds) {
+        liveJSX += idToLiveJSX.get(liveId);
+    }
+    for (const pastId of pastIds) {
+        pastJSX += idToPastJSX.get(pastId);
     }
 
     return { 
