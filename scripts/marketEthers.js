@@ -71,16 +71,6 @@ const formatEther = (balance_) => { return ethers.utils.formatEther(balance_) };
 const parseEther = (eth_) => { return ethers.utils.parseEther(eth_) }; // multiplies by 18 modulus
 const getChainId = async() => { return await signer.getChainId() };
 
-const updateCurrentChain = async() => {
-    if ((await getChainId()) !== correctChain) {
-        displayErrorMessage("Error: Wrong Network!", false);
-    }
-    else {
-        $("#error-popup").remove();
-        $("#block-screen-error").remove();
-    }
-}
-
 // General Variables
 const maxInt = "115792089237316195423570985008687907853269984665640564039457584007913129639934";
 
@@ -525,7 +515,6 @@ const updateInfo = async () => {
 };
 
 setInterval( async() => {
-    await updateCurrentChain();
     await getCocoBalance();
     await updateInfo();
     if (loadedCollections) {
@@ -551,7 +540,6 @@ window.onload = async() => {
     }
     else {
         console.log("using wallet")
-        await updateCurrentChain();
         await updateInfo();
         await loadCollectionsData();
         await loadCollections();
