@@ -13,5 +13,10 @@
         "name": "Psyker",
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/psyker.png?raw=true",
         "discord-required": "true"
+    },
+    "3": {
+        "name": "Psyker",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/psyker.png?raw=true",
+        "discord-required": "true"
     }
 }
