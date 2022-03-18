@@ -141,6 +141,8 @@ const getLatestRaffle = async() => {
             $("#max-msg").html("Max 1 entry!");
             let userEntries = await getRaffleEntries(currentID);
             let totalEntries = await getTotalEntries(currentID);
+            $("#your-entries").html(`Your Entries: <span id="your-entries-val">${userEntries}</span>`);
+            $("#total-entries").html(`Total Entries: <span id="total-entries-val">${totalEntries}</span>`);
             $("#entry-num").addClass("hidden");
         }
         else {
