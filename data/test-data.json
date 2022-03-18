@@ -6,7 +6,8 @@
         "website": "http://twitter.com/KiwamiNFT",
         "twitter": "http://twitter.com/KiwamiNFT",
         "max-slots": 10,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
         },
     "1": {
         "name": "Psyker",
@@ -15,7 +16,8 @@
         "website": "https://psyker.game/",
         "twitter": "http://twitter.com/psykergame",
         "max-slots": 50,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
         },
     "2": {
         "name": "War Kittens",
@@ -24,7 +26,8 @@
         "website": "https://warkittens.xyz/",
         "twitter": "https://twitter.com/0xWarKittens",
         "max-slots": 10,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "3": {
         "name": "Smol Potions",
@@ -33,7 +36,8 @@
         "website": "https://twitter.com/SmolPotions",
         "twitter": "https://twitter.com/SmolPotions",
         "max-slots": 10,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "4": {
         "name": "ApexWolves",
@@ -42,7 +46,8 @@
         "website": "https://www.apexwolves.io/",
         "twitter": "https://twitter.com/0xAWNFT",
         "max-slots": 10,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "5": {
         "name": "Fat Cats DAO",
@@ -51,7 +56,8 @@
         "website": "https://www.fatcats.art/",
         "twitter": "https://twitter.com/FatCatsDao",
         "max-slots": 100,
-        "display-on-market": "false"
+        "display-on-market": "false",
+        "network": "eth"
     },
     "6": {
         "name": "It Remains",
@@ -60,7 +66,8 @@
         "website": "https://itremains.io/",
         "twitter": "https://twitter.com/ItRemainsNFT",
         "max-slots": 10,
-        "display-on-market": "false"
+        "display-on-market": "false",
+        "network": "eth"
     },
     "7": {
         "name": "Genesis Dragons v2",
@@ -69,7 +76,8 @@
         "website": "https://twitter.com/GenesisDragons",
         "twitter": "https://twitter.com/GenesisDragons",
         "max-slots": 20,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "8": {
         "name": "Soul Splicers",
@@ -78,7 +86,8 @@
         "website": "https://twitter.com/SoulSplicersNFT",
         "twitter": "https://twitter.com/SoulSplicersNFT",
         "max-slots": 15,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "9": {
         "name": "Smol Obits",
@@ -87,7 +96,8 @@
         "website": "https://twitter.com/SmolObits",
         "twitter": "https://twitter.com/SmolObits",
         "max-slots": 20,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "10": {
         "name": "Elefrens",
@@ -96,7 +106,8 @@
         "website": "https://twitter.com/Elefrens",
         "twitter": "https://twitter.com/Elefrens",
         "max-slots": 10,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "27": {
         "name": "Example1",
@@ -105,7 +116,8 @@
         "website": "https://paperhands.game/",
         "twitter": "https://twitter.com/PaperHandsGame",
         "max-slots": 20,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "28": {
         "name": "Example2",
@@ -114,7 +126,8 @@
         "website": "https://paperhands.game/",
         "twitter": "https://twitter.com/PaperHandsGame",
         "max-slots": 20,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "arb"
     },
     "29": {
         "name": "Example3",
@@ -123,7 +136,8 @@
         "website": "https://paperhands.game/",
         "twitter": "https://twitter.com/PaperHandsGame",
         "max-slots": 20,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "30": {
         "name": "Example4",
@@ -132,6 +146,7 @@
         "website": "https://paperhands.game/",
         "twitter": "https://twitter.com/PaperHandsGame",
         "max-slots": 20,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     }
 }

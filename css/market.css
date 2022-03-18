@@ -146,6 +146,13 @@
     width: 15%;
 }
 
+.collection-network {
+    position: absolute;
+    top: 1.2%;
+    right: 2%;
+    width: 13%;
+}
+
 .collection-discord {
     position: absolute;
     top: 1%;

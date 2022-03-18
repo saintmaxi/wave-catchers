@@ -299,6 +299,18 @@ const loadCollections = async() => {
             let maxSlots = collection["max-slots"];
             let minted = maxSlots - WLinfo.amount;
             let display = collection["display-on-market"] == "true" ? true : false;
+            let network = collection["network"];
+            console.log(network)
+
+            let networkLogo;
+            if (network == "eth") {
+                networkLogo = "./images/eth.png";
+                networkLogo = "https://github.com/saintmaxi/wave-catchers/blob/main/images/eth.png?raw=true";
+            }
+            else if (network == "arb") {
+                networkLogo = "./images/arbitrum.png";
+                networkLogo = "https://github.com/saintmaxi/wave-catchers/blob/main/images/arbitrum.png?raw=true";
+            }
     
             let winners = [];
             if (version == 2) {
@@ -337,6 +349,7 @@ const loadCollections = async() => {
                                     <a href="${collection["twitter"]}" target="_blank">
                                         <img class="collection-twitter" src="./images/twitter-white.png">
                                     </a>
+                                    <img class="collection-network" src="${networkLogo}">
                                     <div class="timer" id="timer-${id}">Loading<span class="one">.</span><span class="two">.</span><span class="three">.</span></div>
                                     <img class="collection-img" src="${collection["image"]}">
                                     <div class="collection-info">
@@ -363,6 +376,7 @@ const loadCollections = async() => {
                                     <a href="${collection["twitter"]}" target="_blank">
                                         <img class="collection-twitter" src="./images/twitter-white.png">
                                     </a>
+                                    <img class="collection-network" src="${networkLogo}">
                                     <img class="collection-img" src="${collection["image"]}">
                                     <div class="collection-info">
                                         <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
