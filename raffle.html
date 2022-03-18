@@ -161,19 +161,27 @@
       <div id="live-raffles">
          <div id="raffle" class="container w-container box"  style="text-align: center;">
             <h1><span class="hide-on-mobile">$COCO</span> RAFFLE</h1>
-            <h2 id="raffle-title">???</h2>
-            <img src="./images/ticket.jpeg" id="current-raffle-img">
-            <h2 id="time-left-div" class="hidden">
-               <span id="time-left">-</span>
-            </h2>
-            <h2>ENTRY PRICE: <span id="base-raffle-price">-</span> <img src="./images/coco.png" class="coco-icon"></h2>
-            <h2 id="total-price" class="hidden">TOTAL: <span id="raffle-price">-</span> <img src="./images/coco.png" class="coco-icon"></h2>
-            <h2 id="max-msg"></h2>
-            <input min=1 type="number" id="entry-num" class="hidden" placeholder="# of Entries" value="">
-            <button id="enter-button" class="button hidden" onclick="enterRaffle()">ENTER</button>
-            <button id="enter-with-name-button" class="button hidden" onclick="promptForDiscord()">ENTER</button>
-            <button id="connect-button" class="button hidden" onclick="connect()">CONNECT</button>
-            <button id="entered-button" class="button purchased hidden">ENTERED!</button>
+            <div id="raffle-div-container">
+               <div class="raffle-div">
+                  <h2 id="raffle-title">???</h2>
+                  <img src="./images/ticket.jpeg" id="current-raffle-img">
+                  <h2 id="time-left-div" class="hidden">
+                     <span id="time-left">-</span>
+                  </h2>
+               </div>
+               <div class="raffle-div">
+                  <h2>ENTRY PRICE: <span id="base-raffle-price">-</span> <img src="./images/coco.png" class="coco-icon"></h2>
+                  <h2 id="total-price" class="hidden">TOTAL: <span id="raffle-price">-</span> <img src="./images/coco.png" class="coco-icon"></h2>
+                  <h2 id="max-msg"></h2>
+                  <h2 id="your-entries"></h2>
+                  <h2 id="total-entries"></h2>
+                  <input min=1 type="number" id="entry-num" class="hidden" placeholder="# of Entries" value="">
+                  <button id="enter-button" class="button hidden" onclick="enterRaffle()">ENTER</button>
+                  <button id="enter-with-name-button" class="button hidden" onclick="promptForDiscord()">ENTER</button>
+                  <button id="connect-button" class="button hidden" onclick="connect()">CONNECT</button>
+                  <button id="entered-button" class="button purchased hidden">ENTERED!</button>
+               </div>
+            </div>
       </div>
       </div>
       <div id="past-raffles" class="hidden">

@@ -1,5 +1,5 @@
 #current-raffle-img {
-    width: 40%;
+    width: 60%;
     border-style: solid;
 	border-color: black;
 	border-radius: 20px;
@@ -7,9 +7,25 @@
     background-color: black;
 }
 
-#enter-button {
+#raffle-div-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.raffle-div {
+    display: inline-block;
     width: 50%;
 }
+
+#entry-num {
+    width: 80%;
+}
+
+/* #enter-button, #entered-button, #enter-with-name-button {
+    width: 80%;
+} */
 
 #entered-button:hover {
     cursor: default !important;
@@ -17,7 +33,7 @@
 
 #raffle {
     margin: 1%;
-    width: 45%;
+    width: 75%;
    background-color: white;
 }
 
@@ -52,7 +68,7 @@
 }
 
 #live-raffles button {
-    width: 50%;
+    width: 80%;
 }
 
 #past-raffles button {
@@ -65,12 +81,29 @@ input {
 
 @media screen and (max-width: 991px) {
     #current-raffle-img {
+        width: 50%;
 		border-width: 5px;
     }
 
     #raffle {
         width: 90%;
         margin-top: 40px;
+    }
+
+    #raffle-div-container {
+        display: initial;
+    }
+
+    h2 {
+        font-size: 3vh;
+        line-height: 3.1vh;
+        margin-top: 1.6vh !important;
+        margin-bottom: 1.6vh !important;
+    }
+
+    .raffle-div {
+        display: block;
+        width: 100%;
     }
 
     #live-raffles button {

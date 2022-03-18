@@ -144,7 +144,10 @@ const getLatestRaffle = async() => {
         else {
             $("#total-price").removeClass("hidden");
             let userEntries = await getRaffleEntries(currentID);
-            $("#max-msg").html(`Unlimited entries!<br class="hide-on-desktop"><br class="hide-on-desktop"> Yours: <span id="your-entries">${userEntries}</span>`);
+            let totalEntries = await getTotalEntries(currentID);
+            $("#max-msg").html(`Unlimited entries!`);
+            $("#your-entries").html(`Your Entries: <span id="your-entries-val">${userEntries}</span>`);
+            $("#total-entries").html(`Total Entries: <span id="total-entries-val">${totalEntries}</span>`);
             $("#entry-num").removeClass("hidden");
         }
     
@@ -184,9 +187,23 @@ const getRaffleEntries = async(id) => {
     return entries;
 }
 
-const updateUserEntries = async() => {
-    let entries = await getRaffleEntries(currentID);
-    $("#your-entries").html(entries);
+const getTotalEntries = async(id) => {
+    const eventFilter = market.filters.EnterRaffle(id);
+    const logs = await market.queryFilter(eventFilter);
+
+    let entries = 0;
+    for (i = 0; i < logs.length; i++) {
+        let amount = Number(logs[i].args._amount);
+        entries += amount;
+    }
+    return entries;
+}
+
+const updateEntries = async() => {
+    let userEntries = await getRaffleEntries(currentID);
+    let totalEntries = await getTotalEntries(currentID);
+    $("#your-entries-val").html(userEntries);
+    $("#total-entries-val").html(totalEntries);
 }
 
 const loadPastRaffles = async() => {
@@ -201,6 +218,7 @@ const loadPastRaffles = async() => {
         let raffleInfo = await market.getRaffle(id);
         let rafflePrice = Number(formatEther(raffleInfo.price));
         let userEntries = await getRaffleEntries(id);
+        let totalEntries = await getTotalEntries(id);
         let expired = (raffleInfo.endTime < (Date.now() / 1000));
 
         // Data from JSON file
@@ -221,7 +239,8 @@ const loadPastRaffles = async() => {
                             <div class="collection-info">
                                 <h3>${raffle["name"]}</h3>
                                 <h4>${rafflePrice} <img src="${cocoImgURL}" class="coco-icon"></h4>
-                                <h4>Your entries: ${userEntries}</h4>
+                                <h4>Your Entries: ${userEntries}</h4>
+                                <h4>Total Entries: ${totalEntries}</h4>
                             </div>
                             ${button}
                             </div>`
@@ -475,7 +494,7 @@ async function endLoading(tx, txStatus) {
 setInterval(async()=>{
     await updateInfo();
     await getCocoBalance();
-    await updateUserEntries();
+    await updateEntries();
 }, 5000)
 
 const updateInfo = async () => {
