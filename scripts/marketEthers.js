@@ -266,6 +266,7 @@ const splitArrayToChunks = (array_, chunkSize_) => {
 };
 
 const loadCollections = async() => {
+    let userAddress = await getAddress();
     let liveJSX = "";
     let pastJSX = "";
     let numLive = 0;
@@ -332,7 +333,7 @@ const loadCollections = async() => {
                     liveListings.push(id);
                     timerPending.push(true);
                     let button;
-                    if (winners.includes(await getAddress())) {
+                    if (winners.includes(userAddress)) {
                         button = `<button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">PURCHASED!</button>`;
                     }
                     else {
@@ -364,7 +365,7 @@ const loadCollections = async() => {
                 else {
                     numPast +=1;
                     let button;
-                    if (winners.includes(await getAddress())) {
+                    if (winners.includes(userAddress)) {
                         button = `<button disabled class="mint-prompt-button button purchased">PURCHASED!</button>`;
                     }
                     else {

@@ -212,6 +212,7 @@ const updateEntries = async() => {
 
 const loadPastRaffles = async() => {
     $("#past-raffles").empty();
+    let userAddress = await getAddress();
     let pastJSX = "";
     let numPast = 0;
     let raffleIDs = Object.keys(rafflesData);
@@ -227,7 +228,7 @@ const loadPastRaffles = async() => {
 
         // Data from JSON file
         let raffle = rafflesData[String(id)];
-        let hasEntered = await market.hasPurchasedRaffle(currentID, await getAddress());
+        let hasEntered = await market.hasPurchasedRaffle(currentID, userAddress);
 
         if (expired) {
             numPast +=1;
