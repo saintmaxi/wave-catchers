@@ -258,10 +258,10 @@ const promptForDiscord = async(id) => {
     if (!($("#discord-popup").length)) {
         let fakeJSX = `<div id="discord-popup">
                         <div id="content">
-                         <p>Enter Discord User ID to associate with purchase.</p>
+                         <p>Enter Discord User ID to associate with entry.</p>
                          <br>
                          <input id="discord-name" type="text" spellcheck="false" value="" placeholder="user#1234">
-                         <button class="button" onclick="enterRaffleWithName(${id})"">COMPLETE PURCHASE</button>
+                         <button class="button" onclick="enterRaffleWithName(${id})"">ENTER RAFFLE</button>
                         </div>
                        </div>`;
         $("body").append(fakeJSX);
