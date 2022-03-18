@@ -139,6 +139,8 @@ const getLatestRaffle = async() => {
         if (capped) {
             $("#total-price").addClass("hidden");
             $("#max-msg").html("Max 1 entry!");
+            let userEntries = await getRaffleEntries(currentID);
+            let totalEntries = await getTotalEntries(currentID);
             $("#entry-num").addClass("hidden");
         }
         else {
