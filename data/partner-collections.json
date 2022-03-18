@@ -177,7 +177,7 @@
         "website": "https://www.introverse.club/",
         "twitter": "https://twitter.com/_introverse_",
         "max-slots": 15,
-        "display-on-market": "true"
+        "display-on-market": "false"
     },
     "21": {
         "name": "The Squids",
@@ -267,6 +267,15 @@
         "website": "https://twitter.com/Wagmiworld",
         "twitter": "https://twitter.com/wagmiworld",
         "max-slots": 25,
+        "display-on-market": "true"
+    },
+    "31": {
+        "name": "Skylinez",
+        "description": "Skylinez is a cooperative P2E strategy game where players work together to develop their cities.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/skylinez.jpeg?raw=true",
+        "website": "https://twitter.com/SkylinezNFT",
+        "twitter": "https://twitter.com/SkylinezNFT",
+        "max-slots": 90,
         "display-on-market": "true"
     }
 }

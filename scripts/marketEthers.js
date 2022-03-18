@@ -305,11 +305,9 @@ const loadCollections = async() => {
             let networkLogo;
             if (network == "eth") {
                 networkLogo = "./images/eth.png";
-                networkLogo = "https://github.com/saintmaxi/wave-catchers/blob/main/images/eth.png?raw=true";
             }
             else if (network == "arb") {
                 networkLogo = "./images/arbitrum.png";
-                networkLogo = "https://github.com/saintmaxi/wave-catchers/blob/main/images/arbitrum.png?raw=true";
             }
     
             let winners = [];
