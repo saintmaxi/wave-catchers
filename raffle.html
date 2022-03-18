@@ -90,10 +90,16 @@
          </a>
       </div>
       <div id="desktop-wallet-connect-div">
-         <button class="button hide-on-mobile clickable" id="account" href="#" onclick=connect()>CONNECT</button>
+         <button class="button hide-on-mobile clickable" id="account" href="#" onclick=connect()>
+            <span id="account-text">CONNECT</span>
+            <span id="account-chain-logo"></span>
+         </button>
       </div>
       <div id="mobile-wallet-connect-div" class="hide-on-desktop">
-         <button id="mobile-account" href="#" class="button" onclick=connect()>CONNECT WALLET</button>
+         <button id="mobile-account" href="#" class="button" onclick=connect()>
+            <span id="mobile-account-text">CONNECT WALLET</span>
+            <span id="mobile-account-chain-logo"></span>
+         </button>
          <button id="navbar" href="#" class="button" onclick="toggleMenu()"></button>
       </div>
       <div id="expand-container">
