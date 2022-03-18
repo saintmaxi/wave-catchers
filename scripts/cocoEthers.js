@@ -85,16 +85,6 @@ const importCocoToWallet = async() => {
       });
 }
 
-const updateCurrentChain = async() => {
-    if ((await getChainId()) !== correctChain) {
-        displayErrorMessage("Error: Wrong Network!", false);
-    }
-    else {
-        $("#error-popup").remove();
-        $("#block-screen-error").remove();
-    }
-}
-
 // COCO Functions
 
 const getWaveCatchersEnum = async()=>{
@@ -348,7 +338,6 @@ async function endLoading(tx, txStatus) {
 }
 
 setInterval(async()=>{
-    await updateCurrentChain();
     await updateInfo();
     await updateCocoEarned();
     await getPendingCocoBalance();
@@ -356,8 +345,16 @@ setInterval(async()=>{
 
 const updateInfo = async () => {
     let userAddress = await getAddress();
-    $("#account").text(`${userAddress.substr(0,9)}..`);
-    $("#mobile-account").text(`${userAddress.substr(0,9)}...`);
+    let chain = await getChainId();
+    let chainLogo;
+    if (chain == 1 || chain == 4) {
+        chainLogo = "https://github.com/saintmaxi/wave-catchers/blob/main/images/eth.png?raw=true";
+    }
+    else if (chain = 42161) {
+        chainLogo = "https://github.com/saintmaxi/wave-catchers/blob/main/images/arbitrum.png?raw=true";
+    }
+    $("#account").html(`${userAddress.substr(0,5)}.. <img src="${chainLogo}" class="coco-icon">`);
+    $("#mobile-account").html(`${userAddress.substr(0,12)}.. <img src="${chainLogo}" class="coco-icon">`);
 };
 
 ethereum.on("accountsChanged", async(accounts_)=>{
@@ -365,7 +362,6 @@ ethereum.on("accountsChanged", async(accounts_)=>{
 });
 
 window.onload = async()=>{
-    await updateCurrentChain();
     await updateInfo();
     if (pendingTransactions.size < 1) {
         await updateClaimingInfo();
