@@ -346,15 +346,15 @@ setInterval(async()=>{
 const updateInfo = async () => {
     let userAddress = await getAddress();
     let chain = await getChainId();
-    let chainLogo;
+    let chainLogo = "";
     if (chain == 1 || chain == 4) {
-        chainLogo = "https://github.com/saintmaxi/wave-catchers/blob/main/images/eth.png?raw=true";
+        chainLogo = "<img src='https://github.com/saintmaxi/wave-catchers/blob/main/images/eth.png?raw=true' class='coco-icon'>";
     }
-    else if (chain = 42161) {
-        chainLogo = "https://github.com/saintmaxi/wave-catchers/blob/main/images/arbitrum.png?raw=true";
+    else if (chain == 42161) {
+        chainLogo = "<img src='https://github.com/saintmaxi/wave-catchers/blob/main/images/arbitrum.png?raw=true' class='coco-icon'>";
     }
-    $("#account").html(`${userAddress.substr(0,5)}.. <img src="${chainLogo}" class="coco-icon">`);
-    $("#mobile-account").html(`${userAddress.substr(0,12)}.. <img src="${chainLogo}" class="coco-icon">`);
+    $("#account").html(`${userAddress.substr(0,5)}.. ${chainLogo}`);
+    $("#mobile-account").html(`${userAddress.substr(0,12)}.. ${chainLogo}>`);
 };
 
 ethereum.on("accountsChanged", async(accounts_)=>{
