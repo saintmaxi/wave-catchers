@@ -6,7 +6,8 @@
         "website": "http://twitter.com/KiwamiNFT",
         "twitter": "http://twitter.com/KiwamiNFT",
         "max-slots": 10,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
         },
     "1": {
         "name": "Psyker",
@@ -15,7 +16,8 @@
         "website": "https://psyker.game/",
         "twitter": "http://twitter.com/psykergame",
         "max-slots": 50,
-        "display-on-market": "false"
+        "display-on-market": "false",
+        "network": "eth"
         },
     "2": {
         "name": "War Kittens",
@@ -24,7 +26,8 @@
         "website": "https://warkittens.xyz/",
         "twitter": "https://twitter.com/0xWarKittens",
         "max-slots": 10,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "3": {
         "name": "Smol Potions",
@@ -33,7 +36,8 @@
         "website": "https://twitter.com/SmolPotions",
         "twitter": "https://twitter.com/SmolPotions",
         "max-slots": 10,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "arb"
     },
     "4": {
         "name": "ApexWolves",
@@ -42,7 +46,8 @@
         "website": "https://www.apexwolves.io/",
         "twitter": "https://twitter.com/0xAWNFT",
         "max-slots": 10,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "5": {
         "name": "Fat Cats DAO",
@@ -51,7 +56,8 @@
         "website": "https://www.fatcats.art/",
         "twitter": "https://twitter.com/FatCatsDao",
         "max-slots": 100,
-        "display-on-market": "false"
+        "display-on-market": "false",
+        "network": "eth"
     },
     "6": {
         "name": "It Remains",
@@ -60,7 +66,8 @@
         "website": "https://itremains.io/",
         "twitter": "https://twitter.com/ItRemainsNFT",
         "max-slots": 10,
-        "display-on-market": "false"
+        "display-on-market": "false",
+        "network": "eth"
     },
     "7": {
         "name": "Genesis Dragons v2",
@@ -69,7 +76,8 @@
         "website": "https://twitter.com/GenesisDragons",
         "twitter": "https://twitter.com/GenesisDragons",
         "max-slots": 20,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "8": {
         "name": "Soul Splicers",
@@ -78,7 +86,8 @@
         "website": "https://twitter.com/SoulSplicersNFT",
         "twitter": "https://twitter.com/SoulSplicersNFT",
         "max-slots": 15,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "9": {
         "name": "Smol Obits",
@@ -87,7 +96,8 @@
         "website": "https://twitter.com/SmolObits",
         "twitter": "https://twitter.com/SmolObits",
         "max-slots": 20,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "arb"
     },
     "10": {
         "name": "Elefrens",
@@ -96,7 +106,8 @@
         "website": "https://twitter.com/Elefrens",
         "twitter": "https://twitter.com/Elefrens",
         "max-slots": 10,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "arb"
     },
     "11": {
         "name": "Eyes of Ignolia",
@@ -105,7 +116,8 @@
         "website": "https://www.eyesofignolia.io/",
         "twitter": "https://twitter.com/eyesofignolia",
         "max-slots": 5,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "12": {
         "name": "Lost Samurise",
@@ -114,7 +126,8 @@
         "website": "https://samurise.xyz",
         "twitter": "https://twitter.com/SamuRiseNFT",
         "max-slots": 15,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "arb"
     },
     "13": {
         "name": "The Dead Puppet Co",
@@ -123,7 +136,8 @@
         "website": "https://twitter.com/TheDeadPuppetCo",
         "twitter": "https://twitter.com/TheDeadPuppetCo",
         "max-slots": 20,
-        "display-on-market": "false"
+        "display-on-market": "false",
+        "network": "eth"
     },
     "14": {
         "name": "vSamurai",
@@ -132,7 +146,8 @@
         "website": "https://twitter.com/vSamurai_NFT",
         "twitter": "https://twitter.com/vSamurai_NFT",
         "max-slots": 20,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "16": {
         "name": "Smol Sharks",
@@ -141,7 +156,8 @@
         "website": "https://twitter.com/smolsharks",
         "twitter": "https://twitter.com/smolsharks",
         "max-slots": 15,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "arb"
     },
     "17": {
         "name": "Everai",
@@ -150,7 +166,8 @@
         "website": "https://everai.xyz/",
         "twitter": "https://twitter.com/TheEverai",
         "max-slots": 5,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "18": {
         "name": "Kiwami (Refill)",
@@ -159,7 +176,8 @@
         "website": "http://twitter.com/KiwamiNFT",
         "twitter": "http://twitter.com/KiwamiNFT",
         "max-slots": 10,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "19": {
         "name": "War Kittens (Refill)",
@@ -168,7 +186,8 @@
         "website": "https://warkittens.xyz/",
         "twitter": "https://twitter.com/0xWarKittens",
         "max-slots": 10,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "20": {
         "name": "Introverse",
@@ -177,7 +196,8 @@
         "website": "https://www.introverse.club/",
         "twitter": "https://twitter.com/_introverse_",
         "max-slots": 15,
-        "display-on-market": "false"
+        "display-on-market": "false",
+        "network": "eth"
     },
     "21": {
         "name": "The Squids",
@@ -186,7 +206,8 @@
         "website": "https://thesquids.io/",
         "twitter": "https://twitter.com/TheSquids_NFT",
         "max-slots": 15,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "22": {
         "name": "Magic Monkies",
@@ -195,7 +216,8 @@
         "website": "https://twitter.com/magicmonkies",
         "twitter": "https://twitter.com/magicmonkies",
         "max-slots": 25,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "arb"
     },
     "23": {
         "name": "Smulips",
@@ -204,7 +226,8 @@
         "website": "https://www.smulips.com/",
         "twitter": "https://twitter.com/Smulips",
         "max-slots": 10,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "arb"
     },
     "24": {
         "name": "KaijuKing #5168",
@@ -213,7 +236,8 @@
         "website": "https://kaijukingz.io",
         "twitter": "https://twitter.com/kaijukingz/",
         "max-slots": 1,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "25": {
         "name": "Illogics",
@@ -222,7 +246,8 @@
         "website": "https://www.illogics.io/",
         "twitter": "https://twitter.com/illogics",
         "max-slots": 15,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "26": {
         "name": "Tales of Elleria",
@@ -231,7 +256,8 @@
         "website": "https://www.talesofelleria.com/",
         "twitter": "https://twitter.com/TalesofElleria",
         "max-slots": 15,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "arb"
     },
     "27": {
         "name": "Martian Premier League",
@@ -240,7 +266,8 @@
         "website": "https://www.martianpremierleague.com/",
         "twitter": "https://twitter.com/MartianPLeague",
         "max-slots": 5,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "28": {
         "name": "PaperHands",
@@ -249,7 +276,8 @@
         "website": "https://paperhands.game/",
         "twitter": "https://twitter.com/PaperHandsGame",
         "max-slots": 40,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "29": {
         "name": "Gummies Gang",
@@ -258,7 +286,8 @@
         "website": "https://twitter.com/GummiesGangNFT",
         "twitter": "https://twitter.com/GummiesGangNFT",
         "max-slots": 10,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "30": {
         "name": "Wagmi World",
@@ -267,7 +296,8 @@
         "website": "https://twitter.com/Wagmiworld",
         "twitter": "https://twitter.com/wagmiworld",
         "max-slots": 25,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "31": {
         "name": "Skylinez",
@@ -276,7 +306,8 @@
         "website": "https://twitter.com/SkylinezNFT",
         "twitter": "https://twitter.com/SkylinezNFT",
         "max-slots": 90,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "eth"
     },
     "32": {
         "name": "SmithyDAO",
@@ -285,6 +316,7 @@
         "website": "https://smithydao.lol/",
         "twitter": "https://twitter.com/SmithyDAO",
         "max-slots": 15,
-        "display-on-market": "true"
+        "display-on-market": "true",
+        "network": "arb"
     }
 }
