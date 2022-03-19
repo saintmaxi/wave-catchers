@@ -26,7 +26,7 @@ const cocoAbi = () => {
 const etherscanBase = `https://etherscan.io/tx/`;
 const correctChain = 1;
 const cocoImgURL = "https://github.com/saintmaxi/wave-catchers/blob/main/images/coco.png?raw=true";
-const V2_START = 28;
+const V2_START = 33;
 const data_file = "./data/partner-collections.json";
 
 /*********************************************************************************/
