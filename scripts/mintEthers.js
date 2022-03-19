@@ -257,10 +257,10 @@ const updateMintInfo = async() => {
 }
 
 provider.on("network", async(newNetwork, oldNetwork) => {
-        if (oldNetwork) {
-            location.reload();
-        }
-    });
+    if (oldNetwork) {
+        location.reload();
+    }
+});
 
 // Processing tx returns
 const waitForTransaction = async(tx_) => {
@@ -315,7 +315,7 @@ async function endLoading(tx, txStatus) {
     $(`#etherscan-link-${txHash}`).remove();
     pendingTransactions.delete(tx);
     if (pendingTransactions.size == 0) {
-        // await updateMintInfo();
+        await updateMintInfo();
     }
 }
 
