@@ -99,10 +99,14 @@ const checkCocoApproval = async() => {
     }
     else {
         if (oldMarketApproved) {
-            $("#approval-button").remove();
+            $("#approval-button").prop("disabled",true);
+            $("#approval-button").addClass("purchased");
+            $("#approval-button").html("Approved V1!");
         }
         else if (newMarketApproved) {
-            $("#approval-button-new").remove();
+            $("#approval-button-new").prop("disabled",true);
+            $("#approval-button-new").addClass("purchased");
+            $("#approval-button-new").html("Approved V1!");
         }
         $("#approval-container").removeClass("hidden");
     }
