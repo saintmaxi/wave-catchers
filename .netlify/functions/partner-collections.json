@@ -318,5 +318,25 @@
         "max-slots": 15,
         "display-on-market": "true",
         "network": "arb"
+    },
+    "33": {
+        "name": "Smol Bears",
+        "description": "Free mint coming to Arbitrum!",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/smolbears.jpeg?raw=true",
+        "website": "https://twitter.com/SmolBearsNFT",
+        "twitter": "https://twitter.com/SmolBearsNFT",
+        "max-slots": 30,
+        "display-on-market": "true",
+        "network": "arb"
+    },
+    "34": {
+        "name": "Star Wolvez",
+        "description": "Where we're going, the moon will be just a speck of dust. !howl",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/starwolves.jpeg?raw=true",
+        "website": "https://starwolvez.com/",
+        "twitter": "https://twitter.com/starwolvez",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
