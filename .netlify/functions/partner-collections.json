@@ -277,5 +277,14 @@
         "twitter": "https://twitter.com/SkylinezNFT",
         "max-slots": 90,
         "display-on-market": "true"
+    },
+    "32": {
+        "name": "SmithyDAO",
+        "description": "The SmithyDAO is a community of builders supporting the TreasureDAO and sworn to protect $MAGIC.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/smithy.png?raw=true",
+        "website": "https://smithydao.lol/",
+        "twitter": "https://twitter.com/SmithyDAO",
+        "max-slots": 15,
+        "display-on-market": "true"
     }
 }
