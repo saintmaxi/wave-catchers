@@ -289,9 +289,14 @@ const enterRaffle = async() => {
         }
         else {
             let amount = Number($("#entry-num").val());
-            await market.enterRaffle(currentID, amount, "").then( async(tx_) => {
-                await waitForTransaction(tx_);
-            });
+            if (amount == '') {
+                await displayErrorMessage("Enter an amount of entries!");
+            }
+            else {
+                await market.enterRaffle(currentID, amount, "").then( async(tx_) => {
+                    await waitForTransaction(tx_);
+                });
+            }
         }
     }
     catch (error) {
