@@ -252,8 +252,14 @@ setInterval(async()=>{
                 $(`#timer-${id}`).html(`LIVE IN ${hours}:${minutes}:${seconds}`);
                 
                 if (distance <= 0) {
-                    timerPending[i] = false;
-                    $(`#timer-${id}`).html("LIVE NOW");
+                    let blockTime = (await provider.getBlock((await provider.getBlockNumber()))).timestamp;
+                    if (blockTime > timestamp) {
+                        timerPending[i] = false;
+                        $(`#timer-${id}`).html("LIVE NOW");
+                    }
+                    else {
+                        $(`#timer-${id}`).html(`PENDING NEXT BLOCK<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
+                    }
                 }
             }
         }

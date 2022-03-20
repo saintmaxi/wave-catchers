@@ -427,7 +427,13 @@ setInterval(async()=>{
         $(`#time-left`).html(`${hours}:${minutes}:${seconds}`);
       
         if (distance < 0) {
-          $("#time-left").html("EXPIRED");
+            let blockTime = (await provider.getBlock((await provider.getBlockNumber()))).timestamp;
+            if (blockTime > latestEndTime) {
+                $(`#time-left`).html("EXPIRED");
+            }
+            else {
+                $(`#time-left`).html(`EXPIRES NEXT BLOCK<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
+            }
         }
     }
 }, 1000)
