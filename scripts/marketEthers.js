@@ -257,7 +257,7 @@ setInterval(async()=>{
                         $(`#timer-${id}`).removeClass("pending");
                     }
                     else {
-                        $(`#timer-${id}`).html(`PENDING NEXT BLOCK<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
+                        $(`#timer-${id}`).html(`LIVE NEXT BLOCK<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
                     }
                 }
                 else {
