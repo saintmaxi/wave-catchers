@@ -65,9 +65,15 @@ const connect = async()=>{
     await provider.send("eth_requestAccounts", []);
 };
 
-const getAddress = async()=>{
-    return await signer.getAddress()
-};
+const getAddress = async() => { 
+    try { 
+        return await signer.getAddress(); 
+    } 
+    catch { 
+        return false; 
+    }
+}; 
+
 
 const formatEther = (balance_)=>{
     return ethers.utils.formatEther(balance_)
@@ -552,11 +558,18 @@ ethereum.on("accountsChanged", async(accounts_)=>{
 });
 
 window.onload = async()=>{
-    await updateInfo();
-    await loadRafflesData();
-    await getLatestRaffle();
-    await loadPastRaffles();
-    await getCocoBalance();
+    if (!(await getAddress())) {
+        console.log("using infura")
+        await loadInfuraRaffles();
+    }
+    else {
+        console.log("using wallet")
+        await updateInfo();
+        await loadRafflesData();
+        await getLatestRaffle();
+        await loadPastRaffles();
+        await getCocoBalance();
+    }
 };
 
 window.onunload = async()=>{

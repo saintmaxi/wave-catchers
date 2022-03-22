@@ -92,7 +92,7 @@ const loadInfuraListings = async() => {
 
 const loadInfuraRaffles = async() => {
     const raffles = await fetch(`https://www.wavecatchers.io/.netlify/functions/raffles?get=true`).then(res => res.text());
-    const jsonData = listings ? JSON.parse(listings) : [];
+    const jsonData = raffles ? JSON.parse(raffles) : [];
     if (jsonData.currentRaffle.raffleLive == false) {
         $("#raffle-title").html("No raffles live!");
     }
@@ -100,15 +100,15 @@ const loadInfuraRaffles = async() => {
         $("#raffle-title").html(jsonData.currentRaffle.raffleTitle);
         $("#current-raffle-img").attr("src", jsonData.currentRaffle.raffleImg);
         $("#base-raffle-price").html(jsonData.currentRaffle.rafflePrice);
+        $("#total-entries").html(`Total Entries: ${jsonData.currentRaffle.totalEntries}`);
+        $("#entry-num").addClass("hidden");
         if (jsonData.currentRaffle.capped) {
             $("#total-price").addClass("hidden");
             $("#max-msg").html("Max 1 entry!");
-            $("#entry-num").addClass("hidden");
         }
         else {
             $("#total-price").removeClass("hidden");
-            $("#max-msg").html(`Unlimited entries!<br class="hide-on-desktop"><br class="hide-on-desktop"> Yours: <span id="your-entries">???</span>`);
-            $("#entry-num").removeClass("hidden");
+            $("#max-msg").html(`Unlimited entries!`);
         }
     }
     $("#past-raffles").empty();
