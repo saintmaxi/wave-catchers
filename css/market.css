@@ -16,6 +16,10 @@
    background-color: white;
 }
 
+.pending {
+    color: red;
+}
+
 #approval h1 {
     margin: 0;
 }

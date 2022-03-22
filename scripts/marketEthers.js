@@ -254,6 +254,7 @@ setInterval(async()=>{
                     if (blockTime > timestamp) {
                         timerPending[i] = false;
                         $(`#timer-${id}`).html("LIVE NOW");
+                        $(`#timer-${id}`).removeClass("pending");
                     }
                     else {
                         $(`#timer-${id}`).html(`PENDING NEXT BLOCK<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
@@ -261,6 +262,7 @@ setInterval(async()=>{
                 }
                 else {
                     $(`#timer-${id}`).html(`LIVE IN ${hours}:${minutes}:${seconds}`);
+                    $(`#timer-${id}`).addClass("pending");
                 }
             }
         }
