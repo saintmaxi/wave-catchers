@@ -51,6 +51,7 @@ const data_file = "./data/raffle-data.json";
 
 if (window.ethereum == undefined) {
     displayErrorMessage('Use a web3 enabled browser and connect to enter raffles!');
+    loadInfuraRaffles();
 }
 
 // - - - - - - - - - SETUP + GENERAL WEB3 FUNCTIONS - - - - - - - - -
