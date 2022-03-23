@@ -322,7 +322,7 @@
     "33": {
         "name": "Smol Bears",
         "description": "Free mint coming to Arbitrum!",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolbears.jpeg?raw=true",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/smolbears.jpeg?raw=true",
         "website": "https://twitter.com/SmolBearsNFT",
         "twitter": "https://twitter.com/SmolBearsNFT",
         "max-slots": 30,
@@ -332,10 +332,100 @@
     "34": {
         "name": "Star Wolvez",
         "description": "Where we're going, the moon will be just a speck of dust. !howl",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/starwolvez.jpeg?raw=true",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/starwolvez.jpeg?raw=true",
         "website": "https://starwolvez.com/",
         "twitter": "https://twitter.com/starwolvez",
         "max-slots": 10,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "35": {
+        "name": "Ether Royale",
+        "description": "Revolutionizing NFT utility. First W2E NFT battle royale. Holders spectate as their soldiers battle for valuable NFTs & prizes.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/etherroyale.jpeg?raw=true",
+        "website": "https://etherroyale.io/",
+        "twitter": "https://twitter.com/EtherRoyale",
+        "max-slots": 50,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "36": {
+        "name": "Doomboo",
+        "description": "Little monsters that live light years from Earth. They used to be millions but there’s only 10,000 left.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/doomboo.jpeg?raw=true",
+        "website": "https://doomboo.io/",
+        "twitter": "https://twitter.com/doombooNFT",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "37": {
+        "name": "Kiwami (Refill #2)",
+        "description": "Designed in the Metaverse. Born in Japan",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/kiwami.gif?raw=true",
+        "website": "https://twitter.com/KiwamiNFT",
+        "twitter": "https://twitter.com/KiwamiNFT",
+        "max-slots": 3,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "38": {
+        "name": "Star Wolvez (Refill)",
+        "description": "Where we're going, the moon will be just a speck of dust. !howl",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/starwolvez.jpeg?raw=true",
+        "website": "https://starwolvez.com/",
+        "twitter": "https://twitter.com/starwolvez",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "39": {
+        "name": "Dreadfulz",
+        "description": "7,777 Dreadfulz have inked their name in fealty to the Grand Inquisitor. Bound by avarice, lustful for $DREAD",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/dreadfulz.jpeg?raw=true",
+        "website": "https://dreadfulz.com/",
+        "twitter": "https://twitter.com/DreadfulzNFT",
+        "max-slots": 30,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "40": {
+        "name": "Cyberia",
+        "description": "Enter the world of Cyberia and fight for your species in the first-ever decentralized Neurobot society!",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/cyberia.jpeg?raw=true",
+        "website": "https://entercyberia.com/",
+        "twitter": "https://twitter.com/EnterCyberia",
+        "max-slots": 7,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+     "41": {
+        "name": "I'm Starving",
+        "description": "Do you have some food? On-chain story driven community game launching soon on #Arbitrum",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/starving.jpeg?raw=true",
+        "website": "https://twitter.com/ImStarvingNFT",
+        "twitter": "https://twitter.com/ImStarvingNFT",
+        "max-slots": 15,
+        "display-on-market": "true",
+        "network": "arb"
+    }, 
+    "42": {
+        "name": "Shounen",
+        "description": "Shounens Inspired by Asian Animation & Culture",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/shounen.jpeg?raw=true",
+        "website": "https://nftshounen.com/",
+        "twitter": "https://twitter.com/NFTSHOUNEN",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "eth"
+    } ,
+    "43": {
+        "name": "The Squids (Refill)",
+        "description": "1,000 Genesis Lab-made NFTs designed to play games on the metaverse. Mini games | $DNA",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/squid.gif?raw=true",
+        "website": "https://thesquids.io/",
+        "twitter": "https://twitter.com/TheSquids_NFT",
+        "max-slots": 5,
         "display-on-market": "true",
         "network": "eth"
     }
