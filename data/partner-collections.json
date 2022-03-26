@@ -428,5 +428,35 @@
         "max-slots": 5,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "44": {
+        "name": "Exalted",
+        "description": "5,000 Pixel Avatars Based On Fantasy RPGs",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/exalted.jpeg?raw=true",
+        "website": "https://docs.exaltednft.com/the-exalted/overview",
+        "twitter": "https://mobile.twitter.com/exaltednft",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "eth"
+    }, 
+    "45": {
+        "name": "Ether Warriors",
+        "description": "10,000 Warriors Wreaking Havoc on the Blockchain",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/ewarriors.png?raw=true",
+        "website": "https://discord.com/invite/etherwarriors",
+        "twitter": "https://twitter.com/etherwarriors",
+        "max-slots": 50,
+        "display-on-market": "true",
+        "network": "eth"
+    } ,
+    "46": {
+        "name": "Kuroro Beasts",
+        "description": "PVP focused NFT RPG, over 100 different beasts.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/kuroro.jpeg?raw=true",
+        "website": "https://discord.com/invite/kurorobeasts",
+        "twitter": "https://twitter.com/kurorobeast",
+        "max-slots": 5,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
