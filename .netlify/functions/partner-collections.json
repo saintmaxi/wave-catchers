@@ -458,5 +458,55 @@
         "max-slots": 5,
         "display-on-market": "true",
         "network": "eth"
-    }
+    },
+     "47": {
+        "name": "Smolegends",
+        "description": "Smolegends is an NFT collection that turns into unique playable characters for our upcoming web-based roguelike deckbuilding game.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/smolegend.jpeg?raw=true",
+        "website": "https://discord.com/invite/smolegends",
+        "twitter": "https://twitter.com/smolegends?lang=en",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "arb"
+    },
+    "48": {
+        "name": "Litter Kittens",
+        "description": "Meow, meow. Only 5,555 kittens for FREE...meow. Coming soon to #arbitrum...",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/litterkittens.jpeg?raw=true",
+        "website": "https://discord.com/invite/litterkittens",
+        "twitter": "https://mobile.twitter.com/litterkittens",
+        "max-slots": 12,
+        "display-on-market": "true",
+        "network": "arb"
+    },
+    "49": {
+        "name": "VARIANT",
+        "description": "SHIFT THE META // CHANGE THE CULTURE // VARIANT",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/variant.jpeg?raw=true",
+        "website": "https://discord.com/invite/VARIANT",
+        "twitter": "https://twitter.com/VARIANT",
+        "max-slots": 3,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "50": {
+        "name": "Meta & Magic (Heroes + Items)",
+        "description": "100% on-chain NFT game. Can you defeat the bosses? This spot allows you to mint a hero and two items.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/mmitems.gif?raw=true",
+        "website": "https://linktr.ee/metaandmagic",
+        "twitter": "https://twitter.com/metaandmagic",
+        "max-slots": 25,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "51": {
+        "name": "Meta & Magic (Items)",
+        "description": "100% on-chain NFT game. Can you defeat the bosses? This spot allows you to mint one item.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/mmheroes.gif?raw=true",
+        "website": "https://linktr.ee/metaandmagic",
+        "twitter": "https://twitter.com/metaandmagic",
+        "max-slots": 75,
+        "display-on-market": "true",
+        "network": "eth"
+    } 
 }
