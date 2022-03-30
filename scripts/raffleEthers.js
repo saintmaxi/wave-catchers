@@ -1,4 +1,5 @@
 // a saintmaxi joint
+// onChainDiscordDirectory created by @0xInuarashi
 /*********************************************************************************/
 /********************************PRODUCTION CONFIG********************************/
 /*********************************************************************************/
@@ -271,22 +272,6 @@ const loadPastRaffles = async() => {
     $("#num-past").text(` (${numPast})`);
 }
 
-const promptForDiscord = async(id) => {
-    if (!($("#discord-popup").length)) {
-        let fakeJSX = `<div id="discord-popup">
-                        <div id="content">
-                         <p>Enter Discord User ID to associate with entry.</p>
-                         <br>
-                         <input id="discord-name" type="text" spellcheck="false" value="" placeholder="user#1234">
-                         <button class="button" onclick="enterRaffleWithName(${id})"">ENTER RAFFLE</button>
-                        </div>
-                       </div>`;
-        $("body").append(fakeJSX);
-        let height = $(document).height();
-        $("body").append(`<div id='block-screen-discord' style="height:${height}px" onclick="$('#discord-popup').remove();$('#block-screen-discord').remove()"></div>`);
-    }
-}
-
 const enterRaffle = async() => {
     try {
         if (capped) {
@@ -336,17 +321,15 @@ const enterRaffle = async() => {
 
 const enterRaffleWithName = async() => {
     try {
-        let name = $("#discord-name").val();
-        if (name == "") {
-            await displayErrorMessage(`Error: No User ID provided!`);
-
-        }
-        else if (!(name.includes("#"))) {
-            await displayErrorMessage(`Error: Must include "#" and numbers in ID!`);
+        let userAddress = await getAddress();
+        if (!discordSet) {
+            await displayErrorMessage("Error: Must set Discord ID to associate with purchases!")
+            await promptForDiscord();
         }
         else {
+            let currentDiscord = await identityMapper.addressToDiscord(userAddress);
             if (capped) {
-                await market.enterRaffle(currentID, 1, name).then( async(tx_) => {
+                await market.enterRaffle(currentID, 1, currentDiscord).then( async(tx_) => {
                     await waitForTransaction(tx_);
                     $('#discord-popup').remove();
                     $('#block-screen-discord').remove()
@@ -354,7 +337,7 @@ const enterRaffleWithName = async() => {
             }
             else {
                 let amount = Number($("#entry-num").val());
-                await market.enterRaffle(currentID, amount, name).then( async(tx_) => {
+                await market.enterRaffle(currentID, amount, currentDiscord).then( async(tx_) => {
                     await waitForTransaction(tx_);
                     $('#discord-popup').remove();
                     $('#block-screen-discord').remove()
@@ -548,7 +531,8 @@ const updateInfo = async () => {
     await checkCocoApproval();
     let userAddress = await getAddress();
     $("#account-text").html(`${userAddress.substr(0,7)}..`);
-    $("#mobile-account-text").html(`${userAddress.substr(0,12)}..`);
+    $("#account").addClass(`connected`);
+    $("#mobile-account-text").html(`${userAddress.substr(0,7)}..`);
     // if (!chainLogoSet) {
     //     await setChainLogo();
     // }

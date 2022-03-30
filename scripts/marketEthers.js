@@ -1,4 +1,5 @@
 // a saintmaxi joint
+// onChainDiscordDirectory created by @0xInuarashi
 /*********************************************************************************/
 /********************************PRODUCTION CONFIG********************************/
 /*********************************************************************************/
@@ -116,16 +117,14 @@ const checkCocoApproval = async() => {
 
 const purchaseWithName  = async(id) => {
     try {
-        let name = $("#discord-name").val();
-        if (name == "") {
-            await displayErrorMessage(`Error: No User ID provided!`);
-
-        }
-        else if (!(name.includes("#"))) {
-            await displayErrorMessage(`Error: Must include "#" and numbers in ID!`);
+        if (!discordSet) {
+            await displayErrorMessage("Error: Must set Discord ID to associate with purchases!")
+            await promptForDiscord();
         }
         else {
-            await newMarket.purchase(id, name).then( async(tx_) => {
+            let userAddress = await getAddress();
+            let currentDiscord = await identityMapper.addressToDiscord(userAddress);
+            await newMarket.purchase(id, currentDiscord).then( async(tx_) => {
                 await waitForTransaction(tx_);
                 $('#discord-popup').remove();
                 $('#block-screen-discord').remove()
@@ -198,21 +197,21 @@ const purchase  = async(id) => {
     }
 }
 
-const promptForDiscord = async(id) => {
-    if (!($("#discord-popup").length)) {
-        let fakeJSX = `<div id="discord-popup">
-                        <div id="content">
-                         <p>Enter Discord User ID to associate with purchase.</p>
-                         <br>
-                         <input id="discord-name" type="text" spellcheck="false" value="" placeholder="user#1234">
-                         <button class="button" onclick="purchaseWithName(${id})"">COMPLETE PURCHASE</button>
-                        </div>
-                       </div>`;
-        $("body").append(fakeJSX);
-        let height = $(document).height();
-        $("body").append(`<div id='block-screen-discord' style="height:${height}px" onclick="$('#discord-popup').remove();$('#block-screen-discord').remove()"></div>`);
-    }
-}
+// const promptForDiscord = async(id) => {
+//     if (!($("#discord-popup").length)) {
+//         let fakeJSX = `<div id="discord-popup">
+//                         <div id="content">
+//                          <p>Enter Discord User ID to associate with purchase.</p>
+//                          <br>
+//                          <input id="discord-name" type="text" spellcheck="false" value="" placeholder="user#1234">
+//                          <button class="button" onclick="purchaseWithName(${id})"">COMPLETE PURCHASE</button>
+//                         </div>
+//                        </div>`;
+//         $("body").append(fakeJSX);
+//         let height = $(document).height();
+//         $("body").append(`<div id='block-screen-discord' style="height:${height}px" onclick="$('#discord-popup').remove();$('#block-screen-discord').remove()"></div>`);
+//     }
+// }
 
 // - - - - - - - - - LOAD AND UPDATE LISTING DISPLAYS - - - - - - - - -
 
@@ -353,7 +352,7 @@ const loadCollections = async() => {
                             button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="purchase(${id})">PURCHASE</button>`;
                         }
                         else if (version == 2) {
-                            button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="promptForDiscord(${id})">PURCHASE</button>`;
+                            button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="purchaseWithName(${id})">PURCHASE</button>`;
                         }
                     }
                     let fakeJSX = `<div class="partner-collection" id="project-${id}">
@@ -537,7 +536,8 @@ const updateInfo = async () => {
     await checkCocoApproval();
     let userAddress = await getAddress();
     $("#account-text").html(`${userAddress.substr(0,7)}..`);
-    $("#mobile-account-text").html(`${userAddress.substr(0,12)}..`);
+    $("#account").addClass(`connected`);
+    $("#mobile-account-text").html(`${userAddress.substr(0,7)}..`);
     // if (!chainLogoSet) {
     //     await setChainLogo();
     // }

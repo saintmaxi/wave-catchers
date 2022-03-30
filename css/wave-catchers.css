@@ -81,19 +81,53 @@ p {
 
 #desktop-wallet-connect-div {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	width: 15%;
+	width: 29%;
 }
 
-#account {
+#desktop-wallet-connect-div button {
+	width: 48%;
+	font-size: 1.1vw;
+	letter-spacing: 1px
+}
+
+#discord-img {
+	height: 1.8vw;
+}
+
+#edit-img {
+	height: 1.4vw;
+}
+
+#account, #discord {
 	text-align: center;
-	font-size: 1.3vw;
-	letter-spacing: 3px;
-	background-color: white;
-	color:black;
-	width: 95%;
+	background-color: white !important;
+	color:black !important;
 	height: 80%;
+	min-height: 3vw;
   }
+
+#account.connected:hover {
+	cursor: default !important;
+}
+
+#discord.success, #discord-mobile.success {
+    background-color: rgb(49, 219, 49) !important;
+}
+
+#discord.success:hover, #discord-mobile.success:hover {
+    background-color: rgb(49, 219, 49) !important;
+	color: black !important;
+}
+
+#discord.failure, #discord-mobile.failure {
+    background-color: #F72119 !important;
+}
+
+#discord.failure:hover, #discord-mobile.failure:hover {
+    background-color: #F72119 !important;
+}
 
 
 .body {
@@ -268,7 +302,7 @@ h5 {
     box-shadow: 0 0 5000px 5000px rgba(0,0,0,0.88);
 }
 
-#error-popup, #status-popup, #discord-popup {
+#error-popup, #status-popup, #discord-popup, #stake-popup {
 	background-color: white;
     z-index: 99999;
     position:fixed;
@@ -284,10 +318,10 @@ h5 {
 }
 
 #discord-popup {
-    height: 45vh;
+    height: 50vh;
 }
 
-#error-popup p, #status-popup p, #discord-popup p {
+#error-popup p, #status-popup p, #discord-popup p, #stake-popup p {
     width: 100%;
     font-size: 2.5vw !important;
     line-height: 2.7vw !important;
@@ -300,7 +334,7 @@ h5 {
     text-align: center;
 }
 
-#discord-popup p {
+#discord-popup p, #stake-popup p {
 	position: initial;
 	top: initial;
 	left: initial;
@@ -310,7 +344,7 @@ h5 {
 	padding-bottom: 0;
 }
   
-  #discord-popup #content {
+  #discord-popup #content, #stake-popup #content {
 	width: 100%;
 	font-size: 2vw;
 	line-height: 2vw;
@@ -322,12 +356,12 @@ h5 {
 	transform: translate(-50%, -50%);
   }
   
-  #discord-popup #content input {
+  #discord-popup #content input, #stake-popup #content input {
 	text-align: center;
 	border: solid black .5vw;
   }
   
-  #discord-popup #content button {
+  #discord-popup #content button, #stake-popup #content button {
 	margin: auto;
 	margin-top: 3%;
   }
@@ -351,7 +385,7 @@ h5 {
     background-color: #F72119 !important;
 }
 
-#block-screen, #block-screen-error, #block-screen-status, #block-screen-approval, #block-screen-loading,  #block-screen-discord {
+#block-screen, #block-screen-error, #block-screen-status, #block-screen-approval, #block-screen-loading, #block-screen-discord, #block-screen-stake {
     z-index: 9998;
     width: 100vw;
     opacity: 0;
@@ -509,14 +543,23 @@ h5 {
 		line-height: 5.4vh !important;
 	}
 
-    #error-popup, #status-popup, #discord-popup {
+    #error-popup, #status-popup, #discord-popup, #stake-popup {
         width: 75vw;
         height: 15vh;
 		border-width: 5px;
     }
 
 	#discord-popup {
-		height: 40vh;
+		height: 45vh;
+	  }
+
+	  #stake-popup {
+		  height: 75vh;
+		  width: 90vw;
+	  }
+
+	  #stake-popup h1 {
+		  font-size: 4vh !important;
 	  }
 
     #error-popup p, #status-popup p, #discord-popup p {
@@ -525,26 +568,49 @@ h5 {
 		width: 80%;
     }
 
-	#discord-popup p {
+	#stake-popup p {
+		width: 90%;
+		padding: 0 !important;
+		font-size: 3vh !important;
+		line-height: 3vh !important;
+	}
+
+	#discord-popup p, #stake-popup p {
 		padding: 0;
 		margin: auto !important;
 		margin-bottom: 3%;
 	  }
 	
-	  #discord-popup #content input {
-			border-width: 2px;
+	  #discord-popup #content input, #stake-popup #content input {
+		border-width: 2px;
 		font-size: 4vw;
 		line-height: 4vw;
 	  }
 
-	  #discord-popup #content button {
+	  #stake-popup #content {
+		height: 95%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	  }
+
+	  #discord-popup #content button, #stake-popup #content button {
 		margin-top: 7%;
+		width: 90%;
   }
 	
 
 }
 
 @media screen and (max-width:767px) {
+	#discord-img {
+		height: 3.3vh;
+	}
+
+	#edit-img {
+		height: 2.3vh;
+	}
+
 	.header {
 		padding-right: 20px;
 		padding-left: 20px

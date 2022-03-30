@@ -1,4 +1,5 @@
 // a saintmaxi joint
+// onChainDiscordDirectory created by @0xInuarashi
 /*********************************************************************************/
 /********************************PRODUCTION CONFIG********************************/
 /*********************************************************************************/
@@ -345,7 +346,8 @@ const setChainLogo = async() => {
 const updateInfo = async () => {
     let userAddress = await getAddress();
     $("#account-text").html(`${userAddress.substr(0,7)}..`);
-    $("#mobile-account-text").html(`${userAddress.substr(0,12)}..`);
+    $("#account").addClass(`connected`);
+    $("#mobile-account-text").html(`${userAddress.substr(0,7)}..`);
     // if (!chainLogoSet) {
     //     await setChainLogo();
     // }

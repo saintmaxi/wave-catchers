@@ -1,5 +1,5 @@
 :root {
-    --active-color: #F5CD03;
+    --active-color: rgba(245, 205, 3, 1);
   }
 
 #coco-description {
@@ -9,6 +9,10 @@
     width: 65%;
     font-size: 1.4vw !important;
     line-height: 1.6vw !important;
+}
+
+#coco-balance-section {
+    padding-bottom: 0 !important;
 }
 
 h2, h3 {
@@ -21,42 +25,32 @@ h3 {
     line-height: 1.7vw !important;
 }
 
+#claim-passive {
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
 #coco-balances {
+    margin: auto;
     text-align: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
 }
 
 .coco-balance-container {
     padding: 10px;
     margin-bottom: 10px;
-    width: 39vw;
+    width: 32.5%;
 }
 
 .coco-balance-container button {
-    width: 75%;
+    width: 95%;
 }    
 
-#your-coco-container {
-    margin-right: 2vw;
+#approval {
+    width: 80vw;
 }
 
 #your-wavecatcher-section {
@@ -71,13 +65,20 @@ h3 {
 }
 
 .staking-section {
-    width: 90%;
+    width: 95%;
+}
+
+#wc-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #available-wavecatchers-images, #staked-wavecatchers-images {
+    padding: 10px;
 	border: solid black .5vw;
 	border-radius: 20px;
-    height: 50vh;
+    height: 53vh;
     overflow-y: scroll;
     text-align: center;
     display: -webkit-box;
@@ -103,16 +104,14 @@ h3 {
 }
 
 .your-wavecatcher {
-    width: 20%;
-    font-size: 1.3vw;
-    margin: 10px;
+    width: 25%;
+    margin: 1vw;
     transition: transform ease 300ms;
 }
 
 .your-wavecatcher img {
     border: solid black .5vw;
 	border-radius: 20px;
-    margin: 5px;
     background-color: black;
 }
 
@@ -132,6 +131,8 @@ h3 {
     margin-bottom: 0px;
     padding: 0 !important;
     text-align: center;
+    font-size: 1.5vw !important;
+    line-height: 1.5vw !important;
   }
   
 .your-wavecatcher:hover {
@@ -148,9 +149,56 @@ h3 {
     cursor: pointer;
 }
 
+.your-wavecatcher:hover .unlock-wrapper {
+    border-color: var(--active-color);
+    cursor: pointer;
+}
+
+.your-wavecatcher.active .unlock-wrapper {
+    border-color: var(--active-color);
+}
+
 .your-wavecatcher .coco-icon {
     margin-bottom: .2vw;
     margin-left: .2vw;
+}
+
+.img-div {
+    position: relative;
+    text-align: center;
+}
+
+.unlock-wrapper {
+    border: solid black .3vw;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .8;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.unlock-info {
+    text-align: center;
+    font-size: 1.1vw !important;
+}
+
+#controls-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.controls {
+    width: 49%;
 }
   
 .active img {
@@ -220,10 +268,20 @@ h3 {
 }
 
 .stake-buttons button {
-    width: 25%;
+    width: 49%;
+    margin-bottom: 1%;
 }
 
 @media screen and (max-width: 991px) {
+
+    #coco-balance-section {
+        padding-bottom: 50px !important;
+    }
+
+    #claim-passive {
+        height: 3vh;
+        width: 3vh;
+    }
 
     #coco-description {
         margin:auto;
@@ -243,8 +301,15 @@ h3 {
         line-height: 2.8vh !important;
     }
 
+    #coco-balances {
+        display: block;
+        width: 100vw;
+    }
+
     .coco-balance-container {
         width: 95vw;
+        margin: auto;
+        margin-bottom: 10px;
     }
 
     .coco-balance-container h2 {
@@ -258,11 +323,7 @@ h3 {
         padding: 20px;
     }    
 
-    #your-coco-container {
-        margin-right: initial;
-    }
-
-    #your-coco, #claimable-coco {
+    #your-coco, #claimable-coco, #claimable-staking-coco {
         font-size: 5vh;
         line-height: 5vh;
     }
@@ -271,16 +332,22 @@ h3 {
         width: 5vh;
     }
 
+    #approval {
+        width: 95% !important;
+    }
+
     #your-wavecatcher-section {
         width:95vw;
         min-height: 0;
         margin: auto;
         display: block;
+        padding: 10px;
     }
 
     .stake-buttons button {
         margin: 5px;
-        width: 95%;
+        width: 45%;
+        height: 6vh;
     }
 
     .staking-section {
@@ -292,10 +359,18 @@ h3 {
         margin-top: 30px;
     }
 
+    #controls-wrapper {
+        display: block;
+    }
+
+    .controls {
+        width: 100%;
+    }
+
     #available-wavecatchers-images, #staked-wavecatchers-images {
         width: 100%;
         border-width: 5px;
-        height: 60vh;
+        height: 55vh;
         text-align: center;
         display: -webkit-box;
         display: -webkit-flex;
@@ -325,6 +400,13 @@ h3 {
 
     .your-wavecatcher {
         width: 41%;
+        margin: 10px;
+    }
+
+    .unlock-info {
+        font-size: 2.4vh !important;
+        line-height: 2.4vh !important;
+        padding: 3px !important;
     }
 
     .your-wavecatcher img {
@@ -339,9 +421,13 @@ h3 {
         margin-left: 4px;
     }
 
+    .wavecatcher-id {
+        margin-top: 3px !important;
+    }
+
     .wavecatcher-id, .coco-earned {
-          font-size: 3vh;
-          line-height: 3.2vh;
+        font-size: 2.8vh !important;
+        line-height: 3.1vh !important;
     }
 
     .active img {

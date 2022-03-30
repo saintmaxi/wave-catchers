@@ -310,6 +310,15 @@
     background-color: #447CFC;
 
     }
+
+    #mobile-account, #discord-mobile {
+        width: 40%;
+        padding: 2px !important;
+    }
+
+    #discord-mobile {
+        background-color: white;
+    }
     
     #mobile-nav-menu.expanded {
         backdrop-filter: blur(10px);

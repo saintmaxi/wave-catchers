@@ -1,4 +1,5 @@
 // a saintmaxi joint
+// onChainDiscordDirectory created by @0xInuarashi
 /*********************************************************************************/
 /********************************PRODUCTION CONFIG********************************/
 /*********************************************************************************/
@@ -139,6 +140,8 @@ const loadCollectionsData = async() => {
         }
 
         let projectName = collectionsData[String(id)].name;
+        let mintDate = collectionsData[String(id)]["mint-date"] ? `(${collectionsData[String(id)]?.["mint-date"]})` : "" ;
+        let projectSite = collectionsData[String(id)].website;
         let winners = [];
 
         if (version == 2) {
@@ -146,9 +149,9 @@ const loadCollectionsData = async() => {
             let events = await marketContract.queryFilter(eventFilter);
             for (let i = 0; i < events.length; i++) {
                 if (events[i].args._address == userAddress) {
-                    myWL.push(projectName);
+                    myWL.push(`<a href="${projectSite}" target="_blank" class="link">${projectName} ${mintDate}</a>`);
                 }
-                winners.push(`${events[i].args._name} - ${events[i].args._address}`);
+                winners.push({discord: events[i].args._name, address: events[i].args._address});
             }
         }
         else {
@@ -156,9 +159,9 @@ const loadCollectionsData = async() => {
             let events = await marketContract.queryFilter(eventFilter);
             for (let i = 0; i < events.length; i++) {
                 if (events[i].args._address == userAddress) {
-                    myWL.push(projectName);
+                    myWL.push(`<a href="${projectSite}" target="_blank" class="link">${projectName} ${mintDate}</a>`);
                 }
-                winners.push(events[i].args._address);
+                winners.push({address: events[i].args._address});
             }
         }
 
@@ -181,7 +184,14 @@ const loadMyWL = async() => {
 }
 
 function selectWL(projectName) {
-    let wlArray = [...(projectToWL.get(projectName))];
+    let wlArray = [...(projectToWL.get(projectName))].map(x => {
+        if (x.discord) {
+            return `${x.discord} - ${x.address}`;
+        }
+        else {
+            return x.address;
+        }
+    });
     let wlString = wlArray.join("\n");
     $("#wl-section").empty();
     $("#wl-section").text(wlString);
@@ -190,9 +200,20 @@ function selectWL(projectName) {
 
 function updateDownload() {
     let projectName = $("#wl-select").val();
-    let filename = `${projectName}_WAVECATCHERS_WL.txt`;
-    let wlArray = [...(projectToWL.get(projectName))];
+    let filename = `${projectName}_WAVECATCHERS_WL.csv`;
+    let headerRow = "";
+    let wlArray = [...(projectToWL.get(projectName))].map(x => {
+        if (x.discord) {
+            headerRow = "DISCORD,ADDRESS\n";
+            return `"${x.discord}","${x.address}"`;
+        }
+        else {
+            headerRow = "ADDRESS\n";
+            return `"${x.address}"`;
+        }
+    });
     let wlString = wlArray.join("\n");
+    wlString = headerRow + wlString;
 
     $("#download-link").attr('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(wlString));
     $("#download-link").attr('download', filename);
@@ -286,7 +307,8 @@ const setChainLogo = async() => {
 const updateInfo = async () => {
     let userAddress = await getAddress();
     $("#account-text").html(`${userAddress.substr(0,7)}..`);
-    $("#mobile-account-text").html(`${userAddress.substr(0,12)}..`);
+    $("#account").addClass(`connected`);
+    $("#mobile-account-text").html(`${userAddress.substr(0,7)}..`);
     // if (!chainLogoSet) {
     //     await setChainLogo();
     // }

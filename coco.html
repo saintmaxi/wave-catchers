@@ -70,7 +70,7 @@
             </a>
          </div>
       </div>
-      <div class="hide-on-mobile" id="socials">
+      <!-- <div class="hide-on-mobile" id="socials">
          <a href="https://twitter.com/wavecatchersnft" target="_blank" class="link w-inline-block">
             <img src="images/twitter-black.png" loading="lazy" alt="">
          </a>
@@ -86,17 +86,25 @@
          <a href="https://etherscan.io/address/0x1a331c89898c37300ccce1298c62aefd3dfc016c" target="_blank" class="link w-inline-block">
             <img class="etherscan" src="images/etherscan-white.png" loading="lazy" alt="" style="border-radius: 50%;">
          </a>
-      </div>
+      </div> -->
       <div id="desktop-wallet-connect-div">
          <button class="button hide-on-mobile clickable" id="account" href="#" onclick=connect()>
             <span id="account-text">CONNECT</span>
-            <span id="account-chain-logo"></span>
+         </button>
+         <button class="button hide-on-mobile" id="discord" onclick="promptForDiscord()">
+            <img id="discord-img" src="./images/dc-black.png">
+            <span id="discord-text"></span>
+            <img id="edit-img" src="./images/edit.png">
          </button>
       </div>
       <div id="mobile-wallet-connect-div" class="hide-on-desktop">
          <button id="mobile-account" href="#" class="button" onclick=connect()>
-            <span id="mobile-account-text">CONNECT WALLET</span>
-            <span id="mobile-account-chain-logo"></span>
+            <span id="mobile-account-text">CONNECT</span>
+         </button>
+         <button class="button" id="discord-mobile" onclick="promptForDiscord()">
+            <img id="discord-img" src="./images/dc-black.png">
+            <span id="discord-text-mobile"></span>
+            <img id="edit-img" src="./images/edit.png">
          </button>
          <button id="navbar" href="#" class="button" onclick="toggleMenu()"></button>
       </div>
@@ -149,33 +157,68 @@
          </div>
       </div>
    </div>
-   <div class="section">
+   <div id="approval-container" class="section body-section body-1 wf-section hidden">
+      <div id="approval" class="container w-container box" style="text-align: center;">
+         <h1>APPROVE STAKING</h1><br>
+         <h3>In order to stake, you must first approve the staking contract to transfer your Wave Catchers.</h3><br>
+         <button class="button" id="approval-button" onclick="approveWCToCocoV2()">APPROVE STAKING</button>
+      </div>
+   </div>
+   <div class="section" id="coco-balance-section">
       <div id="coco-balances">
          <div id="your-coco-container" class="box coco-balance-container">
             <h2 class="text-primary">Your $COCO</h2>
             <h2><span id="your-coco"><span class="one">.</span><span class="two">.</span><span class="three">.</span></span> <img src="https://github.com/saintmaxi/wave-catchers/blob/main/images/coco.png?raw=true" class="coco-icon"></h2>
-            <button class="button" onclick="importCocoToWallet()">ADD $COCO TO METAMASK</button>
+            <button class="button" onclick="importCocoToWallet()">TRACK IN METAMASK</button>
          </div>
          <div class="box coco-balance-container"> 
-            <h2 class="text-primary">Claimable $COCO</h2>
+            <h2 class="text-primary">Passive $COCO</h2>
             <h2><span id="claimable-coco"><span class="one">.</span><span class="two">.</span><span class="three">.</span></span> <img src="https://github.com/saintmaxi/wave-catchers/blob/main/images/coco.png?raw=true" class="coco-icon"></h2>
             <button class="button" onclick="claimAll()">CLAIM $COCO </button>
+         </div>
+         <div class="box coco-balance-container"> 
+            <h2 class="text-primary">Staking $COCO</h2>
+            <h2><span id="claimable-staking-coco"><span class="one">.</span><span class="two">.</span><span class="three">.</span></span> <img src="https://github.com/saintmaxi/wave-catchers/blob/main/images/coco.png?raw=true" class="coco-icon"></h2>
+            <button class="button" onclick="claimAllStaked()">CLAIM $COCO </button>
          </div>
       </div>
    </div>
    <div id="your-wavecatcher-section" class="container box">
       <div id="staked-wavecatcher-wrapper" class="staking-section">
-         <h2 class="text-primary">YOUR CREW (<span id="your-wavecatchers-num"><span class="one">.</span><span class="two">.</span><span class="three">.</span></span>)</h2>
-              <div class="stake-buttons">
-                <button id="unstakeSelectedButton" href="#" class="button" onclick="claimByIds()">CLAIM SELECTED</button>
-                <button id="unstakeallButton" href="#" class="button" onclick="claimAll()">CLAIM ALL</button>
-              </div>
-              <div style="text-align: center;">
-                <h3 class="selected">Selected:</h3>
-                <h3 class="selected" id="selected-for-unstaking">None</h3>
-              </div>
-         <div id="available-wavecatchers-images" style="margin-top:0;width:100%;">
-            <h3>Searching <span class="hide-on-mobile">for Wave Catchers</span><span class="one">.</span><span class="two">.</span><span class="three">.</span></h3>
+         <div id="controls-wrapper">
+            <div class="controls">
+               <h2 class="text-primary">UNSTAKED (<span id="your-wavecatchers-num"><span class="one">.</span><span class="two">.</span><span class="three">.</span></span>)</h2>
+               <div class="stake-buttons">
+                 <button id="claimSelectedButton" href="#" class="button" onclick="claimByIds()">CLAIM SELECTED</button>
+                 <button id="claimAllButton" href="#" class="button" onclick="claimAll()">CLAIM <br class="hide-on-desktop">ALL</button>
+                 <button id="stakeSelectedButton" href="#" class="button" onclick="stakeByIdsHelper()">STAKE SELECTED</button>
+                 <button id="stakeAllButton" href="#" class="button" onclick="stakeAllHelper()">STAKE <br class="hide-on-desktop">ALL</button>
+               </div>
+               <div style="text-align: center;">
+                 <h3 class="selected">Selected:</h3>
+                 <h3 class="selected" id="selected-unstaked">None</h3>
+               </div>
+               <div id="available-wavecatchers-images" style="margin-top:0;">
+                  <h3>Searching</span><span class="one">.</span><span class="two">.</span><span class="three">.</span></h3>
+               </div>
+            </div>
+            <br class="hide-on-desktop">
+            <div class="controls">
+               <h2 class="text-primary">STAKED (<span id="your-staked-wavecatchers-num"><span class="one">.</span><span class="two">.</span><span class="three">.</span></span>)</h2>
+               <div class="stake-buttons">
+                  <button id="claimSelectedStakedButton" href="#" class="button" onclick="claimStakedByIds()">CLAIM SELECTED</button>
+                  <button id="claimAllStakedButton" href="#" class="button" onclick="claimAllStaked()">CLAIM <br class="hide-on-desktop">ALL</button>
+                  <button id="unstakeSelectedButton" href="#" class="button" onclick="unstakeByIds()">UNSTAKE SELECTED</button>
+                  <button id="unstakeallButton" href="#" class="button" onclick="unstakeAll()">UNSTAKE <br class="hide-on-desktop">ALL</button>
+               </div>
+               <div style="text-align: center;">
+                 <h3 class="selected">Selected:</h3>
+                 <h3 class="selected" id="selected-staked">None</h3>
+               </div>
+               <div id="staked-wavecatchers-images" style="margin-top:0;">
+                  <h3>Searching</span><span class="one">.</span><span class="two">.</span><span class="three">.</span></h3>
+               </div>
+            </div>
          </div>
       </div>
    </div>

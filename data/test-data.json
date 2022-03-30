@@ -27,7 +27,8 @@
         "twitter": "https://twitter.com/0xWarKittens",
         "max-slots": 10,
         "display-on-market": "true",
-        "network": "eth"
+        "network": "eth",
+        "mint-date": "5/10/2022"
     },
     "3": {
         "name": "Smol Potions",
@@ -67,7 +68,8 @@
         "twitter": "https://twitter.com/ItRemainsNFT",
         "max-slots": 10,
         "display-on-market": "false",
-        "network": "eth"
+        "network": "eth",
+        "mint-date": "5/10/2022"
     },
     "7": {
         "name": "Genesis Dragons v2",
@@ -77,7 +79,8 @@
         "twitter": "https://twitter.com/GenesisDragons",
         "max-slots": 20,
         "display-on-market": "true",
-        "network": "eth"
+        "network": "eth",
+        "mint-date": "3/19/2022"
     },
     "8": {
         "name": "Soul Splicers",
@@ -87,7 +90,8 @@
         "twitter": "https://twitter.com/SoulSplicersNFT",
         "max-slots": 15,
         "display-on-market": "true",
-        "network": "eth"
+        "network": "eth",
+        "mint-date": "3/9/2022"
     },
     "9": {
         "name": "Smol Obits",
@@ -97,7 +101,8 @@
         "twitter": "https://twitter.com/SmolObits",
         "max-slots": 20,
         "display-on-market": "true",
-        "network": "eth"
+        "network": "eth",
+        "mint-date": "9/9/2022"
     },
     "10": {
         "name": "Elefrens",
