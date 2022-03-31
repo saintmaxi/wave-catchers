@@ -49,8 +49,45 @@ h3 {
     width: 95%;
 }    
 
-#approval {
+#migration-steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.migration-step {
+    width: 33%;
+}
+
+.migration-step h3 {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    width: 90% !important;
+}
+
+.migration-step button {
+    width: 90%;
+}
+
+.converted {
+    background-color: grey;
+}
+
+.converted:hover {
+    background-color: grey;
+}
+
+#approval, #migration {
     width: 80vw;
+}
+
+#approval h3, #migration h3 {
+    width: 75%;
+    margin: auto;
+}
+
+#approval-button {
+    width: 50%;
 }
 
 #your-wavecatcher-section {
@@ -332,8 +369,29 @@ h3 {
         width: 5vh;
     }
 
-    #approval {
+    #approval, #migration {
         width: 95% !important;
+    }
+
+    #approval-button {
+        width: 95%;
+    }
+
+    #approval h3, #migration h3 {
+        width: 95%;
+        margin: auto;
+    }
+
+    #migration-steps {
+        display: block;
+    }
+
+    .migration-step {
+        width: 100%;
+    }
+
+    .migration-step button {
+        width: 95%;
     }
 
     #your-wavecatcher-section {

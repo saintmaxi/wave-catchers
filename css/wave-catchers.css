@@ -364,6 +364,7 @@ h5 {
   #discord-popup #content button, #stake-popup #content button {
 	margin: auto;
 	margin-top: 3%;
+	width: 29%;
   }
 
 @keyframes blinker {

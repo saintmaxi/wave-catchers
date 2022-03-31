@@ -38,8 +38,9 @@ const cocoAbi = () => {
     return `[ { "inputs": [], "stateMutability": "nonpayable", "type": "constructor" }, { "anonymous": false, "inputs": [ { "indexed": true, "internalType": "address", "name": "owner", "type": "address" }, { "indexed": true, "internalType": "address", "name": "spender", "type": "address" }, { "indexed": false, "internalType": "uint256", "name": "value", "type": "uint256" } ], "name": "Approval", "type": "event" }, { "anonymous": false, "inputs": [ { "indexed": true, "internalType": "address", "name": "previousOwner", "type": "address" }, { "indexed": true, "internalType": "address", "name": "newOwner", "type": "address" } ], "name": "OwnershipTransferred", "type": "event" }, { "anonymous": false, "inputs": [ { "indexed": true, "internalType": "address", "name": "from", "type": "address" }, { "indexed": true, "internalType": "address", "name": "to", "type": "address" }, { "indexed": false, "internalType": "uint256", "name": "value", "type": "uint256" } ], "name": "Transfer", "type": "event" }, { "inputs": [], "name": "DEFAULT_START_TIMESTAMP", "outputs": [ { "internalType": "uint256", "name": "", "type": "uint256" } ], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "EMISSION_RATE", "outputs": [ { "internalType": "uint256", "name": "", "type": "uint256" } ], "stateMutability": "view", "type": "function" }, { "inputs": [ { "internalType": "address", "name": "owner", "type": "address" }, { "internalType": "address", "name": "spender", "type": "address" } ], "name": "allowance", "outputs": [ { "internalType": "uint256", "name": "", "type": "uint256" } ], "stateMutability": "view", "type": "function" }, { "inputs": [ { "internalType": "address", "name": "spender", "type": "address" }, { "internalType": "uint256", "name": "amount", "type": "uint256" } ], "name": "approve", "outputs": [ { "internalType": "bool", "name": "", "type": "bool" } ], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [ { "internalType": "address", "name": "account", "type": "address" } ], "name": "balanceOf", "outputs": [ { "internalType": "uint256", "name": "", "type": "uint256" } ], "stateMutability": "view", "type": "function" }, { "inputs": [ { "internalType": "uint256", "name": "amount", "type": "uint256" } ], "name": "burn", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [ { "internalType": "address", "name": "account", "type": "address" }, { "internalType": "uint256", "name": "amount", "type": "uint256" } ], "name": "burnFrom", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [ { "internalType": "uint16[]", "name": "_tokenIds", "type": "uint16[]" } ], "name": "claim", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "name": "claimFree", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "name": "decimals", "outputs": [ { "internalType": "uint8", "name": "", "type": "uint8" } ], "stateMutability": "view", "type": "function" }, { "inputs": [ { "internalType": "address", "name": "spender", "type": "address" }, { "internalType": "uint256", "name": "subtractedValue", "type": "uint256" } ], "name": "decreaseAllowance", "outputs": [ { "internalType": "bool", "name": "", "type": "bool" } ], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [ { "internalType": "uint256", "name": "_id", "type": "uint256" } ], "name": "getRewardsForId", "outputs": [ { "internalType": "uint256", "name": "", "type": "uint256" } ], "stateMutability": "view", "type": "function" }, { "inputs": [ { "internalType": "address", "name": "spender", "type": "address" }, { "internalType": "uint256", "name": "addedValue", "type": "uint256" } ], "name": "increaseAllowance", "outputs": [ { "internalType": "bool", "name": "", "type": "bool" } ], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "name": "name", "outputs": [ { "internalType": "string", "name": "", "type": "string" } ], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "owner", "outputs": [ { "internalType": "address", "name": "", "type": "address" } ], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "renounceOwnership", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [ { "internalType": "address", "name": "_address", "type": "address" } ], "name": "setWaveCatchersAddress", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "name": "symbol", "outputs": [ { "internalType": "string", "name": "", "type": "string" } ], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "totalSupply", "outputs": [ { "internalType": "uint256", "name": "", "type": "uint256" } ], "stateMutability": "view", "type": "function" }, { "inputs": [ { "internalType": "address", "name": "recipient", "type": "address" }, { "internalType": "uint256", "name": "amount", "type": "uint256" } ], "name": "transfer", "outputs": [ { "internalType": "bool", "name": "", "type": "bool" } ], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [ { "internalType": "address", "name": "sender", "type": "address" }, { "internalType": "address", "name": "recipient", "type": "address" }, { "internalType": "uint256", "name": "amount", "type": "uint256" } ], "name": "transferFrom", "outputs": [ { "internalType": "bool", "name": "", "type": "bool" } ], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [ { "internalType": "address", "name": "newOwner", "type": "address" } ], "name": "transferOwnership", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "name": "waveCatchers", "outputs": [ { "internalType": "address", "name": "", "type": "address" } ], "stateMutability": "view", "type": "function" } ]`;
 };
 
-const cocoV2Address = "0x1A6E795EDB1f5Ba12b034d9a5ade8e44745fDA2f";
+const cocoV2Address = "0xe7e8C80B6731E97a78E30EF8DBC3d6cA62C6DD4a";
 const cocoV2Abi = () => { 
+    return `[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[],"name":"EMISSION_RATE","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"EMISSION_START_TIMESTAMP","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint16[]","name":"inDays","type":"uint16[]"},{"internalType":"uint256[]","name":"emissions","type":"uint256[]"}],"name":"addLockupPeriods","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"burn","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"burnFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"claimFromV1","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"},{"internalType":"uint16[]","name":"_tokenIds","type":"uint16[]"}],"name":"claimPassiveYield","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"},{"internalType":"uint16[]","name":"_tokenIds","type":"uint16[]"}],"name":"claimStakingRewards","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"cocov1","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint16","name":"_id","type":"uint16"}],"name":"getPassiveRewardsForId","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"}],"name":"getStakeDatas","outputs":[{"internalType":"uint256[]","name":"","type":"uint256[]"},{"internalType":"uint256[]","name":"","type":"uint256[]"},{"internalType":"uint256[]","name":"","type":"uint256[]"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint16","name":"_id","type":"uint16"}],"name":"getStakedRewardsForId","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"}],"name":"getStakes","outputs":[{"internalType":"uint256[]","name":"","type":"uint256[]"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"marketplace","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"},{"internalType":"address","name":"","type":"address"},{"internalType":"uint256","name":"","type":"uint256"},{"internalType":"bytes","name":"","type":"bytes"}],"name":"onERC721Received","outputs":[{"internalType":"bytes4","name":"","type":"bytes4"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"ownerMint","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"setCocoV1Address","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"setMarketplace","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"setWaveCatchersAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"},{"internalType":"uint16[]","name":"_tokenIds","type":"uint16[]"},{"internalType":"uint16[]","name":"_lockupDays","type":"uint16[]"},{"internalType":"bool","name":"claimPassiveRewardsFirst","type":"bool"}],"name":"stake","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"},{"internalType":"uint16[]","name":"_tokenIds","type":"uint16[]"},{"internalType":"bool","name":"claimStakingRewardsFirst","type":"bool"}],"name":"unstake","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"waveCatchers","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"}]`;
     return `[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[],"name":"EMISSION_RATE","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"EMISSION_START_TIMESTAMP","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint16[]","name":"inDays","type":"uint16[]"},{"internalType":"uint256[]","name":"emissions","type":"uint256[]"}],"name":"addLockupPeriods","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"burn","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"burnFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"claimFromV1","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"},{"internalType":"uint16[]","name":"_tokenIds","type":"uint16[]"}],"name":"claimPassiveYield","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"},{"internalType":"uint16[]","name":"_tokenIds","type":"uint16[]"}],"name":"claimStakingRewards","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"cocov1","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint16","name":"_id","type":"uint16"}],"name":"getPassiveRewardsForId","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"}],"name":"getStakeDatas","outputs":[{"internalType":"uint256[]","name":"","type":"uint256[]"},{"internalType":"uint256[]","name":"","type":"uint256[]"},{"internalType":"uint256[]","name":"","type":"uint256[]"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint16","name":"_id","type":"uint16"}],"name":"getStakedRewardsForId","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"}],"name":"getStakes","outputs":[{"internalType":"uint256[]","name":"","type":"uint256[]"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"marketplace","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"},{"internalType":"address","name":"","type":"address"},{"internalType":"uint256","name":"","type":"uint256"},{"internalType":"bytes","name":"","type":"bytes"}],"name":"onERC721Received","outputs":[{"internalType":"bytes4","name":"","type":"bytes4"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"proxy","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"setCocoV1Address","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"setMarketplace","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"setProxy","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"setWaveCatchersAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"},{"internalType":"uint16[]","name":"_tokenIds","type":"uint16[]"},{"internalType":"uint16[]","name":"_lockupDays","type":"uint16[]"},{"internalType":"bool","name":"claimPassiveRewardsFirst","type":"bool"}],"name":"stake","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"},{"internalType":"uint16[]","name":"_tokenIds","type":"uint16[]"},{"internalType":"bool","name":"claimStakingRewardsFirst","type":"bool"}],"name":"unstake","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"waveCatchers","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"}]`;
 };
 
@@ -88,7 +89,7 @@ const importCocoToWallet = async() => {
         params: {
           type: 'ERC20',
           options: {
-            address: cocoAddress,
+            address: cocoV2Address,
             symbol: 'COCO',
             decimals: 18,
             image: 'https://github.com/saintmaxi/wave-catchers/blob/main/images/coco.png?raw=true',
@@ -99,12 +100,32 @@ const importCocoToWallet = async() => {
 
 // - - - - - - - - - APPROVAL FUNCTIONS - - - - - - - - -
 
+// General Variables
+const maxInt = "115792089237316195423570985008687907853269984665640564039457584007913129639934";
+
 const approveWCToCocoV2 = async() => {
     await wavecatchers.setApprovalForAll(cocoV2Address, true).then (async(tx_) => {
         await waitForTransaction(tx_);
         $("#approval-button").html(`Approving<span class="one">.</span><span class="two">.</span><span class="three">.</span>`)
     });
 }
+
+const approveCocoConversion = async() => {
+    await coco.approve(cocoV2Address, maxInt).then (async(tx_) => {
+        await waitForTransaction(tx_);
+        $("#approval-button-conversion").html(`Approving<span class="one">.</span><span class="two">.</span><span class="three">.</span>`)
+    });
+}
+
+const checkConversionApproval = async() => {
+    const userAddress = await getAddress();
+    let conversionApproved = (Number(await coco.allowance(userAddress, cocoV2Address)) >= maxInt) ? true : false;
+    if (conversionApproved) {
+        $("#approval-button-conversion").prop("disabled",true);
+        $("#approval-button-conversion").addClass("converted");
+        $("#approval-button-conversion").html("Approved!");
+    }
+};
 
 const checkStakingApproval = async() => {
     const userAddress = await getAddress();
@@ -117,8 +138,35 @@ const checkStakingApproval = async() => {
     }
 };
 
+// - - - - - - - - - MIGRATION FUNCTIONS - - - - - - - - -
 
-// COCO Functions
+const migrateCoco = async() => {
+    try {
+        let userAddress = await getAddress();
+        let amount = await coco.balanceOf(userAddress);
+        await cocoV2.claimFromV1(userAddress, amount).then( async(tx_) => {
+            await waitForTransaction(tx_);
+        }); 
+    }
+    catch (error) {
+        if ((error.message).includes("Claims no longer accepted, emissions began")) {
+            await displayErrorMessage(`Error: Migration window now closed!`);
+        }
+        else if ((error.message).includes("transfer amount exceeds allowance")) {
+            await displayErrorMessage(`Error: Conversion not approved!`);
+        }
+        else if ((error.message).includes("User denied transaction signature")) {
+            console.log("Transaction rejected.");
+        }
+        else {
+            await displayErrorMessage("An error occurred. See console and window alert for details...")
+            window.alert(error);
+            console.log(error);
+        }
+    }
+}
+
+// - - - - - - - - - WAVE CATCHERS FUNCTIONS - - - - - - - - -
 
 const getWaveCatchersEnum = async()=>{
     let userAddress = await getAddress();
@@ -146,7 +194,7 @@ const getWaveCatchersOwned = async() => {
 const getWaveCatchersStaked = async() => {
     let userAddress = await getAddress();
     let stakedWaveCatchers = (await cocoV2.getStakes(userAddress)).map(Number);
-    return [...stakedWaveCatchers].sort((a, b) => a - b);
+    return [...stakedWaveCatchers];
 }
 
 const getWaveCatchersStakedDurations = async() => {
@@ -155,10 +203,23 @@ const getWaveCatchersStakedDurations = async() => {
     return [...durations];
 }
 
+// - - - - - - - - - $COCO BALANCE FUNCTIONS - - - - - - - - -
+
 const getCocoBalance = async()=>{
     let userAddress = await getAddress();
     let cocoBalance = await cocoV2.balanceOf(userAddress);
     $("#your-coco").html(`${(Number(formatEther(cocoBalance))).toFixed(2)}`);
+};
+
+const getPendingCocoV1Balance = async()=>{
+    let userAddress = await getAddress();
+    let totalWaveCatchers = await getWaveCatchersEnum();
+    let pendingCoco = 0;
+    for (let i = 0; i < totalWaveCatchers; i++) {
+        let id = Number(await wavecatchers.tokenOfOwnerByIndex(userAddress, i));
+        pendingCoco += Number(formatEther(await coco.getRewardsForId(id))); 
+    }
+    $("#claimable-coco-v1").html(`${pendingCoco.toFixed(2)}`);
 };
 
 const getPendingCocoBalance = async()=>{
@@ -182,7 +243,7 @@ const getPendingStakingCocoBalance = async()=>{
     $("#claimable-staking-coco").html(`${pendingCoco.toFixed(2)}`);
 };
 
-// Staking functions
+// - - - - - - - - - $COCO CLAIMING + STAKING FUNCTIONS - - - - - - - - -
 
 const claimByIds = async()=>{
     if (selectedUnstaked.size == 0) {
@@ -211,6 +272,22 @@ const claimAll = async() => {
         await cocoV2.claimPassiveYield(userAddress, waveCatchersArray).then( async(tx_) => {
             selectedUnstaked = new Set();
             $("#selected-unstaked").text("None");
+            $(".active").removeClass("active");
+            await waitForTransaction(tx_);
+        }); 
+    }
+};
+
+const claimAllV1 = async() => {
+    const numWaveCatchers = await getWaveCatchersEnum();
+    if (numWaveCatchers == 0) {
+        displayErrorMessage("No Wave Catchers to claim for!")
+    }
+    else {
+        const waveCatchersArray = await getWaveCatchersOwned();
+        await coco.claim(waveCatchersArray).then( async(tx_) => {
+            selectedForUnstaking = new Set();
+            $("#selected-for-unstaking").text("None");
             $(".active").removeClass("active");
             await waitForTransaction(tx_);
         }); 
@@ -376,7 +453,7 @@ const openStakingPrompt = async(ids) => {
                          <h1>Select lockup<span class="hide-on-mobile"> period</span></h1>
                          <p style="margin-left:0 !important;margin-right:0 !important;width:100%">
                             Claim passive rewards? 
-                            <input type="checkbox" id="claim-passive" name="claim-passive" value="true">
+                            <input type="checkbox" id="claim-passive" name="claim-passive" value="true" checked>
                          </p>
                          <br class="hide-on-mobile">
                          <button class="button" onclick="stakeByIds([${ids}], ${1})">7 DAYS</button>
@@ -390,7 +467,7 @@ const openStakingPrompt = async(ids) => {
     }
 }
 
-// Display functions
+// - - - - - - - - - DISPLAY FUNCTIONS - - - - - - - - -
 
 var stakedCatchers = [];
 var timerPending = [];
@@ -427,7 +504,7 @@ setInterval(async()=>{
                         $(`#unlock-info-${id}`).html("UNLOCKED!");
                     }
                     else {
-                        $(`#unlock-info-${id}`).html(`UNLOCKING<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
+                        $(`#unlock-info-${id}`).html(`PENDING<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
                     }
                 }
                 else {
@@ -446,6 +523,7 @@ const getWaveCatchersImages = async()=>{
     loadedCatchers = false;
     stakedCatchers = [];
     timerPending = [];
+    let idToStakedJSX = new Map();
     $("#available-wavecatchers-images").html(`<br><h3>Loading<span class="one">.</span><span class="two">.</span><span class="three">.</span></h3>`);
     $("#staked-wavecatchers-images").html(`<br><h3>Loading<span class="one">.</span><span class="two">.</span><span class="three">.</span></h3>`);
 
@@ -478,7 +556,6 @@ const getWaveCatchersImages = async()=>{
         const yourStakedWaveCatchers = await getWaveCatchersStaked();
         const timesLeft = await getWaveCatchersStakedDurations();
         currentlyStaked = yourStakedWaveCatchers;
-        let batchFakeJSX = "";
         for (let i = 0; i < yourStakedWaveCatchers.length; i++) {
             let waveCatcherID = yourStakedWaveCatchers[i];
             stakedCatchers.push({id: waveCatcherID, unlock: timesLeft[i]});
@@ -489,9 +566,15 @@ const getWaveCatchersImages = async()=>{
             }
             let cocoEarned = await getStakingCocoEarnedByID(waveCatcherID);
             let unlockHTML = `<img src="https://github.com/saintmaxi/wave-catchers/blob/main/images/lock-img-white.png?raw=true" class="coco-icon"> IN <span id="timer-${waveCatcherID}"><span class="one">.</span><span class="two">.</span><span class="three">.</span></span>`;
-            batchFakeJSX += `<div id="wavecatcher-${waveCatcherID}" class="your-wavecatcher ${active}" onclick="selectStaked(${waveCatcherID})"><div class="img-div"><img src="${baseImageURI}${waveCatcherID}.png"><div class="unlock-wrapper"><p class="unlock-info" id="unlock-info-${waveCatcherID}">${unlockHTML}</p></div></div><p class="wavecatcher-id">#${waveCatcherID}</p><p class="coco-earned"><span id="coco-earned-${waveCatcherID}">${cocoEarned}</span><img src="${cocoImgURL}" class="coco-icon"></p></div>`          
+            let fakeJSX = `<div id="wavecatcher-${waveCatcherID}" class="your-wavecatcher ${active}" onclick="selectStaked(${waveCatcherID})"><div class="img-div"><img src="${baseImageURI}${waveCatcherID}.png"><div class="unlock-wrapper"><p class="unlock-info" id="unlock-info-${waveCatcherID}">${unlockHTML}</p></div></div><p class="wavecatcher-id">#${waveCatcherID}</p><p class="coco-earned"><span id="coco-earned-${waveCatcherID}">${cocoEarned}</span><img src="${cocoImgURL}" class="coco-icon"></p></div>`;
+            idToStakedJSX.set(waveCatcherID, fakeJSX);
         };
-        $("#staked-wavecatchers-images").html(batchFakeJSX);
+        let stakedJSX = "";
+        let stakedIds = Array.from(idToStakedJSX.keys()).map(Number).sort(function(a, b){return a-b});
+        for (const stakedId of stakedIds) {
+            stakedJSX += idToStakedJSX.get(stakedId);
+        }
+        $("#staked-wavecatchers-images").html(stakedJSX);
     }
     loadedCatchers = true;
 }
@@ -530,6 +613,8 @@ const updateCocoEarned = async() => {
     };
 };
 
+// - - - - - - - - - PAGE REFRESH HANDLERS - - - - - - - - -
+
 const updateClaimingInfo = async()=>{
     if ((await getChainId()) === correctChain) {
         const loadingDiv = `<div class="loading-div" id="refresh-notification">REFRESHING <br>CLAIMING INTERFACE<span class="one">.</span><span class="two">.</span><span class="three">.</span>​</div><br>`;
@@ -540,7 +625,8 @@ const updateClaimingInfo = async()=>{
             $("#claimable-coco").text("0.0");
         }
         else {
-            await getPendingCocoBalance();
+            await getPendingCocoV1Balance();
+            // await getPendingCocoBalance();
         }
         let stakedWaveCatchersNum = await getStakedWaveCatchersEnum();
         if (stakedWaveCatchersNum == 0) {
@@ -679,7 +765,9 @@ async function endLoading(tx, txStatus) {
 setInterval(async()=>{
     await updateInfo();
     await checkStakingApproval();
+    await checkConversionApproval();
     await updateCocoEarned();
+    await getPendingCocoV1Balance();
     await getPendingCocoBalance();
     await getPendingStakingCocoBalance();
 }, 5000)
@@ -716,6 +804,7 @@ ethereum.on("accountsChanged", async(accounts_)=>{
 
 window.onload = async()=>{
     await updateInfo();
+    await checkConversionApproval();
     await checkStakingApproval();
     if (pendingTransactions.size < 1) {
         await updateClaimingInfo();
