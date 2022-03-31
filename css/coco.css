@@ -461,6 +461,10 @@ h3 {
         margin: 10px;
     }
 
+    .unlock-wrapper {
+        border-width: 5px;
+    }
+
     .unlock-info {
         font-size: 2.4vh !important;
         line-height: 2.4vh !important;
