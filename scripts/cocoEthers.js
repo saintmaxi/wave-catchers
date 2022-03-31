@@ -344,6 +344,9 @@ const stakeByIds = async(ids, lockup)=> {
         else if ((error.message).includes("User denied transaction signature")) {
             console.log("Transaction rejected.");
         }
+        else if ((error.message).includes("execution reverted")) {
+            await displayErrorMessage(`Passive yield not started! Please uncheck claim box.`);
+        }
         else {
             await displayErrorMessage("An error occurred. See console and window alert for details...")
             window.alert(error);
