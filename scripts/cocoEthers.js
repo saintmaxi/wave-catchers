@@ -223,14 +223,20 @@ const getPendingCocoV1Balance = async()=>{
 };
 
 const getPendingCocoBalance = async()=>{
-    let userAddress = await getAddress();
-    let totalWaveCatchers = await getWaveCatchersEnum();
-    let pendingCoco = 0;
-    for (let i = 0; i < totalWaveCatchers; i++) {
-        let id = Number(await wavecatchers.tokenOfOwnerByIndex(userAddress, i));
-        pendingCoco += Number(formatEther(await cocoV2.getPassiveRewardsForId(id))); 
+    try {
+        let userAddress = await getAddress();
+        let totalWaveCatchers = await getWaveCatchersEnum();
+        let pendingCoco = 0;
+        for (let i = 0; i < totalWaveCatchers; i++) {
+            let id = Number(await wavecatchers.tokenOfOwnerByIndex(userAddress, i));
+            pendingCoco += Number(formatEther(await cocoV2.getPassiveRewardsForId(id))); 
+        }
+        $("#claimable-coco").html(`${pendingCoco.toFixed(2)}`);
     }
-    $("#claimable-coco").html(`${pendingCoco.toFixed(2)}`);
+    catch (error) {
+        console.log("Error occured checking passive rewards. Emissions likely not started.");
+        $("#claimable-coco").html(`0.00`);
+    }
 };
 
 const getPendingStakingCocoBalance = async()=>{
