@@ -430,8 +430,12 @@ h4 {
         line-height: 4.5vh !important;
     }
 
-    #approval-button {
+    #approval-button, #approval-button-new {
         width: 90%;
+    }
+
+    #approval-button {
+        margin-bottom: 10px;
     }
 
     /* End approval section*/

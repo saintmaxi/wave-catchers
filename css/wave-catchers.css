@@ -343,6 +343,11 @@ h5 {
 	margin: auto;
 	padding-bottom: 0;
 }
+
+#stake-popup p {
+	font-size: 1.9vw !important;
+    line-height: 2vw !important;
+}
   
   #discord-popup #content, #stake-popup #content {
 	width: 100%;
@@ -364,7 +369,7 @@ h5 {
   #discord-popup #content button, #stake-popup #content button {
 	margin: auto;
 	margin-top: 3%;
-	width: 29%;
+	width: 32%;
   }
 
 @keyframes blinker {

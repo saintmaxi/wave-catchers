@@ -76,7 +76,7 @@
         "website": "https://twitter.com/GenesisDragons",
         "twitter": "https://twitter.com/GenesisDragons",
         "max-slots": 20,
-        "display-on-market": "true",
+        "display-on-market": "false",
         "network": "eth"
     },
     "8": {
@@ -146,7 +146,7 @@
         "website": "https://twitter.com/vSamurai_NFT",
         "twitter": "https://twitter.com/vSamurai_NFT",
         "max-slots": 20,
-        "display-on-market": "true",
+        "display-on-market": "false",
         "network": "eth"
     },
     "16": {
@@ -508,5 +508,85 @@
         "max-slots": 75,
         "display-on-market": "true",
         "network": "eth"
-    } 
+    },
+    "52": {
+        "name": "Gummies Gang (Refill)",
+        "description": "6969 chewy NFT friends who got hungry and ate the forbidden Ethereum rainbow.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/gummies.jpeg?raw=true",
+        "website": "https://twitter.com/GummiesGangNFT",
+        "twitter": "https://twitter.com/GummiesGangNFT",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "53": {
+        "name": "VARIANT (Refill)",
+        "description": "SHIFT THE META // CHANGE THE CULTURE // VARIANT",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/variant.jpeg?raw=true",
+        "website": "https://discord.com/invite/VARIANT",
+        "twitter": "https://twitter.com/VARIANT",
+        "max-slots": 15,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "55": {
+        "name": "Trove Street Punks",
+        "description": "Trove Street Punks is a collection of 10k punks who were created for the community Treasure!",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/tsp.jpeg?raw=true",
+        "website": "https://discord.com/invite/trovestreetpunks",
+        "twitter": "https://twitter.com/Tr_Street_Punks",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "arb"
+    },
+    "56": {
+        "name": "Gorilla Dao",
+        "description": "A troop of 6,666 gorillas living on a faraway island. $MAGIC integration - P2E - Gamified Staking Free mint, coming to Arbitrum Q2 of 2022",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/gdao.jpeg?raw=true",
+        "website": "https://discord.com/invite/gorillaDAO",
+        "twitter": "https://twitter.com/dao_gorilla",
+        "max-slots": 15,
+        "display-on-market": "true",
+        "network": "arb"
+    },
+    "57": {
+        "name": "Smol Age (Formerly Smol Obits)",
+        "description": "Smol Age will tell the story of how Smol Brains evolved. The first generation will be 5,678 Neandersmols. Free mint on Arbitrum.",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolobits.jpeg?raw=true",
+        "website": "https://twitter.com/SmolAge_NFT",
+        "twitter": "https://twitter.com/SmolAge_NFT",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "arb"
+    },
+    "58": {
+        "name": "Luv Bugs",
+        "description": "Raising awareness for shelter animals. Passive income utility project made up of 5,555 Luv Bugz",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/luvbugs.jpeg?raw=true",
+        "website": "https://luvbugznft.com/",
+        "twitter": "https://twitter.com/BugzNft",
+        "max-slots": 20,
+        "display-on-market": "true",
+        "network": "arb"
+    },
+    "59": {
+        "name": "Antebellum Games",
+        "description": "Antebellum, is a Crypto Real Time Strategy game coming to iOS and Android Q4 2022",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/antebellum.jpeg?raw=true",
+        "website": "https://www.antebellumgames.com/",
+        "twitter": "https://twitter.com/AntebellumGames",
+        "max-slots": 30,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "60": {
+        "name": "Color Monsters",
+        "description": "The most inclusive ANIMATED NFTs on the blockchain! ",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/colormonsters.png?raw=true",
+        "website": "https://colormonsters.io/",
+        "twitter": "https://twitter.com/colormonsterNFT",
+        "max-slots": 24,
+        "display-on-market": "true",
+        "network": "eth"
+    }
 }

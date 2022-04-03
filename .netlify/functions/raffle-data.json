@@ -3,5 +3,10 @@
         "name": "Wave Catcher #3328",
         "image": "https://wavecatchers.mypinata.cloud/ipfs/QmSMd9zpdeJSr2rzLvcvrKtfDRvuz8PYhk7GqCNumsa4H7/3328.png",
         "discord-required": "false"
+    },
+    "1": {
+        "name": "3Lander #7392",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/3lraffle.png?raw=true",
+        "discord-required": "false"
     }
 }
