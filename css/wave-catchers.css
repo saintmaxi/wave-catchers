@@ -302,7 +302,7 @@ h5 {
     box-shadow: 0 0 5000px 5000px rgba(0,0,0,0.88);
 }
 
-#error-popup, #status-popup, #discord-popup, #stake-popup {
+#error-popup, #status-popup, #discord-popup, #stake-popup, #confirm-popup {
 	background-color: white;
     z-index: 99999;
     position:fixed;
@@ -321,7 +321,15 @@ h5 {
     height: 50vh;
 }
 
-#error-popup p, #status-popup p, #discord-popup p, #stake-popup p {
+#stake-popup {
+	height: 40vh;
+}
+
+#confirm-popup {
+	height: 50vh;
+}
+
+#error-popup p, #status-popup p, #discord-popup p, #stake-popup p, #confirm-popup p {
     width: 100%;
     font-size: 2.5vw !important;
     line-height: 2.7vw !important;
@@ -334,7 +342,7 @@ h5 {
     text-align: center;
 }
 
-#discord-popup p, #stake-popup p {
+#discord-popup p, #stake-popup p, #confirm-popup p {
 	position: initial;
 	top: initial;
 	left: initial;
@@ -344,12 +352,12 @@ h5 {
 	padding-bottom: 0;
 }
 
-#stake-popup p {
+#stake-popup p, #confirm-popup p {
 	font-size: 1.9vw !important;
     line-height: 2vw !important;
 }
   
-  #discord-popup #content, #stake-popup #content {
+  #discord-popup #content, #stake-popup #content, #confirm-popup #content {
 	width: 100%;
 	font-size: 2vw;
 	line-height: 2vw;
@@ -361,7 +369,7 @@ h5 {
 	transform: translate(-50%, -50%);
   }
   
-  #discord-popup #content input, #stake-popup #content input {
+  #discord-popup #content input, #stake-popup #content input, #confirm-popup #content input {
 	text-align: center;
 	border: solid black .5vw;
   }
@@ -370,6 +378,12 @@ h5 {
 	margin: auto;
 	margin-top: 3%;
 	width: 32%;
+  }
+
+  #confirm-popup #content button  {
+	margin: auto;
+	margin-top: 3%;
+	width: 75%;
   }
 
 @keyframes blinker {
@@ -391,7 +405,7 @@ h5 {
     background-color: #F72119 !important;
 }
 
-#block-screen, #block-screen-error, #block-screen-status, #block-screen-approval, #block-screen-loading, #block-screen-discord, #block-screen-stake {
+#block-screen, #block-screen-error, #block-screen-status, #block-screen-approval, #block-screen-loading, #block-screen-discord, #block-screen-stake, #block-screen-confirm {
     z-index: 9998;
     width: 100vw;
     opacity: 0;
@@ -549,7 +563,7 @@ h5 {
 		line-height: 5.4vh !important;
 	}
 
-    #error-popup, #status-popup, #discord-popup, #stake-popup {
+    #error-popup, #status-popup, #discord-popup, #stake-popup, #confirm-popup {
         width: 75vw;
         height: 15vh;
 		border-width: 5px;
@@ -559,12 +573,12 @@ h5 {
 		height: 45vh;
 	  }
 
-	  #stake-popup {
+	  #stake-popup, #confirm-popup {
 		  height: 75vh;
 		  width: 90vw;
 	  }
 
-	  #stake-popup h1 {
+	  #stake-popup h1, #confirm-popup h1 {
 		  font-size: 4vh !important;
 	  }
 
@@ -574,20 +588,20 @@ h5 {
 		width: 80%;
     }
 
-	#stake-popup p {
+	#stake-popup p, #confirm-popup p {
 		width: 90%;
 		padding: 0 !important;
 		font-size: 3vh !important;
 		line-height: 3vh !important;
 	}
 
-	#discord-popup p, #stake-popup p {
+	#discord-popup p, #stake-popup p, #confirm-popup p {
 		padding: 0;
 		margin: auto !important;
 		margin-bottom: 3%;
 	  }
 	
-	  #discord-popup #content input, #stake-popup #content input {
+	  #discord-popup #content input, #stake-popup #content input, #confirm-popup #content input {
 		border-width: 2px;
 		font-size: 4vw;
 		line-height: 4vw;
@@ -600,7 +614,7 @@ h5 {
 		justify-content: space-between;
 	  }
 
-	  #discord-popup #content button, #stake-popup #content button {
+	  #discord-popup #content button, #stake-popup #content button, #confirm-popup #content button {
 		margin-top: 7%;
 		width: 90%;
   }

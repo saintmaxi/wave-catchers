@@ -327,12 +327,19 @@ const stakeAllHelper = async() => {
 };
 
 const stakeByIds = async(ids, lockup)=> {
+    let userAddress = await getAddress();
+    let lockups = Array(ids.length).fill(lockup);
+    let claimPassive = !migrationOpen;
+    await openConfirmPrompt(userAddress, ids, lockups, claimPassive);
+};
+
+const confirmStakeByIds = async(userAddress, ids, lockups, claimPassive)=> {
     try {
-        let userAddress = await getAddress();
-        let lockups = Array(ids.length).fill(lockup);
-        let claimPassive = !migrationOpen;
         await cocoV2.stake(userAddress, ids, lockups, claimPassive).then( async(tx_) => {
             $("#stake-popup").remove();
+            $("#confirm-popup").remove();
+            $("#block-screen-stake").remove();
+            $("#block-screen-confirm").remove();
             selectedUnstaked = new Set();
             for (let i = 0; i < ids.length; i++) {
                 $(`#wavecatcher-${ids[i]}`).remove();
@@ -361,7 +368,7 @@ const stakeByIds = async(ids, lockup)=> {
             console.log(error);
         }
     }
-};
+}
 
 const claimStakedByIds = async()=>{
     if (selectedStaked.size == 0) {
@@ -469,7 +476,7 @@ const openStakingPrompt = async(ids) => {
                         <div id="content">
                          <h1>Select lockup<span class="hide-on-mobile"> period</span></h1>
                          <p style="margin-left:0 !important;margin-right:0 !important;width:100%">
-                            Unclaimed passive V2 $COCO will be claimed automatically on staking. You can unstake when the lockup period ends.
+                            Unclaimed passive V2 $COCO will be claimed automatically on staking. You can unstake after the lockup period.
                          </p>
                          <button class="button" onclick="stakeByIds([${ids}], ${7})">7 DAYS (+10%)</button>
                          <button class="button" onclick="stakeByIds([${ids}], ${30})">30 DAYS (+25%)</button>
@@ -479,6 +486,24 @@ const openStakingPrompt = async(ids) => {
         $("body").append(fakeJSX);
         let height = $(document).height();
         $("body").append(`<div id='block-screen-stake' style="height:${height}px" onclick="$('#stake-popup').remove();$('#block-screen-stake').remove()"></div>`);
+    }
+}
+
+const openConfirmPrompt = async(userAddress, ids, lockups, claimPassive) => {
+    if (!($("#confirm-popup").length)) {
+        let fakeJSX = `<div id="confirm-popup">
+                        <div id="content">
+                         <h1>Confirm Staking</h1>
+                         <p style="margin-left:0 !important;margin-right:0 !important;width:100%">
+                            NOTE: CLAIM V1 COCO FIRST!<br>V1 COCO is only claimable when your Wave Catcher is in your wallet. If you stake before claiming, you may not be able to unlock and claim
+                             your remaining V1 COCO before migration closes.
+                         </p>
+                         <button class="button" onclick="confirmStakeByIds('${userAddress}', [${ids}], [${lockups}], ${claimPassive})">CONFIRM & STAKE</button>
+                        </div>
+                       </div>`;
+        $("body").append(fakeJSX);
+        let height = $(document).height();
+        $("body").append(`<div id='block-screen-confirm' style="height:${height}px" onclick="$('#confirm-popup').remove();$('#block-screen-confirm').remove()"></div>`);
     }
 }
 
