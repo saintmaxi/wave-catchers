@@ -130,7 +130,7 @@ const purchaseWithName  = async(id) => {
             await displayErrorMessage("Error: Must have Wave Catcher staked or in wallet to purchase!")
         }
         else if (!discordSet) {
-            await displayErrorMessage("Error: Must set Discord ID to associate with purchases!")
+            await displayErrorMessage("Error: Must set Discord ID to associate with purchases!");
             await promptForDiscord();
         }
         else {
@@ -154,10 +154,10 @@ const purchaseWithName  = async(id) => {
             await displayErrorMessage(`Error: Not live yet!`);
         }
         else if ((error.message).includes("transfer amount exceeds balance")) {
-            await displayErrorMessage(`Error: Insufficent $COCO balance!`);
+            await displayErrorMessage(`Error: Insufficent $COCO balance! You may still need to migrate!`);
         }
         else if ((error.message).includes("burn amount exceeds balance")) {
-            await displayErrorMessage(`Error: Insufficent $COCO balance!`);
+            await displayErrorMessage(`Error: Insufficent $COCO balance! You may still need to migrate!`);
         }
         else if ((error.message).includes("burn amount exceeds allowance")) {
             await displayErrorMessage(`Error: Market v2 not approved to spend $COCO!`);

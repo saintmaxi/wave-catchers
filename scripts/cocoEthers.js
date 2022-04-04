@@ -469,7 +469,7 @@ const openStakingPrompt = async(ids) => {
                         <div id="content">
                          <h1>Select lockup<span class="hide-on-mobile"> period</span></h1>
                          <p style="margin-left:0 !important;margin-right:0 !important;width:100%">
-                            Unclaimed passive $COCO will be claimed automatically on staking. You can unstake when the lockup period ends.
+                            Unclaimed passive V2 $COCO will be claimed automatically on staking. You can unstake when the lockup period ends.
                          </p>
                          <button class="button" onclick="stakeByIds([${ids}], ${7})">7 DAYS (+10%)</button>
                          <button class="button" onclick="stakeByIds([${ids}], ${30})">30 DAYS (+25%)</button>
