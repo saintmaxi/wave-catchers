@@ -727,6 +727,6 @@
         "twitter": "https://twitter.com/GeishasGardens",
         "max-slots": 20,
         "display-on-market": "true",
-        "network": "eth"
+        "network": "arb"
     }
 }
