@@ -728,5 +728,15 @@
         "max-slots": 20,
         "display-on-market": "true",
         "network": "arb"
+    },
+    "79": {
+        "name": "Neon Pantheon",
+        "description": "Experiental AR NFT project produced by a fully doxxed team.<br><brCelebrating cultural diversity and inclusivity.",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/NeonPantheon.jpg?raw=true",
+        "website": "https://neonpantheon.com/",
+        "twitter": "https://twitter.com/NeonPantheonNFT",
+        "max-slots": 50,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
