@@ -718,5 +718,15 @@
         "max-slots": 10,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "74": {
+        "name": "Geishas & Gardens",
+        "description": "A massive collection of 10,000 different Geishas & Gardens",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/geisha.jpg?raw=true",
+        "website": "https://twitter.com/GeishasGardens",
+        "twitter": "https://twitter.com/GeishasGardens",
+        "max-slots": 20,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
