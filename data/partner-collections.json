@@ -738,5 +738,15 @@
         "max-slots": 50,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "80": {
+        "name": "Kong Hub",
+        "description": "Join the Hub of Upgradeable Kongs",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/konghub.jpg?raw=true",
+        "website": "https://twitter.com/KongHub_",
+        "twitter": "https://twitter.com/KongHub_",
+        "max-slots": 15,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
