@@ -748,5 +748,15 @@
         "max-slots": 15,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "81": {
+        "name": "Sneaky Goblins",
+        "description": "4,444 Goblins building a sneaky ecosystem with gamified staking, mutations, black market, tools & more!",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/sneakygoblins.jpg?raw=true",
+        "website": "https://www.sneakygoblins.co/",
+        "twitter": "https://twitter.com/sneakygoblinnft",
+        "max-slots": 50,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
