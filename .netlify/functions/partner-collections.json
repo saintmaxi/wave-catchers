@@ -758,5 +758,25 @@
         "max-slots": 50,
         "display-on-market": "false",
         "network": "eth"
+    },
+    "82": {
+        "name": "The Sneaky Beans",
+        "description": "@Treasure_DAO | @TroveByTreasure<br>MAGIC beanleader @lowbudgetNFT<br>4444 Supply, Free Mint 🤫",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/sneakybeanz.jpg?raw=true",
+        "website": "https://twitter.com/SneakyBeansNFT",
+        "twitter": "https://twitter.com/SneakyBeansNFT",
+        "max-slots": 80,
+        "display-on-market": "true",
+        "network": "arb"
+    },
+    "83": {
+        "name": "Citizens of Tajigen",
+        "description": "We are already building.<br>The blockchain shall return.<br>// follow the signal //",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/tajigen.png?raw=true",
+        "website": "https://twitter.com/0xtajigen",
+        "twitter": "https://twitter.com/0xtajigen",
+        "max-slots": 15,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
