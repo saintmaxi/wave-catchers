@@ -606,7 +606,7 @@
         "website": "https://twitter.com/HomieFacesNFT",
         "twitter": "https://twitter.com/HomieFacesNFT",
         "max-slots": 20,
-        "display-on-market": "true",
+        "display-on-market": "false",
         "network": "eth"
     },
     "63": {
