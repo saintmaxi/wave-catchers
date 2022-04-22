@@ -8,5 +8,10 @@
         "name": "3Lander #7392",
         "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/3lraffle.png?raw=true",
         "discord-required": "false"
+    },
+    "2": {
+        "name": "Baby Mouse #2116",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/bbmouse.png?raw=true",
+        "discord-required": "false"
     }
 }
