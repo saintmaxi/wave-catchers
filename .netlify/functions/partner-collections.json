@@ -778,5 +778,45 @@
         "max-slots": 15,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "84": {
+        "name": "DaoDon Genesis Access Card",
+        "description": "Bridge between VR, Hospitality & Community Governance<br>0.2 Mint: 7777 Access Cards",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/daodon.jpg?raw=true",
+        "website": "https://twitter.com/daodonnft",
+        "twitter": "https://twitter.com/daodonnft",
+        "max-slots": 40,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "85": {
+        "name": "Super Dudes",
+        "description": "Welcome to Graveyard Falls. Where the line between hero and villain isn’t so clear.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/superdude.gif?raw=true",
+        "website": "https://twitter.com/graveyardfalls",
+        "twitter": "https://twitter.com/graveyardfalls",
+        "max-slots": 50,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "86": {
+        "name": "Bone Ducks",
+        "description": "P2E NFT<br>Join the battle for precious $SNAIL 🐌<br>FREE MINT FOR WL MEMBERS",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/boneduck.gif?raw=true",
+        "website": "https://www.boneducks.com/",
+        "twitter": "https://twitter.com/boneducks",
+        "max-slots": 5,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "87": {
+        "name": "M1CH3L",
+        "description": "A Battle of Heaven vs Hell<br>Total Supply: 3333<br>FREE MINT",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/m1ch3l.jpg?raw=true",
+        "website": "https://twitter.com/Ch3lM",
+        "twitter": "https://twitter.com/Ch3lM",
+        "max-slots": 20,
+        "display-on-market": "true",
+        "network": "arb"
     }
 }
