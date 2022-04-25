@@ -109,23 +109,6 @@ const approveWCToCocoV2 = async() => {
     });
 }
 
-const approveCocoConversion = async() => {
-    await coco.approve(cocoV2Address, maxInt).then (async(tx_) => {
-        await waitForTransaction(tx_);
-        $("#approval-button-conversion").html(`Approving<span class="one">.</span><span class="two">.</span><span class="three">.</span>`)
-    });
-}
-
-const checkConversionApproval = async() => {
-    const userAddress = await getAddress();
-    let conversionApproved = (Number(await coco.allowance(userAddress, cocoV2Address)) >= maxInt) ? true : false;
-    if (conversionApproved) {
-        $("#approval-button-conversion").prop("disabled",true);
-        $("#approval-button-conversion").addClass("converted");
-        $("#approval-button-conversion").html("Approved!");
-    }
-};
-
 const checkStakingApproval = async() => {
     const userAddress = await getAddress();
     let stakingApproved = await wavecatchers.isApprovedForAll(userAddress, cocoV2Address);
@@ -136,34 +119,6 @@ const checkStakingApproval = async() => {
         $("#approval-container").removeClass("hidden");
     }
 };
-
-// - - - - - - - - - MIGRATION FUNCTIONS - - - - - - - - -
-
-const migrateCoco = async() => {
-    try {
-        let userAddress = await getAddress();
-        let amount = await coco.balanceOf(userAddress);
-        await cocoV2.claimFromV1(userAddress, amount).then( async(tx_) => {
-            await waitForTransaction(tx_);
-        }); 
-    }
-    catch (error) {
-        if ((error.message).includes("Claims no longer accepted, emissions began")) {
-            await displayErrorMessage(`Error: Migration window now closed!`);
-        }
-        else if ((error.message).includes("transfer amount exceeds allowance")) {
-            await displayErrorMessage(`Error: Conversion not approved!`);
-        }
-        else if ((error.message).includes("User denied transaction signature")) {
-            console.log("Transaction rejected.");
-        }
-        else {
-            await displayErrorMessage("An error occurred. See console and window alert for details...")
-            window.alert(error);
-            console.log(error);
-        }
-    }
-}
 
 // - - - - - - - - - WAVE CATCHERS FUNCTIONS - - - - - - - - -
 
@@ -210,23 +165,6 @@ const getCocoBalance = async()=>{
     $("#your-coco").html(`${(Number(formatEther(cocoBalance))).toFixed(2)}`);
 };
 
-const getCocoV1Balance = async()=>{
-    let userAddress = await getAddress();
-    let cocoBalance = await coco.balanceOf(userAddress);
-    $("#your-v1-balance").html(`${(Number(formatEther(cocoBalance))).toFixed(2)}`);
-};
-
-const getPendingCocoV1Balance = async()=>{
-    let userAddress = await getAddress();
-    let totalWaveCatchers = await getWaveCatchersEnum();
-    let pendingCoco = 0;
-    for (let i = 0; i < totalWaveCatchers; i++) {
-        let id = Number(await wavecatchers.tokenOfOwnerByIndex(userAddress, i));
-        pendingCoco += Number(formatEther(await coco.getRewardsForId(id))); 
-    }
-    $("#claimable-coco-v1").html(`${pendingCoco.toFixed(2)}`);
-};
-
 const getPendingCocoBalance = async()=>{
     try {
         let userAddress = await getAddress();
@@ -239,8 +177,7 @@ const getPendingCocoBalance = async()=>{
         $("#claimable-coco").html(`${pendingCoco.toFixed(2)}`);
     }
     catch (error) {
-        console.log("Error occured checking passive rewards. Emissions likely not started.");
-        $("#claimable-coco").html(`0.00`);
+        console.log("MM throws extra error. Rewards lookup successful.");
     }
 };
 
@@ -289,22 +226,6 @@ const claimAll = async() => {
     }
 };
 
-const claimAllV1 = async() => {
-    const numWaveCatchers = await getWaveCatchersEnum();
-    if (numWaveCatchers == 0) {
-        displayErrorMessage("No Wave Catchers to claim for!")
-    }
-    else {
-        const waveCatchersArray = await getWaveCatchersOwned();
-        await coco.claim(waveCatchersArray).then( async(tx_) => {
-            selectedForUnstaking = new Set();
-            $("#selected-for-unstaking").text("None");
-            $(".active").removeClass("active");
-            await waitForTransaction(tx_);
-        }); 
-    }
-};
-
 const stakeByIdsHelper = async()=>{
     if (selectedUnstaked.size == 0) {
         displayErrorMessage("Select at least 1 Wave Catcher to stake!")
@@ -329,7 +250,7 @@ const stakeAllHelper = async() => {
 const stakeByIds = async(ids, lockup)=> {
     let userAddress = await getAddress();
     let lockups = Array(ids.length).fill(lockup);
-    let claimPassive = !migrationOpen;
+    let claimPassive = true;
     await openConfirmPrompt(userAddress, ids, lockups, claimPassive);
 };
 
@@ -476,14 +397,14 @@ const openStakingPrompt = async(ids) => {
                         <div id="content">
                          <h1>Select lockup<span class="hide-on-mobile"> period</span></h1>
                          <p style="margin-left:0 !important;margin-right:0 !important;width:100%">
-                            Unclaimed passive V2 $COCO will be claimed automatically on staking. You can unstake after the lockup period.
+                            Unclaimed passive $COCO will be claimed automatically on staking. You can unstake after the lockup period.
                          </p>
+                        <button class="button" onclick="stakeByIds([${ids}], ${7})">7 DAYS (+10%)</button>
                          <button class="button" onclick="stakeByIds([${ids}], ${30})">30 DAYS (+25%)</button>
                          <button class="button" onclick="stakeByIds([${ids}], ${90})">90 DAYS (+50%)</button>
                         </div>
                        </div>`;
         $("body").append(fakeJSX);
-        // <button class="button" onclick="stakeByIds([${ids}], ${7})">7 DAYS (+10%)</button>
         let height = $(document).height();
         $("body").append(`<div id='block-screen-stake' style="height:${height}px" onclick="$('#stake-popup').remove();$('#block-screen-stake').remove()"></div>`);
     }
@@ -495,8 +416,7 @@ const openConfirmPrompt = async(userAddress, ids, lockups, claimPassive) => {
                         <div id="content">
                          <h1>Confirm Staking</h1>
                          <p style="margin-left:0 !important;margin-right:0 !important;width:100%">
-                            NOTE: CLAIM V1 COCO FIRST!<br>V1 COCO is only claimable when your Wave Catcher is in your wallet. If you stake before claiming, you may not be able to unlock and claim
-                             your remaining V1 COCO before migration closes.
+                         You will be unable to unstake until the end of the selected lockup period. After the lockup period, you can unstake as you please or remain staked to continue earning boosted rewards.
                          </p>
                          <button class="button" onclick="confirmStakeByIds('${userAddress}', [${ids}], [${lockups}], ${claimPassive})">CONFIRM & STAKE</button>
                         </div>
@@ -508,44 +428,6 @@ const openConfirmPrompt = async(userAddress, ids, lockups, claimPassive) => {
 }
 
 // - - - - - - - - - DISPLAY FUNCTIONS - - - - - - - - -
-
-var migrationOpen = true;
-
-setInterval(async()=>{
-        if (migrationOpen) {
-            let now = Date.now() / 1000;
-            let timestamp = Number(await cocoV2.EMISSION_START_TIMESTAMP());
-            let distance = timestamp - now;
-    
-            var hours = Math.floor(distance / (60 * 60));
-            var minutes = Math.floor((distance % (60 * 60)) / (60));
-            var seconds = Math.floor((distance % (60)));
-
-            if (hours < 10) {
-                hours = `0${hours}`;
-            }
-            if (minutes < 10) {
-                minutes = `0${minutes}`;
-            }
-            if (seconds < 10) {
-                seconds = `0${seconds}`;
-            }
-                            
-            if (distance <= 0) {
-                let blockTime = (await provider.getBlock((await provider.getBlockNumber()))).timestamp;
-                if (blockTime > timestamp) {
-                    migrationOpen = false;
-                    $(`#migration-timer`).html("MIGRATION CLOSED!");
-                }
-                else {
-                    $(`#migration-timer`).html(`ENDS NEXT BLOCK<span class="one">.</span><span class="two">.</span><span class="three">.</span>`);
-                }
-            }
-            else {
-                $(`#migration-timer`).html(`ENDS IN ${hours}:${minutes}:${seconds}`);
-            }
-        }
-}, 1000)
 
 var stakedCatchers = [];
 var timerPending = [];
@@ -698,14 +580,12 @@ const updateClaimingInfo = async()=>{
         const loadingDiv = `<div class="loading-div" id="refresh-notification">REFRESHING <br>CLAIMING INTERFACE<span class="one">.</span><span class="two">.</span><span class="three">.</span>​</div><br>`;
         $("#pending-transactions").append(loadingDiv);
         await getCocoBalance();
-        await getCocoV1Balance();
         let waveCatchersNum = await getWaveCatchersEnum();
         if (waveCatchersNum == 0) {
             $("#claimable-coco").text("0.0");
         }
         else {
-            await getPendingCocoV1Balance();
-            // await getPendingCocoBalance();
+            await getPendingCocoBalance();
         }
         let stakedWaveCatchersNum = await getStakedWaveCatchersEnum();
         if (stakedWaveCatchersNum == 0) {
@@ -844,10 +724,7 @@ async function endLoading(tx, txStatus) {
 setInterval(async()=>{
     await updateInfo();
     await checkStakingApproval();
-    await checkConversionApproval();
     await updateCocoEarned();
-    await getCocoV1Balance();
-    await getPendingCocoV1Balance();
     await getPendingCocoBalance();
     await getPendingStakingCocoBalance();
 }, 5000)
@@ -884,7 +761,6 @@ ethereum.on("accountsChanged", async(accounts_)=>{
 
 window.onload = async()=>{
     await updateInfo();
-    await checkConversionApproval();
     await checkStakingApproval();
     if (pendingTransactions.size < 1) {
         await updateClaimingInfo();
