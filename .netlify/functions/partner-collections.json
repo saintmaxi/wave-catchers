@@ -719,6 +719,16 @@
         "display-on-market": "true",
         "network": "eth"
     },
+    "76": {
+        "name": "The Randoms",
+        "description": "Cultivating singularity.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/randoms.jpeg?raw=true",
+        "website": "https://therandoms.io/",
+        "twitter": "https://twitter.com/TheRandomsNFT",
+        "max-slots": 30,
+        "display-on-market": "false",
+        "network": "eth"
+    },
     "78": {
         "name": "Geishas & Gardens",
         "description": "A massive collection of 10,000 different Geishas & Gardens",
@@ -736,7 +746,7 @@
         "website": "https://neonpantheon.com/",
         "twitter": "https://twitter.com/NeonPantheonNFT",
         "max-slots": 50,
-        "display-on-market": "true",
+        "display-on-market": "false",
         "network": "eth"
     },
     "80": {
@@ -818,5 +828,15 @@
         "max-slots": 20,
         "display-on-market": "true",
         "network": "arb"
+    } ,
+    "88": {
+        "name": "Taiketsu",
+        "description": "Collection of 5,889 warriors on the Ethereum Network.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/51A4E0DB-EFF1-4CD7-82C3-4840E29AC017.jpeg?raw=true",
+        "website": "https://taiketsu.io/",
+        "twitter": "https://twitter.com/TaiketsuNFT",
+        "max-slots": 20,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
