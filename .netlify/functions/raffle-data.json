@@ -18,5 +18,10 @@
         "name": "Baby Anonymice #2116",
         "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/bbmouse.png?raw=true",
         "discord-required": "false"
+    },
+    "4": {
+        "name": "Llamascape Whitelist Spot",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/llamascape.jpg?raw=true",
+        "discord-required": "false"
     }
 }
