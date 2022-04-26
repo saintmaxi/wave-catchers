@@ -845,7 +845,7 @@
         "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/llamascape.jpg?raw=true",
         "website": "https://mobile.twitter.com/LlamascapeNFT",
         "twitter": "https://mobile.twitter.com/LlamascapeNFT",
-        "max-slots": 15,
+        "max-slots": 14,
         "display-on-market": "true",
         "network": "eth"
     }
