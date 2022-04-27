@@ -108,6 +108,11 @@ p {
 	min-height: 3vw;
   }
 
+#discord {
+	transition: all 0.5s;
+}
+  
+
 #account.connected:hover {
 	cursor: default !important;
 }
