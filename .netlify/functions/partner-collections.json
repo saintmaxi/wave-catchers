@@ -858,5 +858,15 @@
         "max-slots": 20,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "91": {
+        "name": "Generative Dungeon",
+        "description": "World's first fully playable, fully customizable, community-driven RPG collection",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/generative%20dungeon.jpg?raw=true",
+        "website": "https://generativedungeon.com/",
+        "twitter": "https://twitter.com/GenDungeon",
+        "max-slots": 5,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
