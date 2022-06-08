@@ -1,1100 +1,1100 @@
 {
-    "0": {
-        "name": "Kiwami",
-        "description": "Designed in the Metaverse<br><br>Born in Japan.<br><br>Purchase a Mintlist slot to secure your spot at Tengoku Club.",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/kiwami.gif?raw=true",
-        "website": "http://twitter.com/KiwamiNFT",
-        "twitter": "http://twitter.com/KiwamiNFT",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-        },
-    "1": {
-        "name": "Psyker",
-        "description": "Welcome to the Pskyerverse! Immerse yourself into a fighting experience like no other, blending science-fiction and post-apocalyptic themes.",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/psyker.png?raw=true",
-        "website": "https://psyker.game/",
-        "twitter": "http://twitter.com/psykergame",
-        "max-slots": 50,
-        "display-on-market": "false",
-        "network": "eth"
-        },
-    "2": {
-        "name": "War Kittens",
-        "description": "The on-chain PvP RPG ⚔️🐱<br><br>Entering the Kitten Kingdom is not for the faint of heart– join us if you’re prepared.",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/warkittens.gif?raw=true",
-        "website": "https://warkittens.xyz/",
-        "twitter": "https://twitter.com/0xWarKittens",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "3": {
-        "name": "Smol Potions",
-        "description": "The forgotten art of black $MAGIC. Who knows what these potions are capable of....<br><br>Free mint on L2",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolpotion.png?raw=true",
-        "website": "https://twitter.com/SmolPotions",
-        "twitter": "https://twitter.com/SmolPotions",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "4": {
-        "name": "ApexWolves",
-        "description": "5000 of the freshest wolves building their pack on the Ethereum blockchain.<br><br>Loyalty points applicable: 2/16/2022 - Present",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/apexwolves.jpeg?raw=true",
-        "website": "https://www.apexwolves.io/",
-        "twitter": "https://twitter.com/0xAWNFT",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "5": {
-        "name": "Fat Cats DAO",
-        "description": "5000 unique NFTs that double as membership tokens and a share of all Fat Cats holdings. Join us as we build the premier blue chip NFT portfolio & community!",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/fatcatsdao.gif?raw=true",
-        "website": "https://www.fatcats.art/",
-        "twitter": "https://twitter.com/FatCatsDao",
-        "max-slots": 100,
-        "display-on-market": "false",
-        "network": "eth"
-    },
-    "6": {
-        "name": "It Remains",
-        "description": "The beyond dystopian NFT universe franchise. A genesis collection of 7777 Resisters. With the art director of WALL-E and Finding Nemo.",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/itremains.jpeg?raw=true",
-        "website": "https://itremains.io/",
-        "twitter": "https://twitter.com/ItRemainsNFT",
-        "max-slots": 10,
-        "display-on-market": "false",
-        "network": "eth"
-    },
-    "7": {
-        "name": "Genesis Dragons v2",
-        "description": "The v2 Collection of Genesis Dragons, a collection of 250 Pixel Dragons Created by @NiftyDragons.<br><br>Join the Thunder!",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/genesisdragons.jpeg?raw=true",
-        "website": "https://twitter.com/GenesisDragons",
-        "twitter": "https://twitter.com/GenesisDragons",
-        "max-slots": 20,
-        "display-on-market": "false",
-        "network": "eth"
-    },
-    "8": {
-        "name": "Soul Splicers",
-        "description": "Building the next generation of blockchain gaming, starting with a P2E roguevania.<br><br>No empty promises, gameplay first.",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/soulsplicers.jpeg?raw=true",
-        "website": "https://twitter.com/SoulSplicersNFT",
-        "twitter": "https://twitter.com/SoulSplicersNFT",
-        "max-slots": 15,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "9": {
-        "name": "Smol Obits",
-        "description": "Smol Obits is a collection of 4269 prehistoric, skeletal ancestors of Smol Brains<br><br>Free Mint on Arbitrum",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolobits.jpeg?raw=true",
-        "website": "https://twitter.com/SmolObits",
-        "twitter": "https://twitter.com/SmolObits",
-        "max-slots": 20,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "10": {
-        "name": "Elefrens",
-        "description": "5555 Elephant Baby Calves on arbitrum protecting endangered Elephants and African wildlife.<br>NFT STAKING. DAO. GAME. AIRDROPS. CHARITY.",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/elefrens.jpeg?raw=true",
-        "website": "https://twitter.com/Elefrens",
-        "twitter": "https://twitter.com/Elefrens",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "11": {
-        "name": "Eyes of Ignolia",
-        "description": "The first decentralized anime created with the community. Seekers narrating the tale of Ignolia",
-        "image": "https://pbs.twimg.com/profile_images/1466206671194177545/4nk-xvI1_400x400.jpg",
-        "website": "https://www.eyesofignolia.io/",
-        "twitter": "https://twitter.com/eyesofignolia",
-        "max-slots": 5,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "12": {
-        "name": "Lost Samurise",
-        "description": "The river is contaminated; the land destroyed. Help us save the lost samurai.",
-        "image": "https://pbs.twimg.com/profile_images/1485980245534683139/ePzEaG6l_400x400.jpg",
-        "website": "https://samurise.xyz",
-        "twitter": "https://twitter.com/SamuRiseNFT",
-        "max-slots": 15,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "13": {
-        "name": "The Dead Puppet Co",
-        "description": "5,555 Dead Puppets looking to find life in the Metaverse",
-        "image": "https://pbs.twimg.com/profile_images/1491804392353193987/BVQjwJoq_400x400.jpg",
-        "website": "https://twitter.com/TheDeadPuppetCo",
-        "twitter": "https://twitter.com/TheDeadPuppetCo",
-        "max-slots": 20,
-        "display-on-market": "false",
-        "network": "eth"
-    },
-    "14": {
-        "name": "vSamurai",
-        "description": "A limited-supply genesis NFT collection on the Ethereum Network. Play and Earn as you follow the path of vSamurai. Coming soon.",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/vsamurai.png?raw=true",
-        "website": "https://twitter.com/vSamurai_NFT",
-        "twitter": "https://twitter.com/vSamurai_NFT",
-        "max-slots": 20,
-        "display-on-market": "false",
-        "network": "eth"
-    },
-    "16": {
-        "name": "Smol Sharks",
-        "description": "There is something in the water... $MAGIC, Free Mint, PvP P2E NFT game",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolsharks.jpeg?raw=true",
-        "website": "https://twitter.com/smolsharks",
-        "twitter": "https://twitter.com/smolsharks",
-        "max-slots": 15,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "17": {
-        "name": "Everai",
-        "description": "Heroes of the Metaverse. A long-lasting brand based on the Everai Heroes and their Universe.",
-        "image": "https://raw.githubusercontent.com/saintmaxi/wave-catchers-prod/main/images/everai.jpeg?raw=true",
-        "website": "https://everai.xyz/",
-        "twitter": "https://twitter.com/TheEverai",
-        "max-slots": 5,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "18": {
-        "name": "Kiwami (Refill)",
-        "description": "Designed in the Metaverse<br><br>Born in Japan.<br><br>Purchase a Mintlist slot to secure your spot at Tengoku Club.",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/kiwami.gif?raw=true",
-        "website": "http://twitter.com/KiwamiNFT",
-        "twitter": "http://twitter.com/KiwamiNFT",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "19": {
-        "name": "War Kittens (Refill)",
-        "description": "The on-chain PvP RPG ⚔️🐱<br><br>Entering the Kitten Kingdom is not for the faint of heart– join us if you’re prepared.",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/warkittens.gif?raw=true",
-        "website": "https://warkittens.xyz/",
-        "twitter": "https://twitter.com/0xWarKittens",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "20": {
-        "name": "Introverse",
-        "description": "With unity, wealth, and true knowledge, we will be the society of the future. We are #introverse.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/intro.jpeg?raw=true",
-        "website": "https://www.introverse.club/",
-        "twitter": "https://twitter.com/_introverse_",
-        "max-slots": 15,
-        "display-on-market": "false",
-        "network": "eth"
-    },
-    "21": {
-        "name": "The Squids",
-        "description": "1,000 Genesis Lab-made NFTs designed to play games on the metaverse. Mini games | $DNA",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/squid.gif?raw=true",
-        "website": "https://thesquids.io/",
-        "twitter": "https://twitter.com/TheSquids_NFT",
-        "max-slots": 15,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "22": {
-        "name": "Magic Monkies",
-        "description": "A collection of cute magic monkies on arbitrum. Free mint & P2E.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/monkie.jpeg?raw=true",
-        "website": "https://twitter.com/magicmonkies",
-        "twitter": "https://twitter.com/magicmonkies",
-        "max-slots": 25,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "23": {
-        "name": "Smulips",
-        "description": "5,000 Smulips unleashed on Arbitrum, Join the garden. Free mint within the $MAGIC metaverse.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/smulip.jpeg?raw=true",
-        "website": "https://www.smulips.com/",
-        "twitter": "https://twitter.com/Smulips",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "24": {
-        "name": "KaijuKing #5168",
-        "description": "Join the Kingz and live forever as a legend.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/kaiju.png?raw=true",
-        "website": "https://kaijukingz.io",
-        "twitter": "https://twitter.com/kaijukingz/",
-        "max-slots": 1,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "25": {
-        "name": "Illogics",
-        "description": "The illogics have crash landed on Earth and are here to change the future of NFTs. ⁣(Transparency / Fairness / Utility) $GOOP ",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/illogics.jpeg?raw=true",
-        "website": "https://www.illogics.io/",
-        "twitter": "https://twitter.com/illogics",
-        "max-slots": 15,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "26": {
-        "name": "Tales of Elleria",
-        "description": "Welcome to Elleria. Send your heroes on assignments and quests to earn Medals ($MEDALS) and Ellerium ($ELM)",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/tales.jpeg?raw=true",
-        "website": "https://www.talesofelleria.com/",
-        "twitter": "https://twitter.com/TalesofElleria",
-        "max-slots": 15,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "27": {
-        "name": "Martian Premier League",
-        "description": "10,000 genesis characters - 9,000 humans and 1,000 Martians - available to mint in early March. These characters form the basis of Professor Gaffer's new society being built on Mars.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/martian.jpeg?raw=true",
-        "website": "https://www.martianpremierleague.com/",
-        "twitter": "https://twitter.com/MartianPLeague",
-        "max-slots": 5,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "28": {
-        "name": "PaperHands",
-        "description": "Presenting the world's first ever Paint-2-Earn NFT Game. PaperHands is a simple play-to-earn game where one player draws what is indicated by the game, while other players attempt to guess what is being drawn.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/pphand.jpeg?raw=true",
-        "website": "https://paperhands.game/",
-        "twitter": "https://twitter.com/PaperHandsGame",
-        "max-slots": 40,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "29": {
-        "name": "Gummies Gang",
-        "description": "6969 chewy NFT friends who got hungry and ate the forbidden Ethereum rainbow.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/gummies.jpeg?raw=true",
-        "website": "https://twitter.com/GummiesGangNFT",
-        "twitter": "https://twitter.com/GummiesGangNFT",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "30": {
-        "name": "Wagmi World",
-        "description": "Welcome to Wagmi World ✨ a project by @neokseye",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/wworld.jpeg?raw=true",
-        "website": "https://twitter.com/Wagmiworld",
-        "twitter": "https://twitter.com/wagmiworld",
-        "max-slots": 25,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "31": {
-        "name": "Skylinez",
-        "description": "Skylinez is a cooperative P2E strategy game where players work together to develop their cities.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/skylinez.jpeg?raw=true",
-        "website": "https://twitter.com/SkylinezNFT",
-        "twitter": "https://twitter.com/SkylinezNFT",
-        "max-slots": 90,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "32": {
-        "name": "SmithyDAO",
-        "description": "The SmithyDAO is a community of builders supporting the TreasureDAO and sworn to protect $MAGIC.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/smithy.png?raw=true",
-        "website": "https://smithydao.lol/",
-        "twitter": "https://twitter.com/SmithyDAO",
-        "max-slots": 15,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "33": {
-        "name": "Smol Bears",
-        "description": "Free mint coming to Arbitrum!",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/smolbears.jpeg?raw=true",
-        "website": "https://twitter.com/SmolBearsNFT",
-        "twitter": "https://twitter.com/SmolBearsNFT",
-        "max-slots": 30,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "34": {
-        "name": "Star Wolvez",
-        "description": "Where we're going, the moon will be just a speck of dust. !howl",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/starwolvez.jpeg?raw=true",
-        "website": "https://starwolvez.com/",
-        "twitter": "https://twitter.com/starwolvez",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "35": {
-        "name": "Ether Royale",
-        "description": "Revolutionizing NFT utility. First W2E NFT battle royale. Holders spectate as their soldiers battle for valuable NFTs & prizes.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/etherroyale.jpeg?raw=true",
-        "website": "https://etherroyale.io/",
-        "twitter": "https://twitter.com/EtherRoyale",
-        "max-slots": 50,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "36": {
-        "name": "Doomboo",
-        "description": "Little monsters that live light years from Earth. They used to be millions but there’s only 10,000 left.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/doomboo.jpeg?raw=true",
-        "website": "https://doomboo.io/",
-        "twitter": "https://twitter.com/doombooNFT",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "37": {
-        "name": "Kiwami (Refill #2)",
-        "description": "Designed in the Metaverse. Born in Japan",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/kiwami.gif?raw=true",
-        "website": "https://twitter.com/KiwamiNFT",
-        "twitter": "https://twitter.com/KiwamiNFT",
-        "max-slots": 3,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "38": {
-        "name": "Star Wolvez (Refill)",
-        "description": "Where we're going, the moon will be just a speck of dust. !howl",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/starwolvez.jpeg?raw=true",
-        "website": "https://starwolvez.com/",
-        "twitter": "https://twitter.com/starwolvez",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "39": {
-        "name": "Dreadfulz",
-        "description": "7,777 Dreadfulz have inked their name in fealty to the Grand Inquisitor. Bound by avarice, lustful for $DREAD",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/dreadfulz.jpeg?raw=true",
-        "website": "https://dreadfulz.com/",
-        "twitter": "https://twitter.com/DreadfulzNFT",
-        "max-slots": 30,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "40": {
-        "name": "Cyberia",
-        "description": "Enter the world of Cyberia and fight for your species in the first-ever decentralized Neurobot society!",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/cyberia.jpeg?raw=true",
-        "website": "https://entercyberia.com/",
-        "twitter": "https://twitter.com/EnterCyberia",
-        "max-slots": 7,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-     "41": {
-        "name": "I'm Starving",
-        "description": "Do you have some food? On-chain story driven community game launching soon on #Arbitrum",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/starving.jpeg?raw=true",
-        "website": "https://twitter.com/ImStarvingNFT",
-        "twitter": "https://twitter.com/ImStarvingNFT",
-        "max-slots": 15,
-        "display-on-market": "true",
-        "network": "arb"
-    }, 
-    "42": {
-        "name": "Shounen",
-        "description": "Shounens Inspired by Asian Animation & Culture",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/shounen.jpeg?raw=true",
-        "website": "https://nftshounen.com/",
-        "twitter": "https://twitter.com/NFTSHOUNEN",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    } ,
-    "43": {
-        "name": "The Squids (Refill)",
-        "description": "1,000 Genesis Lab-made NFTs designed to play games on the metaverse. Mini games | $DNA",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/squid.gif?raw=true",
-        "website": "https://thesquids.io/",
-        "twitter": "https://twitter.com/TheSquids_NFT",
-        "max-slots": 5,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "44": {
-        "name": "Exalted",
-        "description": "5,000 Pixel Avatars Based On Fantasy RPGs",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/exalted.jpeg?raw=true",
-        "website": "https://docs.exaltednft.com/the-exalted/overview",
-        "twitter": "https://mobile.twitter.com/exaltednft",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    }, 
-    "45": {
-        "name": "Ether Warriors",
-        "description": "10,000 Warriors Wreaking Havoc on the Blockchain",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/ewarriors.png?raw=true",
-        "website": "https://discord.com/invite/etherwarriors",
-        "twitter": "https://twitter.com/etherwarriors",
-        "max-slots": 50,
-        "display-on-market": "true",
-        "network": "eth"
-    } ,
-    "46": {
-        "name": "Kuroro Beasts",
-        "description": "PVP focused NFT RPG, over 100 different beasts.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/kuroro.jpeg?raw=true",
-        "website": "https://discord.com/invite/kurorobeasts",
-        "twitter": "https://twitter.com/kurorobeast",
-        "max-slots": 5,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-     "47": {
-        "name": "Smolegends",
-        "description": "Smolegends is an NFT collection that turns into unique playable characters for our upcoming web-based roguelike deckbuilding game.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/smolegend.jpeg?raw=true",
-        "website": "https://discord.com/invite/smolegends",
-        "twitter": "https://twitter.com/smolegends?lang=en",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "48": {
-        "name": "Litter Kittens",
-        "description": "Meow, meow. Only 5,555 kittens for FREE...meow. Coming soon to #arbitrum...",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/litterkittens.jpeg?raw=true",
-        "website": "https://discord.com/invite/litterkittens",
-        "twitter": "https://mobile.twitter.com/litterkittens",
-        "max-slots": 12,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "49": {
-        "name": "VARIANT",
-        "description": "SHIFT THE META // CHANGE THE CULTURE // VARIANT",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/variant.jpeg?raw=true",
-        "website": "https://discord.com/invite/VARIANT",
-        "twitter": "https://twitter.com/VARIANT",
-        "max-slots": 3,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "50": {
-        "name": "Meta & Magic (Heroes + Items)",
-        "description": "100% on-chain NFT game. Can you defeat the bosses? This spot allows you to mint a hero and two items.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/mmitems.gif?raw=true",
-        "website": "https://linktr.ee/metaandmagic",
-        "twitter": "https://twitter.com/metaandmagic",
-        "max-slots": 25,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "51": {
-        "name": "Meta & Magic (Items)",
-        "description": "100% on-chain NFT game. Can you defeat the bosses? This spot allows you to mint one item.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/mmheroes.gif?raw=true",
-        "website": "https://linktr.ee/metaandmagic",
-        "twitter": "https://twitter.com/metaandmagic",
-        "max-slots": 75,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "52": {
-        "name": "Gummies Gang (Refill)",
-        "description": "6969 chewy NFT friends who got hungry and ate the forbidden Ethereum rainbow.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/gummies.jpeg?raw=true",
-        "website": "https://twitter.com/GummiesGangNFT",
-        "twitter": "https://twitter.com/GummiesGangNFT",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "53": {
-        "name": "VARIANT (Refill)",
-        "description": "SHIFT THE META // CHANGE THE CULTURE // VARIANT",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/variant.jpeg?raw=true",
-        "website": "https://discord.com/invite/VARIANT",
-        "twitter": "https://twitter.com/VARIANT",
-        "max-slots": 15,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "55": {
-        "name": "Trove Street Punks",
-        "description": "Trove Street Punks is a collection of 10k punks who were created for the community Treasure!",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/tsp.jpeg?raw=true",
-        "website": "https://discord.com/invite/trovestreetpunks",
-        "twitter": "https://twitter.com/Tr_Street_Punks",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "56": {
-        "name": "Gorilla Dao",
-        "description": "A troop of 6,666 gorillas living on a faraway island. $MAGIC integration - P2E - Gamified Staking Free mint, coming to Arbitrum Q2 of 2022",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/gdao.jpeg?raw=true",
-        "website": "https://discord.com/invite/gorillaDAO",
-        "twitter": "https://twitter.com/dao_gorilla",
-        "max-slots": 15,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "57": {
-        "name": "Smol Age (Formerly Smol Obits)",
-        "description": "Smol Age will tell the story of how Smol Brains evolved. The first generation will be 5,678 Neandersmols. Free mint on Arbitrum.",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolobits.jpeg?raw=true",
-        "website": "https://twitter.com/SmolAge_NFT",
-        "twitter": "https://twitter.com/SmolAge_NFT",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "58": {
-        "name": "Luv Bugs",
-        "description": "Raising awareness for shelter animals. Passive income utility project made up of 5,555 Luv Bugz",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/luvbugs.jpeg?raw=true",
-        "website": "https://luvbugznft.com/",
-        "twitter": "https://twitter.com/BugzNft",
-        "max-slots": 20,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "59": {
-        "name": "Antebellum Games",
-        "description": "Antebellum, is a Crypto Real Time Strategy game coming to iOS and Android Q4 2022",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/antebellum.jpeg?raw=true",
-        "website": "https://www.antebellumgames.com/",
-        "twitter": "https://twitter.com/AntebellumGames",
-        "max-slots": 30,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "60": {
-        "name": "Color Monsters",
-        "description": "The most inclusive ANIMATED NFTs on the blockchain! ",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/colormonsters.png?raw=true",
-        "website": "https://colormonsters.io/",
-        "twitter": "https://twitter.com/colormonsterNFT",
-        "max-slots": 24,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "61": {
-        "name": "Dream Protocols",
-        "description": "PHASE 1 - FLAPPY BOYS MINTING APRIL 18.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/dreamprotocols.jpeg?raw=true",
-        "website": "https://twitter.com/DreamProtocols",
-        "twitter": "https://twitter.com/DreamProtocols",
-        "max-slots": 15,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "62": {
-        "name": "Homie Faces",
-        "description": "An NFT Collection that Put Community First. Home Sweet Home.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/homiefaces.jpeg?raw=true",
-        "website": "https://twitter.com/HomieFacesNFT",
-        "twitter": "https://twitter.com/HomieFacesNFT",
-        "max-slots": 20,
-        "display-on-market": "false",
-        "network": "eth"
-    },
-    "63": {
-        "name": "Last Hopium",
-        "description": "NFT utilities tied to 5 star hotels. Enter the Pantheon and become a MetaGod.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/lasthopium.jpeg?raw=true",
-        "website": "https://discord.com/invite/lasthopium",
-        "twitter": "https://twitter.com/lasthopium",
-        "max-slots": 4,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "64": {
-        "name": "BearVX",
-        "description": "BEARVX is the most detailed voxel collection yet. With more than 10+ animations, BearVX’s is fully playable and customisable in all voxel metaverses.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/bearvx.jpeg?raw=true",
-        "website": "https://bearxlabs.com/",
-        "twitter": "https://twitter.com/BearX_NFT",
-        "max-slots": 25,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "65": {
-        "name": "Tori Zero",
-        "description": "The first virtual idol in blockchain industry. A collection of 7,777 NFTs .",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/torizero.jpeg?raw=true",
-        "website": "https://torizero.com/#/",
-        "twitter": "https://twitter.com/ToriZero_REDLAB",
-        "max-slots": 5,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "66": {
-        "name": "Neuromod",
-        "description": "In a fragmented world dictated by technology, your Neuromod is your ticket to survival - plug in and enter the Neuroverse.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/neuromod.jpeg?raw=true",
-        "website": "https://www.neuromod.io/",
-        "twitter": "https://twitter.com/NeuromodNFTs",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "67": {
-        "name": "YOOMOOTA",
-        "description": "Explore the YOOMOOTA Metaverse along with 7777 unique NFT Curiosities.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/yoomoota.jpeg?raw=true",
-        "website": "https://yoomoota.io/",
-        "twitter": "https://twitter.com/yoomoota",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-     "68": {
-        "name": "Momoco",
-        "description": "Momoco is a collection of the 10,000 NFTs of memories in Sensoji Temple, bringing the blessing of Sensoji in Tokyo.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/momoco.jpeg?raw=true",
-        "website": "https://www.momoconft.com/#/",
-        "twitter": "https://twitter.com/nft_momoco",
-        "max-slots": 3,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "69": {
-        "name": "Fuzzy Fighters",
-        "description": "2222 Genesis Collection. High utility NFT for holders & future launchpad program for creators.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/fuzzy.jpeg?raw=true",
-        "website": "https://fuzzyfighters.com/",
-        "twitter": "https://twitter.com/fuzzy_fighters",
-        "max-slots": 8,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "70": {
-        "name": "PxDungeon",
-        "description": "20,000 customizable on-chain characters.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/pxdungeon.jpeg?raw=true",
-        "website": "https://twitter.com/PxDungeon",
-        "twitter": "https://twitter.com/PxDungeon",
-        "max-slots": 20,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "71": {
-        "name": "Kuroki",
-        "description": "Collection of exclusively hand-drawn anime styled NFTs.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/kuroki.jpeg?raw=true",
-        "website": "https://www.kurokinft.com/",
-        "twitter": "https://twitter.com/Kuroki_NFT",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "72": {
-        "name": "Brewies",
-        "description": "We are Brewies - The caffeinated non-fungibrews pioneering the way to the first web3 coffeeshop.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/brewies.jpeg?raw=true",
-        "website": "https://twitter.com/BrewiesNFT",
-        "twitter": "https://twitter.com/BrewiesNFT",
-        "max-slots": 30,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "73": {
-        "name": "Soul Splicers (Refill)",
-        "description": "Building the next generation of blockchain gaming, starting with a P2E roguevania.<br><br>No empty promises, gameplay first.",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/soulsplicers.jpeg?raw=true",
-        "website": "https://twitter.com/SoulSplicersNFT",
-        "twitter": "https://twitter.com/SoulSplicersNFT",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "76": {
-        "name": "The Randoms",
-        "description": "Cultivating singularity.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/randoms.jpeg?raw=true",
-        "website": "https://therandoms.io/",
-        "twitter": "https://twitter.com/TheRandomsNFT",
-        "max-slots": 30,
-        "display-on-market": "false",
-        "network": "eth"
-    },
-    "78": {
-        "name": "Geishas & Gardens",
-        "description": "A massive collection of 10,000 different Geishas & Gardens",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/geisha.jpg?raw=true",
-        "website": "https://twitter.com/GeishasGardens",
-        "twitter": "https://twitter.com/GeishasGardens",
-        "max-slots": 20,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "79": {
-        "name": "Neon Pantheon",
-        "description": "Experiental AR NFT project produced by a fully doxxed team. Celebrating cultural diversity and inclusivity.",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/NeonPantheon.jpg?raw=true",
-        "website": "https://neonpantheon.com/",
-        "twitter": "https://twitter.com/NeonPantheonNFT",
-        "max-slots": 50,
-        "display-on-market": "false",
-        "network": "eth"
-    },
-    "80": {
-        "name": "Kong Hub",
-        "description": "Join the Hub of Upgradeable Kongs",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/konghub.jpg?raw=true",
-        "website": "https://twitter.com/KongHub_",
-        "twitter": "https://twitter.com/KongHub_",
-        "max-slots": 15,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "81": {
-        "name": "Sneaky Goblins",
-        "description": "4,444 Goblins building a sneaky ecosystem with gamified staking, mutations, black market, tools & more!",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/sneakygoblins.jpg?raw=true",
-        "website": "https://www.sneakygoblins.co/",
-        "twitter": "https://twitter.com/sneakygoblinnft",
-        "max-slots": 50,
-        "display-on-market": "false",
-        "network": "eth"
-    },
-    "82": {
-        "name": "The Sneaky Beans",
-        "description": "MAGIC beanleader @lowbudgetNFT<br>4444 Supply, Free Mint 🤫",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/sneakybeanz.jpg?raw=true",
-        "website": "https://twitter.com/SneakyBeansNFT",
-        "twitter": "https://twitter.com/SneakyBeansNFT",
-        "max-slots": 80,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "83": {
-        "name": "Citizens of Tajigen",
-        "description": "We are already building.<br>The blockchain shall return.<br>// follow the signal //",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/tajigen.png?raw=true",
-        "website": "https://twitter.com/0xtajigen",
-        "twitter": "https://twitter.com/0xtajigen",
-        "max-slots": 15,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "84": {
-        "name": "DaoDon Genesis Access Card",
-        "description": "Bridge between VR, Hospitality & Community Governance<br>0.2 Mint: 7777 Access Cards",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/daodon.jpg?raw=true",
-        "website": "https://twitter.com/daodonnft",
-        "twitter": "https://twitter.com/daodonnft",
-        "max-slots": 40,
-        "display-on-market": "false",
-        "network": "eth"
-    },
-    "85": {
-        "name": "Super Dudes",
-        "description": "Welcome to Graveyard Falls. Where the line between hero and villain isn’t so clear.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/superdude.gif?raw=true",
-        "website": "https://twitter.com/graveyardfalls",
-        "twitter": "https://twitter.com/graveyardfalls",
-        "max-slots": 50,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "86": {
-        "name": "Bone Ducks",
-        "description": "P2E NFT<br>Join the battle for precious $SNAIL 🐌<br>FREE MINT FOR WL MEMBERS",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/boneduck.gif?raw=true",
-        "website": "https://www.boneducks.com/",
-        "twitter": "https://twitter.com/boneducks",
-        "max-slots": 5,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "87": {
-        "name": "M1CH3L",
-        "description": "A Battle of Heaven vs Hell<br>Total Supply: 3333<br>FREE MINT",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/m1ch3l.jpg?raw=true",
-        "website": "https://twitter.com/Ch3lM",
-        "twitter": "https://twitter.com/Ch3lM",
-        "max-slots": 20,
-        "display-on-market": "true",
-        "network": "arb"
-    } ,
-    "88": {
-        "name": "Taiketsu",
-        "description": "Collection of 5,889 warriors on the Ethereum Network.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/51A4E0DB-EFF1-4CD7-82C3-4840E29AC017.jpeg?raw=true",
-        "website": "https://taiketsu.io/",
-        "twitter": "https://twitter.com/TaiketsuNFT",
-        "max-slots": 20,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "89": {
-        "name": "Llamascape",
-        "description": "Minecraft NFT P2E Project<br>🦙 A LlamaLabs Project<br>Land & P2E Ecosystem",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/llamascape.jpg?raw=true",
-        "website": "https://mobile.twitter.com/LlamascapeNFT",
-        "twitter": "https://mobile.twitter.com/LlamascapeNFT",
-        "max-slots": 14,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "90": {
-        "name": "Flur Alpha Pass",
-        "description": "Flur Alpha NFT coming soon...",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/flurpfp.png?raw=true",
-        "website": "https://twitter.com/fluralpha",
-        "twitter": "https://twitter.com/fluralpha",
-        "max-slots": 20,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "91": {
-        "name": "Generative Dungeon",
-        "description": "World's first fully playable, fully customizable, community-driven RPG collection",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/generative%20dungeon.jpg?raw=true",
-        "website": "https://generativedungeon.com/",
-        "twitter": "https://twitter.com/GenDungeon",
-        "max-slots": 5,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "92": {
-        "name": "The Lab Game",
-        "description": "The Lab, where Scientists produce $SERUM and experiment on Mutants | Mint May 1",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/Lab%20Rats.jpg?raw=true",
-        "website": "http://thelab.game/",
-        "twitter": "https://twitter.com/TheLabGameNFT",
-        "max-slots": 10,
-        "display-on-market": "false",
-        "network": "eth"
-    },
-    "93": {
-        "name": "Treasure Arcade",
-        "description": "Community Led Arcade integrating TreasureDAO NFTs<br><br>Facilitating a fun minigame experience for all community friends over at @treasure_DAO",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/treasure%20arcade.jpg?raw=true",
-        "website": "https://twitter.com/Treasure_Arcade",
-        "twitter": "https://twitter.com/Treasure_Arcade",
-        "max-slots": 40,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "94": {
-        "name": "Yugen",
-        "description": "A new vision for storytelling in Web3<br><br>A Community narrated cyberpunk anime",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/yugen.jpg?raw=true",
-        "website": "https://twitter.com/Yugennft",
-        "twitter": "https://twitter.com/Yugennft",
-        "max-slots": 20,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "95": {
-        "name": "NFT Island",
-        "description": "Own, stake and build in our limitless possibilities Minecraft Metaverse 🏝",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/NFT%20Island.jpg?raw=true",
-        "website": "https://www.thenftislands.io/",
-        "twitter": "https://twitter.com/thenftislandsio",
-        "max-slots": 30,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "96": {
-        "name": "Nametags",
-        "description": "Your all-in-one Web2 + Web3 profile 🏷",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/nametags.jpg?raw=true",
-        "website": "https://nametag.org/",
-        "twitter": "https://twitter.com/nametagtweets",
-        "max-slots": 100,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "97": {
-        "name": "Chipos",
-        "description": "An ever expanding idea ♦️",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/chipos.jpg?raw=true",
-        "website": "https://twitter.com/chiposnft",
-        "twitter": "https://twitter.com/chiposnft",
-        "max-slots": 30,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "98": {
-        "name": "The Armors",
-        "description": "3333 warriors inspired by the 80's and 90's series.<br><br>Alpha. Staking. Marketplace. Decreasing Supply. Not your average 3D project.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/The%20Armors.jpg?raw=true",
-        "website": "https://thearmors.io/",
-        "twitter": "https://twitter.com/thearmors",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "99": {
-        "name": "Furballs Gen2",
-        "description": "Collectible NFT game!<br><br>Bosses, Scholarships, Gen2 coming soon!",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/furballs.png?raw=true",
-        "website": "https://furballs.com/",
-        "twitter": "https://twitter.com/FurballsNFT",
-        "max-slots": 20,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "100": {
-        "name": "Underrated Plankton",
-        "description": "Plankton creates half of the Oxygen we breathe 🌳3,333 Collection | Clean the Planet for a year 🌍",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/underratedplankton.jpg?raw=true",
-        "website": "https://linktr.ee/Planktongang",
-        "twitter": "https://twitter.com/planktongang",
-        "max-slots": 3,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "101": {
-        "name": "Greed",
-        "description": "P2E game integrating $MAGIC and Treasure from @Treasure_DAO",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/greed.jpg?raw=true",
-        "website": "https://twitter.com/GREED_Nu",
-        "twitter": "https://twitter.com/GREED_Nu",
-        "max-slots": 25,
-        "display-on-market": "true",
-        "network": "arb"
-    },
-    "102": {
-        "name": "Automated Assassins",
-        "description": "3333 Genesis Assassins waiting to be deployed on the Blockchain this May.<br><br>100% On-Chain P2E MMORPG. Complete Missions. Collect $BOUNTY. Level up your Crew.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/automatedAssassins.jpg?raw=true",
-        "website": "https://automated-assassins.gitbook.io/automated-assassins/about/overview",
-        "twitter": "https://twitter.com/AutoAssassinNFT",
-        "max-slots": 50,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "103": {
-        "name": "Jukiverse",
-        "description": "#Jukiverse by Creator of @jukihoki, @fazameonk<br><br>3456 Jukis lost in the Jukiverse",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/jukiverse.jpg?raw=true",
-        "website": "https://twitter.com/JukiverseNFT",
-        "twitter": "https://twitter.com/JukiverseNFT",
-        "max-slots": 12,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "104": {
-        "name": "Squishiverse",
-        "description": "The possibilities are endless... Build, Share & Earn in the Metaverse. 🛠️",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/squishiverse.jpg?raw=true",
-        "website": "https://www.squishiverse.com/",
-        "twitter": "https://twitter.com/SquishiverseNFT",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "105": {
-        "name": "Dirty Ape",
-        "description": "7777 differents Dirty Ape's 🍌🐵⏳ Minting May 2022 ⌛ Play with your Ape in our unique P2E Game. $DAC coming soon 💸",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/dirtyape.jpg?raw=true",
-        "website": "https://twitter.com/DirtyApeNft",
-        "twitter": "https://twitter.com/DirtyApeNft",
-        "max-slots": 20,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "106": {
-        "name": "Magic Munchers",
-        "description": "A family of furry little monsters roaming the metaverse and devouring $MAGIC and jpegs",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/magicmunchers.jpg?raw=true",
-        "website": "https://www.magicmunchers.lol/",
-        "twitter": "https://twitter.com/magicmunchers",
-        "max-slots": 20,
-        "display-on-market": "false",
-        "network": "arb"
-    },
-    "107": {
-        "name": "Laidback Llamas",
-        "description": "3000 #LadyLlamas 🦙 - Minting May 16th",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/laidbackllama.jpg?raw=true",
-        "website": "https://www.laidbackllamas.com/",
-        "twitter": "https://twitter.com/LaidBackLlamas",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "108": {
-        "name": "Pastel Peeps",
-        "description": "5555 colourful Hand drawn, Generative cc0 pfp Art+Utility project",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/pastelpeeps.jpg?raw=true",
-        "website": "https://www.pastelpeeps.xyz/",
-        "twitter": "https://twitter.com/PastellPeeps",
-        "max-slots": 30,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "109": {
-        "name": "Bee Frens",
-        "description": "Bee Frens minting May 2022 <br><br> Free Mint!",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/badbears.jpg?raw=true",
-        "website": "https://www.badbears.io/",
-        "twitter": "https://twitter.com/badbearsmsk",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "110": {
-        "name": "Dope Voyage",
-        "description": "Dawn of the Pixel Empire | P2E. Social-Fi. 100% Ethereum On-Chain. $DOPES. Until the Pixels rule 👾",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/dopevoyage.jpg?raw=true",
-        "website": "https://dope.voyage/",
-        "twitter": "https://twitter.com/DopeVoyage",
-        "max-slots": 20,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "111": {
-        "name": "Project MetroGrad",
-        "description": "Together we rise from the underground | Together we are MetroGrad | 333 genesis collection coming soon…",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/metrograd.jpg?raw=true",
-        "website": "https://metrogradnft.io/",
-        "twitter": "https://twitter.com/MetroGradNFT",
-        "max-slots": 5,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "112": {
-        "name": "Slothopia",
-        "description": "3333 Sloths granting you access to Staking, MarketPlace, Tools, Private Nodes Alpha and more! Launching in May!",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/slothopolis.jpg?raw=true",
-        "website": "https://twitter.com/Slothopia",
-        "twitter": "https://twitter.com/Slothopia",
-        "max-slots": 10,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-    "113": {
-        "name": "Spaced Headz",
-        "description": "☁️5555 Spaced Headz NFTS giving you access to a new exclusive club,$SPACED & more",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/spacedheadz.jpg?raw=true",
-        "website": "https://twitter.com/SpacedHeadzNFTS",
-        "twitter": "https://twitter.com/SpacedHeadzNFTS",
-        "max-slots": 30,
-        "display-on-market": "true",
-        "network": "eth"
-    },
-      "114": {
+  "0": {
+    "name": "Kiwami",
+    "description": "Designed in the Metaverse<br><br>Born in Japan.<br><br>Purchase a Mintlist slot to secure your spot at Tengoku Club.",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/kiwami.gif?raw=true",
+    "website": "http://twitter.com/KiwamiNFT",
+    "twitter": "http://twitter.com/KiwamiNFT",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "1": {
+    "name": "Psyker",
+    "description": "Welcome to the Pskyerverse! Immerse yourself into a fighting experience like no other, blending science-fiction and post-apocalyptic themes.",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/psyker.png?raw=true",
+    "website": "https://psyker.game/",
+    "twitter": "http://twitter.com/psykergame",
+    "max-slots": 50,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "2": {
+    "name": "War Kittens",
+    "description": "The on-chain PvP RPG ⚔️🐱<br><br>Entering the Kitten Kingdom is not for the faint of heart– join us if you’re prepared.",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/warkittens.gif?raw=true",
+    "website": "https://warkittens.xyz/",
+    "twitter": "https://twitter.com/0xWarKittens",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "3": {
+    "name": "Smol Potions",
+    "description": "The forgotten art of black $MAGIC. Who knows what these potions are capable of....<br><br>Free mint on L2",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolpotion.png?raw=true",
+    "website": "https://twitter.com/SmolPotions",
+    "twitter": "https://twitter.com/SmolPotions",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "4": {
+    "name": "ApexWolves",
+    "description": "5000 of the freshest wolves building their pack on the Ethereum blockchain.<br><br>Loyalty points applicable: 2/16/2022 - Present",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/apexwolves.jpeg?raw=true",
+    "website": "https://www.apexwolves.io/",
+    "twitter": "https://twitter.com/0xAWNFT",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "5": {
+    "name": "Fat Cats DAO",
+    "description": "5000 unique NFTs that double as membership tokens and a share of all Fat Cats holdings. Join us as we build the premier blue chip NFT portfolio & community!",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/fatcatsdao.gif?raw=true",
+    "website": "https://www.fatcats.art/",
+    "twitter": "https://twitter.com/FatCatsDao",
+    "max-slots": 100,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "6": {
+    "name": "It Remains",
+    "description": "The beyond dystopian NFT universe franchise. A genesis collection of 7777 Resisters. With the art director of WALL-E and Finding Nemo.",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/itremains.jpeg?raw=true",
+    "website": "https://itremains.io/",
+    "twitter": "https://twitter.com/ItRemainsNFT",
+    "max-slots": 10,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "7": {
+    "name": "Genesis Dragons v2",
+    "description": "The v2 Collection of Genesis Dragons, a collection of 250 Pixel Dragons Created by @NiftyDragons.<br><br>Join the Thunder!",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/genesisdragons.jpeg?raw=true",
+    "website": "https://twitter.com/GenesisDragons",
+    "twitter": "https://twitter.com/GenesisDragons",
+    "max-slots": 20,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "8": {
+    "name": "Soul Splicers",
+    "description": "Building the next generation of blockchain gaming, starting with a P2E roguevania.<br><br>No empty promises, gameplay first.",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/soulsplicers.jpeg?raw=true",
+    "website": "https://twitter.com/SoulSplicersNFT",
+    "twitter": "https://twitter.com/SoulSplicersNFT",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "9": {
+    "name": "Smol Obits",
+    "description": "Smol Obits is a collection of 4269 prehistoric, skeletal ancestors of Smol Brains<br><br>Free Mint on Arbitrum",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolobits.jpeg?raw=true",
+    "website": "https://twitter.com/SmolObits",
+    "twitter": "https://twitter.com/SmolObits",
+    "max-slots": 20,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "10": {
+    "name": "Elefrens",
+    "description": "5555 Elephant Baby Calves on arbitrum protecting endangered Elephants and African wildlife.<br>NFT STAKING. DAO. GAME. AIRDROPS. CHARITY.",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/elefrens.jpeg?raw=true",
+    "website": "https://twitter.com/Elefrens",
+    "twitter": "https://twitter.com/Elefrens",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "11": {
+    "name": "Eyes of Ignolia",
+    "description": "The first decentralized anime created with the community. Seekers narrating the tale of Ignolia",
+    "image": "https://pbs.twimg.com/profile_images/1466206671194177545/4nk-xvI1_400x400.jpg",
+    "website": "https://www.eyesofignolia.io/",
+    "twitter": "https://twitter.com/eyesofignolia",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "12": {
+    "name": "Lost Samurise",
+    "description": "The river is contaminated; the land destroyed. Help us save the lost samurai.",
+    "image": "https://pbs.twimg.com/profile_images/1485980245534683139/ePzEaG6l_400x400.jpg",
+    "website": "https://samurise.xyz",
+    "twitter": "https://twitter.com/SamuRiseNFT",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "13": {
+    "name": "The Dead Puppet Co",
+    "description": "5,555 Dead Puppets looking to find life in the Metaverse",
+    "image": "https://pbs.twimg.com/profile_images/1491804392353193987/BVQjwJoq_400x400.jpg",
+    "website": "https://twitter.com/TheDeadPuppetCo",
+    "twitter": "https://twitter.com/TheDeadPuppetCo",
+    "max-slots": 20,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "14": {
+    "name": "vSamurai",
+    "description": "A limited-supply genesis NFT collection on the Ethereum Network. Play and Earn as you follow the path of vSamurai. Coming soon.",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/vsamurai.png?raw=true",
+    "website": "https://twitter.com/vSamurai_NFT",
+    "twitter": "https://twitter.com/vSamurai_NFT",
+    "max-slots": 20,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "16": {
+    "name": "Smol Sharks",
+    "description": "There is something in the water... $MAGIC, Free Mint, PvP P2E NFT game",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolsharks.jpeg?raw=true",
+    "website": "https://twitter.com/smolsharks",
+    "twitter": "https://twitter.com/smolsharks",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "17": {
+    "name": "Everai",
+    "description": "Heroes of the Metaverse. A long-lasting brand based on the Everai Heroes and their Universe.",
+    "image": "https://raw.githubusercontent.com/saintmaxi/wave-catchers-prod/main/images/everai.jpeg?raw=true",
+    "website": "https://everai.xyz/",
+    "twitter": "https://twitter.com/TheEverai",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "18": {
+    "name": "Kiwami (Refill)",
+    "description": "Designed in the Metaverse<br><br>Born in Japan.<br><br>Purchase a Mintlist slot to secure your spot at Tengoku Club.",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/kiwami.gif?raw=true",
+    "website": "http://twitter.com/KiwamiNFT",
+    "twitter": "http://twitter.com/KiwamiNFT",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "19": {
+    "name": "War Kittens (Refill)",
+    "description": "The on-chain PvP RPG ⚔️🐱<br><br>Entering the Kitten Kingdom is not for the faint of heart– join us if you’re prepared.",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/warkittens.gif?raw=true",
+    "website": "https://warkittens.xyz/",
+    "twitter": "https://twitter.com/0xWarKittens",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "20": {
+    "name": "Introverse",
+    "description": "With unity, wealth, and true knowledge, we will be the society of the future. We are #introverse.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/intro.jpeg?raw=true",
+    "website": "https://www.introverse.club/",
+    "twitter": "https://twitter.com/_introverse_",
+    "max-slots": 15,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "21": {
+    "name": "The Squids",
+    "description": "1,000 Genesis Lab-made NFTs designed to play games on the metaverse. Mini games | $DNA",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/squid.gif?raw=true",
+    "website": "https://thesquids.io/",
+    "twitter": "https://twitter.com/TheSquids_NFT",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "22": {
+    "name": "Magic Monkies",
+    "description": "A collection of cute magic monkies on arbitrum. Free mint & P2E.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/monkie.jpeg?raw=true",
+    "website": "https://twitter.com/magicmonkies",
+    "twitter": "https://twitter.com/magicmonkies",
+    "max-slots": 25,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "23": {
+    "name": "Smulips",
+    "description": "5,000 Smulips unleashed on Arbitrum, Join the garden. Free mint within the $MAGIC metaverse.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/smulip.jpeg?raw=true",
+    "website": "https://www.smulips.com/",
+    "twitter": "https://twitter.com/Smulips",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "24": {
+    "name": "KaijuKing #5168",
+    "description": "Join the Kingz and live forever as a legend.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/kaiju.png?raw=true",
+    "website": "https://kaijukingz.io",
+    "twitter": "https://twitter.com/kaijukingz/",
+    "max-slots": 1,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "25": {
+    "name": "Illogics",
+    "description": "The illogics have crash landed on Earth and are here to change the future of NFTs. ⁣(Transparency / Fairness / Utility) $GOOP ",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/illogics.jpeg?raw=true",
+    "website": "https://www.illogics.io/",
+    "twitter": "https://twitter.com/illogics",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "26": {
+    "name": "Tales of Elleria",
+    "description": "Welcome to Elleria. Send your heroes on assignments and quests to earn Medals ($MEDALS) and Ellerium ($ELM)",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/tales.jpeg?raw=true",
+    "website": "https://www.talesofelleria.com/",
+    "twitter": "https://twitter.com/TalesofElleria",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "27": {
+    "name": "Martian Premier League",
+    "description": "10,000 genesis characters - 9,000 humans and 1,000 Martians - available to mint in early March. These characters form the basis of Professor Gaffer's new society being built on Mars.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/martian.jpeg?raw=true",
+    "website": "https://www.martianpremierleague.com/",
+    "twitter": "https://twitter.com/MartianPLeague",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "28": {
+    "name": "PaperHands",
+    "description": "Presenting the world's first ever Paint-2-Earn NFT Game. PaperHands is a simple play-to-earn game where one player draws what is indicated by the game, while other players attempt to guess what is being drawn.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/pphand.jpeg?raw=true",
+    "website": "https://paperhands.game/",
+    "twitter": "https://twitter.com/PaperHandsGame",
+    "max-slots": 40,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "29": {
+    "name": "Gummies Gang",
+    "description": "6969 chewy NFT friends who got hungry and ate the forbidden Ethereum rainbow.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/gummies.jpeg?raw=true",
+    "website": "https://twitter.com/GummiesGangNFT",
+    "twitter": "https://twitter.com/GummiesGangNFT",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "30": {
+    "name": "Wagmi World",
+    "description": "Welcome to Wagmi World ✨ a project by @neokseye",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/wworld.jpeg?raw=true",
+    "website": "https://twitter.com/Wagmiworld",
+    "twitter": "https://twitter.com/wagmiworld",
+    "max-slots": 25,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "31": {
+    "name": "Skylinez",
+    "description": "Skylinez is a cooperative P2E strategy game where players work together to develop their cities.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/skylinez.jpeg?raw=true",
+    "website": "https://twitter.com/SkylinezNFT",
+    "twitter": "https://twitter.com/SkylinezNFT",
+    "max-slots": 90,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "32": {
+    "name": "SmithyDAO",
+    "description": "The SmithyDAO is a community of builders supporting the TreasureDAO and sworn to protect $MAGIC.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/smithy.png?raw=true",
+    "website": "https://smithydao.lol/",
+    "twitter": "https://twitter.com/SmithyDAO",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "33": {
+    "name": "Smol Bears",
+    "description": "Free mint coming to Arbitrum!",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/smolbears.jpeg?raw=true",
+    "website": "https://twitter.com/SmolBearsNFT",
+    "twitter": "https://twitter.com/SmolBearsNFT",
+    "max-slots": 30,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "34": {
+    "name": "Star Wolvez",
+    "description": "Where we're going, the moon will be just a speck of dust. !howl",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/starwolvez.jpeg?raw=true",
+    "website": "https://starwolvez.com/",
+    "twitter": "https://twitter.com/starwolvez",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "35": {
+    "name": "Ether Royale",
+    "description": "Revolutionizing NFT utility. First W2E NFT battle royale. Holders spectate as their soldiers battle for valuable NFTs & prizes.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/etherroyale.jpeg?raw=true",
+    "website": "https://etherroyale.io/",
+    "twitter": "https://twitter.com/EtherRoyale",
+    "max-slots": 50,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "36": {
+    "name": "Doomboo",
+    "description": "Little monsters that live light years from Earth. They used to be millions but there’s only 10,000 left.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/doomboo.jpeg?raw=true",
+    "website": "https://doomboo.io/",
+    "twitter": "https://twitter.com/doombooNFT",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "37": {
+    "name": "Kiwami (Refill #2)",
+    "description": "Designed in the Metaverse. Born in Japan",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/kiwami.gif?raw=true",
+    "website": "https://twitter.com/KiwamiNFT",
+    "twitter": "https://twitter.com/KiwamiNFT",
+    "max-slots": 3,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "38": {
+    "name": "Star Wolvez (Refill)",
+    "description": "Where we're going, the moon will be just a speck of dust. !howl",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/starwolvez.jpeg?raw=true",
+    "website": "https://starwolvez.com/",
+    "twitter": "https://twitter.com/starwolvez",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "39": {
+    "name": "Dreadfulz",
+    "description": "7,777 Dreadfulz have inked their name in fealty to the Grand Inquisitor. Bound by avarice, lustful for $DREAD",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/dreadfulz.jpeg?raw=true",
+    "website": "https://dreadfulz.com/",
+    "twitter": "https://twitter.com/DreadfulzNFT",
+    "max-slots": 30,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "40": {
+    "name": "Cyberia",
+    "description": "Enter the world of Cyberia and fight for your species in the first-ever decentralized Neurobot society!",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/cyberia.jpeg?raw=true",
+    "website": "https://entercyberia.com/",
+    "twitter": "https://twitter.com/EnterCyberia",
+    "max-slots": 7,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "41": {
+    "name": "I'm Starving",
+    "description": "Do you have some food? On-chain story driven community game launching soon on #Arbitrum",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/starving.jpeg?raw=true",
+    "website": "https://twitter.com/ImStarvingNFT",
+    "twitter": "https://twitter.com/ImStarvingNFT",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "42": {
+    "name": "Shounen",
+    "description": "Shounens Inspired by Asian Animation & Culture",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/shounen.jpeg?raw=true",
+    "website": "https://nftshounen.com/",
+    "twitter": "https://twitter.com/NFTSHOUNEN",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "43": {
+    "name": "The Squids (Refill)",
+    "description": "1,000 Genesis Lab-made NFTs designed to play games on the metaverse. Mini games | $DNA",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/squid.gif?raw=true",
+    "website": "https://thesquids.io/",
+    "twitter": "https://twitter.com/TheSquids_NFT",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "44": {
+    "name": "Exalted",
+    "description": "5,000 Pixel Avatars Based On Fantasy RPGs",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/exalted.jpeg?raw=true",
+    "website": "https://docs.exaltednft.com/the-exalted/overview",
+    "twitter": "https://mobile.twitter.com/exaltednft",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "45": {
+    "name": "Ether Warriors",
+    "description": "10,000 Warriors Wreaking Havoc on the Blockchain",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/ewarriors.png?raw=true",
+    "website": "https://discord.com/invite/etherwarriors",
+    "twitter": "https://twitter.com/etherwarriors",
+    "max-slots": 50,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "46": {
+    "name": "Kuroro Beasts",
+    "description": "PVP focused NFT RPG, over 100 different beasts.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/kuroro.jpeg?raw=true",
+    "website": "https://discord.com/invite/kurorobeasts",
+    "twitter": "https://twitter.com/kurorobeast",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "47": {
+    "name": "Smolegends",
+    "description": "Smolegends is an NFT collection that turns into unique playable characters for our upcoming web-based roguelike deckbuilding game.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/smolegend.jpeg?raw=true",
+    "website": "https://discord.com/invite/smolegends",
+    "twitter": "https://twitter.com/smolegends?lang=en",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "48": {
+    "name": "Litter Kittens",
+    "description": "Meow, meow. Only 5,555 kittens for FREE...meow. Coming soon to #arbitrum...",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/litterkittens.jpeg?raw=true",
+    "website": "https://discord.com/invite/litterkittens",
+    "twitter": "https://mobile.twitter.com/litterkittens",
+    "max-slots": 12,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "49": {
+    "name": "VARIANT",
+    "description": "SHIFT THE META // CHANGE THE CULTURE // VARIANT",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/variant.jpeg?raw=true",
+    "website": "https://discord.com/invite/VARIANT",
+    "twitter": "https://twitter.com/VARIANT",
+    "max-slots": 3,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "50": {
+    "name": "Meta & Magic (Heroes + Items)",
+    "description": "100% on-chain NFT game. Can you defeat the bosses? This spot allows you to mint a hero and two items.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/mmitems.gif?raw=true",
+    "website": "https://linktr.ee/metaandmagic",
+    "twitter": "https://twitter.com/metaandmagic",
+    "max-slots": 25,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "51": {
+    "name": "Meta & Magic (Items)",
+    "description": "100% on-chain NFT game. Can you defeat the bosses? This spot allows you to mint one item.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/mmheroes.gif?raw=true",
+    "website": "https://linktr.ee/metaandmagic",
+    "twitter": "https://twitter.com/metaandmagic",
+    "max-slots": 75,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "52": {
+    "name": "Gummies Gang (Refill)",
+    "description": "6969 chewy NFT friends who got hungry and ate the forbidden Ethereum rainbow.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/gummies.jpeg?raw=true",
+    "website": "https://twitter.com/GummiesGangNFT",
+    "twitter": "https://twitter.com/GummiesGangNFT",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "53": {
+    "name": "VARIANT (Refill)",
+    "description": "SHIFT THE META // CHANGE THE CULTURE // VARIANT",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/variant.jpeg?raw=true",
+    "website": "https://discord.com/invite/VARIANT",
+    "twitter": "https://twitter.com/VARIANT",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "55": {
+    "name": "Trove Street Punks",
+    "description": "Trove Street Punks is a collection of 10k punks who were created for the community Treasure!",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/tsp.jpeg?raw=true",
+    "website": "https://discord.com/invite/trovestreetpunks",
+    "twitter": "https://twitter.com/Tr_Street_Punks",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "56": {
+    "name": "Gorilla Dao",
+    "description": "A troop of 6,666 gorillas living on a faraway island. $MAGIC integration - P2E - Gamified Staking Free mint, coming to Arbitrum Q2 of 2022",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/gdao.jpeg?raw=true",
+    "website": "https://discord.com/invite/gorillaDAO",
+    "twitter": "https://twitter.com/dao_gorilla",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "57": {
+    "name": "Smol Age (Formerly Smol Obits)",
+    "description": "Smol Age will tell the story of how Smol Brains evolved. The first generation will be 5,678 Neandersmols. Free mint on Arbitrum.",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolobits.jpeg?raw=true",
+    "website": "https://twitter.com/SmolAge_NFT",
+    "twitter": "https://twitter.com/SmolAge_NFT",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "58": {
+    "name": "Luv Bugs",
+    "description": "Raising awareness for shelter animals. Passive income utility project made up of 5,555 Luv Bugz",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/luvbugs.jpeg?raw=true",
+    "website": "https://luvbugznft.com/",
+    "twitter": "https://twitter.com/BugzNft",
+    "max-slots": 20,
+    "display-on-market": "false",
+    "network": "arb"
+  },
+  "59": {
+    "name": "Antebellum Games",
+    "description": "Antebellum, is a Crypto Real Time Strategy game coming to iOS and Android Q4 2022",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/antebellum.jpeg?raw=true",
+    "website": "https://www.antebellumgames.com/",
+    "twitter": "https://twitter.com/AntebellumGames",
+    "max-slots": 30,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "60": {
+    "name": "Color Monsters",
+    "description": "The most inclusive ANIMATED NFTs on the blockchain! ",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/colormonsters.png?raw=true",
+    "website": "https://colormonsters.io/",
+    "twitter": "https://twitter.com/colormonsterNFT",
+    "max-slots": 24,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "61": {
+    "name": "Dream Protocols",
+    "description": "PHASE 1 - FLAPPY BOYS MINTING APRIL 18.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/dreamprotocols.jpeg?raw=true",
+    "website": "https://twitter.com/DreamProtocols",
+    "twitter": "https://twitter.com/DreamProtocols",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "62": {
+    "name": "Homie Faces",
+    "description": "An NFT Collection that Put Community First. Home Sweet Home.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/homiefaces.jpeg?raw=true",
+    "website": "https://twitter.com/HomieFacesNFT",
+    "twitter": "https://twitter.com/HomieFacesNFT",
+    "max-slots": 20,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "63": {
+    "name": "Last Hopium",
+    "description": "NFT utilities tied to 5 star hotels. Enter the Pantheon and become a MetaGod.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/lasthopium.jpeg?raw=true",
+    "website": "https://discord.com/invite/lasthopium",
+    "twitter": "https://twitter.com/lasthopium",
+    "max-slots": 4,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "64": {
+    "name": "BearVX",
+    "description": "BEARVX is the most detailed voxel collection yet. With more than 10+ animations, BearVX’s is fully playable and customisable in all voxel metaverses.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/bearvx.jpeg?raw=true",
+    "website": "https://bearxlabs.com/",
+    "twitter": "https://twitter.com/BearX_NFT",
+    "max-slots": 25,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "65": {
+    "name": "Tori Zero",
+    "description": "The first virtual idol in blockchain industry. A collection of 7,777 NFTs .",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/torizero.jpeg?raw=true",
+    "website": "https://torizero.com/#/",
+    "twitter": "https://twitter.com/ToriZero_REDLAB",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "66": {
+    "name": "Neuromod",
+    "description": "In a fragmented world dictated by technology, your Neuromod is your ticket to survival - plug in and enter the Neuroverse.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/neuromod.jpeg?raw=true",
+    "website": "https://www.neuromod.io/",
+    "twitter": "https://twitter.com/NeuromodNFTs",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "67": {
+    "name": "YOOMOOTA",
+    "description": "Explore the YOOMOOTA Metaverse along with 7777 unique NFT Curiosities.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/yoomoota.jpeg?raw=true",
+    "website": "https://yoomoota.io/",
+    "twitter": "https://twitter.com/yoomoota",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "68": {
+    "name": "Momoco",
+    "description": "Momoco is a collection of the 10,000 NFTs of memories in Sensoji Temple, bringing the blessing of Sensoji in Tokyo.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/momoco.jpeg?raw=true",
+    "website": "https://www.momoconft.com/#/",
+    "twitter": "https://twitter.com/nft_momoco",
+    "max-slots": 3,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "69": {
+    "name": "Fuzzy Fighters",
+    "description": "2222 Genesis Collection. High utility NFT for holders & future launchpad program for creators.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/fuzzy.jpeg?raw=true",
+    "website": "https://fuzzyfighters.com/",
+    "twitter": "https://twitter.com/fuzzy_fighters",
+    "max-slots": 8,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "70": {
+    "name": "PxDungeon",
+    "description": "20,000 customizable on-chain characters.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/pxdungeon.jpeg?raw=true",
+    "website": "https://twitter.com/PxDungeon",
+    "twitter": "https://twitter.com/PxDungeon",
+    "max-slots": 20,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "71": {
+    "name": "Kuroki",
+    "description": "Collection of exclusively hand-drawn anime styled NFTs.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/kuroki.jpeg?raw=true",
+    "website": "https://www.kurokinft.com/",
+    "twitter": "https://twitter.com/Kuroki_NFT",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "72": {
+    "name": "Brewies",
+    "description": "We are Brewies - The caffeinated non-fungibrews pioneering the way to the first web3 coffeeshop.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/brewies.jpeg?raw=true",
+    "website": "https://twitter.com/BrewiesNFT",
+    "twitter": "https://twitter.com/BrewiesNFT",
+    "max-slots": 30,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "73": {
+    "name": "Soul Splicers (Refill)",
+    "description": "Building the next generation of blockchain gaming, starting with a P2E roguevania.<br><br>No empty promises, gameplay first.",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/soulsplicers.jpeg?raw=true",
+    "website": "https://twitter.com/SoulSplicersNFT",
+    "twitter": "https://twitter.com/SoulSplicersNFT",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "76": {
+    "name": "The Randoms",
+    "description": "Cultivating singularity.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/randoms.jpeg?raw=true",
+    "website": "https://therandoms.io/",
+    "twitter": "https://twitter.com/TheRandomsNFT",
+    "max-slots": 30,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "78": {
+    "name": "Geishas & Gardens",
+    "description": "A massive collection of 10,000 different Geishas & Gardens",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/geisha.jpg?raw=true",
+    "website": "https://twitter.com/GeishasGardens",
+    "twitter": "https://twitter.com/GeishasGardens",
+    "max-slots": 20,
+    "display-on-market": "false",
+    "network": "arb"
+  },
+  "79": {
+    "name": "Neon Pantheon",
+    "description": "Experiental AR NFT project produced by a fully doxxed team. Celebrating cultural diversity and inclusivity.",
+    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/NeonPantheon.jpg?raw=true",
+    "website": "https://neonpantheon.com/",
+    "twitter": "https://twitter.com/NeonPantheonNFT",
+    "max-slots": 50,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "80": {
+    "name": "Kong Hub",
+    "description": "Join the Hub of Upgradeable Kongs",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/konghub.jpg?raw=true",
+    "website": "https://twitter.com/KongHub_",
+    "twitter": "https://twitter.com/KongHub_",
+    "max-slots": 15,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "81": {
+    "name": "Sneaky Goblins",
+    "description": "4,444 Goblins building a sneaky ecosystem with gamified staking, mutations, black market, tools & more!",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/sneakygoblins.jpg?raw=true",
+    "website": "https://www.sneakygoblins.co/",
+    "twitter": "https://twitter.com/sneakygoblinnft",
+    "max-slots": 50,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "82": {
+    "name": "The Sneaky Beans",
+    "description": "MAGIC beanleader @lowbudgetNFT<br>4444 Supply, Free Mint 🤫",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/sneakybeanz.jpg?raw=true",
+    "website": "https://twitter.com/SneakyBeansNFT",
+    "twitter": "https://twitter.com/SneakyBeansNFT",
+    "max-slots": 80,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "83": {
+    "name": "Citizens of Tajigen",
+    "description": "We are already building.<br>The blockchain shall return.<br>// follow the signal //",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/tajigen.png?raw=true",
+    "website": "https://twitter.com/0xtajigen",
+    "twitter": "https://twitter.com/0xtajigen",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "84": {
+    "name": "DaoDon Genesis Access Card",
+    "description": "Bridge between VR, Hospitality & Community Governance<br>0.2 Mint: 7777 Access Cards",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/daodon.jpg?raw=true",
+    "website": "https://twitter.com/daodonnft",
+    "twitter": "https://twitter.com/daodonnft",
+    "max-slots": 40,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "85": {
+    "name": "Super Dudes",
+    "description": "Welcome to Graveyard Falls. Where the line between hero and villain isn’t so clear.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/superdude.gif?raw=true",
+    "website": "https://twitter.com/graveyardfalls",
+    "twitter": "https://twitter.com/graveyardfalls",
+    "max-slots": 50,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "86": {
+    "name": "Bone Ducks",
+    "description": "P2E NFT<br>Join the battle for precious $SNAIL 🐌<br>FREE MINT FOR WL MEMBERS",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/boneduck.gif?raw=true",
+    "website": "https://www.boneducks.com/",
+    "twitter": "https://twitter.com/boneducks",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "87": {
+    "name": "M1CH3L",
+    "description": "A Battle of Heaven vs Hell<br>Total Supply: 3333<br>FREE MINT",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/m1ch3l.jpg?raw=true",
+    "website": "https://twitter.com/Ch3lM",
+    "twitter": "https://twitter.com/Ch3lM",
+    "max-slots": 20,
+    "display-on-market": "false",
+    "network": "arb"
+  },
+  "88": {
+    "name": "Taiketsu",
+    "description": "Collection of 5,889 warriors on the Ethereum Network.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/51A4E0DB-EFF1-4CD7-82C3-4840E29AC017.jpeg?raw=true",
+    "website": "https://taiketsu.io/",
+    "twitter": "https://twitter.com/TaiketsuNFT",
+    "max-slots": 20,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "89": {
+    "name": "Llamascape",
+    "description": "Minecraft NFT P2E Project<br>🦙 A LlamaLabs Project<br>Land & P2E Ecosystem",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/llamascape.jpg?raw=true",
+    "website": "https://mobile.twitter.com/LlamascapeNFT",
+    "twitter": "https://mobile.twitter.com/LlamascapeNFT",
+    "max-slots": 14,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "90": {
+    "name": "Flur Alpha Pass",
+    "description": "Flur Alpha NFT coming soon...",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/flurpfp.png?raw=true",
+    "website": "https://twitter.com/fluralpha",
+    "twitter": "https://twitter.com/fluralpha",
+    "max-slots": 20,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "91": {
+    "name": "Generative Dungeon",
+    "description": "World's first fully playable, fully customizable, community-driven RPG collection",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/generative%20dungeon.jpg?raw=true",
+    "website": "https://generativedungeon.com/",
+    "twitter": "https://twitter.com/GenDungeon",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "92": {
+    "name": "The Lab Game",
+    "description": "The Lab, where Scientists produce $SERUM and experiment on Mutants | Mint May 1",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/Lab%20Rats.jpg?raw=true",
+    "website": "http://thelab.game/",
+    "twitter": "https://twitter.com/TheLabGameNFT",
+    "max-slots": 10,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "93": {
+    "name": "Treasure Arcade",
+    "description": "Community Led Arcade integrating TreasureDAO NFTs<br><br>Facilitating a fun minigame experience for all community friends over at @treasure_DAO",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/treasure%20arcade.jpg?raw=true",
+    "website": "https://twitter.com/Treasure_Arcade",
+    "twitter": "https://twitter.com/Treasure_Arcade",
+    "max-slots": 40,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "94": {
+    "name": "Yugen",
+    "description": "A new vision for storytelling in Web3<br><br>A Community narrated cyberpunk anime",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/yugen.jpg?raw=true",
+    "website": "https://twitter.com/Yugennft",
+    "twitter": "https://twitter.com/Yugennft",
+    "max-slots": 20,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "95": {
+    "name": "NFT Island",
+    "description": "Own, stake and build in our limitless possibilities Minecraft Metaverse 🏝",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/NFT%20Island.jpg?raw=true",
+    "website": "https://www.thenftislands.io/",
+    "twitter": "https://twitter.com/thenftislandsio",
+    "max-slots": 30,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "96": {
+    "name": "Nametags",
+    "description": "Your all-in-one Web2 + Web3 profile 🏷",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/nametags.jpg?raw=true",
+    "website": "https://nametag.org/",
+    "twitter": "https://twitter.com/nametagtweets",
+    "max-slots": 100,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "97": {
+    "name": "Chipos",
+    "description": "An ever expanding idea ♦️",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/chipos.jpg?raw=true",
+    "website": "https://twitter.com/chiposnft",
+    "twitter": "https://twitter.com/chiposnft",
+    "max-slots": 30,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "98": {
+    "name": "The Armors",
+    "description": "3333 warriors inspired by the 80's and 90's series.<br><br>Alpha. Staking. Marketplace. Decreasing Supply. Not your average 3D project.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/The%20Armors.jpg?raw=true",
+    "website": "https://thearmors.io/",
+    "twitter": "https://twitter.com/thearmors",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "99": {
+    "name": "Furballs Gen2",
+    "description": "Collectible NFT game!<br><br>Bosses, Scholarships, Gen2 coming soon!",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/furballs.png?raw=true",
+    "website": "https://furballs.com/",
+    "twitter": "https://twitter.com/FurballsNFT",
+    "max-slots": 20,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "100": {
+    "name": "Underrated Plankton",
+    "description": "Plankton creates half of the Oxygen we breathe 🌳3,333 Collection | Clean the Planet for a year 🌍",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/underratedplankton.jpg?raw=true",
+    "website": "https://linktr.ee/Planktongang",
+    "twitter": "https://twitter.com/planktongang",
+    "max-slots": 3,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "101": {
+    "name": "Greed",
+    "description": "P2E game integrating $MAGIC and Treasure from @Treasure_DAO",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/greed.jpg?raw=true",
+    "website": "https://twitter.com/GREED_Nu",
+    "twitter": "https://twitter.com/GREED_Nu",
+    "max-slots": 25,
+    "display-on-market": "true",
+    "network": "arb"
+  },
+  "102": {
+    "name": "Automated Assassins",
+    "description": "3333 Genesis Assassins waiting to be deployed on the Blockchain this May.<br><br>100% On-Chain P2E MMORPG. Complete Missions. Collect $BOUNTY. Level up your Crew.",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/automatedAssassins.jpg?raw=true",
+    "website": "https://automated-assassins.gitbook.io/automated-assassins/about/overview",
+    "twitter": "https://twitter.com/AutoAssassinNFT",
+    "max-slots": 50,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "103": {
+    "name": "Jukiverse",
+    "description": "#Jukiverse by Creator of @jukihoki, @fazameonk<br><br>3456 Jukis lost in the Jukiverse",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/jukiverse.jpg?raw=true",
+    "website": "https://twitter.com/JukiverseNFT",
+    "twitter": "https://twitter.com/JukiverseNFT",
+    "max-slots": 12,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "104": {
+    "name": "Squishiverse",
+    "description": "The possibilities are endless... Build, Share & Earn in the Metaverse. 🛠️",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/squishiverse.jpg?raw=true",
+    "website": "https://www.squishiverse.com/",
+    "twitter": "https://twitter.com/SquishiverseNFT",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "105": {
+    "name": "Dirty Ape",
+    "description": "7777 differents Dirty Ape's 🍌🐵⏳ Minting May 2022 ⌛ Play with your Ape in our unique P2E Game. $DAC coming soon 💸",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/dirtyape.jpg?raw=true",
+    "website": "https://twitter.com/DirtyApeNft",
+    "twitter": "https://twitter.com/DirtyApeNft",
+    "max-slots": 20,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "106": {
+    "name": "Magic Munchers",
+    "description": "A family of furry little monsters roaming the metaverse and devouring $MAGIC and jpegs",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/magicmunchers.jpg?raw=true",
+    "website": "https://www.magicmunchers.lol/",
+    "twitter": "https://twitter.com/magicmunchers",
+    "max-slots": 20,
+    "display-on-market": "false",
+    "network": "arb"
+  },
+  "107": {
+    "name": "Laidback Llamas",
+    "description": "3000 #LadyLlamas 🦙 - Minting May 16th",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/laidbackllama.jpg?raw=true",
+    "website": "https://www.laidbackllamas.com/",
+    "twitter": "https://twitter.com/LaidBackLlamas",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "108": {
+    "name": "Pastel Peeps",
+    "description": "5555 colourful Hand drawn, Generative cc0 pfp Art+Utility project",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/pastelpeeps.jpg?raw=true",
+    "website": "https://www.pastelpeeps.xyz/",
+    "twitter": "https://twitter.com/PastellPeeps",
+    "max-slots": 30,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "109": {
+    "name": "Bee Frens",
+    "description": "Bee Frens minting May 2022 <br><br> Free Mint!",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/badbears.jpg?raw=true",
+    "website": "https://www.badbears.io/",
+    "twitter": "https://twitter.com/badbearsmsk",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "110": {
+    "name": "Dope Voyage",
+    "description": "Dawn of the Pixel Empire | P2E. Social-Fi. 100% Ethereum On-Chain. $DOPES. Until the Pixels rule 👾",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/dopevoyage.jpg?raw=true",
+    "website": "https://dope.voyage/",
+    "twitter": "https://twitter.com/DopeVoyage",
+    "max-slots": 20,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "111": {
+    "name": "Project MetroGrad",
+    "description": "Together we rise from the underground | Together we are MetroGrad | 333 genesis collection coming soon…",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/metrograd.jpg?raw=true",
+    "website": "https://metrogradnft.io/",
+    "twitter": "https://twitter.com/MetroGradNFT",
+    "max-slots": 5,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "112": {
+    "name": "Slothopia",
+    "description": "3333 Sloths granting you access to Staking, MarketPlace, Tools, Private Nodes Alpha and more! Launching in May!",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/slothopolis.jpg?raw=true",
+    "website": "https://twitter.com/Slothopia",
+    "twitter": "https://twitter.com/Slothopia",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "113": {
+    "name": "Spaced Headz",
+    "description": "☁️5555 Spaced Headz NFTS giving you access to a new exclusive club,$SPACED & more",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/spacedheadz.jpg?raw=true",
+    "website": "https://twitter.com/SpacedHeadzNFTS",
+    "twitter": "https://twitter.com/SpacedHeadzNFTS",
+    "max-slots": 30,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "114": {
     "name": "Flicky Gang",
-    "description": "Each Flicky has a life of its own, and their fashion taste highlights their personality and lifestyle. The first-ever AR-powered NFT collection on the fully built & functional app FlickPlay. FlickPlay is a social app where people build the social status of their Digital Collectibles.",
+    "description": "Each Flicky has a life of its own, and their fashion taste highlights their personality and lifestyle. Ttruohe first-ever AR-powered NFT collection on the fully built & functional app FlickPlay. FlickPlay is a social app where people build the social status of their Digital Collectibles.",
     "image": "https://imgur.com/ylbQ9Ma.png",
     "website": "https://flickygang.io/",
-    "twitter":"https://twitter.com/flickplayapp",
+    "twitter": "https://twitter.com/flickplayapp",
     "max-slots": 30,
     "display-on-market": "true",
     "network": "eth"
@@ -1104,7 +1104,7 @@
     "description": "Crazy Catz has partnered with the largest alcohol conglomerate in China, and is set to release 100,000 bottles (Pledge order) into the Chinese market. In partnership with the brand “No Rules” cans will be covered in Crazy Catz branding, with a QR Code that will take people directly to the collection. Crazy Catz is also building “Web-Kinz for Web3” where people will be able to buy Crazy Catz stuffed animals in real world stores.",
     "image": "https://imgur.com/IUmQa3h.png",
     "website": "https://www.crazycatz.xyz/",
-    "twitter":"https://twitter.com/crazycatznft",
+    "twitter": "https://twitter.com/crazycatznft",
     "max-slots": 20,
     "display-on-market": "true",
     "network": "sol"
@@ -1114,7 +1114,7 @@
     "description": "HG is a leading P2E NFT Project, building/having built proprietary NFT-Item architecture, Item-Forging, Avatar Equipping and more. With a team of 6+ Full-Time members and another 6+ Part-Time Core Team hailing from Amazon, Smartsheet, Google and more, Hero Galaxy has built for the present and is building for the future.",
     "image": "https://i.imgur.com/9b3QZmK.png",
     "website": "https://herogalaxy.io/play-now",
-    "twitter":"https://twitter.com/HeroGalaxyNFT",
+    "twitter": "https://twitter.com/HeroGalaxyNFT",
     "max-slots": 10,
     "display-on-market": "true",
     "network": "eth"
@@ -1123,7 +1123,7 @@
     "name": "Dropoutz",
     "description": "Our aim is to build our community based around quality over quantity and reward those who support others, connect and relate to the project!",
     "image": "https://imgur.com/V6DwByZ.png",
-    "twitter":"https://twitter.com/dropoutz_nft",
+    "twitter": "https://twitter.com/dropoutz_nft",
     "website": "https://twitter.com/dropoutz_nft",
     "max-slots": 20,
     "display-on-market": "true",
