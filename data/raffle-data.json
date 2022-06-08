@@ -1,27 +1,32 @@
 {
-    "0": {
-        "name": "Wave Catcher #3328",
-        "image": "https://wavecatchers.mypinata.cloud/ipfs/QmSMd9zpdeJSr2rzLvcvrKtfDRvuz8PYhk7GqCNumsa4H7/3328.png",
-        "discord-required": "false"
-    },
-    "1": {
-        "name": "3Lander #7392",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/3lraffle.png?raw=true",
-        "discord-required": "false"
-    },
-    "2": {
-        "name": "Final Clay Whitelist Spot",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/clay.jpeg?raw=true",
-        "discord-required": "true"
-    },
-    "3": {
-        "name": "Baby Anonymice #2116",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/bbmouse.png?raw=true",
-        "discord-required": "false"
-    },
-    "4": {
-        "name": "Llamascape Whitelist Spot",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/llamascape.jpg?raw=true",
-        "discord-required": "false"
-    }
+  "0": {
+    "name": "Wave Catcher #3328",
+    "image": "https://wavecatchers.mypinata.cloud/ipfs/QmSMd9zpdeJSr2rzLvcvrKtfDRvuz8PYhk7GqCNumsa4H7/3328.png",
+    "discord-required": "false"
+  },
+  "1": {
+    "name": "3Lander #7392",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/3lraffle.png?raw=true",
+    "discord-required": "false"
+  },
+  "2": {
+    "name": "Final Clay Whitelist Spot",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/clay.jpeg?raw=true",
+    "discord-required": "true"
+  },
+  "3": {
+    "name": "Baby Anonymice #2116",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/bbmouse.png?raw=true",
+    "discord-required": "false"
+  },
+  "4": {
+    "name": "Llamascape Whitelist Spot",
+    "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/llamascape.jpg?raw=true",
+    "discord-required": "false"
+  },
+  "5": {
+    "name": "Project NANOPASS",
+    "image": "https://metadata.nanopass.io/prereveal/images/3337.png",
+    "discord-required": "false"
+  }
 }
