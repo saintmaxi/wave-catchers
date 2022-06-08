@@ -1089,14 +1089,44 @@
         "display-on-market": "true",
         "network": "eth"
     },
-    "114": {
-        "name": "Crazy Catz",
-        "description": "8,888 CrazyCatz 疯狂猫 | Future of web 3 collectibles Designed by William Lindhorst | Made in China",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/crazycatz.jpg?raw=true",
-        "website": "http://crazycatznft.org/",
-        "twitter": "https://twitter.com/crazycatznft",
-        "max-slots": 30,
-        "display-on-market": "false",
-        "network": "eth"
-    }
+      "114": {
+    "name": "Flicky Gang",
+    "description": "Each Flicky has a life of its own, and their fashion taste highlights their personality and lifestyle. The first-ever AR-powered NFT collection on the fully built & functional app FlickPlay. FlickPlay is a social app where people build the social status of their Digital Collectibles.",
+    "image": "https://imgur.com/ylbQ9Ma.png",
+    "website": "https://flickygang.io/",
+    "twitter":"https://twitter.com/flickplayapp",
+    "max-slots": 30,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "115": {
+    "name": "Crazy Catz",
+    "description": "Crazy Catz has partnered with the largest alcohol conglomerate in China, and is set to release 100,000 bottles (Pledge order) into the Chinese market. In partnership with the brand “No Rules” cans will be covered in Crazy Catz branding, with a QR Code that will take people directly to the collection. Crazy Catz is also building “Web-Kinz for Web3” where people will be able to buy Crazy Catz stuffed animals in real world stores.",
+    "image": "https://imgur.com/IUmQa3h.png",
+    "website": "https://www.crazycatz.xyz/",
+    "twitter":"https://twitter.com/crazycatznft",
+    "max-slots": 20,
+    "display-on-market": "true",
+    "network": "sol"
+  },
+  "116": {
+    "name": "Hero Galaxy",
+    "description": "HG is a leading P2E NFT Project, building/having built proprietary NFT-Item architecture, Item-Forging, Avatar Equipping and more. With a team of 6+ Full-Time members and another 6+ Part-Time Core Team hailing from Amazon, Smartsheet, Google and more, Hero Galaxy has built for the present and is building for the future.",
+    "image": "https://imgur.com/a/rHM2k2Z.png",
+    "website": "https://herogalaxy.io/play-now",
+    "twitter":"https://twitter.com/HeroGalaxyNFT",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "117": {
+    "name": "Dropoutz",
+    "description": "Created by, marnie",
+    "image": "https://imgur.com/V6DwByZ.png",
+    "twitter":"https://twitter.com/dropoutz_nft",
+    "website": "https://twitter.com/dropoutz_nft",
+    "max-slots": 20,
+    "display-on-market": "true",
+    "network": "eth"
+  }
 }
