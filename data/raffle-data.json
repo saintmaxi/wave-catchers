@@ -28,5 +28,10 @@
     "name": "Project NANOPASS #3337",
     "image": "https://metadata.nanopass.io/prereveal/images/3337.png",
     "discord-required": "false"
+  },
+  "6": {
+    "name": "PXN: Ghost Division #0477",
+    "image": "https://lh3.googleusercontent.com/uJ7IFBsUKFAEwJ1RPvgy50VZ9husN4YdqpQtr7X_KiN8YoEZmDitqVDwa2wLWRbtEIPmYDpLv4552aAmKzBd81NMYzuSku_7uv8IX1o=w600",
+    "discord-required": "true"
   }
 }
