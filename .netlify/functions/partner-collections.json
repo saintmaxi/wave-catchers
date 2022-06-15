@@ -1096,7 +1096,7 @@
     "website": "https://flickygang.io/",
     "twitter": "https://twitter.com/flickplayapp",
     "max-slots": 30,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "115": {
@@ -1106,7 +1106,7 @@
     "website": "https://www.crazycatz.xyz/",
     "twitter": "https://twitter.com/crazycatznft",
     "max-slots": 20,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "sol"
   },
   "116": {
@@ -1125,6 +1125,46 @@
     "image": "https://imgur.com/V6DwByZ.png",
     "twitter": "https://twitter.com/dropoutz_nft",
     "website": "https://twitter.com/dropoutz_nft",
+    "max-slots": 20,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "118": {
+    "name": "KENOKO",
+    "description": "KENOKO is an NFT collection of 5000 characters used in a manga managed by the community. They are still new but with great bluechip potential on Solana!",
+    "image": "https://i.imgur.com/5UTPPtJ.png",
+    "twitter": "https://twitter.com/kenoko_NFT",
+    "website": "https://www.kenokonft.com/",
+    "max-slots": 18,
+    "display-on-market": "true",
+    "network": "sol"
+  },
+  "119": {
+    "name": "Apex88",
+    "description": "Introducing Apex88 — a street-style anime fantasy brand inspired by unique and creative creature art. Apex88 is on its way to becoming one of the most sought-after anime fantasy brands ever created.  Apex 88 is not just an NFT that will release astonishing artworks. It will also tap into real-life events and experiences. NFT Holders can look forward to: 1.  8,888 collection 2. An interactive community that will open doors to exclusive collaborations and whitelist benefits 3. VIP access to real-life events, merchandise, and partnerships",
+    "image": "https://i.imgur.com/SJCRJS5.png",
+    "twitter": "https://twitter.com/apexeightyeight",
+    "website": "https://apex88.io/",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "sol"
+  },
+  "120": {
+    "name": "Warriors of Ankh",
+    "description": "The Ankh is Calling… The Warriors have awoken, the conquest has began, and the search for the key to eternal life is gaining momentum. A collection of 3,777 inspired by Ancient Egyptian Gods (Orsiris, Horus, Anubis, Seth, Aset). Bestowing their finest warriors in their own image, the Gods prepare for battle.",
+    "image": "https://imgur.com/lJSBpQb.png",
+    "twitter": "https://twitter.com/warriorsofankh",
+    "website": "https://warriorsofankh.io/",
+    "max-slots": 25,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "121": {
+    "name": "The Chibi Club",
+    "description": "The cinematic metaverse is in your hands...content produced by the team that brought you the MCU.",
+    "image": "https://imgur.com/ivNuH8m.png",
+    "twitter": "https://twitter.com/TheChibiClub",
+    "website": "https://twitter.com/TheChibiClub",
     "max-slots": 20,
     "display-on-market": "true",
     "network": "eth"
