@@ -33,5 +33,10 @@
     "name": "PXN: Ghost Division #0477",
     "image": "https://lh3.googleusercontent.com/uJ7IFBsUKFAEwJ1RPvgy50VZ9husN4YdqpQtr7X_KiN8YoEZmDitqVDwa2wLWRbtEIPmYDpLv4552aAmKzBd81NMYzuSku_7uv8IX1o=w600",
     "discord-required": "true"
+  },
+  "7": {
+    "name": "The Art of Seasons: Seasons #13377",
+    "image": "https://renga.imgix.net/token/autumn/3/18.jpg",
+    "discord-required": "true"
   }
 }
