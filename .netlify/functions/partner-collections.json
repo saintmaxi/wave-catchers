@@ -1176,10 +1176,10 @@
     "twitter": "https://twitter.com/Cryptobilianft",
     "website": "https://cryptobilianft.com/",
     "max-slots": 20,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
-  "123":{
+  "123": {
     "name": "Dream Society NFT",
     "description": "Community based project with a team that includes artists from Marvel and DreamWorks",
     "image": "https://i.imgur.com/cDf3RoP.png",
@@ -1189,17 +1189,17 @@
     "display-on-market": "true",
     "network": "eth"
   },
-  "124":{
+  "124": {
     "name": "Nekozuma",
     "description": "Greatness Shining Through The Thunderstorm's Of $SOL First community curated web3 merch brand",
     "image": "https://i.imgur.com/731Uwj9.png",
     "twitter": "https://twitter.com/NekozumaNFT",
     "website": "https://nekozuma.com/",
     "max-slots": 30,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "sol"
   },
-  "125":{
+  "125": {
     "name": "Haunted Space",
     "description": "The first Play AND Earn game that connects the blockchain world to the leading marketplaces: Steam (PC), Playstation 5, Xbox Series X, and S. Doxxed team AAA game produced by Italian Games Factory",
     "image": "https://i.imgur.com/d47xrKQ.png",
