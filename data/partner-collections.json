@@ -1208,5 +1208,35 @@
     "max-slots": 10,
     "display-on-market": "true",
     "network": "eth"
+  },
+  "126": {
+    "name": "Drippy Zombies",
+    "description": "4000 Drippy Zombies on the Ethereum Blockchain with a play-to-earn ecosystem heading towards the metaverse. Doxxed team!",
+    "image": "https://i.imgur.com/yXvrzZa.png",
+    "twitter": "https://twitter.com/drippyzombies",
+    "website": "https://www.drippyzombies.com/",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "127": {
+    "name": "FRACTALZ",
+    "description": "FRACTALZ is an innovative project built on open-source & collaborative story-telling, in-depth interactive mechanics enabling an evolving art collection and providing residual value to holders.Partnered with ShuffleDAO, the soon-to-launch NFT Production House and web3 collective. Fractalz holders will earn its native governance & utility token - $MINT.",
+    "image": "https://i.imgur.com/fnWZktk.png",
+    "twitter": "https://twitter.com/fractalzNFT",
+    "website": "https://twitter.com/fractalzNFT",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "128": {
+    "name": "SubwayRats",
+    "description": "SubwayRats is a collection of 10,000 dynamic NFTs with 130+ Utility Stations and Landmarks. We've recreated every NYC subway station in pixel art. All ownable, travelable and unique. As you move your rat around the map, your NFTs background will change to reflect your location on the map. Stations and landmarks are utility NFTs that generate passive income for owners. SubwayRat NFT owners will gain access to exclusive games and events hosted at random locations around the map for ETH rewards and giveaways!",
+    "image": "https://i.imgur.com/bmhbWcd.png",
+    "twitter": "https://twitter.com/SubwayRatsNFT",
+    "website": "https://subwayrats.io/",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
   }
 }
