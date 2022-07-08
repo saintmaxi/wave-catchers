@@ -38,5 +38,10 @@
     "name": "The Art of Seasons: Seasons #13377",
     "image": "https://renga.imgix.net/token/autumn/3/18.jpg",
     "discord-required": "true"
+  },
+  "8": {
+    "name": "Ledger Nano X",
+    "image": "https://i.imgur.com/4f5oyYd.png",
+    "discord-required": "true"
   }
 }
