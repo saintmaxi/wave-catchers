@@ -1238,5 +1238,15 @@
     "max-slots": 10,
     "display-on-market": "true",
     "network": "eth"
+  },
+  "129": {
+    "name": "Helix",
+    "description": "HELIX is developed by the studio Hypersonic Laboratories, which consists of all-star designers, artists, developers, and producers with real experience at AAA game-developers like Rockstar, Activision, and Ubisoft. Unlike most teams they will give their holders access to the game this year.NFTs & Utility Their Founders Collection will be launched with 10K generative art NFTs that included benefits like: 1 free land plot in Parallel City, Early access to HELIX, Permanent P2E bonuses, Token Airdrop (LIX), Continuous NFT airdrops (items, vehicles, artworks, etc.)",
+    "image": "https://i.imgur.com/bsSwDmK.png",
+    "twitter": "https://twitter.com/HELIX_Metaverse",
+    "website": "https://helixmetaverse.com/#main",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
   }
 }
