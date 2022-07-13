@@ -1216,7 +1216,7 @@
     "twitter": "https://twitter.com/drippyzombies",
     "website": "https://www.drippyzombies.com/",
     "max-slots": 15,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "127": {
