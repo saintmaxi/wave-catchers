@@ -1226,7 +1226,7 @@
     "twitter": "https://twitter.com/fractalzNFT",
     "website": "https://twitter.com/fractalzNFT",
     "max-slots": 15,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "128": {
@@ -1236,7 +1236,7 @@
     "twitter": "https://twitter.com/SubwayRatsNFT",
     "website": "https://subwayrats.io/",
     "max-slots": 10,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "129": {
@@ -1246,7 +1246,47 @@
     "twitter": "https://twitter.com/HELIX_Metaverse",
     "website": "https://helixmetaverse.com/#main",
     "max-slots": 10,
+    "display-on-market": "false",
+    "network": "eth"
+  },
+  "130": {
+    "name": "Helix",
+    "description": "HELIX is developed by the studio Hypersonic Laboratories, which consists of all-star designers, artists, developers, and producers with real experience at AAA game-developers like Rockstar, Activision, and Ubisoft. Unlike most teams they will give their holders access to the game this year.NFTs & Utility Their Founders Collection will be launched with 10K generative art NFTs that included benefits like: 1 free land plot in Parallel City, Early access to HELIX, Permanent P2E bonuses, Token Airdrop (LIX), Continuous NFT airdrops (items, vehicles, artworks, etc.)",
+    "image": "https://i.imgur.com/bsSwDmK.png",
+    "twitter": "https://twitter.com/HELIX_Metaverse",
+    "website": "https://helixmetaverse.com/#main",
+    "max-slots": 6,
     "display-on-market": "true",
     "network": "eth"
+  },
+  "131": {
+    "name": "YUKI",
+    "description": "YUKI is working to build a virtual metaverse as our first attempt at an Metaverse-Ready Experiment where we tend to connect players. By holding a Generation 1 of YUKI Avatars you will gain exclusive access to Yuki Lands and Yuki Creatures. Train, Evolve and Fight with your characters.  Always exploring the Otherside.",
+    "image": "https://i.imgur.com/lviZt69.png",
+    "twitter": "https://twitter.com/THEYUKINFT",
+    "website": "https://twitter.com/THEYUKINFT",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "132": {
+    "name": "FANTASIZE",
+    "description": "Fantasize is a project which tries to do the most for its community. We have one of the most unique art throughout social media by having 30 different characters with 100+ attributes EACH, all hand-drawn too! Unfortunately, we won't be able to spoil a lot about the future, but one thing is sure, and that is that you will love it as it is something you haven't seen before.",
+    "image": "https://i.imgur.com/ljmx4Ct.png",
+    "twitter": "https://twitter.com/FantasizeNFT",
+    "website": "https://twitter.com/FantasizeNFT",
+    "max-slots": 85,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "133": {
+    "name": "COSMIC CITIZENS",
+    "description": "Cosmic Citizens - an NFT collection comprised of 8888 alien citizens from a far dimension defending the galaxy from evil lurking throughout the universe. One of the first NFT collections that will feature a community driven storyline with licensing opportunities for our upcoming cartoon and merchandise.",
+    "image": "https://i.imgur.com/09Ql1Ji.png",
+    "twitter": "https://twitter.com/CosmicCitizens_",
+    "website": "https://www.cosmiccitizens.io/",
+    "max-slots": 35,
+    "display-on-market": "true",
+    "network": "sol"
   }
 }
