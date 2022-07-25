@@ -1236,7 +1236,7 @@
     "twitter": "https://twitter.com/SubwayRatsNFT",
     "website": "https://subwayrats.io/",
     "max-slots": 10,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "129": {
@@ -1246,7 +1246,7 @@
     "twitter": "https://twitter.com/HELIX_Metaverse",
     "website": "https://helixmetaverse.com/#main",
     "max-slots": 10,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "130": {
@@ -1266,7 +1266,7 @@
     "twitter": "https://twitter.com/THEYUKINFT",
     "website": "https://twitter.com/THEYUKINFT",
     "max-slots": 10,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "132": {
@@ -1286,7 +1286,37 @@
     "twitter": "https://twitter.com/CosmicCitizens_",
     "website": "https://www.cosmiccitizens.io/",
     "max-slots": 35,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "sol"
+  },
+  "134": {
+    "name": "Banditsverse",
+    "description": "Bandits are criminals that operate in the Metaverse, examples of crimes committed include stealing ETH, NFTs and even Whitelists to exclusive upcoming NFT collections. Holders of Bandits In The Metaverse will be rewarded and provided with the proceeds of crime. Furthermore, your Bandit serves as a membership card to an exclusive Alpha Group which comprises of several leading NFT and Crypto research analysts, that specialize in both technical and fundamental research.",
+    "image": "https://gyazo.com/9ad0cb8f23ac5ed3afa0870daea86d11",
+    "website": "https://twitter.com/Banditsverse",
+    "twitter": "https://twitter.com/Banditsverse",
+    "max-slots": 40,
+    "display-on-market": true,
+    "network": "eth"
+  },
+  "135": {
+    "name": "Warriors of Freya",
+    "description": "Freya has woken up in this new world from her divine sleep. Freya's call for her trusted warriors echoes through the world tree. This is not a call for war. It's a call to unite world women.\r\n\r\nWarriors of Freya is an art focused NFT project launching on the Avalanche blockchain with support from the Joepegs launchpad. Mint date - 12th Aug \r",
+    "image": "https://gyazo.com/78769cb5359a6c22a142827b724d4efd",
+    "website": "https://twitter.com/WarriorsofFreya",
+    "twitter": "https://twitter.com/WarriorsofFreya",
+    "max-slots": 18,
+    "display-on-market": true,
+    "network": "eth"
+  },
+  "136": {
+    "name": "Dirty Street Cats",
+    "description": "Dirty Street Cats is a mobile P2E Battle Royale game and the first flagship product by the Swiss Web3 gaming brand Andrew Labs. \r\n\r\nIn the game, players will take control of Street Cats, a newly-conscious species that appeared after the richest man in the world transferred the human population to Mars. \r\n\r\nStarting with Paris, the players will fight for control over the last 7 major standing cities, collecting in-game currency and strengthening their characters.\r\n\r\nFully doxxed team. Founders have an MSc in Physics and MBA from London Business School. Gameplay will include battle royale PvP experience.",
+    "image": "https://gyazo.com/40be45f578a383027ebea167cac8361c",
+    "website": "https://twitter.com/dirtystreetcats",
+    "twitter": "https://twitter.com/dirtystreetcats",
+    "max-slots": 20,
+    "display-on-market": true,
+    "network": "eth"
   }
 }
