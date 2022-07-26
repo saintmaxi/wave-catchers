@@ -43,5 +43,10 @@
     "name": "Ledger Nano X",
     "image": "https://i.imgur.com/4f5oyYd.png",
     "discord-required": "true"
+  },
+  "9": {
+    "name": "Timith Minting Bot Beta and Whitelist",
+    "image": "https://i.imgur.com/0nPLjpI.png",
+    "discord-required": "true"
   }
 }
