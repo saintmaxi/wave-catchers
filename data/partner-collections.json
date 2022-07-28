@@ -1318,5 +1318,15 @@
     "max-slots": 20,
     "display-on-market": "true",
     "network": "eth"
+  },
+  "137": {
+    "name": "The Turtles",
+    "description": "F*ck humans, save turtles\r\n\r\n🇩🇴 Something is brewing in the Dominican Republic\r\n\r\n Blackbear and Ancore strategy combined their power to save the turtles against polution\r\n\r\nFirst freemint with quality 3D art\r\n\r\nCharity project: majority of the royalties will go to the turtle sanctuary",
+    "image": "https://i.imgur.com/7L1k4nj.png",
+    "website": "https://www.weareblackbear.io/",
+    "twitter": "https://twitter.com/TheTurtlesNFT",
+    "max-slots": 35,
+    "display-on-market": true,
+    "network": "eth"
   }
 }
