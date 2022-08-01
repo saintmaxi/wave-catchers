@@ -1296,7 +1296,7 @@
     "website": "https://twitter.com/Banditsverse",
     "twitter": "https://twitter.com/Banditsverse",
     "max-slots": 40,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "135": {
@@ -1306,7 +1306,7 @@
     "website": "https://twitter.com/WarriorsofFreya",
     "twitter": "https://twitter.com/WarriorsofFreya",
     "max-slots": 18,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "136": {
@@ -1316,7 +1316,7 @@
     "website": "https://twitter.com/dirtystreetcats",
     "twitter": "https://twitter.com/dirtystreetcats",
     "max-slots": 20,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "137": {
