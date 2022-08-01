@@ -1326,7 +1326,7 @@
     "website": "https://www.weareblackbear.io/",
     "twitter": "https://twitter.com/TheTurtlesNFT",
     "max-slots": 35,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "138": {
