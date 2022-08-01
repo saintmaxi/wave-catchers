@@ -1328,5 +1328,45 @@
     "max-slots": 35,
     "display-on-market": true,
     "network": "eth"
+  },
+  "138": {
+    "name": "Bubble Friends",
+    "description": "Bubble, meet web3. A collection of (3,333) community-driven animated bubbles will be released on the ETH blockchain. Bubble Friends grants you access to a holders-only benefit club where exclusive perks will be given. The project will be pledging 10% of its mint sales to charitable initiatives decided by the community. Come explore our bubbly universe and make new friends!",
+    "image": "https://i.imgur.com/ox71Tub.png",
+    "website": "https://twitter.com/bvbblefriends",
+    "twitter": "https://twitter.com/bvbblefriends",
+    "max-slots": 5,
+    "display-on-market": true,
+    "network": "eth"
+  },
+  "139": {
+    "name": "Clokies",
+    "description": "We Are Clokies, Metaverse Treasures Hunters!",
+    "image": "https://pbs.twimg.com/profile_images/1532418491839660034/thJ8qPPD_400x400.jpg",
+    "website": "https://twitter.com/clokiesnft",
+    "twitter": "https://twitter.com/clokiesnft",
+    "max-slots": 15,
+    "display-on-market": true,
+    "network": "eth"
+  },
+  "140": {
+    "name": "Mech NFT",
+    "description": "Building the future of web3 gaming. Build, Battle & Earn \nFounded by @Trey_Smith & @Rudenkon\n",
+    "image": "https://pbs.twimg.com/profile_images/1508521407625506824/08d3IW6F_400x400.jpg",
+    "website": "https://twitter.com/MechNFT",
+    "twitter": "https://twitter.com/MechNFT",
+    "max-slots": 35,
+    "display-on-market": true,
+    "network": "eth"
+  },
+  "141": {
+    "name": "Monster Numberz",
+    "description": "Monster Numberz is a collection of 9,999 number-based banners living on Ethereum Blockchain, designed by The Social Trauma, an italian tattoo artist and illustrator.\r\n\r\nOn Web3, we know that few things matter more than numbers, so let's play with numbers customizing your social profile with your randomly-generated Monster Numberz banner. Represent yourself through a number which could also be the number of your favourite NFT, or even your Discord ID.\r\nWhat number are you going to mint? If you don’t think your first number is too special, it will surely be to someone else’s taste!",
+    "image": "https://pbs.twimg.com/profile_images/1540435196809547780/1mfzTKdi_400x400.jpg",
+    "website": "https://twitter.com/MonsterNumberz",
+    "twitter": "https://twitter.com/MonsterNumberz",
+    "max-slots": 10,
+    "display-on-market": true,
+    "network": "eth"
   }
 }
