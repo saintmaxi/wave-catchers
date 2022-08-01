@@ -1326,7 +1326,7 @@
     "website": "https://www.weareblackbear.io/",
     "twitter": "https://twitter.com/TheTurtlesNFT",
     "max-slots": 35,
-    "display-on-market": true,
+    "display-on-market": "true",
     "network": "eth"
   },
   "138": {
@@ -1336,7 +1336,7 @@
     "website": "https://twitter.com/bvbblefriends",
     "twitter": "https://twitter.com/bvbblefriends",
     "max-slots": 5,
-    "display-on-market": true,
+    "display-on-market": "true",
     "network": "eth"
   },
   "139": {
@@ -1346,7 +1346,7 @@
     "website": "https://twitter.com/clokiesnft",
     "twitter": "https://twitter.com/clokiesnft",
     "max-slots": 15,
-    "display-on-market": true,
+    "display-on-market": "true",
     "network": "eth"
   },
   "140": {
@@ -1356,7 +1356,7 @@
     "website": "https://twitter.com/MechNFT",
     "twitter": "https://twitter.com/MechNFT",
     "max-slots": 35,
-    "display-on-market": true,
+    "display-on-market": "true",
     "network": "eth"
   },
   "141": {
@@ -1366,7 +1366,7 @@
     "website": "https://twitter.com/MonsterNumberz",
     "twitter": "https://twitter.com/MonsterNumberz",
     "max-slots": 10,
-    "display-on-market": true,
+    "display-on-market": "true",
     "network": "eth"
   }
 }
