@@ -1346,7 +1346,7 @@
     "website": "https://twitter.com/MechNFT",
     "twitter": "https://twitter.com/MechNFT",
     "max-slots": 35,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "140": {
