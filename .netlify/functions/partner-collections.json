@@ -1358,5 +1358,35 @@
     "max-slots": 10,
     "display-on-market": "true",
     "network": "eth"
+  },
+  "141": {
+    "name": "Saphire",
+    "description": "Saphire is a 777 genesis free mint for crazy alpha, partnerships with some big names. ",
+    "image": "https://cdn.discordapp.com/attachments/991118556731289691/993573753206354071/rc76.png",
+    "website": "https://twitter.com/saphirenft",
+    "twitter": "https://twitter.com/saphirenft",
+    "max-slots": 6,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "142": {
+    "name": "Project ZR_X",
+    "description": "Buffering...Stages\r\nStaging...3.0\r\nGenerating...ZRX",
+    "image": "https://pbs.twimg.com/profile_images/1523025800764735489/DGj2gUFs_400x400.jpg",
+    "website": "https://twitter.com/ProjectZR_X",
+    "twitter": "https://twitter.com/ProjectZR_X",
+    "max-slots": 13,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "143": {
+    "name": "Dininho",
+    "description": "RAWR",
+    "image": "https://i.imgur.com/I6akHXg.png",
+    "website": "https://twitter.com/dinobonoide",
+    "twitter": "https://twitter.com/dinobonoide",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "eth"
   }
 }
