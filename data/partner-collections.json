@@ -1388,5 +1388,25 @@
     "max-slots": 15,
     "display-on-market": "true",
     "network": "eth"
+  },
+  "144": {
+    "name": "All Heros",
+    "description": "Let's Go Heroes. The World Awaits You.🌎",
+    "image": "https://i.imgur.com/rzA6WeW.png",
+    "website": "https://twitter.com/AllheroesNFTs",
+    "twitter": "https://twitter.com/AllheroesNFTs",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "145": {
+    "name": "Seekers of the Eternal",
+    "description": "Seekers of the Eternals began in 2017 as a group of like-minded friends coming together with the purpose of helping one another awaken our highest self through the practice of mediation and self-actualization.",
+    "image": "https://i.imgur.com/NNj1I3O.jpeg",
+    "website": "https://sote-nft.io/",
+    "twitter": "https://twitter.com/palehorsedesign",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "eth"
   }
 }
