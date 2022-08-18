@@ -1406,7 +1406,7 @@
     "website": "https://sote-nft.io/",
     "twitter": "https://twitter.com/palehorsedesign",
     "max-slots": 15,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "146": {
@@ -1416,7 +1416,7 @@
     "website": "https://twitter.com/onlyonesleft",
     "twitter": "https://twitter.com/onlyonesleft",
     "max-slots": 27,
-    "display-on-market": true,
+    "display-on-market": "true",
     "network": "eth"
   },
   "147": {
@@ -1426,7 +1426,7 @@
     "website": "https://twitter.com/bearfrenzNFT",
     "twitter": "https://twitter.com/bearfrenzNFT",
     "max-slots": 19,
-    "display-on-market": true,
+    "display-on-market": "true",
     "network": "eth"
   },
   "148": {
@@ -1436,7 +1436,7 @@
     "website": "https://twitter.com/dogslifelol",
     "twitter": "https://twitter.com/dogslifelol",
     "max-slots": 15,
-    "display-on-market": true,
+    "display-on-market": "true",
     "network": "eth"
   },
   "149": {
@@ -1446,7 +1446,7 @@
     "website": "https://twitter.com/MetaDungeon_",
     "twitter": "https://twitter.com/MetaDungeon_",
     "max-slots": 40,
-    "display-on-market": true,
+    "display-on-market": "true",
     "network": "eth"
   },
   "150": {
@@ -1456,7 +1456,7 @@
     "website": "https://twitter.com/TopGNFT_",
     "twitter": "https://twitter.com/TopGNFT_",
     "max-slots": 15,
-    "display-on-market": true,
+    "display-on-market": "true",
     "network": "eth"
   }
 }
