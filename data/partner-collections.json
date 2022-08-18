@@ -1408,5 +1408,55 @@
     "max-slots": 15,
     "display-on-market": "true",
     "network": "eth"
+  },
+  "146": {
+    "name": "Were the only ones left",
+    "description": "3,333 emotionally volatile Wojaks seeking for frens who did not quit the space was once known as “web3״.\r\n\r\nWe've all been dabbling into the space for quite a while now, yet not many of us are still here. We aim to become the official Bear Market pfp collection, to remind you all, we all lose money from time to time, but we never quit.",
+    "image": "https://gyazo.com/0d5e1ca9c425536d032323593a074415",
+    "website": "https://twitter.com/onlyonesleft",
+    "twitter": "https://twitter.com/onlyonesleft",
+    "max-slots": 27,
+    "display-on-market": true,
+    "network": "eth"
+  },
+  "147": {
+    "name": "Bear Frenz NFT",
+    "description": "ʙᴇᴀʀs ᴀʀᴇ ᴛʜᴇ ʀᴇᴀʟ ᴋɪɴɢs ᴏғ ᴛʜᴇ ғᴏʀᴇsᴛs.\r\nɴᴏ ғᴀᴋᴇ ᴘʀᴏᴍɪsᴇs! \r\nᴊᴜsᴛ ʀᴏᴀʀ!",
+    "image": "https://gyazo.com/0a9ef11cb4c5e0a0aa2fa1dc55c9921b",
+    "website": "https://twitter.com/bearfrenzNFT",
+    "twitter": "https://twitter.com/bearfrenzNFT",
+    "max-slots": 19,
+    "display-on-market": true,
+    "network": "eth"
+  },
+  "148": {
+    "name": "Dogs Life NFT",
+    "description": "𝔽𝕣𝕖𝕖 𝕞𝕚𝕟𝕥 🦴 𝟛𝟛𝟛𝟛 𝔻𝕠𝕘𝕤 𝕗𝕠𝕣 𝕥𝕙𝕖 𝕔𝕠𝕞𝕞𝕦𝕟𝕚𝕥𝕪 🦴 ℂℂ𝟘 - ℕ𝕠 𝕡𝕣𝕠𝕞𝕚𝕤𝕖 🦴 𝔽𝕦𝕔𝕜 𝕚𝕥’𝕤 𝕥𝕙𝕖 𝕕𝕠𝕘’𝕤 𝕝𝕚𝕗𝕖 🐾",
+    "image": "https://gyazo.com/ef325e3e7b068178c9dec216a9e7c4ed",
+    "website": "https://twitter.com/dogslifelol",
+    "twitter": "https://twitter.com/dogslifelol",
+    "max-slots": 15,
+    "display-on-market": true,
+    "network": "eth"
+  },
+  "149": {
+    "name": "Meta Dungeon ",
+    "description": "- Player vs Blockchain: Through powering the game with an Automation protocol, our team has developed the first ever \"Autonomous NFT\", which allows for true NPCs in the form of \"bosses\". Players do not have to interact with the boss for it to interact with you, just like in the majority of web 2 games. CoinmarketCap will be officially recognizing and adding the term into their glossary!\r",
+    "image": "https://gyazo.com/72adbcbb02c49a79a9f60d916712312b",
+    "website": "https://twitter.com/MetaDungeon_",
+    "twitter": "https://twitter.com/MetaDungeon_",
+    "max-slots": 40,
+    "display-on-market": true,
+    "network": "eth"
+  },
+  "150": {
+    "name": "Top G NFT",
+    "description": "Bear Market is just another stepping stone for the Top G’s to takeover. WL = Free mint .",
+    "image": "https://gyazo.com/6922298ef3a7b889d87f07a4e63f9eff",
+    "website": "https://twitter.com/TopGNFT_",
+    "twitter": "https://twitter.com/TopGNFT_",
+    "max-slots": 15,
+    "display-on-market": true,
+    "network": "eth"
   }
 }
