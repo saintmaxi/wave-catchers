@@ -1488,5 +1488,15 @@
     "max-slots": 15,
     "display-on-market": "true",
     "network": "eth"
+  },
+  "154": {
+    "name": "Clokies",
+    "description": "We Are Clokies, Metaverse Treasures Hunters!",
+    "image": "https://i.imgur.com/MAdZ7c0.png",
+    "website": "https://twitter.com/clokiesnft",
+    "twitter": "https://twitter.com/clokiesnft",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "eth"
   }
 }
