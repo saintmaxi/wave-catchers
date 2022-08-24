@@ -1458,5 +1458,35 @@
     "max-slots": 15,
     "display-on-market": "true",
     "network": "eth"
+  },
+  "151": {
+    "name": "Rotten Eggs",
+    "description": "Key points about the project (more lore and utilities to be revealed throughout the pre-mint process):\r\n🎨  Art by Brennen Karem, who's done work for the likes of Marshmello, Alesso\r\n🪜  Three Stages:  Egg-Demic, Egg-Pocalypse, and Egg-Annihilation (P2E game)\r\n🥚  10,000 PFP collection on Solana\r\n📽️ Tv series on major streaming platform - holders have special perks",
+    "image": "https://i.imgur.com/PGJR6vY.png",
+    "website": "https://twitter.com/rotteneggseww",
+    "twitter": "https://twitter.com/rotteneggseww",
+    "max-slots": 27,
+    "display-on-market": true,
+    "network": "sol"
+  },
+  "152": {
+    "name": "Dominius | Hameer's Hideout",
+    "description": "1,111 DOMINUS GENESIS SUPPLY ",
+    "image": "https://i.imgur.com/k8oFUov.png",
+    "website": "https://twitter.com/HameerHideout",
+    "twitter": "https://twitter.com/HameerHideout",
+    "max-slots": 7,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "153": {
+    "name": "Catpocalypse",
+    "description": "FREE MINT - 1666 fully animated kitties of the Apocalypse on #ETH. \r\nPrivate Tools for Holders.",
+    "image": "https://i.imgur.com/uR3uO2C.png",
+    "website": "https://twitter.com/catpocalypsenft",
+    "twitter": "https://twitter.com/catpocalypsenft",
+    "max-slots": 15,
+    "display-on-market": "true",
+    "network": "eth"
   }
 }
