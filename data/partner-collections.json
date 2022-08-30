@@ -1466,7 +1466,7 @@
     "website": "https://twitter.com/rotteneggseww",
     "twitter": "https://twitter.com/rotteneggseww",
     "max-slots": 27,
-    "display-on-market": true,
+    "display-on-market": "true",
     "network": "sol"
   },
   "152": {
@@ -1496,6 +1496,56 @@
     "website": "https://twitter.com/clokiesnft",
     "twitter": "https://twitter.com/clokiesnft",
     "max-slots": 15,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "155": {
+    "name": "WeBearz",
+    "description": " We Bearz \n\n\nCome aboard our tour of beautiful forestry and grasslands! With Honeycomb Woodz being the land of opportunity, only those who are brave enough to explore it get to find out – will you be one of them?\n\nGet Bearzlisted or mint from Public! 0 ETH to spend to get your WeBearz!\n\n",
+    "image": "https://i.imgur.com/eZ1gEQG.png",
+    "website": "https://twitter.com/WeBearzNFT",
+    "twitter": "https://twitter.com/WeBearzNFT",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "156": {
+    "name": "Spirit Pupz",
+    "description": "6666 pupz looking to be adopted ✨ first 3000 supply is free to mint🐶 Good vibes and donations are our only promise",
+    "image": "https://i.imgur.com/b1jeNzt.png",
+    "website": "https://twitter.com/spiritpupznft",
+    "twitter": "https://twitter.com/spiritpupznft",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "157": {
+    "name": "Xia_One",
+    "description": "Fight as a vigilante, aka Xia, to save or bend the world in any way you see fit!!\r\nEarn KARMA with 7777 playable #NFTs. ",
+    "image": "https://i.imgur.com/ExW6VUU.png",
+    "website": "https://twitter.com/XiaOne_official",
+    "twitter": "https://twitter.com/XiaOne_official",
+    "max-slots": 4,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "158": {
+    "name": "Gas Guzzlers",
+    "description": "⛽ Gas Guzzlers NFT ⛽ \n\n-working with blue-chip communities\n-Earn $PUMP in the Guzzler ecosystem through staking\n-Gas TXN refunds?👀 \n-marketplace?\n-New “BLACKLIST” system that is actually a meaningful, easy, and engaging version of WL.\n-Minting around early September\n-Price is TBA\n-Supply is rumored around 4200-8000",
+    "image": "https://i.imgur.com/x5qk0XB.png",
+    "website": "https://twitter.com/GasGuzzlers_NFT",
+    "twitter": "https://twitter.com/GasGuzzlers_NFT",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "159": {
+    "name": "Strange Connections",
+    "description": "The next connection is around the corner...\r\n\r\n//Your personal safe space\r\n//Daily check in at #SCNFT",
+    "image": "https://i.imgur.com/0cCU81g.png",
+    "website": "https://twitter.com/S_C_NFT",
+    "twitter": "https://twitter.com/S_C_NFT",
+    "max-slots": 5,
     "display-on-market": "true",
     "network": "eth"
   }
