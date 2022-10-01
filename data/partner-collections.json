@@ -1548,5 +1548,45 @@
     "max-slots": 5,
     "display-on-market": "true",
     "network": "eth"
+  },
+  "162": {
+    "name": "Internet Raised",
+    "description": "At Internet Raised, our goal is to develop a global brand pushing beyond the scope of Web3. Our project encompasses the core tenets of Community, Storytelling, Education & providing exceptional Value to our holders. Holders gain access to the Degen Playground - a one-stop digital hub encompassing everything from Education, Alpha, Tools, Staking Rewards & Partnerships. Our IP expansion strategy will start with a series of comics tied into sales incentives and holder rewards.\r\n",
+    "image": "https://i.imgur.com/fRfeKdQ.png",
+    "website": "https://twitter.com/internetraisxd",
+    "twitter": "https://twitter.com/internetraisxd",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "163": {
+    "name": "PepeBeanz",
+    "description": "Just Beanz for hungry Pepes\r\n🐸No discord\r\n🐸No promises\r\n🐸just twitter...\r\n🐸Utility = Beanz at its best",
+    "image": "https://i.imgur.com/lJxgpKa.png",
+    "website": "https://twitter.com/BeanzPepe",
+    "twitter": "https://twitter.com/BeanzPepe",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "164": {
+    "name": "Holy Nephalem",
+    "description": "A new era... A new entity... A new uprising...\r\n\r\nThe Holy Nephalems represent light and decay. Innocence and impurity. Love and fear. \r\n\r\nAs offspring of angels and demons, they have forever altered the stability between Heaven and Hell. \r\n\r\nThose who adapt and conquer live on, but those who do not, are forever left behind…",
+    "image": "https://i.imgur.com/4vWgrFK.png",
+    "website": "https://twitter.com/NephalemNFT",
+    "twitter": "https://twitter.com/NephalemNFT",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "165": {
+    "name": "Zodiac World",
+    "description": "Zodiac World is an immersive gamified avatar-PFP-collection giving you access to earn $ODS and $ZOC as you level up by training, studying and exploring the galaxy near and far.\r\n\r\nThis is only the start of what Cosmos Studios has planned with Zodiac World. \r\nStay tuned for more or else..",
+    "image": "https://i.imgur.com/d5BMabw.png",
+    "website": "https://twitter.com/Zodiacnftworld",
+    "twitter": "https://twitter.com/Zodiacnftworld",
+    "max-slots": 3,
+    "display-on-market": "true",
+    "network": "eth"
   }
 }
