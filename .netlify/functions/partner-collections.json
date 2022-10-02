@@ -1570,6 +1570,16 @@
     "network": "eth"
   },
   "162": {
+    "name": "Kiddoy00ts",
+    "description": "Kiddoy00ts is a derivative collection inspired by y00ts. A collection aiming to make the number one most trusted Derivative community that is focused on arts and alpha tool providers for free to holders.",
+    "image": "https://i.imgur.com/8GrYwm8.png",
+    "website": "https://twitter.com/kiddo_y00ts",
+    "twitter": "https://twitter.com/kiddo_y00ts",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "163": {
     "name": "Holy Nephalem",
     "description": "A new era... A new entity... A new uprising...\r\n\r\nThe Holy Nephalems represent light and decay. Innocence and impurity. Love and fear. \r\n\r\nAs offspring of angels and demons, they have forever altered the stability between Heaven and Hell. \r\n\r\nThose who adapt and conquer live on, but those who do not, are forever left behind…",
     "image": "https://i.imgur.com/4vWgrFK.png",
@@ -1579,7 +1589,7 @@
     "display-on-market": "true",
     "network": "eth"
   },
-  "163": {
+  "164": {
     "name": "Zodiac World",
     "description": "Zodiac World is an immersive gamified avatar-PFP-collection giving you access to earn $ODS and $ZOC as you level up by training, studying and exploring the galaxy near and far.\r\n\r\nThis is only the start of what Cosmos Studios has planned with Zodiac World. \r\nStay tuned for more or else..",
     "image": "https://i.imgur.com/d5BMabw.png",
@@ -1588,16 +1598,5 @@
     "max-slots": 3,
     "display-on-market": "true",
     "network": "eth"
-  },
-
-  "164": {
-    "name": "Kiddoy00ts",
-    "description": "Kiddoy00ts is a derivative collection inspired by y00ts. A collection aiming to make the number one most trusted Derivative community that is focused on arts and alpha tool providers for free to holders.",
-    "image": "https://i.imgur.com/8GrYwm8.png",
-    "website": "https://twitter.com/kiddo_y00ts",
-    "twitter": "https://twitter.com/kiddo_y00ts",
-    "max-slots": 10,
-    "display-on-market": "true",
-    "network": "eth"
-  }
+   }
 }
