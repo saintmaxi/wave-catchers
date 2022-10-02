@@ -1588,5 +1588,16 @@
     "max-slots": 3,
     "display-on-market": "true",
     "network": "eth"
+  },
+
+  "166": {
+    "name": "Kiddoy00ts",
+    "description": "Kiddoy00ts is a derivative collection inspired by y00ts. A collection aiming to make the number one most trusted Derivative community that is focused on arts and alpha tool providers for free to holders.",
+    "image": "https://i.imgur.com/8GrYwm8.png",
+    "website": "https://twitter.com/kiddo_y00ts",
+    "twitter": "https://twitter.com/kiddo_y00ts",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
   }
 }
