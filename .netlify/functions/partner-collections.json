@@ -1550,7 +1550,7 @@
     "network": "eth"
   },
   "160": {
-     "name": "Internet Raised",
+    "name": "Internet Raised",
     "description": "At Internet Raised, our goal is to develop a global brand pushing beyond the scope of Web3. Our project encompasses the core tenets of Community, Storytelling, Education & providing exceptional Value to our holders. Holders gain access to the Degen Playground - a one-stop digital hub encompassing everything from Education, Alpha, Tools, Staking Rewards & Partnerships. Our IP expansion strategy will start with a series of comics tied into sales incentives and holder rewards.\r\n",
     "image": "https://i.imgur.com/fRfeKdQ.png",
     "website": "https://twitter.com/internetraisxd",
@@ -1598,5 +1598,75 @@
     "max-slots": 3,
     "display-on-market": "true",
     "network": "eth"
-   }
+  },
+  "165": {
+    "name": "Creepy Friends",
+    "description": "Manufactured in a mad professor's factory, 5,000 Creeps are looking for Friends across the metaverse.\r\n\r\n⚙️ Launching our collection of 5,000 hand-drawn loveable Creeps.\r\n⚙️ Reviving the original Creep!\r\n⚙️ Creating the Creepy World - will it be Creepyville? Creepytown? Creep City?\r\n⚙️ Construction the Creepy Park, for all the Creeps to hang out!",
+    "image": "https://i.imgur.com/ppxpSO6.png",
+    "website": "https://twitter.com/CreepyFrendsNFT",
+    "twitter": "https://twitter.com/CreepyFrendsNFT",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "166": {
+    "name": "PUMPkins",
+    "description": "A 999 Supply, low mint project that will launch sometime around Halloween. The art will contain plenty of traits to ensure a big variety in 🎃 . 9 lucky minters who will hold to reveal will be pleased with a special 1/1 NFT. These will have special advantages over common pumpkins (TBA). Yet, EVERY holder will get access to: Top tier alpha calls, best WL giveaways, educating round tables and much more!",
+    "image": "https://i.imgur.com/1dQjuyc.png",
+    "website": "https://twitter.com/PUMPkins_NFTs",
+    "twitter": "https://twitter.com/PUMPkins_NFTs",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "167": {
+    "name": "Bolt",
+    "description": "BOLT is the first cross-chain mobile optimized minting platform and NFT dashboard. The founders are doxxed and have had previous success in the NFT space.",
+    "image": "https://i.imgur.com/L68TvKc.png",
+    "website": "https://twitter.com/boltpassnft",
+    "twitter": "https://twitter.com/boltpassnft",
+    "max-slots": 10,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "168": {
+    "name": "DreamBeatz",
+    "description": "DeamBeatz! is an immersive Web3 project aimed to deliver a multisensory experience through art, music and play. Up to 6,666 Japanese anime characters will compete to become the world’s first idol group to perform live in the metaverse.",
+    "image": "https://i.imgur.com/Dab0awO.png",
+    "website": "https://twitter.com/DreamBeatzNFT",
+    "twitter": "https://twitter.com/DreamBeatzNFT",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "169": {
+    "name": "Kinkverse",
+    "description": "Kinkverse genesis passes are SFW utility and social tokens that signal holders' affiliation with an exclusive on-chain kink community and culturists. Owning a kinks pass unlocks access to tons of Real-world benefits and inbuilt utilities.",
+    "image": "https://i.imgur.com/A8Rgt2B.png",
+    "website": "https://twitter.com/kinkverse",
+    "twitter": "https://twitter.com/kinkverse",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "170": {
+    "name": " Ikigai",
+    "description": "Ikigai is a project consisting of 10000 boxes\r\non the Ethereum blockchain.\r\nIn each of the boxes, there are 1 lottery\r\nticket and 1 nft from our collection(ELVES) ,\r\nwhich are randomly placed inside the boxes\r\nikigai box gives you access to members\r\nbenefits, the first benefit is getting access\r\nto the ikigai LOTTERIES to win NFTs including\r\nbluechips e.g. MAYC, DOODLES, HAPE, and more valuable projects.",
+    "image": "https://i.imgur.com/qdB64vg.png",
+    "website": "twitter.com/ikigaiNftBox",
+    "twitter": "twitter.com/ikigaiNftBox",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  },
+  "171": {
+    "name": "ODD Squad",
+    "description": "The world’s first NFT-powered members club for mezcal lovers, brought to you by one of the fastest growing drinks brands on Earth, Ojo De Dios. Ojo de Dios is the eye to the soul of Mexico, a MASTER award-winning mezcal from the mountains of San Luis del Rio, Oaxaca.",
+    "image": "https://i.imgur.com/DgVOvuH.png",
+    "website": "https://twitter.com/oddsquadnft",
+    "twitter": "https://twitter.com/oddsquadnft",
+    "max-slots": 5,
+    "display-on-market": "true",
+    "network": "eth"
+  }
 }
