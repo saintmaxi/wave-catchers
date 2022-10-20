@@ -1616,7 +1616,7 @@
     "website": "https://twitter.com/PUMPkins_NFTs",
     "twitter": "https://twitter.com/PUMPkins_NFTs",
     "max-slots": 5,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "167": {
@@ -1626,7 +1626,7 @@
     "website": "https://twitter.com/boltpassnft",
     "twitter": "https://twitter.com/boltpassnft",
     "max-slots": 10,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "168": {
@@ -1636,7 +1636,7 @@
     "website": "https://twitter.com/DreamBeatzNFT",
     "twitter": "https://twitter.com/DreamBeatzNFT",
     "max-slots": 5,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "169": {
@@ -1646,7 +1646,7 @@
     "website": "https://twitter.com/kinkverse",
     "twitter": "https://twitter.com/kinkverse",
     "max-slots": 5,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "170": {
@@ -1656,7 +1656,7 @@
     "website": "twitter.com/ikigaiNftBox",
     "twitter": "twitter.com/ikigaiNftBox",
     "max-slots": 5,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "171": {
@@ -1666,7 +1666,7 @@
     "website": "https://twitter.com/oddsquadnft",
     "twitter": "https://twitter.com/oddsquadnft",
     "max-slots": 5,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   }
 }
