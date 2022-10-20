@@ -1,3 +1,4 @@
+
 {
   "0": {
     "name": "Kiwami",
@@ -22,7 +23,7 @@
   "2": {
     "name": "War Kittens",
     "description": "The on-chain PvP RPG ⚔️🐱<br><br>Entering the Kitten Kingdom is not for the faint of heart– join us if you’re prepared.",
-    "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/warkittens.gif?raw=true",
+     "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/warkittens.gif?raw=true",
     "website": "https://warkittens.xyz/",
     "twitter": "https://twitter.com/0xWarKittens",
     "max-slots": 10,
@@ -1576,7 +1577,7 @@
     "website": "https://twitter.com/kiddo_y00ts",
     "twitter": "https://twitter.com/kiddo_y00ts",
     "max-slots": 10,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "163": {
@@ -1606,7 +1607,7 @@
     "website": "https://twitter.com/CreepyFrendsNFT",
     "twitter": "https://twitter.com/CreepyFrendsNFT",
     "max-slots": 5,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "166": {
@@ -1670,3 +1671,5 @@
     "network": "eth"
   }
 }
+
+
